@@ -14,7 +14,7 @@ export const data: TalentData = {
     talents: {
       "Improved Wrath": {
         name: "Improved Wrath",
-        pos: "a1",
+        pos: "i5",
         icon: icons["spell_nature_abolishmagic"],
         maxRank: 5,
         reqPoints: 0,
