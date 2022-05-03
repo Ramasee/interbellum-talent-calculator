@@ -103,7 +103,7 @@ export const data: TalentData = {
       },
       "Improved Thorns": {
         name: "Improved Thorns",
-        pos: "c1",
+        pos: "c2",
         icon: icons["spell_nature_thorns"],
         maxRank: 3,
         reqPoints: 10,
