@@ -28,8 +28,7 @@
   height: 100%;
   background-size: var(--arrow-thickness) auto;
   background-repeat: no-repeat;
-  background-position: left;
-  left: -5px;
+  background-position: bottom 0px left -20px;
 }
 
 .Arrow-container--right-down {
