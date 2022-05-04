@@ -1187,6 +1187,7 @@ export const data: TalentData = {
           8,
           15,
         ]}% MAP.`,
+       },
     },
   },
 };
