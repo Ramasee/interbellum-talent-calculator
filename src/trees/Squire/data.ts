@@ -783,6 +783,7 @@ export const data: TalentData = {
           8,
           15,
         ]}% MAP.`,
+       },
     },
   },
   "Knight of the Blazing Sun": {
