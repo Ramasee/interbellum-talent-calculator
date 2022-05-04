@@ -969,4 +969,5 @@ export const data: TalentData = {
       },
     },
   },
+  },
 };
