@@ -379,19 +379,6 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Enemies that are in front of you will deal 25% less area of effect damage and other reduced effects to groupmates that are within 50 feet behind you.`,
       },
-      "copyme": {
-        name: "copyme",
-        pos: "b9",
-        icon: icons["noicon"],
-        maxRank: 1,
-        reqPoints: 15,
-        prereq: "masochist",
-        arrows: [{ dir: "right", from: "a9", to: "b9" }],
-        description: talentText`100ft range\n100AP\n2.0s cast\n5.0s CD\nability\n\nStrike now deals additional damage equal to ${[
-          8,
-          15,
-        ]}% MAP.`,
-      },
     },
   },
   "Reiksguard": {
