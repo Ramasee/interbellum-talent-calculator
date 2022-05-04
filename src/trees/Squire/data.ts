@@ -300,11 +300,85 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`100ft range
-        100 AP
-        2.0s cast
-        5.0s CD
+        description: talentText`100ft range\n
+        100 AP\n
+        2.0s cast\n
+        5.0s CD\n
+        ability\n\n
         Skill text`,
+      },
+      "On Your Guard!": {
+        name: "On Your Guard!",
+        pos: "d9",
+        icon: icons["abi_onyourguard"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\n
+        Groupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+      },
+      "To Victory!": {
+        name: "To Victory!",
+        pos: "g9",
+        icon: icons["abi_tovictory"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\n
+        Groupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+      },
+      "Vicious Slash": {
+        name: "Vicious Slash",
+        pos: "h9",
+        icon: icons["abi_viciousslash"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`melee range\n
+        50 AP\n
+        instant cast\n
+        skill\n\n
+        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Guard": {
+        name: "Guard",
+        pos: "e1",
+        icon: icons["abi_guard"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`150ft range\n
+        instant cast\n
+        ability\n\n
+        Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
+      },
+      "Strike": {
+        name: "Strike",
+        pos: "b1",
+        icon: icons["abi_strike"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`melee range\n
+        instant cast\n
+        skill\n\n
+        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Improved Strike": {
+        name: "Improved Strike",
+        pos: "c1",
+        icon: icons["abi_strike"],
+        maxRank: 2,
+        reqPoints: 0,
+        prereq: "Strike",
+        arrows: [{ dir: "right", from: "b1", to: "c1" }],
+        description: talentText`Strike now deals additional damage equal to ${[
+          8,
+          15,
+        ]}% MAP.`,
       },
     },
   },
@@ -637,6 +711,78 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "f7", to: "f8" }],
         description: talentText`Testing arrow function`,
       },
+      "On Your Guard!": {
+        name: "On Your Guard!",
+        pos: "d9",
+        icon: icons["abi_onyourguard"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\n
+        Groupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+      },
+      "Press the Attack!": {
+        name: "To Victory!",
+        pos: "f9",
+        icon: icons["abi_presstheattack"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\n
+        Groupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+      },
+      "Vicious Slash": {
+        name: "Vicious Slash",
+        pos: "h9",
+        icon: icons["abi_viciousslash"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`melee range\n
+        50 AP\n
+        instant cast\n
+        skill\n\n
+        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Guard": {
+        name: "Guard",
+        pos: "e1",
+        icon: icons["abi_guard"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`150ft range\n
+        instant cast\n
+        ability\n\n
+        Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
+      },
+      "Strike": {
+        name: "Strike",
+        pos: "b1",
+        icon: icons["abi_strike"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`melee range\n
+        instant cast\n
+        skill\n\n
+        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Improved Strike": {
+        name: "Improved Strike",
+        pos: "c1",
+        icon: icons["abi_strike"],
+        maxRank: 2,
+        reqPoints: 0,
+        prereq: "Strike",
+        arrows: [{ dir: "right", from: "b1", to: "c1" }],
+        description: talentText`Strike now deals additional damage equal to ${[
+          8,
+          15,
+        ]}% MAP.`,
     },
   },
   "Knight of the Blazing Sun": {
@@ -968,6 +1114,78 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "f7", to: "f8" }],
         description: talentText`Testing arrow function`,
       },
+      "To Victory!": {
+        name: "To Victory!",
+        pos: "g9",
+        icon: icons["abi_tovictory"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\n
+        Groupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+      },
+      "Press the Attack!": {
+        name: "To Victory!",
+        pos: "f9",
+        icon: icons["abi_presstheattack"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`30 mechanic\n
+        instant cast\n
+        spell\n\n
+        You gain 125 action points.\n
+        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\n
+        Groupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+      },
+      "Vicious Slash": {
+        name: "Vicious Slash",
+        pos: "h9",
+        icon: icons["abi_viciousslash"],
+        maxRank: 1,
+        reqPoints: 40,
+        description: talentText`melee range\n
+        50 AP\n
+        instant cast\n
+        skill\n\n
+        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Charge": {
+        name: "Charge",
+        pos: "e1",
+        icon: icons["abi_charge"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`instant cast\n
+        30s CD\n\n
+        ability\n\n
+        (Movement Skill) You gain 40% movement speed for 8 seconds. Effect will end if you use any ability.`,
+      },
+      "Strike": {
+        name: "Strike",
+        pos: "b1",
+        icon: icons["abi_strike"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`melee range\n
+        instant cast\n
+        skill\n\n
+        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+      },
+      "Improved Strike": {
+        name: "Improved Strike",
+        pos: "c1",
+        icon: icons["abi_strike"],
+        maxRank: 2,
+        reqPoints: 0,
+        prereq: "Strike",
+        arrows: [{ dir: "right", from: "b1", to: "c1" }],
+        description: talentText`Strike now deals additional damage equal to ${[
+          8,
+          15,
+        ]}% MAP.`,
     },
   },
 };
