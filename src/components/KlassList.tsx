@@ -14,49 +14,9 @@ const KLASSES = [
     path: "/squire",
   },
   {
-    name: "Druid",
-    icon: icons["class_druid"],
+    name: "Warrior Priest",
+    icon: icons["class_warriorpriest"],
     path: "/druid",
-  },
-  {
-    name: "Hunter",
-    icon: icons["class_hunter"],
-    path: "/hunter",
-  },
-  {
-    name: "Mage",
-    icon: icons["class_mage"],
-    path: "/mage",
-  },
-  {
-    name: "Paladin",
-    icon: icons["class_paladin"],
-    path: "/paladin",
-  },
-  {
-    name: "Priest",
-    icon: icons["class_priest"],
-    path: "/priest",
-  },
-  {
-    name: "Rogue",
-    icon: icons["class_rogue"],
-    path: "/rogue",
-  },
-  {
-    name: "Shaman",
-    icon: icons["class_shaman"],
-    path: "/shaman",
-  },
-  {
-    name: "Warlock",
-    icon: icons["class_warlock"],
-    path: "/warlock",
-  },
-  {
-    name: "Warrior",
-    icon: icons["class_warrior"],
-    path: "/warrior",
   },
 ];
 

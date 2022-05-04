@@ -7,10 +7,10 @@ const backgrounds = requireAll(
 const icons = requireAll(require.context("../../assets/icons/empire"));
 
 export const data: TalentData = {
-  Captain: {
-    name: "Captain",
-    background: backgrounds["captain"],
-    icon: icons["archetype_tank"],
+  Anvil_and_Torch: {
+    name: "Anvil and Torch",
+    background: backgrounds["anvilandtorch"],
+    icon: icons["archetype_defsupport"],
     talents: {
       "Moonkin Form": {
         name: "Moonkin Form",
@@ -22,10 +22,10 @@ export const data: TalentData = {
       },
     },
   },
-  Reiksguard: {
-    name: "Reiksguard",
-    background: backgrounds["reiksguard"],
-    icon: icons["archetype_tank"],
+  Silver_Hammer: {
+    name: "Silver Hammer",
+    background: backgrounds["silverhammer"],
+    icon: icons["archetype_healer"],
     talents: {
       "Leader of the Pack": {
         name: "Leader of the Pack",
@@ -37,10 +37,10 @@ export const data: TalentData = {
       },
     },
   },
-  Knight_of_the_Blazing_Sun: {
-    name: "Knight of the Blazing Sun",
-    background: backgrounds["kotbs"],
-    icon: icons["archetype_offsupport"],
+  Cleansing_Flame: {
+    name: "Cleansing Flame",
+    background: backgrounds["cleansingflame"],
+    icon: icons["archetype_dps"],
     talents: {
       "Motivated": {
         name: "Motivated",
