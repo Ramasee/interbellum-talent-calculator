@@ -361,8 +361,6 @@ export const data: TalentData = {
         icon: icons["abi_repel"],
         maxRank: 1,
         reqPoints: 10,
-        prereq: "Strike",
-        arrows: [{ dir: "right", from: "b1", to: "c1" }],
         description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Crippling Blow": {
