@@ -12,13 +12,13 @@ export const data: TalentData = {
     background: backgrounds["anvilandtorch"],
     icon: icons["archetype_defsupport"],
     talents: {
-      "Moonkin Form": {
-        name: "Moonkin Form",
+      "Placeholder 2": {
+        name: "Placeholder 2",
         pos: "e1",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
+        description: talentText`placeholder 2`,
       },
     },
   },
@@ -27,13 +27,13 @@ export const data: TalentData = {
     background: backgrounds["silverhammer"],
     icon: icons["archetype_healer"],
     talents: {
-      "Leader of the Pack": {
-        name: "Leader of the Pack",
+      "Placeholder 2": {
+        name: "Placeholder 2",
         pos: "e1",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%`,
+        description: talentText`placeholder 2`,
       },
     },
   },
