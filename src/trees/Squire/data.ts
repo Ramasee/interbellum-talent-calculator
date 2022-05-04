@@ -141,7 +141,7 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         prereq: "Improved Moonfire",
-        arrows: [{ dir: "down", from: "b2", to: "d2" }],
+        arrows: [{ dir: "right-down-down", from: "b2", to: "d2" }],
         description: talentText`Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by ${[
           20,
           40,
