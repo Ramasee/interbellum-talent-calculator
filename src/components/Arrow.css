@@ -44,7 +44,7 @@
 }
 
 .Arrow-container--right-down-down {
-  padding-top: calc((var(--icon-size) / 2) + var(--sp-sm));
+  padding-top: calc(var(--icon-size) - var(--sp-xxxs));
   padding-bottom: calc(var(--icon-size) - var(--sp-sm));
 }
 
@@ -52,5 +52,5 @@
   height: 100%;
   background-size: var(--arrow-thickness) auto;
   background-repeat: no-repeat;
-  background-position: 90% 100%;
+  background-position: 125% 100%;
 }
