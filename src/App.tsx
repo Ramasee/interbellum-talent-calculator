@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import "./App.css";
 import { KlassList } from "./components/KlassList";
 
+const Squire = lazy(() => import("./trees/Squire"));
 const Druid = lazy(() => import("./trees/Druid"));
 const Hunter = lazy(() => import("./trees/Hunter"));
 const Mage = lazy(() => import("./trees/Mage"));
@@ -19,6 +20,7 @@ export const App: React.FC = () => {
     <div className="App">
       <KlassList />
       <Suspense fallback={null}>
+        <Route path="/squire" component={Squire} />
         <Route path="/druid" component={Druid} />
         <Route path="/hunter" component={Hunter} />
         <Route path="/mage" component={Mage} />
