@@ -28,7 +28,7 @@
   height: 100%;
   background-size: var(--arrow-thickness) auto;
   background-repeat: no-repeat;
-  background-position: -10% 100%;
+  background-position: bottom;
 }
 
 .Arrow-container--right-down {
@@ -38,14 +38,13 @@
 
 .Arrow--right-down {
   height: 100%;
-  width:60%;
   background-size: auto var(--arrow-thickness);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .Arrow-container--right-down-down {
-  padding-top: calc(var(--icon-size) - var(--sp-xxxs));
+  padding-top: calc((var(--icon-size) / 2) + var(--sp-sm));
   padding-bottom: calc(var(--icon-size) - var(--sp-sm));
 }
 
@@ -53,5 +52,5 @@
   height: 100%;
   background-size: var(--arrow-thickness) auto;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom;
 }
