@@ -299,31 +299,20 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`100ft range\n
-        100 AP\n
-        2.0s cast\n
-        5.0s CD\n\n
+        description: talentText`100ft range
+        100 AP
+        2.0s cast
+        5.0s CD
         Skill text`,
       },
-      "Wounds II": {
-        name: "Wounds II",
-        pos: "f8",
-        icon: icons["stat_wou"],
-        maxRank: 1,
-        reqPoints: 25,
-        prereq: "Wounds",
-        arrows: [{ dir: "down", from: "f7", to: "f8" }],
-        description: talentText`Testing arrow function`,
-      },
     },
-  },
-  Reiksguard: {
+  "Reiksguard": {
     name: "Reiksguard",
     background: backgrounds["reiksguard"],
     icon: icons["archetype_tank"],
     talents: {
-      "Motivated": {
-        name: "Motivated",
+      "Motivated2": {
+        name: "Motivated2",
         pos: "a2",
         icon: icons["rrtac_motivated"],
         maxRank: 1,
