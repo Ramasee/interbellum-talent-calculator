@@ -148,6 +148,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Ballistic Skill": {
         name: "Ballistic Skill",
         pos: "b1",
@@ -161,6 +162,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Initiative": {
         name: "Initiative",
         pos: "d2",
@@ -174,6 +176,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Intelligence": {
         name: "Intelligence",
         pos: "d1",
@@ -187,6 +190,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Strength": {
         name: "Strength",
         pos: "f1",
@@ -200,6 +204,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Toughness": {
         name: "Toughness",
         pos: "f2",
@@ -213,6 +218,7 @@ export const data: TalentData = {
           85,
           100,
         ]}.`,
+      },
       "Willpower": {
         name: "Willpower",
         pos: "h1",
