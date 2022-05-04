@@ -88,7 +88,7 @@ export const data: TalentData = {
         icon: icons["rrtac_gottagofast"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`You gain 1 stack of Revelry every second while moving.<BR><BR>Revelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
+        description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Festive Chaos": {
         name: "Festivity",
@@ -96,7 +96,7 @@ export const data: TalentData = {
         icon: icons["rrtac_festivechaos"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.<BR><BR>Revelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
+        description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Break Loose": {
         name: "Break Loose",
