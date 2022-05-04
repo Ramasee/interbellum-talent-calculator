@@ -270,21 +270,21 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Increase your mass by 1.`,
       },
-      "Race Tactic 1": {
-        name: "Archetype Tactic",
+      "Emperor's Ward": {
+        name: "Emperor's Ward",
         pos: "a1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
       },
-      "Race Tactic 2": {
-        name: "Race Tactic 2",
+      "Sigmar's Favored": {
+        name: "Sigmar's Favored",
         pos: "i1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
       "Power Ability 1": {
         name: "Power Aility 1",
@@ -309,40 +309,29 @@ export const data: TalentData = {
       },
       "On Your Guard!": {
         name: "On Your Guard!",
-        pos: "d9",
+        pos: "d1",
         icon: icons["abi_onyourguard"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\n
-        Groupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
-        pos: "g9",
+        pos: "g1",
         icon: icons["abi_tovictory"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\n
-        Groupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
-        pos: "h9",
+        pos: "h1",
         icon: icons["abi_viciousslash"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`melee range\n
-        50 AP\n
-        instant cast\n
-        skill\n\n
+        reqPoints: 0,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
         Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Guard": {
@@ -351,9 +340,7 @@ export const data: TalentData = {
         icon: icons["abi_guard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\n
-        instant cast\n
-        ability\n\n
+        description: talentText`150ft range\ninstant cast\nability\n\n
         Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
       },
       "Strike": {
@@ -362,9 +349,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n
-        instant cast\n
-        skill\n\n
+        description: talentText`melee range\ninstant cast\n\skill\n\n
         (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
@@ -665,21 +650,21 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Increase your mass by 1.`,
       },
-      "Race Tactic 1": {
-        name: "Archetype Tactic",
+      "Emperor's Ward": {
+        name: "Emperor's Ward",
         pos: "a1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
       },
-      "Race Tactic 2": {
-        name: "Race Tactic 2",
+      "Sigmar's Favored": {
+        name: "Sigmar's Favored",
         pos: "i1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
       "Power Ability 1": {
         name: "Power Aility 1",
@@ -701,52 +686,31 @@ export const data: TalentData = {
         5.0s CD\n\n
         Skill text`,
       },
-      "Wounds II": {
-        name: "Wounds II",
-        pos: "f8",
-        icon: icons["stat_wou"],
-        maxRank: 1,
-        reqPoints: 25,
-        prereq: "Wounds",
-        arrows: [{ dir: "down", from: "f7", to: "f8" }],
-        description: talentText`Testing arrow function`,
-      },
       "On Your Guard!": {
         name: "On Your Guard!",
-        pos: "d9",
+        pos: "d1",
         icon: icons["abi_onyourguard"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\n
-        Groupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
-        pos: "f9",
+        pos: "f1",
         icon: icons["abi_presstheattack"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\n
-        Groupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
-        pos: "h9",
+        pos: "h1",
         icon: icons["abi_viciousslash"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`melee range\n
-        50 AP\n
-        instant cast\n
-        skill\n\n
+        reqPoints: 0,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
         Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Guard": {
@@ -755,9 +719,7 @@ export const data: TalentData = {
         icon: icons["abi_guard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\n
-        instant cast\n
-        ability\n\n
+        description: talentText`150ft range\ninstant cast\nability\n\n
         Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
       },
       "Strike": {
@@ -766,9 +728,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n
-        instant cast\n
-        skill\n\n
+        description: talentText`melee range\ninstant cast\nskill\n\n
         (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
@@ -1069,21 +1029,21 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 2.`,
       },
-      "Race Tactic 1": {
-        name: "Archetype Tactic",
+      "Emperor's Ward": {
+        name: "Emperor's Ward",
         pos: "a1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
       },
-      "Race Tactic 2": {
-        name: "Race Tactic 2",
+      "Sigmar's Favored": {
+        name: "Sigmar's Favored",
         pos: "i1",
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`placeholder atm`,
+        description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
       "Power Ability 1": {
         name: "Power Aility 1",
@@ -1105,52 +1065,31 @@ export const data: TalentData = {
         5.0s CD\n\n
         Skill text`,
       },
-      "Wounds II": {
-        name: "Wounds II",
-        pos: "f8",
-        icon: icons["stat_wou"],
-        maxRank: 1,
-        reqPoints: 25,
-        prereq: "Wounds",
-        arrows: [{ dir: "down", from: "f7", to: "f8" }],
-        description: talentText`Testing arrow function`,
-      },
       "To Victory!": {
         name: "To Victory!",
-        pos: "g9",
+        pos: "g1",
         icon: icons["abi_tovictory"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\n
-        Groupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
-        pos: "f9",
+        pos: "f1",
         icon: icons["abi_presstheattack"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`30 mechanic\n
-        instant cast\n
-        spell\n\n
-        You gain 125 action points.\n
-        Groupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\n
-        Groupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        reqPoints: 0,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\n
+        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
-        pos: "h9",
+        pos: "h1",
         icon: icons["abi_viciousslash"],
         maxRank: 1,
-        reqPoints: 40,
-        description: talentText`melee range\n
-        50 AP\n
-        instant cast\n
-        skill\n\n
+        reqPoints: 0,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
         Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Charge": {
@@ -1159,9 +1098,7 @@ export const data: TalentData = {
         icon: icons["abi_charge"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`instant cast\n
-        30s CD\n\n
-        ability\n\n
+        description: talentText`instant cast\n30s CD\nability\n\n
         (Movement Skill) You gain 40% movement speed for 8 seconds. Effect will end if you use any ability.`,
       },
       "Strike": {
@@ -1170,9 +1107,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n
-        instant cast\n
-        skill\n\n
+        description: talentText`melee range\ninstant cast\nskill\n\n
         (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
