@@ -143,10 +143,10 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`Increases your Agility by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Ballistic Skill": {
@@ -157,10 +157,10 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Increases your Ballistic Skill by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Initiative": {
@@ -171,10 +171,10 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`Increases your Initiative by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Intelligence": {
@@ -185,10 +185,10 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Increases your Intelligence by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Strength": {
@@ -199,10 +199,10 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Increases your Strength by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Toughness": {
@@ -213,10 +213,10 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`Increases your Toughness by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Willpower": {
@@ -227,10 +227,10 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Increases your Willpower by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Wounds": {
@@ -241,10 +241,10 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`Increases your Wounds by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
         ]}.`,
       },
       "Wounds II": {
@@ -329,7 +329,7 @@ export const data: TalentData = {
       },
       "Morale 4 Spec": {
         name: "Morale 4s",
-        pos: "ip",
+        pos: "i9",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 40,
