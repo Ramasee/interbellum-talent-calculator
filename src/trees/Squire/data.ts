@@ -22,7 +22,7 @@ export const data: TalentData = {
       },
     },
   },
-  "Reiksguard": {
+  Reiksguard: {
     name: "Reiksguard",
     background: backgrounds["reiksguard"],
     icon: icons["archetype_tank"],
@@ -37,7 +37,7 @@ export const data: TalentData = {
       },
     },
   },
-  Knight of the Blazing Sun: {
+  Knight_of_the_Blazing_Sun: {
     name: "Knight of the Blazing Sun",
     background: backgrounds["kotbs"],
     icon: icons["archetype_offsupport"],
