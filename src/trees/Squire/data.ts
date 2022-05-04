@@ -167,7 +167,7 @@ export const data: TalentData = {
         pos: "g2",
         icon: icons["stat_str"],
         maxRank: 5,
-        reqPoints: 0,
+        reqPoints: 5,
         description: talentText`Increases your Strength by ${[
           40,
           95,
