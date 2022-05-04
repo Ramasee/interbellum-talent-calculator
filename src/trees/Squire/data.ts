@@ -34,7 +34,7 @@ export const data: TalentData = {
         icon: icons["rrtac_uncontrolled"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 5 adrenaline per second over 5 seconds.`,
+        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 20 adrenaline per second over 5 seconds.`,
       },
       "Stay in Formation": {
         name: "Stay in Formation",
@@ -177,9 +177,9 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Increases your Weapon Skill by ${[
           40,
-          55,
-          70,
-          85,
+          95,
+          165,
+          250,
         ]}.`,
       },
       "Morale 1 Class": {
@@ -286,26 +286,21 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
-      "Power Ability 1": {
-        name: "Power Aility 1",
+      "Stand Strong!": {
+        name: "Stand Strong!",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_standstrong"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`placeholder atm`,
+        description: talentText`30 mechanic\ninstant cast\nspell\nYou gain 125 action points.\nGroupmates within 100ft gain a tier 2 buff for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 360 HP4.`,
       },
-      "Power Ability 2": {
-        name: "Power Ability 2",
+      "Emperor's Fury": {
+        name: "Emperor's Fury",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_emperorsfury"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`100ft range\n
-        100 AP\n
-        2.0s cast\n
-        5.0s CD\n
-        ability\n\n
-        Skill text`,
+        description: talentText`80 AP\n2.0s cast\n30s CD\nspell\n\nYou apply Staggered and Unstoppable to up to 48 enemies within 30 feet in front of you. This effect does not apply to targets that have Cover to you.\n\nStaggered prevents all control of your character for 5 seconds or until you are attacked. Unstopped prevents you from being Staggered or Knocked-down for 30 seconds.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -313,8 +308,7 @@ export const data: TalentData = {
         icon: icons["abi_onyourguard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -322,8 +316,7 @@ export const data: TalentData = {
         icon: icons["abi_tovictory"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -331,8 +324,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
-        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Guard": {
         name: "Guard",
@@ -340,8 +332,7 @@ export const data: TalentData = {
         icon: icons["abi_guard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\ninstant cast\nability\n\n
-        Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
+        description: talentText`150ft range\ninstant cast\nability\n\nApplies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
       },
       "Strike": {
         name: "Strike",
@@ -349,8 +340,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\n\skill\n\n
-        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\n\skill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -361,6 +351,45 @@ export const data: TalentData = {
         prereq: "Strike",
         arrows: [{ dir: "right", from: "b1", to: "c1" }],
         description: talentText`Strike now deals additional damage equal to ${[
+          8,
+          15,
+        ]}% MAP.`,
+      },
+      "Repel": {
+        name: "Repel",
+        pos: "d3",
+        icon: icons["abi_repel"],
+        maxRank: 1,
+        reqPoints: 10,
+        prereq: "Strike",
+        arrows: [{ dir: "right", from: "b1", to: "c1" }],
+        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
+      },
+      "Crippling Blow": {
+        name: "Crippling Blow",
+        pos: "f3",
+        icon: icons["abi_shackle"],
+        maxRank: 1,
+        reqPoints: 10,
+        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+      },
+      "Cover": {
+        name: "Cover",
+        pos: "b4",
+        icon: icons["abi_cover"],
+        maxRank: 1,
+        reqPoints: 15,
+        description: talentText`Enemies that are in front of you will deal 25% less area of effect damage and other reduced effects to groupmates that are within 50 feet behind you.`,
+      },
+      "copyme": {
+        name: "copyme",
+        pos: "b9",
+        icon: icons["noicon"],
+        maxRank: 1,
+        reqPoints: 15,
+        prereq: "masochist",
+        arrows: [{ dir: "right", from: "a9", to: "b9" }],
+        description: talentText`100ft range\n100AP\n2.0s cast\n5.0s CD\nability\n\nStrike now deals additional damage equal to ${[
           8,
           15,
         ]}% MAP.`,
@@ -394,7 +423,7 @@ export const data: TalentData = {
         icon: icons["rrtac_uncontrolled"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 5 adrenaline per second over 5 seconds.`,
+        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 20 adrenaline per second over 5 seconds.`,
       },
       "Stay in Formation": {
         name: "Stay in Formation",
@@ -556,10 +585,11 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Increases your Weapon Skill by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
+
         ]}.`,
       },
       "Morale 1 Class": {
@@ -692,8 +722,7 @@ export const data: TalentData = {
         icon: icons["abi_onyourguard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
@@ -701,8 +730,7 @@ export const data: TalentData = {
         icon: icons["abi_presstheattack"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -710,8 +738,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
-        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Guard": {
         name: "Guard",
@@ -719,8 +746,7 @@ export const data: TalentData = {
         icon: icons["abi_guard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\ninstant cast\nability\n\n
-        Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
+        description: talentText`150ft range\ninstant cast\nability\n\nApplies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
       },
       "Strike": {
         name: "Strike",
@@ -728,8 +754,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\nskill\n\n
-        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -773,7 +798,7 @@ export const data: TalentData = {
         icon: icons["rrtac_uncontrolled"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 5 adrenaline per second over 5 seconds.`,
+        description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 20 adrenaline per second over 5 seconds.`,
       },
       "Stay in Formation": {
         name: "Stay in Formation",
@@ -935,10 +960,11 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Increases your Weapon Skill by ${[
           40,
-          55,
-          70,
-          85,
-          100,
+          95,
+          165,
+          250,
+          350,
+
         ]}.`,
       },
       "Morale 1 Class": {
@@ -1071,8 +1097,7 @@ export const data: TalentData = {
         icon: icons["abi_tovictory"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
@@ -1080,8 +1105,7 @@ export const data: TalentData = {
         icon: icons["abi_presstheattack"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\n
-        You gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -1089,8 +1113,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\n
-        Deals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
       },
       "Charge": {
         name: "Charge",
@@ -1098,8 +1121,7 @@ export const data: TalentData = {
         icon: icons["abi_charge"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`instant cast\n30s CD\nability\n\n
-        (Movement Skill) You gain 40% movement speed for 8 seconds. Effect will end if you use any ability.`,
+        description: talentText`instant cast\n30s CD\nability\n\n(Movement Skill) You gain 40% movement speed for 8 seconds. Effect will end if you use any ability.`,
       },
       "Strike": {
         name: "Strike",
@@ -1107,8 +1129,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\nskill\n\n
-        (Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
