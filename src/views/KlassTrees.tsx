@@ -60,7 +60,7 @@ export const KlassTrees = withRouter<Props, React.FC<Props>>(
           <div className="KlassTrees-header">
             <div className="KlassTrees-titleArea">
               <h1>
-                {klass} {treePointsSpent}
+                {klass}
               </h1>
               <p className="KlassTrees-summary">
                 Required level: {requiredLevel >= 0 ? requiredLevel : "-"}
