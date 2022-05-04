@@ -38,13 +38,14 @@
 
 .Arrow--right-down {
   height: 100%;
+  width:60%;
   background-size: auto var(--arrow-thickness);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .Arrow-container--right-down-down {
-  padding-top: calc((var(--icon-size) / 2) + var(--sp-sm));
+  padding-top: calc(var(--icon-size) - var(--sp-xxxs));
   padding-bottom: calc(var(--icon-size) - var(--sp-sm));
 }
 
@@ -52,5 +53,5 @@
   height: 100%;
   background-size: var(--arrow-thickness) auto;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: right;
 }
