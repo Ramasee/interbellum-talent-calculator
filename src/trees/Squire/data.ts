@@ -307,6 +307,7 @@ export const data: TalentData = {
         Skill text`,
       },
     },
+  },
   "Reiksguard": {
     name: "Reiksguard",
     background: backgrounds["reiksguard"],
@@ -968,6 +969,5 @@ export const data: TalentData = {
         description: talentText`Testing arrow function`,
       },
     },
-  },
   },
 };
