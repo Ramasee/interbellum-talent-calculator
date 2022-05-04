@@ -312,14 +312,14 @@ export const data: TalentData = {
     icon: icons["archetype_tank"],
     talents: {
       "Motivated2": {
-        name: "Motivated2",
+        name: "Motivated",
         pos: "a2",
         icon: icons["rrtac_motivated"],
         maxRank: 1,
         reqPoints: 5,
         description: talentText`You gain 5 adrenaline every second while in combat.`,
       },
-      "Strength in Numbers": {
+      "Strength in Numbers2": {
         name: "Strength in Numbers",
         pos: "a3",
         icon: icons["rrtac_strengthinnumbers"],
@@ -327,7 +327,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
       },
-      "Uncontrolled": {
+      "Uncontrolled2": {
         name: "Uncontrolled",
         pos: "a4",
         icon: icons["rrtac_uncontrolled"],
@@ -335,7 +335,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 5 adrenaline per second over 5 seconds.`,
       },
-      "Stay in Formation": {
+      "Stay in Formation2": {
         name: "Stay in Formation",
         pos: "a5",
         icon: icons["rrtac_stayinformation"],
@@ -343,7 +343,7 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`Whenever you are attacked by an opponent you have Cover from, you will gain 10 adrenaline per second for 3 seconds.`,
       },
-      "Fatass": {
+      "Fatass2": {
         name: "Fatass",
         pos: "a6",
         icon: icons["rrtac_fatass"],
@@ -351,7 +351,7 @@ export const data: TalentData = {
         reqPoints: 25,
         description: talentText`Increases your mass by 1.`,
       },
-      "Gotta Go Fast": {
+      "Gotta Go Fast2": {
         name: "Gotta Go Fast",
         pos: "a7",
         icon: icons["rrtac_gottagofast"],
@@ -359,7 +359,7 @@ export const data: TalentData = {
         reqPoints: 30,
         description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
-      "Festive Chaos": {
+      "Festive Chaos2": {
         name: "Festivity",
         pos: "a8",
         icon: icons["rrtac_festivechaos"],
@@ -367,7 +367,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
-      "Masochist": {
+      "Masochist2": {
         name: "Masochist",
         pos: "a9",
         icon: icons["rrtac_masochist"],
@@ -375,7 +375,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
       },
-      "Agility": {
+      "Agility2": {
         name: "Agility",
         pos: "d7",
         icon: icons["stat_agl"],
@@ -389,7 +389,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Ballistic Skill": {
+      "Ballistic Skill2": {
         name: "Ballistic Skill",
         pos: "c2",
         icon: icons["stat_bal"],
@@ -403,7 +403,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Initiative": {
+      "Initiative2": {
         name: "Initiative",
         pos: "c5",
         icon: icons["stat_ini"],
@@ -417,7 +417,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Intelligence": {
+      "Intelligence2": {
         name: "Intelligence",
         pos: "e2",
         icon: icons["stat_int"],
@@ -431,7 +431,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Strength": {
+      "Strength2": {
         name: "Strength",
         pos: "g2",
         icon: icons["stat_str"],
@@ -445,7 +445,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Toughness": {
+      "Toughness2": {
         name: "Toughness",
         pos: "g5",
         icon: icons["stat_tou"],
@@ -459,7 +459,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Willpower": {
+      "Willpower2": {
         name: "Willpower",
         pos: "b3",
         icon: icons["stat_wil"],
@@ -473,7 +473,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Wounds": {
+      "Wounds2": {
         name: "Wounds",
         pos: "f7",
         icon: icons["stat_wou"],
@@ -487,7 +487,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Weapon Skill": {
+      "Weapon Skill2": {
         name: "Weapon Skill",
         pos: "h3",
         icon: icons["stat_ws"],
@@ -501,7 +501,7 @@ export const data: TalentData = {
           100,
         ]}.`,
       },
-      "Morale 1 Class": {
+      "Morale 1 Class2": {
         name: "Morale 1c",
         pos: "i2",
         icon: icons["noicon"],
@@ -509,7 +509,7 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Class": {
+      "Morale 2 Class2": {
         name: "Morale 2c",
         pos: "i3",
         icon: icons["noicon"],
@@ -517,7 +517,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`placeholder atm`,
       },
-      "Morale 1 Arche": {
+      "Morale 1 Arche2": {
         name: "Morale 1a",
         pos: "i4",
         icon: icons["noicon"],
@@ -525,7 +525,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`placeholder atm`,
       },
-      "Morale 3 Race": {
+      "Morale 3 Race2": {
         name: "Morale 3r",
         pos: "i5",
         icon: icons["noicon"],
@@ -533,7 +533,7 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`placeholder atm`,
       },
-      "Morale 4 Arche": {
+      "Morale 4 Arche2": {
         name: "Morale 4a",
         pos: "i6",
         icon: icons["noicon"],
@@ -541,7 +541,7 @@ export const data: TalentData = {
         reqPoints: 25,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Arche": {
+      "Morale 2 Arche2": {
         name: "Morale 2a",
         pos: "i7",
         icon: icons["noicon"],
@@ -549,7 +549,7 @@ export const data: TalentData = {
         reqPoints: 30,
         description: talentText`placeholder atm`,
       },
-      "Morale 3 Arche": {
+      "Morale 3 Arche2": {
         name: "Morale 3a",
         pos: "i8",
         icon: icons["noicon"],
@@ -557,7 +557,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Morale 4 Spec": {
+      "Morale 4 Spec2": {
         name: "Morale 4s",
         pos: "i9",
         icon: icons["noicon"],
@@ -565,7 +565,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`placeholder atm`,
       },
-      "Morale 1 Spec": {
+      "Morale 1 Spec2": {
         name: "Morale 1s",
         pos: "c8",
         icon: icons["noicon"],
@@ -573,7 +573,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Spec": {
+      "Morale 2 Spec2": {
         name: "Morale 2s",
         pos: "g8",
         icon: icons["noicon"],
@@ -581,7 +581,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Stabilized": {
+      "Stabilized2": {
         name: "Stabilized",
         pos: "e4",
         icon: icons["tac_arche"],
@@ -589,7 +589,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Increase your mass by 1.`,
       },
-      "Race Tactic 1": {
+      "Race Tactic 12": {
         name: "Archetype Tactic",
         pos: "a1",
         icon: icons["tac_race_empire"],
@@ -597,7 +597,7 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`placeholder atm`,
       },
-      "Race Tactic 2": {
+      "Race Tactic 22": {
         name: "Race Tactic 2",
         pos: "i1",
         icon: icons["tac_race_empire"],
@@ -605,7 +605,7 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`placeholder atm`,
       },
-      "Power Ability 1": {
+      "Power Ability 12": {
         name: "Power Aility 1",
         pos: "d9",
         icon: icons["noicon"],
@@ -613,7 +613,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`placeholder atm`,
       },
-      "Power Ability 2": {
+      "Power Ability 22": {
         name: "Power Ability 2",
         pos: "f9",
         icon: icons["noicon"],
@@ -625,7 +625,7 @@ export const data: TalentData = {
         5.0s CD\n\n
         Skill text`,
       },
-      "Wounds II": {
+      "Wounds II2": {
         name: "Wounds II",
         pos: "f8",
         icon: icons["stat_wou"],
@@ -642,7 +642,7 @@ export const data: TalentData = {
     background: backgrounds["kotbs"],
     icon: icons["archetype_offsupport"],
     talents: {
-      "Motivated": {
+      "Motivated3": {
         name: "Motivated",
         pos: "a2",
         icon: icons["rrtac_motivated"],
@@ -650,7 +650,7 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`You gain 5 adrenaline every second while in combat.`,
       },
-      "Strength in Numbers": {
+      "Strength in Numbers3": {
         name: "Strength in Numbers",
         pos: "a3",
         icon: icons["rrtac_strengthinnumbers"],
@@ -658,7 +658,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
       },
-      "Uncontrolled": {
+      "Uncontrolled3": {
         name: "Uncontrolled",
         pos: "a4",
         icon: icons["rrtac_uncontrolled"],
@@ -666,7 +666,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Whenever Unstoppable, Inevitable, or Immovable is applied to you, you will gain 5 adrenaline per second over 5 seconds.`,
       },
-      "Stay in Formation": {
+      "Stay in Formation3": {
         name: "Stay in Formation",
         pos: "a5",
         icon: icons["rrtac_stayinformation"],
@@ -674,7 +674,7 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`Whenever you are attacked by an opponent you have Cover from, you will gain 10 adrenaline per second for 3 seconds.`,
       },
-      "Fatass": {
+      "Fatass3": {
         name: "Fatass",
         pos: "a6",
         icon: icons["rrtac_fatass"],
@@ -682,7 +682,7 @@ export const data: TalentData = {
         reqPoints: 25,
         description: talentText`Increases your mass by 1.`,
       },
-      "Gotta Go Fast": {
+      "Gotta Go Fast3": {
         name: "Gotta Go Fast",
         pos: "a7",
         icon: icons["rrtac_gottagofast"],
@@ -690,7 +690,7 @@ export const data: TalentData = {
         reqPoints: 30,
         description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
-      "Festive Chaos": {
+      "Festive Chaos3": {
         name: "Festivity",
         pos: "a8",
         icon: icons["rrtac_festivechaos"],
@@ -698,7 +698,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
-      "Break Loose": {
+      "Break Loose3": {
         name: "Break Loose",
         pos: "a9",
         icon: icons["rrtac_breakloose"],
@@ -706,7 +706,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
       },
-      "Agility": {
+      "Agility3": {
         name: "Agility",
         pos: "d7",
         icon: icons["stat_agl"],
@@ -720,7 +720,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Ballistic Skill": {
+      "Ballistic Skill3": {
         name: "Ballistic Skill",
         pos: "c2",
         icon: icons["stat_bal"],
@@ -734,7 +734,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Initiative": {
+      "Initiative3": {
         name: "Initiative",
         pos: "c5",
         icon: icons["stat_ini"],
@@ -748,7 +748,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Intelligence": {
+      "Intelligence3": {
         name: "Intelligence",
         pos: "e2",
         icon: icons["stat_int"],
@@ -762,7 +762,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Strength": {
+      "Strength3": {
         name: "Strength",
         pos: "g2",
         icon: icons["stat_str"],
@@ -776,7 +776,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Toughness": {
+      "Toughness3": {
         name: "Toughness",
         pos: "g5",
         icon: icons["stat_tou"],
@@ -790,7 +790,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Willpower": {
+      "Willpower3": {
         name: "Willpower",
         pos: "b3",
         icon: icons["stat_wil"],
@@ -804,7 +804,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Wounds": {
+      "Wounds3": {
         name: "Wounds",
         pos: "f7",
         icon: icons["stat_wou"],
@@ -818,7 +818,7 @@ export const data: TalentData = {
           350,
         ]}.`,
       },
-      "Weapon Skill": {
+      "Weapon Skill3": {
         name: "Weapon Skill",
         pos: "h3",
         icon: icons["stat_ws"],
@@ -832,7 +832,7 @@ export const data: TalentData = {
           100,
         ]}.`,
       },
-      "Morale 1 Class": {
+      "Morale 1 Class3": {
         name: "Morale 1c",
         pos: "i2",
         icon: icons["noicon"],
@@ -840,7 +840,7 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Class": {
+      "Morale 2 Class3": {
         name: "Morale 2c",
         pos: "i3",
         icon: icons["noicon"],
@@ -848,7 +848,7 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`placeholder atm`,
       },
-      "Morale 1 Arche": {
+      "Morale 1 Arche3": {
         name: "Morale 1a",
         pos: "i4",
         icon: icons["noicon"],
@@ -856,7 +856,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`placeholder atm`,
       },
-      "Morale 3 Race": {
+      "Morale 3 Race3": {
         name: "Morale 3r",
         pos: "i5",
         icon: icons["noicon"],
@@ -864,7 +864,7 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`placeholder atm`,
       },
-      "Morale 4 Arche": {
+      "Morale 4 Arche3": {
         name: "Morale 4a",
         pos: "i6",
         icon: icons["noicon"],
@@ -872,7 +872,7 @@ export const data: TalentData = {
         reqPoints: 25,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Arche": {
+      "Morale 2 Arche3": {
         name: "Morale 2a",
         pos: "i7",
         icon: icons["noicon"],
@@ -880,7 +880,7 @@ export const data: TalentData = {
         reqPoints: 30,
         description: talentText`placeholder atm`,
       },
-      "Morale 3 Arche": {
+      "Morale 3 Arche3": {
         name: "Morale 3a",
         pos: "i8",
         icon: icons["noicon"],
@@ -888,7 +888,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Morale 4 Spec": {
+      "Morale 4 Spec3": {
         name: "Morale 4s",
         pos: "i9",
         icon: icons["noicon"],
@@ -896,7 +896,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`placeholder atm`,
       },
-      "Morale 1 Spec": {
+      "Morale 1 Spec3": {
         name: "Morale 1s",
         pos: "c8",
         icon: icons["noicon"],
@@ -904,7 +904,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Morale 2 Spec": {
+      "Morale 2 Spec3": {
         name: "Morale 2s",
         pos: "g8",
         icon: icons["noicon"],
@@ -912,7 +912,7 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Fleet-Footed": {
+      "Fleet-Footed3": {
         name: "Fleet-Footed",
         pos: "e4",
         icon: icons["tac_arche"],
@@ -920,7 +920,7 @@ export const data: TalentData = {
         reqPoints: 15,
         description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 2.`,
       },
-      "Race Tactic 1": {
+      "Race Tactic 13": {
         name: "Archetype Tactic",
         pos: "a1",
         icon: icons["tac_race_empire"],
@@ -928,7 +928,7 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`placeholder atm`,
       },
-      "Race Tactic 2": {
+      "Race Tactic 23": {
         name: "Race Tactic 2",
         pos: "i1",
         icon: icons["tac_race_empire"],
@@ -936,7 +936,7 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`placeholder atm`,
       },
-      "Power Ability 1": {
+      "Power Ability 13": {
         name: "Power Aility 1",
         pos: "d9",
         icon: icons["noicon"],
@@ -944,7 +944,7 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`placeholder atm`,
       },
-      "Power Ability 2": {
+      "Power Ability 23": {
         name: "Power Ability 2",
         pos: "f9",
         icon: icons["noicon"],
@@ -956,13 +956,13 @@ export const data: TalentData = {
         5.0s CD\n\n
         Skill text`,
       },
-      "Wounds II": {
+      "Wounds II3": {
         name: "Wounds II",
         pos: "f8",
         icon: icons["stat_wou"],
         maxRank: 1,
         reqPoints: 25,
-        prereq: "Wounds",
+        prereq: "Wounds3",
         arrows: [{ dir: "down", from: "f7", to: "f8" }],
         description: talentText`Testing arrow function`,
       },
