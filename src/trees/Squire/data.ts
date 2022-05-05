@@ -292,7 +292,7 @@ export const data: TalentData = {
         icon: icons["abi_standstrong"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 mechanic\ninstant cast\nspell\nYou gain 125 action points.\nGroupmates within 100ft gain a tier 2 buff for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 360 HP4.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\nYou gain 125 action points.\nGroupmates within 100ft gain a tier 2 buff for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 360 HP4.`,
       },
       "Emperor's Fury": {
         name: "Emperor's Fury",
@@ -400,11 +400,11 @@ export const data: TalentData = {
         description: talentText`Reduces the AP cost of Vicious Slash by ${[
           5,
           10,
-        ]}% MAP.`,
+        ]}.`,
       },
       "Bellow Commands": {
         name: "Bellow Commands",
-        pos: "b9",
+        pos: "e6",
         icon: icons["tac_class_1"],
         maxRank: 1,
         reqPoints: 15,
@@ -458,7 +458,7 @@ export const data: TalentData = {
       },
       "Coordination": {
         name: "Coordination",
-        pos: "d8",
+        pos: "e8",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 35,
@@ -484,7 +484,7 @@ export const data: TalentData = {
       },
       "Dirty Tricks": {
         name: "Dirty Tricks",
-        pos: "e8",
+        pos: "d8",
         icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 35,
