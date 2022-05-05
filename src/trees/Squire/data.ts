@@ -256,7 +256,7 @@ export const data: TalentData = {
       },
       "Morale 2 Spec": {
         name: "Morale 2s",
-        pos: "g8",
+        pos: "h8",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 35,
@@ -391,10 +391,10 @@ export const data: TalentData = {
       },
       "Improved Vicious Slash": {
         name: "Improved Vicious Slash",
-        pos: "h1",
+        pos: "h4",
         icon: icons["abi_viciousslash"],
         maxRank: 2,
-        reqPoints: 0,
+        reqPoints: 15,
         prereq: "Well-Trained",
         arrows: [{ dir: "down", from: "h2", to: "h4" }],
         description: talentText`Reduces the AP cost of Vicious Slash by ${[
@@ -412,20 +412,20 @@ export const data: TalentData = {
       },
       "Slice Through": {
         name: "copyme",
-        pos: "f5",
+        pos: "f6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 25,
         prereq: "Crippling Blow",
-        arrows: [{ dir: "down", from: "f3", to: "f5" }],
+        arrows: [{ dir: "down", from: "f3", to: "f6" }],
         description: talentText`Crippling Blow will now apply to up to 2 other enemies within 15ft in front of you.`,
       },
       "Shining Blade": {
         name: "Shining Blade",
-        pos: "e5",
+        pos: "d6",
         icon: icons["tac_spec_7"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 25,
         description: talentText`Whenever you critically hit, all groupmates within 100 feet will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
       },
       "Distract": {
@@ -466,7 +466,7 @@ export const data: TalentData = {
       },
       "To Glory!": {
         name: "To Glory!",
-        pos: "h6",
+        pos: "g6",
         icon: icons["abi_toglory"],
         maxRank: 1,
         reqPoints: 25,
@@ -474,12 +474,12 @@ export const data: TalentData = {
       },
       "To Action!": {
         name: "To Action!",
-        pos: "h8",
+        pos: "g8",
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 30,
         prereq: "To Glory!",
-        arrows: [{ dir: "down", from: "h6", to: "h8" }],
+        arrows: [{ dir: "down", from: "g6", to: "g8" }],
         description: talentText`Increases the AP/s value of To Glory! by 3.`,
       },
       "Dirty Tricks": {
@@ -508,7 +508,7 @@ export const data: TalentData = {
       },
       "Stay Focused!": {
         name: "Stay Focused!",
-        pos: "d6",
+        pos: "c6",
         icon: icons["abi_stayfocused"],
         maxRank: 1,
         reqPoints: 25,
