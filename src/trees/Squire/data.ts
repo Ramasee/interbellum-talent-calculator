@@ -437,7 +437,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         prereq: "Crippling Blow",
-        arrows: [{ dir: "down", from: "f3", to: "f6" }],
+        arrows: [{ dir: "down", from: "f2", to: "f6" }],
         description: talentText`Crippling Blow will now apply to up to 2 other enemies within 15ft in front of you.`,
       },
       "Shining Blade": {
