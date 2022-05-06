@@ -389,7 +389,7 @@ export const data: TalentData = {
         icon: icons["abi_shackle"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target. You generate 5 mechanic.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Cover": {
         name: "Cover",
@@ -1380,29 +1380,25 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
-      "Power Ability 1": {
-        name: "Power Aility 1",
+      "Now's Our Chance!": {
+        name: "Now's Our Chance!",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_nowsourchance"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`placeholder atm`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 15% increased accuracy.\nGroupmates within 100ft gain 1 stack of Enhanced Critical Damage and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Critical Damage every 10 seconds.`,
       },
-      "Power Ability 2": {
-        name: "Power Ability 2",
+      "Rain of Spears": {
+        name: "Rain of Spears",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_rainofspears"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`100ft range\n
-        100 AP\n
-        2.0s cast\n
-        5.0s CD\n\n
-        Skill text`,
+        description: talentText`150 AP\ninstant cast\n30s CD\n\nApplies a tier2debuff to up to 24 enemies within 30ft in front of you. After 6 seconds, each debuff explodes dealing 15% MAP + 100 elemental damage to up to 96 enemies within 20ft of the target but does not hit the target.`,
       },
       "To Victory!": {
         name: "To Victory!",
-        pos: "g1",
+        pos: "d1",
         icon: icons["abi_tovictory"],
         maxRank: 1,
         reqPoints: 0,
@@ -1410,7 +1406,7 @@ export const data: TalentData = {
       },
       "Press the Attack!": {
         name: "To Victory!",
-        pos: "f1",
+        pos: "c1",
         icon: icons["abi_presstheattack"],
         maxRank: 1,
         reqPoints: 0,
@@ -1426,7 +1422,7 @@ export const data: TalentData = {
       },
       "Charge": {
         name: "Charge",
-        pos: "e1",
+        pos: "b1",
         icon: icons["abi_charge"],
         maxRank: 1,
         reqPoints: 0,
@@ -1434,7 +1430,7 @@ export const data: TalentData = {
       },
       "Strike": {
         name: "Strike",
-        pos: "b1",
+        pos: "e1",
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
@@ -1442,12 +1438,12 @@ export const data: TalentData = {
       },
       "Improved Strike": {
         name: "Improved Strike",
-        pos: "c1",
+        pos: "f1",
         icon: icons["abi_strike"],
         maxRank: 2,
         reqPoints: 0,
         prereq: "Strike",
-        arrows: [{ dir: "right", from: "b1", to: "c1" }],
+        arrows: [{ dir: "right", from: "e1", to: "f1" }],
         description: talentText`Strike now deals additional damage equal to ${[
           8,
           15,
@@ -1527,6 +1523,38 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 2 action points per second.`,
+      },
+      "Vigilance": {
+        name: "Vigilance",
+        pos: "d2",
+        icon: icons["abi_vigilance"],
+        maxRank: 1,
+        reqPoints: 5,
+        description: talentText`instant cast\n60s CD\nability\n\nAll damage you take is reduced by 50% but all damage you deal is reduced by 90%.`,
+      },
+      "Blazing Blade": {
+        name: "Blazing Blade",
+        pos: "f2",
+        icon: icons["abi_blazingblade"],
+        maxRank: 1,
+        reqPoints: 5,
+        description: talentText`Melee range\n120AP\n4.5s channel\nskill\n\nDeals 15% MAP + 125 elemental damage to your target every 0.5s as long as you channel. You generate 5 mechanic.`,
+      },
+      "Arcing Swing": {
+        name: "Arcing Swing",
+        pos: "d6",
+        icon: icons["abi_arcingswing"],
+        maxRank: 1,
+        reqPoints: 25,
+        description: talentText`75AP\n1.0s cast\nskill\n\nDeals 10% MAP + 75 elemental damage to up to 3 enemies within 25ft in front of you and gives them 1 stack of Reduced Fortitude. You generate 5 mechanic.`,
+      },
+      "Smash": {
+        name: "Smash",
+        pos: "e8",
+        icon: icons["abi_smash"],
+        maxRank: 1,
+        reqPoints: 35,
+        description: talentText`Melee range\n60AP\ninstant cast\n15.0s CD\nskill\n\nDeals 15% MAP + 160 elemental damage to the target and applies Knocked-down and Unstoppable. You generate 5 mechanic.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "copyme": {
         name: "copyme",
