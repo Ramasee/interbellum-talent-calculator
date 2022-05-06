@@ -1504,7 +1504,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 35,
-        prereq: "Glorious Assault",
+        prereq: "Glorious Assault!",
         arrows: [{ dir: "down", from: "g6", to: "g8" }],
         description: talentText`Glorious Assault now applies its tier2 buff to your defensive target as well.`,
       },
