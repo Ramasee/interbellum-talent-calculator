@@ -380,7 +380,7 @@ export const data: TalentData = {
         pos: "c2",
         icon: icons["abi_repel"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Crippling Blow": {
@@ -388,12 +388,12 @@ export const data: TalentData = {
         pos: "f2",
         icon: icons["abi_shackle"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Cover": {
         name: "Cover",
-        pos: "b4",
+        pos: "c4",
         icon: icons["abi_cover"],
         maxRank: 1,
         reqPoints: 15,
@@ -442,10 +442,10 @@ export const data: TalentData = {
       },
       "Shining Blade": {
         name: "Shining Blade",
-        pos: "b6",
+        pos: "f1",
         icon: icons["tac_spec_7"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 0,
         description: talentText`Whenever you critically hit, all groupmates within 100 feet will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
       },
       "Distract": {
@@ -453,7 +453,7 @@ export const data: TalentData = {
         pos: "c6",
         icon: icons["abi_distract"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 25,
         description: talentText`60ft range\n30AP\ninstant cast\n20s CD\nspell\n\nJams the target for the next 3 seconds interupting the next ability cast.`,
       },
       "Improved Distract": {
@@ -523,7 +523,7 @@ export const data: TalentData = {
         pos: "e2",
         icon: icons["abi_perseverance"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 5,
         description: talentText`instant cast\n20s CD\nspell\n\nYou gain a tier2 buff for 10 seconds. Each time you are attacked, you will gain 10 action points and gain 1 stack of Enhanced Armor.`,
       },
       "Stay Focused!": {
