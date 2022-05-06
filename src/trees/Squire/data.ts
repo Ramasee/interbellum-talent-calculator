@@ -1061,7 +1061,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "b5",
         icon: icons["stat_agl"],
-        maxRank: 3
+        maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your Agility by ${[
           40,
