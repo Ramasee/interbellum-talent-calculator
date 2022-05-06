@@ -118,7 +118,7 @@ export const data: TalentData = {
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4"
+        pos: "i4",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 15,
@@ -126,7 +126,7 @@ export const data: TalentData = {
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6"
+        pos: "i6",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 25,
@@ -646,7 +646,7 @@ export const data: TalentData = {
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4"
+        pos: "i4",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 15,
@@ -654,7 +654,7 @@ export const data: TalentData = {
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6"
+        pos: "i6",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 25,
@@ -1019,7 +1019,7 @@ export const data: TalentData = {
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4"
+        pos: "i4",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 15,
@@ -1027,7 +1027,7 @@ export const data: TalentData = {
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6"
+        pos: "i6",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 25,
