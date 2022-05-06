@@ -963,7 +963,7 @@ export const data: TalentData = {
       },
       "Shining Blade": {
         name: "Shining Blade",
-        pos: "f1",
+        pos: "h1",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 0,
