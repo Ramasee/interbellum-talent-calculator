@@ -281,6 +281,7 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
+      },
       "Stabilized": {
         name: "Stabilized",
         pos: "e4",
@@ -809,6 +810,7 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
+      },
       "Stabilized": {
         name: "Stabilized",
         pos: "e4",
@@ -1182,6 +1184,7 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
+      },
       "Fleet-Footed": {
         name: "Fleet-Footed",
         pos: "e4",
