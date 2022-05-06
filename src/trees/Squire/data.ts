@@ -12,7 +12,7 @@ export const data: TalentData = {
     background: backgrounds["captain"],
     icon: icons["archetype_tank"],
     talents: {
-       "Motivated": {
+      "Motivated": {
         name: "Motivated",
         pos: "a2",
         icon: icons["rrtac_motivated"],
@@ -25,7 +25,7 @@ export const data: TalentData = {
         pos: "b2",
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
       },
       "Uncontrolled": {
@@ -41,7 +41,7 @@ export const data: TalentData = {
         pos: "b4",
         icon: icons["rrtac_stayinformation"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`Whenever you are attacked by an opponent you have Cover from, you will gain 10 adrenaline per second for 3 seconds.`,
       },
       "Gotta Go Fast": {
@@ -49,7 +49,7 @@ export const data: TalentData = {
         pos: "b6",
         icon: icons["rrtac_gottagofast"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 25,
         description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Festive Chaos": {
@@ -57,7 +57,7 @@ export const data: TalentData = {
         pos: "a6",
         icon: icons["rrtac_festivechaos"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Fatass": {
@@ -65,16 +65,8 @@ export const data: TalentData = {
         pos: "a8",
         icon: icons["rrtac_fatass"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`Increases your mass by 1.`,
-      },
-      "Break Loose": {
-        name: "Break Loose",
-        pos: "a9",
-        icon: icons["rrtac_breakloose"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
       },
       "Masochist": {
         name: "Masochist",
@@ -83,30 +75,6 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
-      "Dissipation Expert": {
-        name: "Dissipation Expert",
-        pos: "a9",
-        icon: icons["rrtac_dissipation"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you use an ability that removes a buff or debuff, you will gain 10 adrenaline per second for 3 seconds.`,
-      },
-      "Loved By All": {
-        name: "Loved By All",
-        pos: "a9",
-        icon: icons["rrtac_lovedbyall"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`You always have Unstoppable. Your mass is decreased by 2.`,
-      },
-      "Verge of Victory": {
-        name: "Verge of Victory",
-        pos: "a9",
-        icon: icons["rrtac_vergeofvictory"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you land a killing blow, you will gain 20 adrenaline per second for 8 seconds. Whenever a groupmate within 100ft lands a killing blow, you will gain 5 adrenaline per second for 8 seconds.`,
       },
       "Morale 1 Class": {
         name: "Morale 1c",
@@ -121,7 +89,7 @@ export const data: TalentData = {
         pos: "h4",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 1 Arche": {
@@ -129,7 +97,7 @@ export const data: TalentData = {
         pos: "i2",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 5,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Race": {
@@ -137,7 +105,7 @@ export const data: TalentData = {
         pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Arche": {
@@ -145,23 +113,23 @@ export const data: TalentData = {
         pos: "i8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4,
+        pos: "i4"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6,
+        pos: "i6"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Spec": {
@@ -174,10 +142,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6
+        pos: "h6",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Spec": {
@@ -188,20 +156,12 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Masochist": {
-        name: "Masochist",
-        pos: "a9",
-        icon: icons["rrtac_masochist"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
       "Agility": {
         name: "Agility",
         pos: "b5",
         icon: icons["stat_agl"],
-        maxRank: 2,
-        reqPoints: 30,
+        maxRank: 5,
+        reqPoints: 20,
         description: talentText`Increases your Agility by ${[
           40,
           95,
@@ -214,8 +174,8 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "b7",
         icon: icons["stat_bal"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Ballistic Skill by ${[
           40,
           95,
@@ -228,8 +188,8 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "b3",
         icon: icons["stat_ini"],
-        maxRank: 3,
-        reqPoints: 20,
+        maxRank: 3
+        reqPoints: 10,
         description: talentText`Increases your Initiative by ${[
           40,
           95,
@@ -242,8 +202,8 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "e7",
         icon: icons["stat_int"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Intelligence by ${[
           40,
           95,
@@ -256,8 +216,8 @@ export const data: TalentData = {
         name: "Strength",
         pos: "h7",
         icon: icons["stat_str"],
-        maxRank: 2,
-        reqPoints: 5,
+        maxRank: 2
+        reqPoints: 30,
         description: talentText`Increases your Strength by ${[
           40,
           95,
@@ -270,7 +230,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "e5",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 4
         reqPoints: 20,
         description: talentText`Increases your Toughness by ${[
           40,
@@ -284,7 +244,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "h3",
         icon: icons["stat_wil"],
-        maxRank: 1,
+        maxRank: 1
         reqPoints: 10,
         description: talentText`Increases your Willpower by ${[
           40,
@@ -298,8 +258,8 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "h5",
         icon: icons["stat_wou"],
-        maxRank: 3,
-        reqPoints: 30,
+        maxRank: 3
+        reqPoints: 20,
         description: talentText`Increases your Wounds by ${[
           40,
           95,
@@ -312,7 +272,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "e3",
         icon: icons["stat_ws"],
-        maxRank: 4,
+        maxRank: 4
         reqPoints: 10,
         description: talentText`Increases your Weapon Skill by ${[
           40,
@@ -321,7 +281,6 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
-      },
       "Stabilized": {
         name: "Stabilized",
         pos: "e4",
@@ -594,7 +553,7 @@ export const data: TalentData = {
         pos: "b2",
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
       },
       "Uncontrolled": {
@@ -610,7 +569,7 @@ export const data: TalentData = {
         pos: "b4",
         icon: icons["rrtac_stayinformation"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`Whenever you are attacked by an opponent you have Cover from, you will gain 10 adrenaline per second for 3 seconds.`,
       },
       "Gotta Go Fast": {
@@ -618,7 +577,7 @@ export const data: TalentData = {
         pos: "b6",
         icon: icons["rrtac_gottagofast"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 25,
         description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Festive Chaos": {
@@ -626,7 +585,7 @@ export const data: TalentData = {
         pos: "a6",
         icon: icons["rrtac_festivechaos"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Fatass": {
@@ -634,16 +593,8 @@ export const data: TalentData = {
         pos: "a8",
         icon: icons["rrtac_fatass"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`Increases your mass by 1.`,
-      },
-      "Break Loose": {
-        name: "Break Loose",
-        pos: "a9",
-        icon: icons["rrtac_breakloose"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
       },
       "Masochist": {
         name: "Masochist",
@@ -652,30 +603,6 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
-      "Dissipation Expert": {
-        name: "Dissipation Expert",
-        pos: "a9",
-        icon: icons["rrtac_dissipation"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you use an ability that removes a buff or debuff, you will gain 10 adrenaline per second for 3 seconds.`,
-      },
-      "Loved By All": {
-        name: "Loved By All",
-        pos: "a9",
-        icon: icons["rrtac_lovedbyall"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`You always have Unstoppable. Your mass is decreased by 2.`,
-      },
-      "Verge of Victory": {
-        name: "Verge of Victory",
-        pos: "a9",
-        icon: icons["rrtac_vergeofvictory"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you land a killing blow, you will gain 20 adrenaline per second for 8 seconds. Whenever a groupmate within 100ft lands a killing blow, you will gain 5 adrenaline per second for 8 seconds.`,
       },
       "Morale 1 Class": {
         name: "Morale 1c",
@@ -690,7 +617,7 @@ export const data: TalentData = {
         pos: "h4",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 1 Arche": {
@@ -698,7 +625,7 @@ export const data: TalentData = {
         pos: "i2",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 5,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Race": {
@@ -706,7 +633,7 @@ export const data: TalentData = {
         pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Arche": {
@@ -714,23 +641,23 @@ export const data: TalentData = {
         pos: "i8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4,
+        pos: "i4"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6,
+        pos: "i6"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Spec": {
@@ -743,10 +670,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6
+        pos: "h6",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Spec": {
@@ -757,20 +684,12 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-      "Masochist": {
-        name: "Masochist",
-        pos: "a9",
-        icon: icons["rrtac_masochist"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
       "Agility": {
         name: "Agility",
         pos: "b5",
         icon: icons["stat_agl"],
-        maxRank: 3,
-        reqPoints: 30,
+        maxRank: 2
+        reqPoints: 20,
         description: talentText`Increases your Agility by ${[
           40,
           95,
@@ -783,8 +702,8 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "b7",
         icon: icons["stat_bal"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Ballistic Skill by ${[
           40,
           95,
@@ -797,8 +716,8 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "b3",
         icon: icons["stat_ini"],
-        maxRank: 3,
-        reqPoints: 20,
+        maxRank: 3
+        reqPoints: 10,
         description: talentText`Increases your Initiative by ${[
           40,
           95,
@@ -811,8 +730,8 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "e7",
         icon: icons["stat_int"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Intelligence by ${[
           40,
           95,
@@ -825,8 +744,8 @@ export const data: TalentData = {
         name: "Strength",
         pos: "h7",
         icon: icons["stat_str"],
-        maxRank: 2,
-        reqPoints: 5,
+        maxRank: 2
+        reqPoints: 30,
         description: talentText`Increases your Strength by ${[
           40,
           95,
@@ -839,7 +758,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "e5",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 4
         reqPoints: 20,
         description: talentText`Increases your Toughness by ${[
           40,
@@ -853,7 +772,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "h3",
         icon: icons["stat_wil"],
-        maxRank: 1,
+        maxRank: 1
         reqPoints: 10,
         description: talentText`Increases your Willpower by ${[
           40,
@@ -867,8 +786,8 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "h5",
         icon: icons["stat_wou"],
-        maxRank: 3,
-        reqPoints: 30,
+        maxRank: 3
+        reqPoints: 20,
         description: talentText`Increases your Wounds by ${[
           40,
           95,
@@ -881,7 +800,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "e3",
         icon: icons["stat_ws"],
-        maxRank: 4,
+        maxRank: 4
         reqPoints: 10,
         description: talentText`Increases your Weapon Skill by ${[
           40,
@@ -890,7 +809,6 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
-      },
       "Stabilized": {
         name: "Stabilized",
         pos: "e4",
@@ -1008,7 +926,7 @@ export const data: TalentData = {
         pos: "b2",
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
       },
       "Uncontrolled": {
@@ -1024,7 +942,7 @@ export const data: TalentData = {
         pos: "b4",
         icon: icons["rrtac_stayinformation"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`Whenever you are attacked by an opponent you have Cover from, you will gain 10 adrenaline per second for 3 seconds.`,
       },
       "Gotta Go Fast": {
@@ -1032,7 +950,7 @@ export const data: TalentData = {
         pos: "b6",
         icon: icons["rrtac_gottagofast"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 25,
         description: talentText`You gain 1 stack of Revelry every second while moving.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Festive Chaos": {
@@ -1040,7 +958,7 @@ export const data: TalentData = {
         pos: "a6",
         icon: icons["rrtac_festivechaos"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`You gain 2 stacks of Revelry each time you use an ability. Whenever you critically hit, you will lose all stacks of Revelry.\n\nRevelry: 1 adrenaline per second. Stacks 15 times and lasts 3 seconds.`,
       },
       "Fatass": {
@@ -1048,7 +966,7 @@ export const data: TalentData = {
         pos: "a8",
         icon: icons["rrtac_fatass"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`Increases your mass by 1.`,
       },
       "Break Loose": {
@@ -1058,38 +976,6 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
-      },
-      "Masochist": {
-        name: "Masochist",
-        pos: "a9",
-        icon: icons["rrtac_masochist"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
-      "Dissipation Expert": {
-        name: "Dissipation Expert",
-        pos: "a9",
-        icon: icons["rrtac_dissipation"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you use an ability that removes a buff or debuff, you will gain 10 adrenaline per second for 3 seconds.`,
-      },
-      "Loved By All": {
-        name: "Loved By All",
-        pos: "a9",
-        icon: icons["rrtac_lovedbyall"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`You always have Unstoppable. Your mass is decreased by 2.`,
-      },
-      "Verge of Victory": {
-        name: "Verge of Victory",
-        pos: "a9",
-        icon: icons["rrtac_vergeofvictory"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Whenever you land a killing blow, you will gain 20 adrenaline per second for 8 seconds. Whenever a groupmate within 100ft lands a killing blow, you will gain 5 adrenaline per second for 8 seconds.`,
       },
       "Morale 1 Class": {
         name: "Morale 1c",
@@ -1104,7 +990,7 @@ export const data: TalentData = {
         pos: "h4",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 1 Arche": {
@@ -1112,7 +998,7 @@ export const data: TalentData = {
         pos: "i2",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 5,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Race": {
@@ -1120,7 +1006,7 @@ export const data: TalentData = {
         pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Arche": {
@@ -1128,23 +1014,23 @@ export const data: TalentData = {
         pos: "i8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Arche": {
         name: "Morale 2a",
-        pos: "i4,
+        pos: "i4"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 30,
+        reqPoints: 15,
         description: talentText`placeholder atm`,
       },
       "Morale 3 Arche": {
         name: "Morale 3a",
-        pos: "i6,
+        pos: "i6"
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 4 Spec": {
@@ -1157,10 +1043,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6
+        pos: "h6",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`placeholder atm`,
       },
       "Morale 2 Spec": {
@@ -1171,21 +1057,12 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`placeholder atm`,
       },
-
-      "Break Loose": {
-        name: "Break Loose",
-        pos: "a9",
-        icon: icons["rrtac_breakloose"],
-        maxRank: 1,
-        reqPoints: 40,
-        description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
-      },
       "Agility": {
         name: "Agility",
-        pos: "c5",
+        pos: "b5",
         icon: icons["stat_agl"],
-        maxRank: 3,
-        reqPoints: 30,
+        maxRank: 3
+        reqPoints: 20,
         description: talentText`Increases your Agility by ${[
           40,
           95,
@@ -1196,10 +1073,10 @@ export const data: TalentData = {
       },
       "Ballistic Skill": {
         name: "Ballistic Skill",
-        pos: "c7",
+        pos: "b7",
         icon: icons["stat_bal"],
-        maxRank: 2,
-        reqPoints: 5,
+        maxRank: 2
+        reqPoints: 30,
         description: talentText`Increases your Ballistic Skill by ${[
           40,
           95,
@@ -1210,10 +1087,10 @@ export const data: TalentData = {
       },
       "Initiative": {
         name: "Initiative",
-        pos: "c3",
+        pos: "b3",
         icon: icons["stat_ini"],
-        maxRank: 3,
-        reqPoints: 20,
+        maxRank: 3
+        reqPoints: 10,
         description: talentText`Increases your Initiative by ${[
           40,
           95,
@@ -1226,8 +1103,8 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "e7",
         icon: icons["stat_int"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Intelligence by ${[
           40,
           95,
@@ -1238,10 +1115,10 @@ export const data: TalentData = {
       },
       "Strength": {
         name: "Strength",
-        pos: "g7",
+        pos: "h7",
         icon: icons["stat_str"],
-        maxRank: 3,
-        reqPoints: 5,
+        maxRank: 3
+        reqPoints: 30,
         description: talentText`Increases your Strength by ${[
           40,
           95,
@@ -1254,7 +1131,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "e5",
         icon: icons["stat_tou"],
-        maxRank: 2,
+        maxRank: 2
         reqPoints: 20,
         description: talentText`Increases your Toughness by ${[
           40,
@@ -1266,9 +1143,9 @@ export const data: TalentData = {
       },
       "Willpower": {
         name: "Willpower",
-        pos: "g3",
+        pos: "h3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 2
         reqPoints: 10,
         description: talentText`Increases your Willpower by ${[
           40,
@@ -1280,10 +1157,10 @@ export const data: TalentData = {
       },
       "Wounds": {
         name: "Wounds",
-        pos: "g5",
+        pos: "h5",
         icon: icons["stat_wou"],
-        maxRank: 2,
-        reqPoints: 30,
+        maxRank: 2
+        reqPoints: 20,
         description: talentText`Increases your Wounds by ${[
           40,
           95,
@@ -1305,7 +1182,6 @@ export const data: TalentData = {
           250,
           350,
         ]}.`,
-      },
       "Fleet-Footed": {
         name: "Fleet-Footed",
         pos: "e4",
