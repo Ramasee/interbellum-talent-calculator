@@ -1552,6 +1552,16 @@ export const data: TalentData = {
         reqPoints: 5,
         description: talentText`instant cast\n60s CD\nability\n\nAll damage you take is reduced by 50% but all damage you deal is reduced by 90%.`,
       },
+      "Improved Vigilance": {
+        name: "Improved Vigilance",
+        pos: "d4",
+        icon: icons["abi_vigilance"],
+        maxRank: 1,
+        reqPoints: 15,
+        prereq: "Vigilance",
+        arrows: [{ dir: "down", from: "d2", to: "d4" }],
+        description: talentText`Vigilance now only reduces your outgoing damage by 75%.`,
+      },
       "Blazing Blade": {
         name: "Blazing Blade",
         pos: "f2",
@@ -1608,7 +1618,7 @@ export const data: TalentData = {
       },
       "Grand Crusader": {
         name: "Grand Crusader",
-        pos: "d8",
+        pos: "c8",
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 35,
