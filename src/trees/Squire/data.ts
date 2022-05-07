@@ -1533,7 +1533,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         prereq: "Staying Power",
-        arrows: [{ dir: "right", from: "c4", to: "c6" }],
+        arrows: [{ dir: "down", from: "c4", to: "c6" }],
         description: talentText`While under the effects of Perseverance, you will deal 30% SAP + 300 elemental damage to any enemy that hits you with an ability.`,
       },
       "To Glory!": {
