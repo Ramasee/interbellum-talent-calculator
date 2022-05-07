@@ -1234,7 +1234,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "b5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 20,
         description: talentText`Increases your Agility by ${[
           40,
@@ -1248,7 +1248,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "b7",
         icon: icons["stat_bal"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 30,
         description: talentText`Increases your Ballistic Skill by ${[
           40,
@@ -1262,7 +1262,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "b3",
         icon: icons["stat_ini"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         description: talentText`Increases your Initiative by ${[
           40,
@@ -1276,7 +1276,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "e7",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 30,
         description: talentText`Increases your Intelligence by ${[
           40,
@@ -1304,7 +1304,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "e5",
         icon: icons["stat_tou"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your Toughness by ${[
           40,
@@ -1318,7 +1318,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "h3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         description: talentText`Increases your Willpower by ${[
           40,
@@ -1332,7 +1332,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "h5",
         icon: icons["stat_wou"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your Wounds by ${[
           40,
