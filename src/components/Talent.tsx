@@ -71,7 +71,6 @@ export const Talent: React.FC<Props> = ({ name }) => {
           onClick={() => spendPoint(tree, name)}
           onRightClick={() => unspendPoint(tree, name)}
           icon={icon}
-          disabled={talentState === "locked"}
           outline={outlineColor}
           {...anchorProps}
         />
