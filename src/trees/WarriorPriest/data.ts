@@ -875,7 +875,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 5,
         prereq: "Twin-Tailed Blow",
-        arrows: [{ dir: "down", from: "c", to: "c2" }],
+        arrows: [{ dir: "down", from: "c1", to: "c2" }],
         description: talentText`Twin-Tailed Blow and Radiance now have a 30ft range.`,
       },
       "Divine Light": {
