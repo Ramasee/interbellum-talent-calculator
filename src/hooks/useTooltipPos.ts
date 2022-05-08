@@ -13,7 +13,7 @@ export const useTooltipPos = <T extends HTMLElement, U extends HTMLElement>(
   const anchorRef = useRef<T | null>(null);
   const tooltipRef = useRef<U | null>(null);
   const [tooltipPos, setTooltipPos] = useState<TooltipPos>(DEFAULT_POS);
-  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [tooltipVisible, setTooltipVisible] = useState(true);
 
   useLayoutEffect(() => {
     if (!tooltipVisible || !tooltipRef.current || !anchorRef.current) {
