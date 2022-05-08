@@ -77,7 +77,7 @@ export const Talent: React.FC<Props> = ({ name }) => {
         {talentState == "locked" && (
           <div
             className={`Talent-pointCount Talent-pointCount--${outlineColor}`}
-            style={{   filter: grayscale(); }}
+            style={{ filter: grayscale() }}
           >
             {rank}
           </div>
