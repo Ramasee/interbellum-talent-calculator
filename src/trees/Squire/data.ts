@@ -516,7 +516,7 @@ export const data: TalentData = {
         icon: icons["abi_bindweapon"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`melee range\n40AP\ninstant cast\n20s CD\nskill\n\nApplies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
+        description: talentText`melee range\n40AP\ninstant cast\n10s CD\nskill\n\nApplies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
       "Perseverance": {
         name: "Perseverance",
@@ -1021,7 +1021,7 @@ export const data: TalentData = {
         icon: icons["abi_bindweapon"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`melee range\n40AP\ninstant cast\n20s CD\nskill\n\nApplies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
+        description: talentText`melee range\n40AP\ninstant cast\n10s CD\nskill\n\nApplies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
       "Improved Bind Weapon": {
         name: "Improved Bind Weapon",
