@@ -505,7 +505,7 @@ export const data: TalentData = {
         icon: icons["abi_righteousness"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 20% SAP spiritual damage each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 15% SAP spiritual damage each time they hit an enemy with an ability.`,
       },
       "Probity": {
         name: "Probity",
@@ -1369,7 +1369,7 @@ export const data: TalentData = {
         icon: icons["abi_avatarofsigmar"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 RF/s\ninstant cast\nability\n\nYou become master of all 4 elements...wait wrong avatar. Sigmar's power courses through granting you 250 weapon skill and 250 willpower as long as the skill is toggled on.`,
+        description: talentText`30 RF/s\ninstant cast\nability\n\nYou become master of all 4 elements...wait wrong avatar. Sigmar's power courses through granting you 250 weapon skill and 250 willpower and you will gain Shield of Faith every 2 seconds as long as the skill is toggled on.`,
       },
       "Soulfire": {
         name: "Soulfire",
@@ -1404,7 +1404,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 0,
         prereq: "Wrath",
-        arrows: [{ dir: "down", from: "c1", to: "d1" }],
+        arrows: [{ dir: "right", from: "c1", to: "d1" }],
         description: talentText`Whenever you cast Wrath or are the victim of a critical hit, you will gain Shield of Faith.`,
       },
       "Charge": {
@@ -1503,7 +1503,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         prereq: "Vigilance",
-        arrows: [{ dir: "down", from: "g2", to: "g4" }],
+        arrows: [{ dir: "down", from: "f2", to: "f4" }],
         description: talentText`Vigilance now only reduces your outgoing damage by 75%.`,
       },
       "Staying Power": {
@@ -1538,7 +1538,7 @@ export const data: TalentData = {
         icon: icons["abi_weightofguilt"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 15% MAP + 160 physical damage to the target and applies 1 stack of Reduced Healing Received.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 15% MAP + 160 physical damage to the target and applies 1 stack of Reduced Healing Received. Generates 20 Righteous Fury`,
       },
       "Guilty Soul": {
         name: "Guilty Soul",
@@ -1552,7 +1552,7 @@ export const data: TalentData = {
       },
       "Twin-Tailed Comet": {
         name: "Twin-Tailed Comet",
-        pos: "f6",
+        pos: "d6",
         icon: icons["abi_comet"],
         maxRank: 1,
         reqPoints: 25,
@@ -1560,12 +1560,12 @@ export const data: TalentData = {
       },
       "Fanatacism": {
         name: "Fanatacism",
-        pos: "f8",
+        pos: "d8",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Twin-Tailed Comet",
-        arrows: [{ dir: "down", from: "f6", to: "f8" }],
+        arrows: [{ dir: "down", from: "d6", to: "d8" }],
         description: talentText`your chance to critically hit is increased by 15% against targets marked by Twin-Tailed Comet.`,
       },
       "Charged Fury": {
@@ -1582,7 +1582,7 @@ export const data: TalentData = {
         icon: icons["abi_righteousness"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 20% SAP spiritual damage each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 15% SAP spiritual damage each time they hit an enemy with an ability.`,
       },
       "Probity": {
         name: "Probity",
