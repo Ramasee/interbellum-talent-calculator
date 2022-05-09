@@ -1530,8 +1530,6 @@ export const data: TalentData = {
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 15,
-        prereq: "Wounds",
-        arrows: [{ dir: "down", from: "f7", to: "f8" }],
         description: talentText`Whenever you critically hit an enemy, you will deal 75% SAP + 300 spiritual damage over 6 seconds to the target. This effect does not refresh.`,
       },
       "Weight of Guilt": {
@@ -1566,7 +1564,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 35,
-        prereq: "Twin-Tailed comet",
+        prereq: "Twin-Tailed Comet",
         arrows: [{ dir: "down", from: "f6", to: "f8" }],
         description: talentText`your chance to critically hit is increased by 15% against targets marked by Twin-Tailed Comet.`,
       },
