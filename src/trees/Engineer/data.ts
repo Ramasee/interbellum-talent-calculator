@@ -532,6 +532,7 @@ export const data: TalentData = {
     name: "Grenadier",
     background: backgrounds["grenadier"],
     icon: icons["archetype_dps"],
+    talents: {
       "Motivated": {
         name: "Motivated",
         pos: "a2",
