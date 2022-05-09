@@ -438,7 +438,7 @@ export const data: TalentData = {
         pos: "c4",
         icon: icons["abi_firebomb"],
         maxRank: 1,
-        reqPoints: c4,
+        reqPoints: 15,
         description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 10% RAP + 100 corporeal damage to up to 3 enemies within a 20ft area.`,
       },
       "Extra Powder": {
