@@ -1545,7 +1545,7 @@ export const data: TalentData = {
         pos: "c8",
         icon: icons["tac_spec_9"],
         maxRank: 1,
-        reqPoints: 0,
+        reqPoints: 35,
         prereq: "Weight of Guilt",
         arrows: [{ dir: "down", from: "c6", to: "c8" }],
         description: talentText`Weight of Guilt will deal 37% MAP + 160 physical damage and apply 2 stacks.`,
@@ -1556,7 +1556,7 @@ export const data: TalentData = {
         icon: icons["abi_comet"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`75ft range\n25 RF\ninstant cast\nspell\n\nApplies a tier1 debuff to the target for 6 seconds. At the end of the duration the target will take 30% SAP + 160 physical damage to the target. This skill does not trigger the GCD.`,
+        description: talentText`75ft range\n25 RF\ninstant cast\nspell\n\nApplies a tier1 debuff to the target for 6 seconds. At the end of the duration the target will take 30% SAP + 160 physical damage to the target. This ability does not trigger the GCD.`,
       },
       "Fanatacism": {
         name: "Fanatacism",
