@@ -333,7 +333,7 @@ export const data: TalentData = {
         description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %50 RAP + 500 physical damage to target.`,
       },
       "Improved Gun Blast": {
-        name: "Improved Gunbast",
+        name: "Improved Gun Blast",
         pos: "d2",
         icon: icons["abi_gunblast"],
         maxRank: 2,
@@ -499,7 +499,7 @@ export const data: TalentData = {
         icon: icons["abi_crackshot"],
         maxRank: 1,
         reqPoints: 35,
-        prereq: "Crackshot",
+        prereq: "Crack Shot",
         arrows: [{ dir: "right", from: "c8", to: "d8" }],
         description: talentText`Crack Shot now deals an additional 37% RAP physical damage.`,
       },
