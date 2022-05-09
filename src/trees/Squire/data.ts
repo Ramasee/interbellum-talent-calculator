@@ -26,7 +26,7 @@ export const data: TalentData = {
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 5 seconds.`,
       },
       "Uncontrolled": {
         name: "Uncontrolled",
@@ -555,7 +555,7 @@ export const data: TalentData = {
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 5 seconds.`,
       },
       "Uncontrolled": {
         name: "Uncontrolled",
@@ -1100,7 +1100,7 @@ export const data: TalentData = {
         icon: icons["rrtac_strengthinnumbers"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that also have this tactic will gain a stack. Max 5 stacks, each stack grants 2 adrenaline per second for a duration of 5 seconds.`,
       },
       "Uncontrolled": {
         name: "Uncontrolled",
@@ -1550,7 +1550,7 @@ export const data: TalentData = {
         icon: icons["abi_vigilance"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`instant cast\n60s CD\nability\n\nAll damage you take is reduced by 50% but all damage you deal is reduced by 90%.`,
+        description: talentText`instant cast\n60s CD\nability\n\nAll damage you take is reduced by 50% but all damage you deal is reduced by 90% for 5 seconds.`,
       },
       "Improved Vigilance": {
         name: "Improved Vigilance",
