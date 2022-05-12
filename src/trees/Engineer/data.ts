@@ -1384,7 +1384,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Gun Blast",
         arrows: [{ dir: "down", from: "d1", to: "d2" }],
-        description: talentText`2 bullets\1.5s cast\nskill\n\nDeals 15% RAP + 75 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.\n\nThis ability replaces Gun Blast`,
+        description: talentText`2 bullets\n1.5s cast\nskill\n\nDeals 15% RAP + 75 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.\n\nThis ability replaces Gun Blast`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
