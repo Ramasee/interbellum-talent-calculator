@@ -1561,7 +1561,7 @@ export const data: TalentData = {
         icon: icons["abi_landmine"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`2 kit\n1.0s cast\n40s CD\nskill\n\nYou place a Land Mine at your feet that lasts up to 40 seconds. The mine detonates if an enemy gets too close applying the Staggered and Unstoppable effects to up to 48 enemies within 30ft of it unless they have Cover.\n\nStagger prevents all control of your character for 5 seconds or until you are attacked. Unstoppable prevents you from being Stagger or knocked-down for 30 seconds.
+        description: talentText`2 kit\n1.0s cast\n40s CD\nskill\n\nYou place a Land Mine at your feet that lasts up to 40 seconds. The mine detonates if an enemy gets too close applying the Staggered and Unstoppable effects to up to 48 enemies within 30ft of it unless they have Cover.\n\nStagger prevents all control of your character for 5 seconds or until you are attacked. Unstoppable prevents you from being Stagger or knocked-down for 30 seconds.`,
       },
     },
   },
