@@ -343,7 +343,7 @@ export const data: TalentData = {
         description: talentText`Reduces the cast time of Gun Blast by ${[
           0.25,
           0.5,
-        ]}seconds.`,
+        ]} seconds.`,
       },
       "Hollow Points": {
         name: "Hollow Points",
@@ -361,7 +361,7 @@ export const data: TalentData = {
         icon: icons["abi_concussiong"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nKnocks the target away from you and applies Immovable to them\n\nImmovable prevents application of Rooted and the target from being Knocked Back or Pulled for 20 seconds.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\n10s CD\nskill\n\nKnocks the target away from you and applies Immovable to them\n\nImmovable prevents application of Rooted and the target from being Knocked Back or Pulled for 20 seconds.`,
       },
       "Incendiary Round": {
         name: "Incendiary Round",
@@ -389,7 +389,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Signal Flare",
         arrows: [{ dir: "down", from: "f4", to: "f8" }],
-        description: talentText`Coordinated Fire now has a 12 second duration and cooldown. It will now cause the target to take 15% increased damage for the duration.`,
+        description: talentText`Signal Flare now has a 12 second duration and cooldown. It will now cause the target to take 15% increased damage for the duration.`,
       },
       "Gun Turret": {
         name: "Gun Turret",
@@ -431,7 +431,7 @@ export const data: TalentData = {
         icon: icons["abi_detaunt"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`150ft range\ninstant cast\n15.0s CD\nability\n\nReduces the damage target does to you by 50% for 15 seconds. Effect will be removed if you hit the opponent with an ability.`,
+        description: talentText`150ft range\ninstant cast\n15s CD\nability\n\nReduces the damage target does to you by 50% for 15 seconds. Effect will be removed if you hit the opponent with an ability.`,
       },
       "Fire Bomb": {
         name: "Fire Bomb",
@@ -479,7 +479,7 @@ export const data: TalentData = {
       },
       "Trench Fighting": {
         name: "Trench Fighting",
-        pos: "g6",
+        pos: "e6",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
@@ -865,7 +865,7 @@ export const data: TalentData = {
         description: talentText`Reduces the cast time of Gun Blast by ${[
           0.25,
           0.5,
-        ]}seconds.`,
+        ]} seconds.`,
       },
       "Hollow Points": {
         name: "Hollow Points",
@@ -883,7 +883,7 @@ export const data: TalentData = {
         icon: icons["abi_concussiong"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nKnocks the target away from you and applies Immovable to them\n\nImmovable prevents application of Rooted and the target from being Knocked Back or Pulled for 20 seconds.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\n10s CD\nskill\n\nKnocks the target away from you and applies Immovable to them\n\nImmovable prevents application of Rooted and the target from being Knocked Back or Pulled for 20 seconds.`,
       },
       "Incendiary Round": {
         name: "Incendiary Round",
@@ -904,7 +904,7 @@ export const data: TalentData = {
       "Acid Bomb": {
         name: "Acid Bomb",
         pos: "f2",
-        icon: icons["ai_acidbomb"],
+        icon: icons["abi_acidbomb"],
         maxRank: 1,
         reqPoints: 5,
         description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nApplies 1 stack of Reduced Corporeal Resistance and a 12 second duration tier1 debuff to up to 3 enemies in a 20ft area you select. Deals X physical damage every 3 seconds.`,
@@ -925,9 +925,9 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Fire Bomb",
         arrows: [
-          { dir: "right-down", from: "f2", to: "f3" },
-          { dir: "right-down", from: "f4", to: "f5" },
-          { dir: "down", from: "g2", to: "g6" }
+          { dir: "right-down", from: "f2", to: "g2" },
+          { dir: "right-down", from: "f4", to: "g4" },
+          { dir: "down", from: "g1", to: "g6" }
         ],
         description: talentText`Acid Bomb, Fire Bomb, and the explosion from Sticky Bomb will now hit up to 12 enemies.`,
       },
@@ -998,16 +998,34 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 35,
         prereq: "Blasting Caps",
-        arrows: [{ dir: "right", from: "f8", to: "e8" }],
+        arrows: [{ dir: "right", from: "d8", to: "e8" }],
         description: talentText`Cinderblast Bomb now applies a tier2 debuff.`,
       },
       "Pierce Defenses": {
         name: "Pierce Defenses",
-        pos: "d6",
+        pos: "e6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 25,
         description: talentText`Whenever a target dodges or blocks an ability that uses bullets, they will take 1 stack of Reduced Armor and 1 stack of Reduced Corporeal Resistance.`,
+      },
+      "Flashbang Grenade": {
+        name: "Flashbang Grenade",
+        pos: "f6",
+        icon: icons["abi_flashbangg"],
+        maxRank: 1,
+        reqPoints: 25,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nJams the target for the next 3 seconds interrupting the next ability cast.`,
+      },
+      "The Flashiest": {
+        name: "The Flashiest",
+        pos: "f8",
+        icon: icons["tac_spec_6"],
+        maxRank: 1,
+        reqPoints: 25,
+        prereq: "Flashbang Grenade",
+        arrows: [{ dir: "down", from: "f6", to: "f8" }],
+        description: talentText`Flashbang Grenade will work on up to 23 additional enemies within 20ft of the target as long as those targets do not have Cover.`,
       },
       "Bombardment": {
         name: "Bombardment",
@@ -1020,7 +1038,7 @@ export const data: TalentData = {
       "Improvise": {
         name: "Improvise",
         pos: "d9",
-        icon: icons["improvise"],
+        icon: icons["abi_improvise"],
         maxRank: 1,
         reqPoints: 40,
         description: talentText`1 kit\ninstant cast\n5.0s CD\nability\n\nGenerate 1 grenade.\n\nThis ability does not trigger the GCD.`,
@@ -1398,12 +1416,15 @@ export const data: TalentData = {
       },
       "Self Destruct": {
         name: "Self Destruct",
-        pos: "g2",
+        pos: "g4",
         icon: icons["abi_selfdestruct"],
         maxRank: 1,
         reqPoints: 5,
         prereq: "Bugman's Best",
-        arrows: [{ dir: "right", from: "f2", to: "g2" }],
+        arrows: [
+          { dir: "right-down", from: "f2", to: "g2" },
+          { dir: "down", from: "g2", to: "g4" }
+        ],
         description: talentText`1 kit\ninstant cast\n45s CD\nspell\n\nDestroy your Deployment device to apply Knocked-down and Unstoppable to up to 6 enemies within 20ft of it.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down or Staggered for 30 seconds.`,
       },
       "Controlled Demolition": {
@@ -1413,7 +1434,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 35,
         prereq: "Wounds",
-        arrows: [{ dir: "down", from: "g2", to: "g8" }],
+        arrows: [{ dir: "down", from: "g4", to: "g8" }],
         description: talentText`Self Destruct will no longer destroy your Deployment device and will deal 20% RAP +75 elemental damage.`,
       },
       "Augmented Equipment": {
@@ -1428,7 +1449,7 @@ export const data: TalentData = {
       },
       "Ammo Pack": {
         name: "Ammo Pack",
-        pos: "h1",
+        pos: "g1",
         icon: icons["abi_ammopack"],
         maxRank: 1,
         reqPoints: 0,
@@ -1498,7 +1519,7 @@ export const data: TalentData = {
       },
       "Trench Fighting": {
         name: "Trench Fighting",
-        pos: "g6",
+        pos: "e6",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
@@ -1507,7 +1528,7 @@ export const data: TalentData = {
       "Flashbang Grenade": {
         name: "Flashbang Grenade",
         pos: "f6",
-        icon: icons["abi_flashbang"],
+        icon: icons["abi_flashbangg"],
         maxRank: 1,
         reqPoints: 25,
         description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nJams the target for the next 3 seconds interrupting the next ability cast.`,
