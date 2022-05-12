@@ -811,6 +811,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         description: talentText`Your range is increased by 20%.`,
+      },
       "Ancestral Inheritance": {
         name: "Archetype Tactic",
         pos: "a1",
