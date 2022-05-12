@@ -923,10 +923,8 @@ export const data: TalentData = {
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 25,
-        prereq: "Fire Bomb",
+        prereq: "Sticky Bomb",
         arrows: [
-          { dir: "right-down", from: "f2", to: "g2" },
-          { dir: "right-down", from: "f4", to: "g4" },
           { dir: "down", from: "g1", to: "g6" }
         ],
         description: talentText`Acid Bomb, Fire Bomb, and the explosion from Sticky Bomb will now hit up to 12 enemies.`,
@@ -953,7 +951,7 @@ export const data: TalentData = {
         icon: icons["abi_detaunt"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`150ft range\ninstant cast\n15.0s CD\nability\n\nReduces the damage target does to you by 50% for 15 seconds. Effect will be removed if you hit the opponent with an ability.`,
+        description: talentText`150ft range\ninstant cast\n15s CD\nability\n\nReduces the damage target does to you by 50% for 15 seconds. Effect will be removed if you hit the opponent with an ability.`,
       },
       "Phosphorous Shell": {
         name: "Phosphorous Shell",
@@ -1386,7 +1384,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Gun Blast",
         arrows: [{ dir: "down", from: "d1", to: "d2" }],
-        description: talentText`(Replaces Gun Blast)\n2 bullets\1.5s cast\nskill\n\nDeals 15% RAP + 75 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.`,
+        description: talentText`2 bullets\1.5s cast\nskill\n\nDeals 15% RAP + 75 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.\n\nThis ability replaces Gun Blast`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -1419,11 +1417,11 @@ export const data: TalentData = {
         pos: "g4",
         icon: icons["abi_selfdestruct"],
         maxRank: 1,
-        reqPoints: 5,
+        reqPoints: 15,
         prereq: "Bugman's Best",
         arrows: [
           { dir: "right-down", from: "f2", to: "g2" },
-          { dir: "down", from: "g2", to: "g4" }
+          { dir: "right-down-down", from: "g2", to: "g4" }
         ],
         description: talentText`1 kit\ninstant cast\n45s CD\nspell\n\nDestroy your Deployment device to apply Knocked-down and Unstoppable to up to 6 enemies within 20ft of it.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down or Staggered for 30 seconds.`,
       },
@@ -1433,7 +1431,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 35,
-        prereq: "Wounds",
+        prereq: "Self Destruct",
         arrows: [{ dir: "down", from: "g4", to: "g8" }],
         description: talentText`Self Destruct will no longer destroy your Deployment device and will deal 20% RAP +75 elemental damage.`,
       },
@@ -1579,7 +1577,7 @@ export const data: TalentData = {
       },
       "Land Mine": {
         name: "Land Mine",
-        pos: "h9",
+        pos: "f9",
         icon: icons["abi_landmine"],
         maxRank: 1,
         reqPoints: 40,
