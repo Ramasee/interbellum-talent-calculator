@@ -208,7 +208,7 @@ export const data: TalentData = {
         icon: icons["morale_hedgehog"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nAll groupmates within 100 ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -216,7 +216,7 @@ export const data: TalentData = {
         icon: icons["morale_grapple"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\nmelee range\n720 adrenaline\ninstant cast\nability\n\nTarget enemy and yourself have your movement speed reduced to 0 for 10 seconds.`,
+        description: talentText`level 2\nmelee range\n720 adrenaline\ninstant cast\nability\n\nApplies a debuff to target enemy and yourself for 10 seconds. Movement speed is reduced to 0 for the duration.`,
       },
       "Distracting Bellow": {
         name: "Distracting Bellow",
@@ -224,7 +224,7 @@ export const data: TalentData = {
         icon: icons["morale_distractingbellow"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a tier3 debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -232,7 +232,7 @@ export const data: TalentData = {
         icon: icons["morale_immaculatedefense"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a tier3 buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Emperor's Champion": {
         name: "Morale 3r",
@@ -240,7 +240,7 @@ export const data: TalentData = {
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Shatter Confidence": {
         name: "Shatter Confidence",
@@ -248,7 +248,7 @@ export const data: TalentData = {
         icon: icons["morale_shatter"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 tier1 buffs and 1 tier2 buff from the target.`,
+        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 enchantments and 1 blessing from the target.`,
       },
       "In Command": {
         name: "In Command",
@@ -256,7 +256,7 @@ export const data: TalentData = {
         icon: icons["morale_incommand"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 mechanic points.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 Mandate.`,
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
@@ -296,7 +296,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -312,7 +312,7 @@ export const data: TalentData = {
         icon: icons["abi_standstrong"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 mechanic\ninstant cast\nspell\nYou gain 125 action points.\nGroupmates within 100ft gain a tier 2 buff for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 360 HP4.`,
+        description: talentText`30 mandate\ninstant cast\nspell\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a enchantment for 60 seconds. For the duration, they will gain 360 HP4.`,
       },
       "Emperor's Fury": {
         name: "Emperor's Fury",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         icon: icons["abi_emperorsfury"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`80 AP\n2.0s cast\n30s CD\nspell\n\nYou apply Staggered and Unstoppable to up to 48 enemies within 30 feet in front of you. This effect does not apply to targets that have Cover to you.\n\nStaggered prevents all control of your character for 5 seconds or until you are attacked. Unstopped prevents you from being Staggered or Knocked-down for 30 seconds.`,
+        description: talentText`80 AP\n2.0s cast\n30s CD\nspell\n\nYou apply Staggered and Unstoppable to up to 48 enemies within 30 feet in front of you. This effect does not apply to targets that have Cover to you.\n\nStaggered prevents all control of your character for 5 seconds or until you are attacked. Unstopped prevents you from being Knocked-down or Staggered for 30 seconds.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -328,7 +328,7 @@ export const data: TalentData = {
         icon: icons["abi_onyourguard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -336,7 +336,7 @@ export const data: TalentData = {
         icon: icons["abi_tovictory"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -344,7 +344,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to the target.`,
       },
       "Guard": {
         name: "Guard",
@@ -360,7 +360,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\n\skill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\n\skill\n\n(Basic Attack) Deals 160 physical damage to the target.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -381,7 +381,7 @@ export const data: TalentData = {
         icon: icons["abi_repel"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
+        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Crippling Blow": {
         name: "Crippling Blow",
@@ -389,7 +389,7 @@ export const data: TalentData = {
         icon: icons["abi_shackle"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target. You generate 5 mechanic.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 8% MAP + 50 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Cover": {
         name: "Cover",
@@ -407,7 +407,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Vicious Slash",
         arrows: [{ dir: "down", from: "g1", to: "g2" }],
-        description: talentText`Vicious Slash will now apply a tier1 debuff to the target that deals 80% MAP + 90 physical damage over 9 seconds. This effect can stack up to 3 times.`,
+        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 5% MAP + 17 physical damage every second.`,
       },
       "Improved Vicious Slash": {
         name: "Improved Vicious Slash",
@@ -428,7 +428,7 @@ export const data: TalentData = {
         icon: icons["tac_class_1"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`You gain 1 mechanic per second.`,
+        description: talentText`You gain 1 Mandate per second.`,
       },
       "Slice Through": {
         name: "Slice Through",
@@ -446,7 +446,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you critically hit, all groupmates within 100 feet will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
+        description: talentText`Whenever you critically hit, all groupmates within 100ft will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
       },
       "Distract": {
         name: "Distract",
@@ -454,7 +454,7 @@ export const data: TalentData = {
         icon: icons["abi_distract"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`60ft range\n30AP\ninstant cast\n20s CD\nspell\n\nJams the target for the next 3 seconds interupting the next ability cast.`,
+        description: talentText`65ft range\n30AP\ninstant cast\n20s CD\nspell\n\nJams the target for the next 3 seconds interupting the next ability cast.`,
       },
       "Improved Distract": {
         name: "Improved Distract",
@@ -482,7 +482,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`All of your abilities cost 5 less mechanic points.`,
+        description: talentText`All of your abilities cost 5 less Mandate.`,
       },
       "To Glory!": {
         name: "To Glory!",
@@ -490,7 +490,7 @@ export const data: TalentData = {
         icon: icons["abi_toglory"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 2 action points per second.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 2 action points per second.`,
       },
       "To Action!": {
         name: "To Action!",
@@ -524,7 +524,7 @@ export const data: TalentData = {
         icon: icons["abi_perseverance"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`instant cast\n20s CD\nspell\n\nYou gain a tier2 buff for 10 seconds. Each time you are attacked, you will gain 10 action points and gain 1 stack of Enhanced Armor.`,
+        description: talentText`instant cast\n20s CD\nspell\n\nYou gain a blessing for 10 seconds. Each time you are attacked, you will gain 10 action points and gain 1 stack of Enhanced Armor.`,
       },
       "Stay Focused!": {
         name: "Stay Focused!",
@@ -532,7 +532,7 @@ export const data: TalentData = {
         icon: icons["abi_stayfocused"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
       },
     },
   },
@@ -753,7 +753,7 @@ export const data: TalentData = {
         icon: icons["morale_distractingbellow"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a tier3 debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -761,7 +761,7 @@ export const data: TalentData = {
         icon: icons["morale_immaculatedefense"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a tier3 buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Emperor's Champion": {
         name: "Morale 3r",
@@ -769,7 +769,7 @@ export const data: TalentData = {
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Shatter Confidence": {
         name: "Shatter Confidence",
@@ -777,7 +777,7 @@ export const data: TalentData = {
         icon: icons["morale_shatter"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 tier1 buffs and 1 tier2 buff from the target.`,
+        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 enchantments and 1 blessing from the target.`,
       },
       "In Command": {
         name: "In Command",
@@ -785,7 +785,7 @@ export const data: TalentData = {
         icon: icons["morale_incommand"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 mechanic points.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 Mandate.`,
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
@@ -825,7 +825,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -841,7 +841,7 @@ export const data: TalentData = {
         icon: icons["abi_gather"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their movement speed increased by 20%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will have their mass increased by 1.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their movement speed increased by 20%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and an enchantment for 60 seconds. For the duration, they will have their mass increased by 1.`,
       },
       "Zerg Buster": {
         name: "Zerg Buster",
@@ -857,7 +857,7 @@ export const data: TalentData = {
         icon: icons["abi_onyourguard"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their block chance increased by 30%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
@@ -865,7 +865,7 @@ export const data: TalentData = {
         icon: icons["abi_presstheattack"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -873,7 +873,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to the target.`,
       },
       "Guard": {
         name: "Guard",
@@ -889,7 +889,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -920,7 +920,7 @@ export const data: TalentData = {
         icon: icons["abi_repel"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
+        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Banishment": {
         name: "Banishment",
@@ -938,7 +938,7 @@ export const data: TalentData = {
         icon: icons["abi_shackle"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 10% MAP + 160 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`melee range\n30AP\ninstant cast\nskill\n\nDeals 8% MAP + 50 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Well-Trained": {
         name: "Well-Trained",
@@ -948,7 +948,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Vicious Slash",
         arrows: [{ dir: "down", from: "g1", to: "g2" }],
-        description: talentText`Vicious Slash will now apply a tier1 debuff to the target that deals 80% MAP + 90 physical damage over 9 seconds. This effect can stack up to 3 times.`,
+        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 5% MAP + 17 physical damage every second.`,
       },
       "Improved Vicious Slash": {
         name: "Improved Vicious Slash",
@@ -969,7 +969,7 @@ export const data: TalentData = {
         icon: icons["tac_class_1"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`You gain 1 mechanic per second.`,
+        description: talentText`You gain 1 Mandate per second.`,
       },
       "Slice Through": {
         name: "Slice Through",
@@ -987,7 +987,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you critically hit, all groupmates within 100 feet will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
+        description: talentText`Whenever you critically hit, all groupmates within 100ft will gain 1 stack of Enhanced Corporeal Resistance, Enhanced Elemental Resistance, or Enhanced Corporeal Resistance.`,
       },
       "Distract": {
         name: "Distract",
@@ -995,7 +995,7 @@ export const data: TalentData = {
         icon: icons["abi_distract"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`60ft range\n30AP\ninstant cast\n20s CD\nspell\n\nJams the target for the next 3 seconds interupting the next ability cast.`,
+        description: talentText`65ft range\n30AP\ninstant cast\n20s CD\nspell\n\nJams the target for the next 3 seconds interupting the next ability cast.`,
       },
       "Improved Distract": {
         name: "Improved Distract",
@@ -1013,7 +1013,7 @@ export const data: TalentData = {
         icon: icons["abi_gloriousassault"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nYou gain a tier2 buff for 8 seconds. For the duration, up to 9 enemies within 30ft of you take 10% MAP + 150 physical damage every 2 seconds.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will deal an additional 15% MAP physical damage each time they deal direct damage.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nYou gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30ft of you take 8% MAP + 50 physical damage every 2 seconds.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will deal an additional 10% MAP physical damage each time they deal direct damage.`,
       },
       "Bind Weapon": {
         name: "Bind Weapon",
@@ -1031,7 +1031,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Bind Weapon",
         arrows: [{ dir: "right", from: "e8", to: "f8" }],
-        description: talentText`Bind Weapon costs 10 more action points but also deals 20% MAP + 250 physical damage to the target.`,
+        description: talentText`Bind Weapon costs 10 more action points but also deals 20% MAP + 200 physical damage to the target.`,
       },
       "Perseverance": {
         name: "Perseverance",
@@ -1039,7 +1039,7 @@ export const data: TalentData = {
         icon: icons["abi_perseverance"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`instant cast\n20s CD\nspell\n\nYou gain a tier2 buff for 10 seconds. Each time you are attacked, you will gain 10 action points and gain 1 stack of Enhanced Armor.`,
+        description: talentText`instant cast\n20s CD\nspell\n\nYou gain a blessing for 10 seconds. Each time you are attacked, you will gain 10 action points and gain 1 stack of Enhanced Armor.`,
       },
       "Staying Power": {
         name: "Staying Power",
@@ -1067,7 +1067,7 @@ export const data: TalentData = {
         icon: icons["abi_stayfocused"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
       },
       "Focused Mending": {
         name: "Focused Mending",
@@ -1077,7 +1077,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Stay Focused!",
         arrows: [{ dir: "down", from: "g6", to: "g8" }],
-        description: talentText`Stay Focused! now provides a different tier2 buff. For 4 seconds, all groupmates will gain 60% healing received.`,
+        description: talentText`Stay Focused! now provides a different blessing. For 4 seconds, all groupmates will gain 60% healing received.`,
       },
     },
   },
@@ -1282,7 +1282,7 @@ export const data: TalentData = {
         icon: icons["morale_severnerve"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nDeals 50% MAP + 600 physical damage to the target.`,
+        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nDeals 50% MAP + 400 physical damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -1290,7 +1290,7 @@ export const data: TalentData = {
         icon: icons["morale_broadswings"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gaina  tier3 buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -1298,7 +1298,7 @@ export const data: TalentData = {
         icon: icons["morale_forceofwill"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, all groupmates within 100ft have 75% reduced action point costs.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a tier3 buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -1306,15 +1306,15 @@ export const data: TalentData = {
         icon: icons["morale_frenziedslaughter"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, all groupmates within 100ft have 40% outgoing damage and 50% reduced cooldowns.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a tier3 buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Emperor's Champion": {
-        name: "Emperor's Champion",
+        name: "Morale 3r",
         pos: "b8",
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Shatter Confidence": {
         name: "Shatter Confidence",
@@ -1322,7 +1322,7 @@ export const data: TalentData = {
         icon: icons["morale_shatter"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 tier1 buffs and 1 tier2 buff from the target.`,
+        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nRemoves up to 3 enchantments and 1 blessing from the target.`,
       },
       "In Command": {
         name: "In Command",
@@ -1330,7 +1330,7 @@ export const data: TalentData = {
         icon: icons["morale_incommand"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 mechanic points.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nGenerates 100 Mandate`,
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
@@ -1370,7 +1370,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -1386,7 +1386,7 @@ export const data: TalentData = {
         icon: icons["abi_nowsourchance"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 15% increased accuracy.\nGroupmates within 100ft gain 1 stack of Enhanced Critical Damage and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Critical Damage every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have 15% increased accuracy.\nGroupmates within 100ft gain 1 stack of Enhanced Critical Damage and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Critical Damage every 10 seconds.`,
       },
       "Rain of Spears": {
         name: "Rain of Spears",
@@ -1394,7 +1394,7 @@ export const data: TalentData = {
         icon: icons["abi_rainofspears"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`150 AP\ninstant cast\n30s CD\n\nApplies a tier2debuff to up to 24 enemies within 30ft in front of you. After 6 seconds, each debuff explodes dealing 15% MAP + 100 elemental damage to up to 96 enemies within 20ft of the target but does not hit the target.`,
+        description: talentText`150 AP\ninstant cast\n30s CD\n\nApplies a debuff to up to 24 enemies within 30ft in front of you. After 6 seconds, each debuff explodes dealing 15% MAP + 100 elemental damage to up to 96 enemies within 20ft of the target but does not hit the target.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -1402,7 +1402,7 @@ export const data: TalentData = {
         icon: icons["abi_tovictory"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Press the Attack!": {
         name: "To Victory!",
@@ -1410,7 +1410,7 @@ export const data: TalentData = {
         icon: icons["abi_presstheattack"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and a tier1 buff for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -1418,7 +1418,7 @@ export const data: TalentData = {
         icon: icons["abi_viciousslash"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to the target.`,
       },
       "Charge": {
         name: "Charge",
@@ -1434,7 +1434,7 @@ export const data: TalentData = {
         icon: icons["abi_strike"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target. Generates 5 mechanic.`,
+        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 physical damage to the target.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -1467,7 +1467,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Vicious Slash",
         arrows: [{ dir: "down", from: "g1", to: "g2" }],
-        description: talentText`Vicious Slash will now apply a tier1 debuff to the target that deals 80% MAP + 90 physical damage over 9 seconds. This effect can stack up to 3 times.`,
+        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 5% MAP + 17 physical damage every second.`,
       },
       "Improved Vicious Slash": {
         name: "Improved Vicious Slash",
@@ -1488,7 +1488,7 @@ export const data: TalentData = {
         icon: icons["tac_class_1"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`You gain 1 mechanic per second.`,
+        description: talentText`You gain 1 Mandate per second.`,
       },
       "Glorious Assault!": {
         name: "Glorious Assault!",
@@ -1496,7 +1496,7 @@ export const data: TalentData = {
         icon: icons["abi_gloriousassault"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nYou gain a tier2 buff for 8 seconds. For the duration, up to 9 enemies within 30ft of you take 10% MAP + 150 physical damage every 2 seconds.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will deal an additional 15% MAP physical damage each time they deal direct damage.`,
+        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nYou gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30ft of you take 8% MAP + 50 physical damage every 2 seconds.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will deal an additional 10% MAP physical damage each time they deal direct damage.`,
       },
       "Assault Party": {
         name: "Assault Party",
@@ -1506,7 +1506,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Glorious Assault!",
         arrows: [{ dir: "down", from: "g6", to: "g8" }],
-        description: talentText`Glorious Assault now applies its tier2 buff to your defensive target as well.`,
+        description: talentText`Glorious Assault now applies its blessing to your defensive target as well.`,
       },
       "Perseverance": {
         name: "Perseverance",
@@ -1534,7 +1534,7 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Staying Power",
         arrows: [{ dir: "down", from: "c4", to: "c6" }],
-        description: talentText`While under the effects of Perseverance, you will deal 30% SAP + 300 elemental damage to any enemy that hits you with an ability.`,
+        description: talentText`While under the effects of Perseverance, you will deal 20% SAP + 300 elemental damage to any enemy that hits you with an ability.`,
       },
       "To Glory!": {
         name: "To Glory!",
@@ -1542,7 +1542,7 @@ export const data: TalentData = {
         icon: icons["abi_toglory"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`30 mechanic\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a tier2 buff for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain a tier1 buff for 60 seconds. For the duration, they will gain 2 action points per second.`,
+        description: talentText`30 mandate\ninstant cast\nspell\n\nYou gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 2 action points per second.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1568,7 +1568,7 @@ export const data: TalentData = {
         icon: icons["abi_blazingblade"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`Melee range\n120AP\n4.5s channel\nskill\n\nDeals 15% MAP + 125 elemental damage to your target every 0.5s as long as you channel. You generate 5 mechanic.`,
+        description: talentText`Melee range\n120AP\n4.5s channel\nskill\n\nDeals 10% MAP + 100 elemental damage to your target every 0.5s as long as you channel.`,
       },
       "Negatory Commander": {
         name: "Negatory Commander",
@@ -1586,7 +1586,7 @@ export const data: TalentData = {
         icon: icons["abi_arcingswing"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`75AP\n1.0s cast\nskill\n\nDeals 10% MAP + 75 elemental damage to up to 3 enemies within 25ft in front of you and gives them 1 stack of Reduced Fortitude. You generate 5 mechanic.`,
+        description: talentText`75AP\n1.0s cast\nskill\n\nDeals 8% MAP + 50 elemental damage to up to 3 enemies within 25ft in front of you and gives them 1 stack of Reduced Fortitude.`,
       },
       "Overpowering Swing": {
         name: "Overpowering Swing",
@@ -1604,7 +1604,7 @@ export const data: TalentData = {
         icon: icons["abi_smash"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`Melee range\n60AP\ninstant cast\n15.0s CD\nskill\n\nDeals 15% MAP + 160 elemental damage to the target and applies Knocked-down and Unstoppable. You generate 5 mechanic.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`Melee range\n60AP\ninstant cast\n15.0s CD\nskill\n\nDeals 15% MAP + 160 elemental damage to the target and applies Knocked-down and Unstoppable.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Super Smash Bro": {
         name: "Super Smash Bro",
@@ -1614,7 +1614,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Smash",
         arrows: [{ dir: "right", from: "e8", to: "f8" }],
-        description: talentText`Whenever you apply the Knocked-down status, you will also apply the Off-balance status which supresses the effect of Guard on the target.`,
+        description: talentText`Whenever you apply the Knocked-down status, you will also apply the Off-Balance status which supresses the effect of Guard on the target.`,
       },
       "Grand Crusader": {
         name: "Grand Crusader",
@@ -1622,7 +1622,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`Whenever you spend mechanic points, you will gain a tier2 buff that increases your strength by 300 for 8 seconds.`,
+        description: talentText`Whenever you spend Mandate, you will gain a blessing for 8 seconds. For the duration, your strength is increased by 300.`,
       },
     },
   },
