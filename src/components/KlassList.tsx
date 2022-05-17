@@ -11,7 +11,7 @@ const KLASSES = [
   {
     name: "Bright Wizard",
     icon: icons["class_brightwizard"],
-    path: "/squire",
+    path: "/brightwizard",
   },
   {
     name: "Squire",
