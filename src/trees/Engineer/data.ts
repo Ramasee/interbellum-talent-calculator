@@ -491,7 +491,7 @@ export const data: TalentData = {
         icon: icons["abi_crackshot"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`125ft range\n1 bullet\ninstant cast\n10s CD\nskill\n\nDeals 160 physical damage to the target and applies Diarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects.`,
+        description: talentText`125ft range\n1 bullet\ninstant cast\n10s CD\nskill\n\nDeals 160 physical damage to the target and applies Disarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects.`,
       },
       "Improved Crack Shot": {
         name: "Improved Crack Shot",
@@ -1268,7 +1268,7 @@ export const data: TalentData = {
         icon: icons["morale_distractingbellow"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a tier3 debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nUp to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -1276,7 +1276,7 @@ export const data: TalentData = {
         icon: icons["morale_immaculatedefense"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a tier3 buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nGroupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Mountain Spirit": {
         name: "Mountain Spirit",
@@ -1547,7 +1547,7 @@ export const data: TalentData = {
         icon: icons["abi_crackshot"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`125ft range\n1 bullet\ninstant cast\n10s CD\nskill\n\nDeals 160 physical damage to the target and applies Diarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects.`,
+        description: talentText`125ft range\n1 bullet\ninstant cast\n10s CD\nskill\n\nDeals 160 physical damage to the target and applies Disarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects.`,
       },
       "Improved Crack Shot": {
         name: "Improved Crack Shot",

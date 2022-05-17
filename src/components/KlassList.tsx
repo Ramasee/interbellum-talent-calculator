@@ -9,6 +9,11 @@ const icons = requireAll(require.context("../assets/icons", false));
 
 const KLASSES = [
   {
+    name: "Bright Wizard",
+    icon: icons["class_brightwizard"],
+    path: "/squire",
+  },
+  {
     name: "Squire",
     icon: icons["class_squire"],
     path: "/squire",
