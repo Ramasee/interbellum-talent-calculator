@@ -232,7 +232,7 @@ export const data: TalentData = {
         icon: icons["morale_explosiveimpact"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nGain a tier3 buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nGain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         icon: icons["morale_burnout"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n\n720 adrenaline\ninstant cast\nability\n\nYou gain 100 Combustion and take Backlash damage.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain 100 Combustion and take Backlash damage.`,
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
@@ -312,7 +312,7 @@ export const data: TalentData = {
         icon: icons["abi_blast"],
         maxRank: 2,
         reqPoints: 0,
-        description: talentText`Backlash deals 20% SAP + 300 elemental damage whenever you gain Combustion when you have 100. (1s ICD)\nBlast is a buff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 6% SAP elemental damage per stack.\n\nTaking this passive increases the damage of Blast by ${[
+        description: talentText`Backlash deals 20% SAP + 300 elemental damage whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 6% SAP elemental damage per stack.\n\nTaking this passive increases the damage of Blast by ${[
           3,
           6,
         ]}% MAP.`,
@@ -393,7 +393,7 @@ export const data: TalentData = {
         description: talentText`Sparking Swing will deal an additional ${[
           8,
           15,
-        ]}% MAP physical damage.`,
+        ]}% MAP elemental damage.`,
       },
       "Spontaneous Combustion": {
         name: "Spontaneous Combustion",
@@ -513,7 +513,7 @@ export const data: TalentData = {
       },
       "Burning Step": {
         name: "Burning Step",
-        pos: "f8",
+        pos: "d8",
         icon: icons["abi_firestep"],
         maxRank: 1,
         reqPoints: 35,
@@ -521,17 +521,17 @@ export const data: TalentData = {
       },
       "TrailBlazer": {
         name: "TrailBlazer",
-        pos: "g8",
+        pos: "e8",
         icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Burning Step",
-        arrows: [{ dir: "right", from: "f8", to: "g8" }],
+        arrows: [{ dir: "right", from: "d8", to: "e8" }],
         description: talentText`The cooldown on Burning Step is reduced by 10 seconds.`,
       },
       "Explosive Force": {
         name: "Explosive Force",
-        pos: "h8",
+        pos: "f8",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 35,
@@ -539,19 +539,19 @@ export const data: TalentData = {
       },
       "Scorched Earth": {
         name: "Scorched Earth",
-        pos: "f9",
+        pos: "d9",
         icon: icons["abi_scorched"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`10 CBN\ninstant cast\naspell\n\nRemoves all of your combustion and deals 4% MAP + 20 corporeal damage per 10 Combustion consumed to up to 9 enemies within 30ft of you.\n\nAugmented: Does not consume Combustion.`,
+        description: talentText`10 CBN\ninstant cast\nspell\n\nRemoves all of your combustion and deals 4% MAP + 20 corporeal damage per 10 Combustion consumed to up to 9 enemies within 30ft of you.\n\nAugmented: Does not consume Combustion.`,
       },
       "Supernova": {
         name: "Supernova",
-        pos: "h9",
+        pos: "f9",
         icon: icons["abi_supernova"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`150 AP\n5s channel\n30s CD\naspell\n\nDeal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.`,
+        description: talentText`150 AP\n5.0s channel\n30s CD\nspell\n\nDeal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.\n\nAugmented: 100% pushback immunity,`,
       },
     },
   },
