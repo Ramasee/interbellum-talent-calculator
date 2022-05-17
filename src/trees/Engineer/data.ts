@@ -216,7 +216,7 @@ export const data: TalentData = {
         icon: icons["morale_focusedmind"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, your abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain a buff for 15 seconds. Abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
       },
       "Explosive Impact": {
         name: "Explosive Impact",
@@ -224,7 +224,7 @@ export const data: TalentData = {
         icon: icons["morale_explosiveimpact"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, whenever you hit a target with a single-target ability, you will deal 20% RAP + 150 corporeal damage and 20% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nGain a tier3 buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
       },
       "Unleash the Winds": {
         name: "Unleash the Winds",
@@ -240,7 +240,7 @@ export const data: TalentData = {
         icon: icons["morale_mountainspirit"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain 1000 armor, 500 corporeal resistance, and 500 elemental resistance.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain a buff for 15 seconds. For the duration, gain 500 armor, 500 corporeal resistance, and 500 elemental resistance.`,
       },
       "Cannon Smash": {
         name: "Cannon Smash",
@@ -330,7 +330,7 @@ export const data: TalentData = {
         icon: icons["abi_gunblast"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %50 RAP + 500 physical damage to target.`,
+        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %40 RAP + 300 physical damage to target.`,
       },
       "Improved Gun Blast": {
         name: "Improved Gun Blast",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         icon: icons["abi_incendiaryround"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies a tier1 debuff to the target that deals 30% RAP + 60 corporeal damage every 3 seconds over 15 seconds.`,
+        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies an affliction to the target that deals 14% RAP + 104 corporeal damage every 3 seconds over 15 seconds.`,
       },
       "Signal Flare": {
         name: "Signal Flare",
@@ -379,7 +379,7 @@ export const data: TalentData = {
         reqPoints: 15,
         prereq: "Incendiary Round",
         arrows: [{ dir: "down", from: "f1", to: "f4" }],
-        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies a tier2 debuff to target enemy that deals 12.5% RAP + 70 physical damage every 3 seconds over 21 seconds.`,
+        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies a cripple to target enemy that deals 15% RAP + 120 physical damage every 3 seconds over 21 seconds.`,
       },
       "Coordinated Fire": {
         name: "Coordinated Fire",
@@ -439,7 +439,7 @@ export const data: TalentData = {
         icon: icons["abi_firebomb"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 10% RAP + 100 corporeal damage to up to 3 enemies within a 20ft area.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 7% RAP + 28 corporeal damage to up to 3 enemies within a 20ft area.`,
       },
       "Extra Powder": {
         name: "Extra Powder",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Fire Bomb",
         arrows: [{ dir: "down", from: "c4", to: "c6" }],
-        description: talentText`Fire Bomb will now hit up to 12 enemies.`,
+        description: talentText`Acid Bomb, Fire Bomb, and the explosion from Sticky Bomb will now hit up to 12 enemies.`,
       },
       "Phosphorous Shell": {
         name: "Phosphorous Shell",
@@ -457,7 +457,7 @@ export const data: TalentData = {
         icon: icons["abi_pshell"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`125ft range\n1 bullet\n1.0s cast\nskill\n\nDeals 18% RAP + 180 corporeal damage to the target. Then it applies a tier1 debuff for 12 seconds to the target and up to 2 enemies within 20ft of them that deals 30% RAP + 15 corporeal damage every 3 seconds.`,
+        description: talentText`125ft range\n1 bullet\n1.0s cast\nskill\n\nDeals 10% RAP + 80 corporeal damage to the target. Then it applies an affliction for 12 seconds to the target and up to 2 enemies within 20ft of them that deals 5% RAP + 15 corporeal damage every 3 seconds.`,
       },
       "White Phosphorous Bomb": {
         name: "White Phosphorous Bomb",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Crack Shot",
         arrows: [{ dir: "right", from: "c8", to: "d8" }],
-        description: talentText`Crack Shot now deals an additional 37% RAP physical damage.`,
+        description: talentText`Crack Shot now deals an additional 27% RAP physical damage.`,
       },
       "Depleted Runic Rounds": {
         name: "Depleted Runic Rounds",
@@ -509,7 +509,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`Every ability that uses bullets will deal an additional 10% RAP corporeal damage.`,
+        description: talentText`Every ability that uses bullets will deal an additional 15% SAP corporeal damage.`,
       },
       "Snipe": {
         name: "Snipe",
@@ -517,7 +517,7 @@ export const data: TalentData = {
         icon: icons["abi_snipe"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`150ft range\n1 bullet\n3.0s cast\nskill\n\nDeals 70% RAP + 400 physical damage to the target. Applies 1 stack of Reduced Dodge.`,
+        description: talentText`150ft range\n1 bullet\n3.0s cast\nskill\n\nDeals 60% RAP + 300 physical damage to the target. Applies 1 stack of Reduced Dodge.`,
       },
       "Focused Fire": {
         name: "Focused Fire",
@@ -525,7 +525,7 @@ export const data: TalentData = {
         icon: icons["abi_focusedfire"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`100ft range\n4 bullets\n3.0s channel\nskill\n\nDeals 20% RAP + 125 physical damage four times over the channel.`,
+        description: talentText`100ft range\n4 bullets\n3.0s channel\nskill\n\nDeals 15% RAP + 150 physical damage four times over the channel.`,
       },
     },
   },
@@ -738,7 +738,7 @@ export const data: TalentData = {
         icon: icons["morale_focusedmind"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, your abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain a buff for 15 seconds. Abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
       },
       "Explosive Impact": {
         name: "Explosive Impact",
@@ -746,7 +746,7 @@ export const data: TalentData = {
         icon: icons["morale_explosiveimpact"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, whenever you hit a target with a single-target ability, you will deal 20% RAP + 150 corporeal damage and 20% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nGain a tier3 buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
       },
       "Unleash the Winds": {
         name: "Unleash the Winds",
@@ -762,7 +762,7 @@ export const data: TalentData = {
         icon: icons["morale_mountainspirit"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain 1000 armor, 500 corporeal resistance, and 500 elemental resistance.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain a buff for 15 seconds. For the duration, gain 500 armor, 500 corporeal resistance, and 500 elemental resistance.`,
       },
       "Cannon Smash": {
         name: "Cannon Smash",
@@ -852,7 +852,7 @@ export const data: TalentData = {
         icon: icons["abi_gunblast"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %50 RAP + 500 physical damage to target.`,
+        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\n(Basic Attack)Deals %40 RAP + 300 physical damage to target.`,
       },
       "Improved Gun Blast": {
         name: "Improved Gun Blast",
@@ -891,7 +891,7 @@ export const data: TalentData = {
         icon: icons["abi_incendiaryround"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies a tier1 debuff to the target that deals 30% RAP + 60 corporeal damage every 3 seconds over 15 seconds.`,
+        description: talentText`125ft range\n1 bullet\ninstant cast\nskill\n\nApplies an affliction to the target that deals 14% RAP + 104 corporeal damage every 3 seconds over 15 seconds.`,
       },
       "Sticky Bomb": {
         name: "Sticky Bomb",
@@ -899,7 +899,7 @@ export const data: TalentData = {
         icon: icons["abi_sticky"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskills\n\nDeals X corporeal damage every 3 seconds for 15 seconds. At the end of the duration, explodes dealing 20% RAP + 50 corporeal damage to up to 3 enemies within 20ft.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskills\n\nApplies a 15s duration affliction to target enemy. Deals 5% RAP + 54 corporeal damage every 3 seconds. At the end of the duration, explodes dealing 7% RAP + 28 corporeal damage to up to 3 enemies within 20ft.`,
       },
       "Acid Bomb": {
         name: "Acid Bomb",
@@ -907,7 +907,7 @@ export const data: TalentData = {
         icon: icons["abi_acidbomb"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nApplies 1 stack of Reduced Corporeal Resistance and a 12 second duration tier1 debuff to up to 3 enemies in a 20ft area you select. Deals X physical damage every 3 seconds.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nApplies 1 stack of Reduced Corporeal Resistance and a 12 second duration affliction to up to 3 enemies in a 20ft area you select. Deals 5% RAP + 20 physical damage every 3 seconds.`,
       },
       "Fire Bomb": {
         name: "Fire Bomb",
@@ -915,7 +915,7 @@ export const data: TalentData = {
         icon: icons["abi_firebomb"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 10% RAP + 100 corporeal damage to up to 3 enemies within a 20ft area.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 7% RAP + 28 corporeal damage to up to 3 enemies within a 20ft area.`,
       },
       "Extra Powder": {
         name: "Extra Powder",
@@ -959,7 +959,7 @@ export const data: TalentData = {
         icon: icons["abi_pshell"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`125ft range\n1 bullet\n1.0s cast\nskill\n\nDeals 18% RAP + 180 corporeal damage to the target. Then it applies a tier1 debuff for 12 seconds to the target and up to 2 enemies within 20ft of them that deals 30% RAP + 15 corporeal damage every 3 seconds.`,
+        description: talentText`125ft range\n1 bullet\n1.0s cast\nskill\n\nDeals 10% RAP + 80 corporeal damage to the target. Then it applies an affliction for 12 seconds to the target and up to 2 enemies within 20ft of them that deals 5% RAP + 15 corporeal damage every 3 seconds.`,
       },
       "White Phosphorous Bomb": {
         name: "White Phosphorous Bomb",
@@ -977,7 +977,7 @@ export const data: TalentData = {
         icon: icons["abi_cinderblast"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nApplies a tier1 debuff for 18 seconds to up to 12 enemies within a 20ft area you select. Deals X corporeal damage every 3 seconds.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nApplies an affliction for 18 seconds to up to 12 enemies within a 20ft area you select. Deals 3% RAP + 28 corporeal damage every 3 seconds.`,
       },
       "Blasting Caps": {
         name: "Blasting Caps",
@@ -987,7 +987,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Cinderblast Bomb",
         arrows: [{ dir: "down", from: "d6", to: "d8" }],
-        description: talentText`Every time Cinderblast Bomb deals damage to a target, it will apply a stack of Blast. Blast lasts for 4 seconds, stacks up to 10 times, and deals 10% RAP corporeal damage at the end of the duration.`,
+        description: talentText`Every time Cinderblast Bomb deals damage to a target, it will apply a stack of Blast. Blast lasts for 4 seconds, stacks up to 10 times, and deals 6% RAP corporeal damage at the end of the duration.`,
       },
       "Blistering Blast": {
         name: "Blistering Blast",
@@ -997,7 +997,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Blasting Caps",
         arrows: [{ dir: "right", from: "d8", to: "e8" }],
-        description: talentText`Cinderblast Bomb now applies a tier2 debuff.`,
+        description: talentText`Cinderblast Bomb now applies a cripple instead of affliction.`,
       },
       "Pierce Defenses": {
         name: "Pierce Defenses",
@@ -1031,7 +1031,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`Acid Bomb, Cinderblast Bomb, and Sticky Bomb now have 35% faster tick intervals, 33% less durations, and cost 2 grenades.`,
+        description: talentText`Acid Bomb, Cinderblast Bomb, and Sticky Bomb now have 35% faster tick intervals, 35% less durations, and cost 2 grenades.`,
       },
       "Improvise": {
         name: "Improvise",
@@ -1047,7 +1047,7 @@ export const data: TalentData = {
         icon: icons["abi_napalmg"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`65ft range\n1 grenade\ninstant cast\n20s CD\nskill\n\nSelect a 20ft area which burns for 20 seconds. Every 2 seconds, enemies within the area gain a stack of tier2 debuff which lasts 10 seconds and stacks up to 5 times. Deals X corporeal damage every 2 seconds.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\n20s CD\nskill\n\nSelect a 20ft area which burns for 20 seconds. Every 2 seconds, enemies within the area gain a stack of tier2 debuff which lasts 10 seconds and stacks up to 5 times. Deals 6% RAP + 60 corporeal damage every 2 seconds.`,
       },
     },
   },
@@ -1284,7 +1284,7 @@ export const data: TalentData = {
         icon: icons["morale_mountainspirit"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain 1000 armor, 500 corporeal resistance, and 500 elemental resistance.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft of you gain a buff for 15 seconds. For the duration, gain 500 armor, 500 corporeal resistance, and 500 elemental resistance.`,
       },
       "Cannon Smash": {
         name: "Cannon Smash",
@@ -1374,7 +1374,7 @@ export const data: TalentData = {
         icon: icons["abi_gunblast"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %50 RAP + 500 physical damage to target.`,
+        description: talentText`125ft range\n1 bullet\n2.5s cast\nskill\n\nDeals %40 RAP + 300 physical damage to target.`,
       },
       "Blunderbuss Blast": {
         name: "Blunderbuss Blast",
@@ -1384,7 +1384,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Gun Blast",
         arrows: [{ dir: "down", from: "d1", to: "d2" }],
-        description: talentText`2 bullets\n1.5s cast\nskill\n\nDeals 15% RAP + 75 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.\n\nThis ability replaces Gun Blast`,
+        description: talentText`2 bullets\n1.5s cast\nskill\n\nDeals 8% RAP + 50 physical damage to up to 9 enemies within 30ft in front of you. can be cast while moving.\n\nThis ability replaces Gun Blast`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -1400,7 +1400,7 @@ export const data: TalentData = {
         icon: icons["abi_lightningrod"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`1 kit\ninstant cast\nskill\n\n(Deployment)Summon a lightning rod at your feet for 20 seconds that will deal elemental damage to up to 9 enemies within 30ft of it.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`1 kit\ninstant cast\nskill\n\n(Deployment) Summon a lightning rod at your feet for 20 seconds that will deal elemental damage to up to 9 enemies within 30ft of it.\n\nYou can only have one Deployment skill active.`,
       },
       "Bugman's Best": {
         name: "Bugman's Best",
@@ -1410,7 +1410,7 @@ export const data: TalentData = {
         reqPoints: 5,
         prereq: "Lightning Rod",
         arrows: [{ dir: "down", from: "f1", to: "f2" }],
-        description: talentText`1 kit\ninstant cast\nskill\n\n(Deployment)Summon a beer keg at your feet for 20 seconds that will heal groupmates within 30ft of it.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`1 kit\ninstant cast\nskill\n\n(Deployment) Summon a beer keg at your feet for 20 seconds that will heal groupmates within 30ft of it.\n\nYou can only have one Deployment skill active.`,
       },
       "Self Destruct": {
         name: "Self Destruct",
@@ -1485,7 +1485,7 @@ export const data: TalentData = {
         icon: icons["abi_firebomb"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 10% RAP + 100 corporeal damage to up to 3 enemies within a 20ft area.`,
+        description: talentText`65ft range\n1 grenade\ninstant cast\nskill\n\nDeals 7% RAP + 28 corporeal damage to up to 3 enemies within a 20ft area.`,
       },
       "Extra Powder": {
         name: "Extra Powder",
@@ -1495,7 +1495,7 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Fire Bomb",
         arrows: [{ dir: "down", from: "c4", to: "c6" }],
-        description: talentText`Fire Bomb will now hit up to 12 enemies.`,
+        description: talentText`Acid Bomb, Fire Bomb, and the explosion from Sticky Bomb will now hit up to 12 enemies.`,
       },
       "Flak Jacket": {
         name: "Flak Jacket",
@@ -1557,7 +1557,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Crack Shot",
         arrows: [{ dir: "right", from: "c8", to: "d8" }],
-        description: talentText`Crack Shot now deals an additional 37% RAP physical damage.`,
+        description: talentText`Crack Shot now deals an additional 27% RAP physical damage.`,
       },
       "Pierce Defenses": {
         name: "Pierce Defenses",

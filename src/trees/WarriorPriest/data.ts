@@ -216,7 +216,7 @@ export const data: TalentData = {
         icon: icons["morale_focusedmind"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, your abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain a buff for 15 seconds. Abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
       },
       "Divine Protection": {
         name: "Divine Protection",
@@ -224,7 +224,7 @@ export const data: TalentData = {
         icon: icons["morale_divineprotection"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a tier3 buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -232,7 +232,7 @@ export const data: TalentData = {
         icon: icons["morale_alterfate"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nRemoves all tier1 and tier2 debuffs from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nRemoves all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -240,7 +240,7 @@ export const data: TalentData = {
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. For the duration, You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Leading the Prayer": {
         name: "Leading the Prayer",
@@ -248,7 +248,7 @@ export const data: TalentData = {
         icon: icons["morale_leadingtheprayer"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nApplies Shield of Faith with the enhanced modifer to all groupmates within 100ft.`,
+        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nApplies Shield of Faith with the augmented modifer to all groupmates within 100ft.`,
       },
       "Hammer Time": {
         name: "Hammer Time",
@@ -296,7 +296,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -328,7 +328,7 @@ export const data: TalentData = {
         icon: icons["abi_shieldoffaith"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Target absorbs up to 30% RP + 200 damage over 5 seconds. Shield of Faith does nothing without this passive.\n\nEnhanced: Target absorbs up to 30% RP + 400 damage over 5 seconds and gains 1 stack of Enhanced Dodge.`,
+        description: talentText`Target absorbs up to 30% RP + 200 damage over 5 seconds. Shield of Faith does nothing without this passive.\n\nAugmented: Target absorbs up to 30% RP + 400 damage over 5 seconds and gains 1 stack of Enhanced Dodge.`,
       },
       "Conviction": {
         name: "Conviction",
@@ -346,7 +346,7 @@ export const data: TalentData = {
         icon: icons["abi_divinelight"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\n60 RF\ninstant cast\nspell\n\nPlace a tier2 buff on target ally that absorbs up to 100% RP + 200 damage over 5 seconds.`,
+        description: talentText`150ft range\n60 RF\ninstant cast\nspell\n\nPlace a blessing on target ally that absorbs up to 90% RP + 170 damage over 5 seconds.`,
       },
       "Preserving Light": {
         name: "Preserving Light",
@@ -414,7 +414,7 @@ export const data: TalentData = {
         icon: icons["abi_purify"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`150ft range\n50 AP\ninstant cast\nspell\n\nDispels a tier1 debuff from target groupmate and applies Shield of Faith. Generates 30 Righteous Fury`,
+        description: talentText`150ft range\n50 AP\ninstant cast\nspell\n\nDispels an affliction from target groupmate and applies Shield of Faith. Generates 30 Righteous Fury`,
       },
       "Feed the Masses": {
         name: "Feed the Masses",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         icon: icons["abi_devotion"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that heals the target for 25% RP + 50 each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and an enchantment for 60 seconds that heals the target for 15% RP + 50 each time they hit an enemy with an ability.`,
       },
       "Sanctity": {
         name: "Sanctity",
@@ -479,7 +479,7 @@ export const data: TalentData = {
         icon: icons["abi_healinghand"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n25 RF\ninstant cast\nspell\n\nApplies a tier 1 buff to target ally that heals for 20% RP + 100 every 3 seconds for 15 seconds.`,
+        description: talentText`150ft range\n25 RF\ninstant cast\nspell\n\nApplies an enchantment to target ally that heals for 18% RP + 70 every 3 seconds for 15 seconds.`,
       },
       "Lay on Hands": {
         name: "Lay on Hands",
@@ -489,7 +489,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Healing Hand",
         arrows: [{ dir: "down", from: "d6", to: "d8" }],
-        description: talentText`The range of Healing Hand is reduced to 75ft but it now heals for 30% RP + 100 every 3 seconds.`,
+        description: talentText`The range of Healing Hand is reduced to 75ft but it now heals for 28% RP + 100 every 3 seconds.`,
       },
       "Charged Fury": {
         name: "Charged Fury",
@@ -505,7 +505,7 @@ export const data: TalentData = {
         icon: icons["abi_righteousness"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 15% SAP spiritual damage each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and an enchantment for 60 seconds that deals an additional 10% SAP spiritual damage each time they hit an enemy with an ability.`,
       },
       "Probity": {
         name: "Probity",
@@ -746,7 +746,7 @@ export const data: TalentData = {
         icon: icons["morale_focusedmind"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, your abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain a buff for 15 seconds. Abilities will have 50% faster cast time and you will have 100% pushback immunity.`,
       },
       "Divine Protection": {
         name: "Divine Protection",
@@ -754,7 +754,7 @@ export const data: TalentData = {
         icon: icons["morale_divineprotection"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a tier3 buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -762,7 +762,7 @@ export const data: TalentData = {
         icon: icons["morale_alterfate"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nRemoves all tier1 and tier2 debuffs from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nRemoves all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -770,7 +770,7 @@ export const data: TalentData = {
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. For the duration, You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Leading the Prayer": {
         name: "Leading the Prayer",
@@ -826,7 +826,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -842,7 +842,7 @@ export const data: TalentData = {
         icon: icons["abi_sigmarsshield"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`75ft range\n100 RF\ninstant cast\n7.0s CD\nspell\n\nApplies a tier2 buff to the target for 7 seconds. Each time they are attacked they will gain a Shield of Faith and 1 stack of a tier3 buff. The tier 3 buff stacks up to 10 times, lasts 3 seconds, and heals the target for 5% RP + 25 per stack.`,
+        description: talentText`75ft range\n100 RF\ninstant cast\n7.0s CD\nspell\n\nApplies a blessing to target ally for 7 seconds. Each time they are attacked, they will gain a Shield of Faith and 1 stack of a buff. Buff stacks up to 10 times, lasts 3 seconds, and heals the target for 5% RP + 25 per stack at the end of the duration.`,
       },
       "Martyr's Blessing": {
         name: "Martyr's Blessing",
@@ -858,7 +858,7 @@ export const data: TalentData = {
         icon: icons["abi_shieldoffaith"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Target absorbs up to 30% RP + 200 damage over 5 seconds. Shield of Faith does nothing without this passive.\n\nEnhanced: Target absorbs up to 30% RP + 400 damage over 5 seconds and gains 1 stack of Enhanced Dodge.`,
+        description: talentText`Target absorbs up to 30% RP + 200 damage over 5 seconds. Shield of Faith does nothing without this passive.\n\nAugmented: Target absorbs up to 30% RP + 400 damage over 5 seconds and gains 1 stack of Enhanced Dodge.`,
       },
       "Twin-Tailed Blow": {
         name: "Twin-Tailed Blow",
@@ -866,7 +866,7 @@ export const data: TalentData = {
         icon: icons["abi_twintailedblow"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`10ft range\n50 AP\ninstant cast\nskill\n\nDeals 20% MAP + 160 spiritual damage to target enemy. Your defensive target will be healed for 150% of the damage dealt and applies Shield of Faith to groupmates within 75ft. Generates 30 Righteous Fury.`,
+        description: talentText`10ft range\n50 AP\ninstant cast\nskill\n\nDeals 15% MAP + 160 spiritual damage to target enemy. Your defensive target will be healed for 150% of the damage dealt and applies Shield of Faith to groupmates within 75ft. Generates 30 Righteous Fury.`,
       },
       "Unberogen Creed": {
         name: "Unberogen Creed",
@@ -884,7 +884,7 @@ export const data: TalentData = {
         icon: icons["abi_divinelight"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`150ft range\n60 RF\ninstant cast\nspell\n\nPlace a tier2 buff on target ally that absorbs up to 100% RP + 200 damage over 5 seconds.`,
+        description: talentText`150ft range\n60 RF\ninstant cast\nspell\n\nPlace a blessing on target ally that absorbs up to 90% RP + 170 damage over 5 seconds.`,
       },
       "Preserving Light": {
         name: "Preserving Light",
@@ -902,7 +902,7 @@ export const data: TalentData = {
         icon: icons["abi_wrath"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to target enemy. Generates 50 Righteous Fury.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to target enemy. Generates 50 Righteous Fury.`,
       },
       "Divine Assault": {
         name: "Divine Assault",
@@ -910,7 +910,7 @@ export const data: TalentData = {
         icon: icons["abi_divineassault"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n80 RF\n3.0s channel\nskill\n\nDeals 10%MAP + 100 spiritual damage to the target every second. Your defensive target will be healed for 300% of the damage you dealt if they were within 75ft.`,
+        description: talentText`melee range\n80 RF\n3.0s channel\nskill\n\nDeals 10%MAP + 50 spiritual damage to the target every second. Your defensive target will be healed for 200% of the damage you dealt if they were within 75ft.`,
       },
       "Radiance": {
         name: "Radiance",
@@ -954,7 +954,7 @@ export const data: TalentData = {
         icon: icons["abi_repel"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them. Generates 5 mechanic points.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
+        description: talentText`melee range\n50AP\ninstant cast\n10s CD\nskill\n\nKnocks the enemy away and applies Immovable to them.\n\nImmovable prevents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -988,7 +988,7 @@ export const data: TalentData = {
         icon: icons["abi_devotion"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that heals the target for 25% RP + 50 each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and an enchantment for 60 seconds that heals the target for 15% RP + 50 each time they hit an enemy with an ability.`,
       },
       "Sanctity": {
         name: "Sanctity",
@@ -1006,7 +1006,7 @@ export const data: TalentData = {
         icon: icons["abi_healinghand"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n25 RF\ninstant cast\nspell\n\nApplies a tier 1 buff to target ally that heals for 20% RP + 100 every 3 seconds for 15 seconds.`,
+        description: talentText`150ft range\n25 RF\ninstant cast\nspell\n\nApplies an enchantment to target ally that heals for 18% RP + 70 every 3 seconds for 15 seconds.`,
       },
       "Lay on Hands": {
         name: "Lay on Hands",
@@ -1016,7 +1016,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Healing Hand",
         arrows: [{ dir: "down", from: "d6", to: "d8" }],
-        description: talentText`The range of Healing Hand is reduced to 75ft but it now heals for 30% RP + 100 every 3 seconds.`,
+        description: talentText`The range of Healing Hand is reduced to 75ft but it now heals for 28% RP + 100 every 3 seconds.`,
       },
       "Charged Fury": {
         name: "Charged Fury",
@@ -1032,7 +1032,7 @@ export const data: TalentData = {
         icon: icons["abi_spiritofh"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`75ft range\ninstant cast\n5.0s CD\nspell\n\nApplies a tier3 buff to target ally that heals them for 7% of your wounds + 420 every second for 5 seconds. Applies a tier3 debuff to you that deals 7% of your wounds + 420 true damage every second and reduces your healing received by 70% for 5 seconds.`,
+        description: talentText`75ft range\ninstant cast\n5.0s CD\nspell\n\nApplies a buff to target ally that heals them for 7% of your wounds + 420 every second for 5 seconds. Applies a debuff to you that deals 7% of your wounds + 420 true damage every second and reduces your healing received by 100% for 5 seconds.`,
       },
       "Moved by the Spirit": {
         name: "Moved by the Spirit",
@@ -1265,7 +1265,7 @@ export const data: TalentData = {
         icon: icons["morale_severnerve"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nDeals 50% MAP + 600 physical damage to the target.`,
+        description: talentText`level 1\nmelee range\n360 adrenaline\ninstant cast\nability\n\nDeals 50% MAP + 400 physical damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -1273,7 +1273,7 @@ export const data: TalentData = {
         icon: icons["morale_broadswings"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`level 2\n720 adrenaline\ninstant cast\nability\n\nYou gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -1281,7 +1281,7 @@ export const data: TalentData = {
         icon: icons["morale_forceofwill"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nFor the next 10 seconds, all groupmates within 100ft have 75% reduced action point costs.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -1289,7 +1289,7 @@ export const data: TalentData = {
         icon: icons["morale_frenziedslaughter"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nFor the next 15 seconds, all groupmates within 100ft have 40% outgoing damage and 50% reduced cooldowns.`,
+        description: talentText`level 4\n3600 adrenaline\ninstant cast\nability\n\nAll groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -1297,7 +1297,7 @@ export const data: TalentData = {
         icon: icons["morale_empchamp"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain 200 ballistic skill, 200 intelligence, and 200 strength for 20 seconds.`,
+        description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. For the duration, You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Leading the Prayer": {
         name: "Leading the Prayer",
@@ -1305,7 +1305,7 @@ export const data: TalentData = {
         icon: icons["morale_leadingtheprayer"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nApplies Shield of Faith with the enhanced modifer to all groupmates within 100ft.`,
+        description: talentText`level 1\n360 adrenaline\ninstant cast\nability\n\nApplies Shield of Faith with the augmented modifer to all groupmates within 100ft.`,
       },
       "Hammer Time": {
         name: "Hammer Time",
@@ -1353,7 +1353,7 @@ export const data: TalentData = {
         icon: icons["tac_race_empire"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Whenever you use a basic attack, you will gain a 500 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -1369,7 +1369,7 @@ export const data: TalentData = {
         icon: icons["abi_avatarofsigmar"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 RF/s\ninstant cast\nability\n\nYou become master of all 4 elements...wait wrong avatar. Sigmar's power courses through granting you 250 weapon skill and 250 willpower and you will gain Shield of Faith every 2 seconds as long as the skill is toggled on.`,
+        description: talentText`30 RF/s\ninstant cast\nability\n\nYou gain 250 weapon skill and 250 willpower and you will gain an augmented Shield of Faith every 2 seconds as long as the skill is toggled on.`,
       },
       "Soulfire": {
         name: "Soulfire",
@@ -1377,7 +1377,7 @@ export const data: TalentData = {
         icon: icons["abi_soulfire"],
         maxRank: 1,
         reqPoints: 40,
-        description: talentText`30 RF/s\ninstant cast\nability\n\nYou deal 25% SAP + 75 spiritual damage every 2 seconds to up to 48 enemies within 30ft of you. Targets under Cover from you take no damage.`,
+        description: talentText`30 RF/s\ninstant cast\nability\n\nYou deal 25% SAP + 75 spiritual damage every 2 seconds to up to 48 enemies within 30ft of you. Targets under Cover from you take no damage. Groupmates within 30ft of you gain Shield of Faith every 2 seconds.`,
       },
       "Shield of Faith": {
         name: "Shield of Faith",
@@ -1385,7 +1385,7 @@ export const data: TalentData = {
         icon: icons["abi_shieldoffaith"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`Target will deal 10% SAP + 25 spiritual damage to the next enemy that attacks them in the next 5 seconds. Shield of Faith does nothing without this passive..\n\nEnhanced: Target will deal 30% SAP + 25 spiritual damage to the next enemy and apply 1 stack of Reduced Accuracy to the target.`,
+        description: talentText`Target will deal 10% SAP + 25 spiritual damage to the next enemy that attacks them in the next 5 seconds. Shield of Faith does nothing without this passive.\n\nAugmented: Target will deal 30% SAP + 25 spiritual damage to the enemy and apply 1 stack of Reduced Accuracy to the target.`,
       },
       "Wrath": {
         name: "Wrath",
@@ -1395,7 +1395,7 @@ export const data: TalentData = {
         reqPoints: 0,
         prereq: "Shield of Faith",
         arrows: [{ dir: "right", from: "b1", to: "c1" }],
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to target enemy. Generates 50 Righteous Fury.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to target enemy. Generates 50 Righteous Fury.`,
       },
       "Heart of the Gryphon": {
         name: "Heart of the Gryphon",
@@ -1421,7 +1421,7 @@ export const data: TalentData = {
         icon: icons["abi_hammerofsigmar"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 30% MAP + 300 physical damage to the target. If the target is below 50% health, deals 50% MAP + 300 physical damage to the target.`,
+        description: talentText`melee range\n50 AP\ninstant cast\nskill\n\nDeals 25% MAP + 200 physical damage to the target. If the target is below 50% health, deals 40% MAP + 200 physical damage to the target.`,
       },
       "Judgement": {
         name: "Judgement",
@@ -1522,7 +1522,7 @@ export const data: TalentData = {
         icon: icons["abi_smite"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`75 AP\n1.0s cast\nspell\n\nDeals 10% SAP + 75 spiritual damage to up to 9 enemies within 30ft in front of you. Generates 50 Righteous Fury`,
+        description: talentText`75 AP\n1.0s cast\nspell\n\nDeals 10% SAP + 50 spiritual damage to up to 9 enemies within 30ft in front of you. Generates 50 Righteous Fury`,
       },
       "Heldenhammer's Fury": {
         name: "Heldenhammer's Fury",
@@ -1530,7 +1530,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`Whenever you critically hit an enemy, you will deal 75% SAP + 300 spiritual damage over 6 seconds to the target. This effect does not refresh.`,
+        description: talentText`Whenever you critically hit an enemy, you will apply a cripple on them for 6 seconds. Deals 8% SAP + 30 spiritual damage every second.`,
       },
       "Weight of Guilt": {
         name: "Weight of Guilt",
@@ -1548,7 +1548,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Weight of Guilt",
         arrows: [{ dir: "down", from: "c6", to: "c8" }],
-        description: talentText`Weight of Guilt will deal 37% MAP + 160 physical damage and apply 2 stacks.`,
+        description: talentText`Weight of Guilt will deal 27% MAP + 160 physical damage and apply 2 stacks.`,
       },
       "Twin-Tailed Comet": {
         name: "Twin-Tailed Comet",
@@ -1556,7 +1556,7 @@ export const data: TalentData = {
         icon: icons["abi_comet"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`75ft range\n25 RF\ninstant cast\nspell\n\nApplies a tier1 debuff to the target for 6 seconds. At the end of the duration the target will take 30% SAP + 160 physical damage to the target. This ability does not trigger the GCD.`,
+        description: talentText`75ft range\n25 RF\ninstant cast\nspell\n\nApplies an affliction to the target for 6 seconds. At the end of the duration the target will take 35% SAP + 160 physical damage to the target. This ability does not trigger the GCD.`,
       },
       "Fanatacism": {
         name: "Fanatacism",
@@ -1566,7 +1566,7 @@ export const data: TalentData = {
         reqPoints: 35,
         prereq: "Twin-Tailed Comet",
         arrows: [{ dir: "down", from: "d6", to: "d8" }],
-        description: talentText`your chance to critically hit is increased by 15% against targets marked by Twin-Tailed Comet.`,
+        description: talentText`Your chance to critically hit is increased by 15% against targets marked by Twin-Tailed Comet.`,
       },
       "Charged Fury": {
         name: "Charged Fury",
@@ -1582,7 +1582,7 @@ export const data: TalentData = {
         icon: icons["abi_righteousness"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and a tier1 buff for 60 seconds that deals an additional 15% SAP spiritual damage each time they hit an enemy with an ability.`,
+        description: talentText`150ft range\n30 RF\ninstant cast\nspell\n\nTarget groupmate gains Shield of Faith and an enchantment for 60 seconds that deals an additional 10% SAP spiritual damage each time they hit an enemy with an ability.`,
       },
       "Probity": {
         name: "Probity",
