@@ -932,7 +932,7 @@ export const data: TalentData = {
         description: talentText`Pyroclastic Surge will deal ${[
           8,
           15,
-        ]}% SAP additional damage.`,`,
+        ]}% SAP additional damage.`,
       },
       "Smokescreen": {
         name: "Smokescreen",
