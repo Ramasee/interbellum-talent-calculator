@@ -838,6 +838,22 @@ export const data: TalentData = {
         reqPoints: 40,
         description: talentText`level 4\n100ft range\n3600 adrenaline\ninstant cast\nability\n\nDescription`,
       },
+      "Emperor's Ward": {
+        name: "Emperor's Ward",
+        pos: "a1",
+        icon: icons["tac_race_empire"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+      },
+      "Sigmar's Favored": {
+        name: "Sigmar's Favored",
+        pos: "i1",
+        icon: icons["tac_race_empire"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
+      },
       "Explosive Action": {
         name: "Explosive Action",
         pos: "b1",
@@ -880,15 +896,15 @@ export const data: TalentData = {
       "Withering Heat": {
         name: "Withering Heat",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_witheringheat"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`100 CBN\ninstant cast\nspell\n\nYou gain a buff for 10 seconds. For the duration, you gain 100% willpower + 160 resistance penetration, but each skill you cast deals Explosion damage to you.`,
+        description: talentText`25 CBN\ninstant cast\nspell\n\nConsumes all your Combustion to give you a buff for 10 seconds. For the duration, each skill you cast deals Explosion damage to you and you will gain resistance penetration based on Combustion spent.\n25 CBN: 10% WIL + 25\n50 CBN: 30% WIL + 60\n75 CBN: 60% WIL + 105\n100 CBN: 100% WIL + 160`,
       },
       "Fireball": {
         name: "Fireball",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_fireball"],
         maxRank: 1,
         reqPoints: 0,
         description: talentText`100ft range\n50 AP\n3.0s cast\nspell\n\nDeals 45% SAP + 225 elemental damage to target. You generate 15 Combustion.`,
@@ -896,7 +912,7 @@ export const data: TalentData = {
       "Meltdown": {
         name: "Meltdown",
         pos: "f2",
-        icon: icons["noicon"],
+        icon: icons["abi_meltdown"],
         maxRank: 1,
         reqPoints: 5,
         prereq: "Fireball",
@@ -916,15 +932,15 @@ export const data: TalentData = {
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_pyroclasticsurge"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`100ft range\n2.0s cast\nspell\n\nDeals 160 corporeal damage to the target. You generate 40 action points.`,
+        description: talentText`100ft range\n2.0s cast\nspell\n\nDeals 160 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
       },
       "Red Tide": {
         name: "Red Tide",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_pyroclasticsurge"],
         maxRank: 2,
         reqPoints: 0,
         prereq: "Pyroclastic Surge",
@@ -937,7 +953,7 @@ export const data: TalentData = {
       "Smokescreen": {
         name: "Smokescreen",
         pos: "d2",
-        icon: icons["noicon"],
+        icon: icons["abi_smokescreen"],
         maxRank: 1,
         reqPoints: 5,
         description: talentText`150ft range\ninstant cast\n15.0s CD\nability\n\nTarget enemy will deal 50% less damage to you for 15 seconds. This effect is removed if you hit the target with an ability.`,
@@ -953,10 +969,10 @@ export const data: TalentData = {
       "Sear": {
         name: "a",
         pos: "g2",
-        icon: icons["noicon"],
+        icon: icons["abi_sear"],
         maxRank: 1,
         reqPoints: 5,
-        description: talentText`100ft range\n60 AP\n1.0s cast\nspell\n\nDeals 19% SAP + 150 elemental damage to target and applies 2 stacks of Blast. You will take Explosion damage.`,
+        description: talentText`100ft range\n80 AP\n1.0s cast\nspell\n\nDeals 19% SAP + 150 elemental damage to target and applies 2 stacks of Blast. You will take Explosion damage and gain 5 Combustion.`,
       },
       "Ignite": {
         name: "Ignite",
@@ -969,7 +985,7 @@ export const data: TalentData = {
       "Scorching Ignition": {
         name: "Scorching Ignition",
         pos: "c8",
-        icon: icons["noicon"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Ignite",
@@ -995,10 +1011,10 @@ export const data: TalentData = {
       "Playing With Fire": {
         name: "Playing With Fire",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_playingwithfire"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`100ft range\n50 AP\n1.5s cast\nspell\n\nApplies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 15% SAP + 100 elemental damage to the healer.`,
+        description: talentText`100ft range\n50 AP\n1.5s cast\nspell\n\nApplies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 15% SAP + 100 elemental damage to the healer and you generate 5 Combustion.`,
       },
       "Devouring Flames": {
         name: "Devouring Flames",
@@ -1011,10 +1027,10 @@ export const data: TalentData = {
       "Boiling Blood": {
         name: "Boiling Blood",
         pos: "g6",
-        icon: icons["noicon"],
+        icon: icons["abi_boilingblood"],
         maxRank: 1,
         reqPoints: 25,
-        description: talentText`100ft range\n40 AP\ninstant cast\nspell\n\nApplies a cripple to the target for 5 seconds. At the end of the duration, target will take 25% SAP + 200 corporeal damage.`,
+        description: talentText`100ft range\n40 AP\ninstant cast\nspell\n\nApplies a cripple to the target for 5 seconds. At the end of the duration, target will take 25% SAP + 200 corporeal damage. You generate 5 Combustion`,
       },
       "Rolling Boil": {
         name: "Rolling Boil",
@@ -1034,10 +1050,10 @@ export const data: TalentData = {
         reqPoints: 35,
         description: talentText`Blast will now generate 2 Combustion per stack whenever it expires.`,
       },
-      "Fan the Flames": {
-        name: "Fan the Flames",
+      "Funnel Power": {
+        name: "Funnel Power",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_funnelpower"],
         maxRank: 1,
         reqPoints: 35,
         description: talentText`30 CBN\ninstant cast\nspell\n\nYou take Explosion damage and gain 1 stack of Enhanced Critical Damage.`,
@@ -1045,7 +1061,7 @@ export const data: TalentData = {
       "Fireball Barrage": {
         name: "Fireball Barrage",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_fireballbarrage"],
         maxRank: 1,
         reqPoints: 40,
         description: talentText`100ft range\n75 AP\n3.0s channel\nspell\n\nDeals 30% SAP + 150 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds.`,
@@ -1053,7 +1069,7 @@ export const data: TalentData = {
       "Spreading Flames": {
         name: "Spreading Flames",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_spreadingflames"],
         maxRank: 1,
         reqPoints: 40,
         description: talentText`75ft range\n150 AP\n2.0s cast\n30s CD\nspell\n\nApplys a debuff to the target enemy for 2s. Deals 6% + 20 elemental damage every 1 second. At the end of the duration, applies stage 2 of the debuff to up to 6 other enemies within 20ft. There are 5 stages, each stacks up to 10x.`,
@@ -1342,6 +1358,22 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         description: talentText`level 4\n100ft range\n3600 adrenaline\ninstant cast\nability\n\nDescription`,
+      },
+      "Emperor's Ward": {
+        name: "Emperor's Ward",
+        pos: "a1",
+        icon: icons["tac_race_empire"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+      },
+      "Sigmar's Favored": {
+        name: "Sigmar's Favored",
+        pos: "i1",
+        icon: icons["tac_race_empire"],
+        maxRank: 1,
+        reqPoints: 0,
+        description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
       "Unquenchable Fury": {
         name: "Unquenchable Fury",
