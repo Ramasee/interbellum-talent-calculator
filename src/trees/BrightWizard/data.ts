@@ -208,7 +208,7 @@ export const data: TalentData = {
         icon: icons["tac_arche"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 2.`,
+        description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 1.`,
       },
       "Disengage": {
         name: "Disengage",
@@ -244,10 +244,10 @@ export const data: TalentData = {
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
-        pos: "b8",
+        pos: "h6",
         icon: icons["morale_empchamp"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Melt Armor": {
@@ -268,10 +268,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6",
+        pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`level 1\n100ft range\n360 adrenaline\ninstant cast\nability\n\nDescription`,
       },
       "Morale 2 Spec": {
@@ -380,7 +380,7 @@ export const data: TalentData = {
         icon: icons["abi_sparks"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`melee range\ninstant cast\nskill\n\nDeals 160 elemental damage to target enemy. You generate 30 action points.`,
+        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 elemental damage to target enemy. You generate 30 action points.`,
       },
       "Master of Sparks": {
         name: "Master of Sparks",
@@ -465,7 +465,7 @@ export const data: TalentData = {
         icon: icons["abi_cauterize"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`100ft range\n10 CBN\ninstant cast\n\nspell\n\nDispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
+        description: talentText`100ft range\n10 CBN\ninstant cast\nspell\n\nDispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
       },
       "Cascading Fire Cloak": {
         name: "Cascading Fire Cloak",
@@ -517,7 +517,7 @@ export const data: TalentData = {
         icon: icons["abi_firestep"],
         maxRank: 1,
         reqPoints: 35,
-        description: talentText`25 CBN\ninstant cast\n20s CD\nspell\n\nYou gain 100% dodge and 100% movement speed for 1 second. You also gain 3 stacks of Blast.`,
+        description: talentText`25 CBN\ninstant cast\n20s CD\nspell\n\n(Movement Skill) You gain 100% dodge and 100% movement speed for 2 seconds. You also gain 3 stacks of Blast.`,
       },
       "TrailBlazer": {
         name: "TrailBlazer",
@@ -792,10 +792,10 @@ export const data: TalentData = {
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
-        pos: "b8",
+        pos: "h6",
         icon: icons["morale_empchamp"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Melt Armor": {
@@ -816,10 +816,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6",
+        pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`level 1\n100ft range\n360 adrenaline\ninstant cast\nability\n\nDescription`,
       },
       "Morale 2 Spec": {
@@ -935,7 +935,7 @@ export const data: TalentData = {
         icon: icons["abi_pyroclasticsurge"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`100ft range\n2.0s cast\nspell\n\nDeals 160 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
+        description: talentText`100ft range\n2.0s cast\nspell\n\n(Basic Attack) Deals 160 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
       },
       "Red Tide": {
         name: "Red Tide",
@@ -1313,10 +1313,10 @@ export const data: TalentData = {
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
-        pos: "b8",
+        pos: "h6",
         icon: icons["morale_empchamp"],
         maxRank: 1,
-        reqPoints: 35,
+        reqPoints: 25,
         description: talentText`level 3\n1800 adrenaline\ninstant cast\nability\n\nYou gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
       "Melt Armor": {
@@ -1337,10 +1337,10 @@ export const data: TalentData = {
       },
       "Morale 1 Spec": {
         name: "Morale 1s",
-        pos: "h6",
+        pos: "b8",
         icon: icons["noicon"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 35,
         description: talentText`level 1\n100ft range\n360 adrenaline\ninstant cast\nability\n\nDescription`,
       },
       "Morale 2 Spec": {
@@ -1375,6 +1375,17 @@ export const data: TalentData = {
         reqPoints: 0,
         description: talentText`Whenever you receive a direct heal, you will also be healed for 120 + 8% wounds.`,
       },
+      "Firestarter": {
+        name: "Firestarter",
+        pos: "b1",
+        icon: icons["abi_blast"],
+        maxRank: 2,
+        reqPoints: 0,
+        description: talentText`Explosion deals 20% SAP + 300 elemental damage whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 6% SAP elemental damage per stack.\n\nTaking this passive causes your stacks of Blast to cause enemies to lose and groupmates to gain ${[
+          1,
+          2,
+        ]} morale per second per stack.`,
+      },
       "Unquenchable Fury": {
         name: "Unquenchable Fury",
         pos: "c1",
@@ -1405,7 +1416,7 @@ export const data: TalentData = {
       },
       "Fireball": {
         name: "Fireball",
-        pos: "f1",
+        pos: "e1",
         icon: icons["abi_fireball"],
         maxRank: 1,
         reqPoints: 0,
@@ -1424,7 +1435,7 @@ export const data: TalentData = {
       "Burning Iron": {
         name: "Burning Iron",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_burningiron"],
         maxRank: 1,
         reqPoints: 0,
         description: talentText`100ft range\n15 CBN\n1.5s cast\nspell\n\nDeals 25% SAP + 200 elemental damage to the target and applies 1 stack of Reduced Weapon Skill.`,
@@ -1445,7 +1456,7 @@ export const data: TalentData = {
         icon: icons["abi_pyroclasticsurge"],
         maxRank: 1,
         reqPoints: 0,
-        description: talentText`100ft range\n2.0s cast\nspell\n\nDeals 160 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
+        description: talentText`100ft range\n2.0s cast\nspell\n\n(Basic Attack) Deals 160 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
       },
       "Red Tide": {
         name: "Red Tide",
@@ -1501,7 +1512,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         prereq: "Ignite",
-        arrows: [{ dir: "right-down", from: "c6", to: "d6" }],
+        arrows: [{ dir: "right", from: "c6", to: "d6" }],
         description: talentText`100ft range\n60 AP\ninstant cast\nspell\n\nRequires Ignite on the target. Dispels Ignite from the target to apply a cripple to the target and up to 8 additional enemies within 20ft of them for 12 seconds. You generate 1 Combustion and the target takes 5% SAP + 30 corporeal damage every 3 seconds.`,
       },
       "Fan the Flames": {
@@ -1517,7 +1528,7 @@ export const data: TalentData = {
       "Stop, Drop, and Roll": {
         name: "Stop, Drop, and Roll",
         pos: "d4",
-        icon: icons["noicon"],
+        icon: icons["abi_stopdropandroll"],
         maxRank: 1,
         reqPoints: 15,
         description: talentText`100ft range\n80 AP\ninstant cast\n15s CD\nspell\n\nApplies Knocked-down and Unstoppable to target enemy.\n\nKbocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
@@ -1528,7 +1539,7 @@ export const data: TalentData = {
         icon: icons["abi_cauterize"],
         maxRank: 1,
         reqPoints: 15,
-        description: talentText`100ft range\n10 CBN\ninstant cast\n\nspell\n\nDispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
+        description: talentText`100ft range\n10 CBN\ninstant cast\nspell\n\nDispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
       },
       "Exquisite Firecraft": {
         name: "Exquisite Firecraft",
@@ -1543,14 +1554,14 @@ export const data: TalentData = {
       "Fiery Blast": {
         name: "Fiery Blast",
         pos: "g4",
-        icon: icons["noicon"],
+        icon: icons["abi_fieryblast"],
         maxRank: 1,
         reqPoints: 15,
         description: talentText`100ft range\n75 AP\n2.5s cast\nspell\n\nDeals 15% SAP + 68 elemental damage to up to 9 enemies within a 30ft area you select.`,
       },
       "Playing With Fire": {
         name: "Playing With Fire",
-        pos: "i6",
+        pos: "g6",
         icon: icons["abi_playingwithfire"],
         maxRank: 1,
         reqPoints: 25,
@@ -1558,18 +1569,18 @@ export const data: TalentData = {
       },
       "You Get Burned": {
         name: "You Get Burned",
-        pos: "i8",
+        pos: "g8",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Playing With Fire",
-        arrows: [{ dir: "down", from: "i6", to: "i8" }],
+        arrows: [{ dir: "down", from: "g6", to: "g8" }],
         description: talentText`Playing With Fire will apply 1 stack of Reduced Willpower to targets it damages.`,
       },
       "Rain of Fire": {
         name: "Rain of Fire",
-        pos: "f8",
-        icon: icons["noicon"],
+        pos: "d8",
+        icon: icons["abi_rainoffire"],
         maxRank: 1,
         reqPoints: 35,
         description: talentText`100ft range\n100 AP\n6.0s cast\nspell\n\nDeals 6% SAP + 45 elemental damage to up to 9 enemies within a 20ft area you select every second.`,
@@ -1585,7 +1596,7 @@ export const data: TalentData = {
       "Shield of Aqshy": {
         name: "Shield of Aqshy",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_shieldofaqshy"],
         maxRank: 1,
         reqPoints: 40,
         description: talentText`40 CDN\ninstant cast\n20s CD\nspell\n\nApplies a buff for 5s and a blessing for 10s to each groupmate within 100ft. For the buff duration, groupmate and all enemies within 20ft of them gain a stack of Blast every second. For the blessing duration, target groupmate gains 1000 elemental resistance.`,
