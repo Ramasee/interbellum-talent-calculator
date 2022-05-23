@@ -357,7 +357,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "this skill is amazeballs",
-        description: talentText`melee range\n25 CBN\ninstant cast\nskill\n\nDeals 35% MAP + 275 corporeal damage to target enemy.`,
+        description: talentText`Deals 35% MAP + 275 corporeal damage to target enemy.`,
       },
       "Rhuination": {
         name: "Rhuination",
