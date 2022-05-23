@@ -51,23 +51,23 @@ export const TalentTooltip = React.forwardRef<HTMLDivElement, Props>(
         )}
         <br />
         <p className="TalentTooltip-type">
-          Type: {prereqData.type}
+          {talentData.type}
         </p>
         <p className="TalentTooltip-cost">
-          Costs {prereqData.cost}
+          Costs {talentData.cost}
         </p>
         <p className="TalentTooltip-range">
-          {prereqData.range} range
+          {talentData.range} range
         </p>
         <p className="TalentTooltip-cast">
-          {prereqData.cast} cast time
+          {talentData.cast} cast time
         </p>
         <p className="TalentTooltip-cooldown">
-          {prereqData.cooldown} cooldown
+          {talentData.cooldown} cooldown
         </p>
         <br />
         <p className="TalentTooltip-blue">
-          {prereqData.blue}
+          {talentData.blue}
         </p>
         <p className="TalentTooltip-description">
           {rank === 0
