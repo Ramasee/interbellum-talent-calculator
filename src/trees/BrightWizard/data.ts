@@ -351,6 +351,12 @@ export const data: TalentData = {
         icon: icons["abi_flameofrhuin"],
         maxRank: 1,
         reqPoints: 0,
+        type: "skill",
+        cost: "30 Combustion",
+        range: "melee range",
+        cast: "instant cast",
+        cooldown: "no cooldown",
+        blue: "this skill is amazeballs",
         description: talentText`melee range\n25 CBN\ninstant cast\nskill\n\nDeals 35% MAP + 275 corporeal damage to target enemy.`,
       },
       "Rhuination": {
