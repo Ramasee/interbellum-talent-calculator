@@ -21,3 +21,37 @@
 .TalentTooltip-clickToLearn {
   color: var(--col-green);
 }
+
+
+.TalentTooltip-type {
+  width:50%;
+  text-align:left;
+}
+
+.TalentTooltip-cost {
+  color: var(--col-green);
+  width:50%;
+  text-align:left;
+}
+
+.TalentTooltip-range {
+  color: var(--col-green);
+  width:50%;
+  text-align:right;
+}
+
+.TalentTooltip-cast {
+  color: var(--col-green);
+  width:50%;
+  text-align:left;
+}
+
+.TalentTooltip-cooldown {
+  color: var(--col-green);
+  width:50%;
+  text-align:right;
+}
+
+.TalentTooltip-blue {
+  color: var(--col-blue);
+}
