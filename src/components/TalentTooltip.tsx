@@ -51,7 +51,7 @@ export const TalentTooltip = React.forwardRef<HTMLDivElement, Props>(
         )}
         <br />
         <p className="TalentTooltip-type">
-          {talentData.type}
+          type {talentData.type}
         </p>
         <p className="TalentTooltip-cost">
           Costs {talentData.cost}
@@ -67,7 +67,7 @@ export const TalentTooltip = React.forwardRef<HTMLDivElement, Props>(
         </p>
         <br />
         <p className="TalentTooltip-blue">
-          {talentData.blue}
+          blue {talentData.blue}
         </p>
         <p className="TalentTooltip-description">
           {rank === 0
