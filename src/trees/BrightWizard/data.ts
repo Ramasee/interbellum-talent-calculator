@@ -486,7 +486,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`melee range\ninstant cast\nskill\n\n(Basic Attack) Deals 160 elemental damage to target enemy. You generate 22 action points.`,
+        description: talentText`(Basic Attack) Deals 160 elemental damage to target enemy. You generate 22 action points.`,
       },
       "Master of Sparks": {
         name: "Master of Sparks",
@@ -576,7 +576,6 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "blue text",
         description: talentText`Requires Ignite on the target. Dispels Ignite from the target to apply a cripple to the target and up to 8 additional enemies within 20ft of them for 12 seconds. You generate 1 Combustion and the target takes 5% SAP + 30 corporeal damage every 3 seconds.`,
       },
       "Fan the Flames": {
@@ -602,7 +601,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 10 Combustion",
-        description: talentText`100ft range\n10 CBN\ninstant cast\nspell\n\nDispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
+        description: talentText`Dispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
       },
       "Cascading Fire Cloak": {
         name: "Cascading Fire Cloak",
@@ -640,7 +639,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Castable while moving",
-        description: talentText`80 AP\n1.5s cast\nspell\n\nApplies an affliction to up to 9 enemies within 30ft in front of you for 9 seconds. You generate 2 Combustion and the target takes 5% SAP + 18 elemental damage every 3 seconds.`,
+        description: talentText`Applies an affliction to up to 9 enemies within 30ft in front of you for 9 seconds. You generate 2 Combustion and the target takes 5% SAP + 18 elemental damage every 3 seconds.`,
       },
       "Rancid Breath": {
         name: "Rancid Breath",
@@ -721,7 +720,6 @@ export const data: TalentData = {
         range: "self",
         cast: "5.0s channel",
         cooldown: "30s cooldown",
-        blue: "blue text",
         description: talentText`Deal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.\n\nAugmented: 100% pushback immunity,`,
       },
     },
