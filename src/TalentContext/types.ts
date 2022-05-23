@@ -92,12 +92,12 @@ interface Talent {
   reqPoints: number;
   prereq?: string;
   arrows?: { dir: ArrowDir; from: Position; to: Position }[];
-  type: string;
-  cost: string;
-  range: string;
-  cast: string;
-  cooldown: string;
-  blue: string;
+  type?: string;
+  cost?: string;
+  range?: string;
+  cast?: string;
+  cooldown?: string;
+  blue?: string;
 }
 
 export interface TalentData {
