@@ -49,6 +49,26 @@ export const TalentTooltip = React.forwardRef<HTMLDivElement, Props>(
             {prereqData.maxRank > 1 ? "s" : ""} in {prereqData.name}
           </p>
         )}
+        <br />
+        <p className="TalentTooltip-type">
+          {prereqData.type}
+        </p>
+        <p className="TalentTooltip-cost">
+          Costs {prereqData.cost}
+        </p>
+        <p className="TalentTooltip-range">
+          {prereqData.range} range
+        </p>
+        <p className="TalentTooltip-cast">
+          {prereqData.cast} cast time
+        </p>
+        <p className="TalentTooltip-cooldown">
+          {prereqData.cooldown}
+        </p>
+        <br />
+        <p className="TalentTooltip-blue">
+          {prereqData.blue}
+        </p>
         <p className="TalentTooltip-description">
           {rank === 0
             ? talentData.description(rank + 1)
