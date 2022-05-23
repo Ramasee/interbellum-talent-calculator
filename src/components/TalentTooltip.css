@@ -28,26 +28,24 @@
   text-align:left;
 }
 
-.TalentTooltip-cost {
+.TalentTooltip-costrange {
   width:100%;
   text-align:left;
 }
 
-.TalentTooltip-range {
-  width:100%;
-  text-align:right;
+.TalentTooltip-costrange span {
+  float:right;
 }
 
-.TalentTooltip-cast {
+.TalentTooltip-castcooldown {
   width:100%;
   text-align:left;
 }
 
-.TalentTooltip-cooldown {
-  width:100%;
-  text-align:right;
+.TalentTooltip-castcooldown span {
+  float:right;
 }
 
 .TalentTooltip-blue {
-  color: #000099;
+  color: #4169E1;
 }
