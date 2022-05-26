@@ -1827,7 +1827,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "10s no cooldown",
         blue: "Costs 2 bullets\nCastable while moving",
-        description: talentText`Deals 10% RAP + 66 physical damage to up to 9 enemies within 30ft in front of you.\n\nThis ability replaces Gun Blast`,
+        description: talentText`(Basic Attack) Deals 10% RAP + 66 physical damage to up to 9 enemies within 30ft in front of you.\n\nThis ability replaces Gun Blast`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -1916,7 +1916,7 @@ export const data: TalentData = {
       },
       "Ammo Pack": {
         name: "Ammo Pack",
-        pos: "h1",
+        pos: "g1",
         icon: icons["abi_ammopack"],
         maxRank: 1,
         reqPoints: 0,

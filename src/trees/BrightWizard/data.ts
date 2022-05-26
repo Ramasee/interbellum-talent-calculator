@@ -1378,7 +1378,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "5s cooldown",
-        blue: "Costs 30 Combustion\n\nOff the GCD",
+        blue: "Costs 30 Combustion\nOff the GCD",
         description: talentText`You take Explosion damage and gain 1 stack of Enhanced Critical Damage.`,
       },
       "Fireball Barrage": {
