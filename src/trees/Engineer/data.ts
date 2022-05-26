@@ -1195,7 +1195,7 @@ export const data: TalentData = {
         type: "skill",
         cost: "no cost",
         range: "65ft range",
-        cast: instant cast",
+        cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
         description: talentText`Applies 1 stack of Reduced Corporeal Resistance and a 12 second duration affliction to up to 3 enemies in a 20ft area you select. Deals 5% RAP + 20 physical damage every 3 seconds.`,
