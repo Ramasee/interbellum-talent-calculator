@@ -1686,7 +1686,6 @@ export const data: TalentData = {
         blue: "Costs 3600 adrenaline",
         description: talentText`level 4\n100ft range\n3600 adrenaline\ninstant cast\nability\n\nUp to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
       },
-      },
       "Emperor's Champion": {
         name: "Emperor's Champion",
         pos: "h6",
@@ -1771,7 +1770,6 @@ export const data: TalentData = {
         blue: "Costs 3600 adrenaline",
         description: talentText`Insert tooltip.`,
       },
-
       "Emperor's Ward": {
         name: "Emperor's Ward",
         pos: "a1",
