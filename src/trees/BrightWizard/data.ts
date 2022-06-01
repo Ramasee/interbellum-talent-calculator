@@ -675,7 +675,7 @@ export const data: TalentData = {
         blue: "Costs 25 Combustion",
         description: talentText`(Movement Skill) You gain 100% dodge and 100% movement speed for 2 seconds. You also gain 3 stacks of Blast.`,
       },
-      "TrailBlazer": {
+      "Trailblazer": {
         name: "TrailBlazer",
         pos: "e8",
         icon: icons["tac_spec_6"],
@@ -720,7 +720,7 @@ export const data: TalentData = {
         range: "self",
         cast: "5.0s channel",
         cooldown: "30s cooldown",
-        description: talentText`Deal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.\n\nAugmented: 100% pushback immunity,`,
+        description: talentText`Deal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.\n\nAugmented: 100% pushback immunity.`,
       },
     },
   },
@@ -999,7 +999,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`level 4\n100ft range\n3600 adrenaline\ninstant cast\nability\n\nUp to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -1162,7 +1162,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Consumes all Combustion",
-        description: talentText`You gain a buff for 10 seconds. For the duration, each skill you cast deals Explosion damage to you and you will gain resistance penetration based on Combustion consumed.\n25 CBN: 10% WIL + 25\n50 CBN: 30% WIL + 60\n75 CBN: 60% WIL + 105\n100 CBN: 100% WIL + 160`,
+        description: talentText`You gain a buff for 10 seconds. For the duration, each skill you cast deals Explosion damage to you, and you will gain resistance penetration based on Combustion consumed.\n25 CBN: 10% WIL + 25\n50 CBN: 30% WIL + 60\n75 CBN: 60% WIL + 105\n100 CBN: 100% WIL + 160`,
       },
       "Fireball": {
         name: "Fireball",
@@ -1202,7 +1202,7 @@ export const data: TalentData = {
         prereq: "Meltdown",
         arrows: [{ dir: "down", from: "f2", to: "f8" }],
         type: "career tactic",
-        description: talentText`Whenever you cast Meltdown, you will gain 1 stack of a blessing for 8 seconds, stacking up to 3 times. Fireball will have a 50% reduced cast time and remove 1 stack.`,
+        description: talentText`Whenever you cast Meltdown, you will gain 1 stack of an enchantment for 8 seconds, stacking up to 3 times. Fireball will have a 50% reduced cast time and remove 1 stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -1254,7 +1254,7 @@ export const data: TalentData = {
         cost: "40 action points",
         range: "30ft range",
         cast: "instant cast",
-        cooldown: "no cooldown",
+        cooldown: "20s cooldown",
         description: talentText`Applies Rooted and Immovable to target enemy.\n\nRooted reduces target movement speed to 0 for 5 seconds. Immovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
       "Sear": {
@@ -1392,7 +1392,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 20% SAP + 130 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds.`,
+        description: talentText`Deals 20% SAP + 30 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds.`,
       },
       "Spreading Flames": {
         name: "Spreading Flames",
@@ -1684,7 +1684,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`level 4\n100ft range\n3600 adrenaline\ninstant cast\nability\n\nUp to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -1993,10 +1993,10 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
-        cost: "80 action points",
+        cost: "75 action points",
         range: "100ft range",
         cast: "instant cast",
-        cooldown: "15s cooldown",
+        cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKbocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Cauterize": {
