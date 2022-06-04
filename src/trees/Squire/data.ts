@@ -1399,6 +1399,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
+        blue: "Costs 30 Mandate",
         description: talentText`You gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
       },
       "Focused Mending": {
@@ -1845,6 +1846,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
+        blue: "Costs 30 Mandate",
         description: talentText`You gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their critical chance increased by 15%.\nGroupmates within 100ft gain 1 stack of Enhanced Strength and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Strength every 10 seconds.`,
       },
       "Vicious Slash": {
