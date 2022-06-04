@@ -19,6 +19,11 @@ const KLASSES = [
     path: "/squire",
   },
   {
+    name: "Swordsman",
+    icon: icons["class_swordsman"],
+    path: "/sswordsman",
+  },
+  {
     name: "Warrior Priest",
     icon: icons["class_warriorpriest"],
     path: "/warriorpriest",
