@@ -1193,7 +1193,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        blue: "Costs 80 Righteous Fury",,
+        blue: "Costs 80 Righteous Fury",
         description: talentText`Deals 12%MAP + 71 spiritual damage to target enemy every second. Your defensive target will be healed for 110% of the damage you dealt if they were within 75ft.`,
       },
       "Radiance": {
