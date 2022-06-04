@@ -1187,7 +1187,7 @@ export const data: TalentData = {
         pos: "f1",
         icon: icons["abi_divineassault"],
         maxRank: 1,
-        reqPoints: 0
+        reqPoints: 0,
         type: "skill",
         cost: "no cost",
         range: "7.5ft range",
