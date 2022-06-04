@@ -1908,12 +1908,6 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 5,
         type: "career tactic",
-        type: "ability skill spell",
-        cost: "50 action points no cost",
-        range: "7.5ft range self",
-        cast: "2.0s instant cast",
-        cooldown: "10s no cooldown",
-        blue: "Costs 30 Righteous Fury",
         description: talentText`Whenever you are hit by an ability, you will gain 10 Righteous Fury.`,
       },
       "Shackle": {
