@@ -1471,7 +1471,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         type: "renown tactic",
-        description: talentText`You always have Unstoppable. Your mass is decreased by 2.`,
+        description: talentText`You always have Immovable. Your mass is decreased by 2.`,
       },
       "Agility": {
         name: "Agility",

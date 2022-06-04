@@ -432,7 +432,7 @@ export const data: TalentData = {
         type: "spell",
         cost: "25 action points",
         range: "150ft range",
-        cast: "1.0scast",
+        cast: "1.0s cast",
         cooldown: "no cooldown",
         description: talentText`Applies Shield of Faith to target ally. You generate 50 Righteous Fury.`,
       },
@@ -469,7 +469,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "spell",
         cost: "no cost",
-        range: "150ft range self",
+        range: "150ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Righteous Fury",
@@ -500,7 +500,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack)Deals 120 spiritual damage to target enemy. You generate 22 action points.`,
+        description: talentText`(Basic Attack) Deals 120 spiritual damage to target enemy. You generate 22 action points.`,
       },
       "Haughty Judgement": {
         name: "Haughty Judgement",
@@ -532,7 +532,7 @@ export const data: TalentData = {
         cost: "no cost",
         range: "150ft range",
         cast: "instant cast",
-        cooldown: "15s no cooldown",
+        cooldown: "15s cooldown",
         description: talentText`Target enemy will deal 50% less damage to you for 15 seconds. This effect is removed if you hit the target with an ability.`,
       },
       "Purify": {
@@ -569,7 +569,7 @@ export const data: TalentData = {
         cost: "55 action points",
         range: "75ft range",
         cast: "instant cast",
-        cooldown: "20s no cooldown",
+        cooldown: "20s cooldown",
         description: talentText`Applies Rooted and Immovable to target enemy.\n\nRooted reduces your movement speed to 0 for 5 seconds. Immovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
       "Shackled Fury": {
@@ -780,7 +780,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 40,
         type: "renown tactic",
-        description: talentText`You always have Unstoppable. Your mass is decreased by 2.`,
+        description: talentText`You always have Immovable. Your mass is decreased by 2.`,
       },
       "Agility": {
         name: "Agility",
@@ -1064,7 +1064,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 2.`,
+        description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 1.`,
       },
       "Emperor's Ward": {
         name: "Emperor's Ward",
@@ -1920,7 +1920,7 @@ export const data: TalentData = {
         cost: "55 action points",
         range: "75ft range",
         cast: "instant cast",
-        cooldown: "20s no cooldown",
+        cooldown: "20s cooldown",
         description: talentText`Applies Rooted and Immovable to target enemy.\n\nRooted reduces your movement speed to 0 for 5 seconds. Immovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
       "Shackled Fury": {
