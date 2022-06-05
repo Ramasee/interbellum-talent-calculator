@@ -374,7 +374,7 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 0,
-        type: "ability,
+        type: "ability",
         cost: "no cost",
         range: "self",
         cast: "3.0s cast",
