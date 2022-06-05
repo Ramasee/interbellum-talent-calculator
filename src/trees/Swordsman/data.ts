@@ -487,7 +487,7 @@ export const data: TalentData = {
       "Waylay": {
         name: "Waylay",
         pos: "c2",
-        icon: icons["noicon"],
+        icon: icons["tac_class_2"],
         maxRank: 1,
         reqPoints: 5,
         type: "career tactic",
@@ -576,7 +576,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "2.0s channel",
         cooldown: "no cooldown",
-        blue: "Execute",
+        blue: "Execute\nCastable while moving",
         description: talentText`Deals 6% MAP + 66 physical damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
       },
       "Seal of Wilhelm": {
@@ -635,7 +635,7 @@ export const data: TalentData = {
       },
       "Unfair Advantage": {
         name: "Unfair Advantage",
-        pos: "e8",
+        pos: "c8",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 35,
@@ -652,7 +652,7 @@ export const data: TalentData = {
         cost: "60 action points",
         range: "7.5ft range",
         cast: "instant cast",
-        cooldown: "20s no cooldown",
+        cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Righteous Steel": {
@@ -664,7 +664,7 @@ export const data: TalentData = {
         prereq: "Smash",
         arrows: [{ dir: "right", from: "e8", to: "f8" }],
         type: "career tactic",
-        description: talentText`Smash and Bind Weapon will now also deal 22% + 160 physical damage to the target and generate 1 Combo Point on them.`,
+        description: talentText`Smash and Bind Weapon will now also deal 22% MAP + 160 physical damage to the target and generate 1 Combo Point on them.`,
       },
       "Rupture": {
         name: "Rupture",
@@ -705,7 +705,7 @@ export const data: TalentData = {
         range: "self",
         cast: "5.0s channel",
         cooldown: "30s cooldown",
-        description: talentText`Deal 10% MAP + 50 physical damage to up to 48 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stcks. Effect is dispelled when channel ends.`,
+        description: talentText`Deal 10% MAP + 50 physical damage to up to 48 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends.`,
       },
     },
   },
