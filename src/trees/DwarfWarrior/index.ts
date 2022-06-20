@@ -1,2 +1,2 @@
-import { Engineer } from "./DwarfWarrior";
+import { DwarfWarrior } from "./DwarfWarrior";
 export default DwarfWarrior;

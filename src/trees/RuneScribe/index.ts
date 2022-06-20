@@ -1,2 +1,2 @@
-import { Engineer } from "./RuneScribe";
+import { RuneScribe } from "./RuneScribe";
 export default RuneScribe;
