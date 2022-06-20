@@ -395,10 +395,10 @@ export const data: TalentData = {
         type: "ability",
         cost: "no cost",
         range: "self",
-        cast: "3.0s cast",
+        cast: "2.5s cast",
         cooldown: "45s cooldown",
         blue: "Castable while moving",
-        description: talentText`You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
+        description: talentText`(Movement Skill) You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
       },
       "Chaos Stalker": {
         name: "Chaos stalker",
@@ -451,7 +451,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 7% + 70 physical damage every 2 seconds; the last tick will deal 30% MAP + 231 physical damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 7% MAP + 70 physical damage every 2 seconds; the last tick will deal 30% MAP + 231 physical damage.`,
       },
       "Brutal Executions": {
         name: "Brutal Executions",
@@ -475,7 +475,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 120 physical damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 120 physical damage to target enemy. Generates 22 action points.`,
       },
       "Improved Strike": {
         name: "Improved Strike",
@@ -676,7 +676,7 @@ export const data: TalentData = {
       "Righteous Steel": {
         name: "Righteous Steel",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Smash",
@@ -1115,10 +1115,10 @@ export const data: TalentData = {
         type: "ability",
         cost: "no cost",
         range: "self",
-        cast: "3.0s cast",
+        cast: "2.5s cast",
         cooldown: "45s cooldown",
         blue: "Castable while moving",
-        description: talentText`You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
+        description: talentText`(Movement Skill) You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
       },
       "Chaos Stalker": {
         name: "Chaos stalker",
@@ -1171,7 +1171,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 7% + 70 physical damage every 2 seconds; the last tick will deal 30% MAP + 231 physical damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 7% MAP + 70 physical damage every 2 seconds; the last tick will deal 30% MAP + 231 physical damage.`,
       },
       "Strike": {
         name: "Strike",
@@ -1184,7 +1184,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 120 physical damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 120 physical damage to target enemy. Generates 22 action points.`,
       },
       "Dual Strike": {
         name: "Dual Strike",
@@ -1336,7 +1336,7 @@ export const data: TalentData = {
         prereq: "Seal of Wilhelm",
         arrows: [{ dir: "down", from: "d6", to: "d8" }],
         type: "career tactic",
-        description: talentText`Seal of Wilhelm will no longer increase your armor and corporeal resistance. Instead it will apply a 8s duration ailment to up to 48 enemies within 30ft of you that reduces armor and corporeal resistance by 600.`,
+        description: talentText`Seal of Wilhelm will no longer increase your armor and corporeal resistance. Instead it will apply a 8 second duration ailment to up to 48 enemies within 30ft of you that reduces armor and corporeal resistance by 600.`,
       },
       "Seal of Van Horstmann": {
         name: "Seal of Magnus",
@@ -1395,7 +1395,7 @@ export const data: TalentData = {
       "Righteous Steel": {
         name: "Righteous Steel",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 35,
         prereq: "Smash",
@@ -1418,7 +1418,7 @@ export const data: TalentData = {
       },
       "Feint and Reposition": {
         name: "Feint and Reposition",
-        pos: "f9",
+        pos: "d9",
         icon: icons["abi_feint"],
         maxRank: 1,
         reqPoints: 40,
@@ -1431,7 +1431,7 @@ export const data: TalentData = {
       },
       "Dragon Gun": {
         name: "Dragon Gun",
-        pos: "h9",
+        pos: "f9",
         icon: icons["abi_dragongun"],
         maxRank: 1,
         reqPoints: 40,

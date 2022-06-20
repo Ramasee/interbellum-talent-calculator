@@ -8,7 +8,10 @@ const BrightWizard = lazy(() => import("./trees/BrightWizard"));
 const Squire = lazy(() => import("./trees/Squire"));
 const Swordsman = lazy(() => import("./trees/Swordsman"));
 const WarriorPriest = lazy(() => import("./trees/WarriorPriest"));
+const DwarfWarrior = lazy(() => import("./trees/DwarfWarrior"));
 const Engineer = lazy(() => import("./trees/Engineer"));
+const Oathbreaker = lazy(() => import("./trees/Oathbreaker"));
+const RuneScribe = lazy(() => import("./trees/RuneScribe"));
 
 export const App: React.FC = () => {
   return (
@@ -19,7 +22,10 @@ export const App: React.FC = () => {
         <Route path="/squire" component={Squire} />
         <Route path="/swordsman" component={Swordsman} />
         <Route path="/warriorpriest" component={WarriorPriest} />
+        <Route path="/dwarfwarrior" component={DwarfWarrior} />
         <Route path="/engineer" component={Engineer} />
+        <Route path="/oathbreaker" component={Oathbreaker} />
+        <Route path="/runescribe" component={RuneScribe} />
       </Suspense>
     </div>
   );

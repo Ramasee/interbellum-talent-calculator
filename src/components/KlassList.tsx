@@ -29,9 +29,24 @@ const KLASSES = [
     path: "/warriorpriest",
   },
   {
+    name: "Dwarf Warrior",
+    icon: icons["class_dwarfwarrior"],
+    path: "/dwarfwarrior",
+  },
+  {
     name: "Engineer",
     icon: icons["class_engineer"],
     path: "/engineer",
+  },
+  {
+    name: "Oathbreaker",
+    icon: icons["class_oathbreaker"],
+    path: "/oathbreaker",
+  },
+  {
+    name: "Rune Scribe",
+    icon: icons["class_runescribe"],
+    path: "/runescribe",
   },
 ];
 
