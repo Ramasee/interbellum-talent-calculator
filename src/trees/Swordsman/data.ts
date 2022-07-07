@@ -1850,7 +1850,7 @@ export const data: TalentData = {
         description: talentText`Mount Warhorse now has a 1.5 second cast time, but will go on a 30 second cooldown when removed.`,
       },
       "Suppressive Fire": {
-        name: "Supressive Fire",
+        name: "Suppressive Fire",
         pos: "d1",
         icon: icons["noicon"],
         maxRank: 1,
@@ -1868,7 +1868,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 15,
-        prereq: "Supressive Fire",
+        prereq: "Suppressive Fire",
         arrows: [{ dir: "down", from: "d1", to: "d4" }],
         description: talentText`All of your non-instant cast abilities have their cast times increased by 1.0 seconds. Your accuracy is increased by 15% and your outgoing damage is increased by 30%.`,
       },
