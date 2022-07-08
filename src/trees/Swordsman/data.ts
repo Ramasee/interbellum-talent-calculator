@@ -287,7 +287,7 @@ export const data: TalentData = {
       "Exquisite Swordsmanship": {
         name: "Exquisitie Swordsmanship",
         pos: "h2",
-        icon: icons["noicon"],
+        icon: icons["morale_swordsmanship"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -301,7 +301,7 @@ export const data: TalentData = {
       "Multi-hit Combo": {
         name: "Multi-hit Combo",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["morale_mhc"],
         maxRank: 1,
         reqPoints: 15,
         type: "morale 2",
@@ -1007,7 +1007,7 @@ export const data: TalentData = {
       "Exquisite Swordsmanship": {
         name: "Exquisitie Swordsmanship",
         pos: "h2",
-        icon: icons["noicon"],
+        icon: icons["morale_swordsmanship"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -1021,7 +1021,7 @@ export const data: TalentData = {
       "Multi-hit Combo": {
         name: "Multi-hit Combo",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["morale_mhc"],
         maxRank: 1,
         reqPoints: 15,
         type: "morale 2",
@@ -1725,7 +1725,7 @@ export const data: TalentData = {
       "Exquisite Swordsmanship": {
         name: "Exquisitie Swordsmanship",
         pos: "h2",
-        icon: icons["noicon"],
+        icon: icons["morale_swordsmanship"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -1739,7 +1739,7 @@ export const data: TalentData = {
       "Multi-hit Combo": {
         name: "Multi-hit Combo",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["morale_mhc"],
         maxRank: 1,
         reqPoints: 15,
         type: "morale 2",
@@ -1827,7 +1827,7 @@ export const data: TalentData = {
       "Mount Warhorse": {
         name: "Mount Warhorse",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_charge"],
         maxRank: 1,
         reqPoints: 0,
         type: "ability",
@@ -1852,7 +1852,7 @@ export const data: TalentData = {
       "Suppressive Fire": {
         name: "Suppressive Fire",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_suppressivefire"],
         maxRank: 1,
         reqPoints: 0,
         type: "skill",
@@ -1898,7 +1898,7 @@ export const data: TalentData = {
       "Concentrated Fire": {
         name: "Concentrated Fire",
         pos: "f2",
-        icon: icons["noicon"],
+        icon: icons["abi_concentratedfire"],
         maxRank: 1,
         reqPoints: 5,
         prereq: "Blessed Bullet",
@@ -1909,7 +1909,7 @@ export const data: TalentData = {
       "Steel and Gunpowder": {
         name: "Steel and Gunpowder",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_steelandgunpowder"],
         maxRank: 1,
         reqPoints: 0,
         type: "skill",
@@ -1922,7 +1922,7 @@ export const data: TalentData = {
       "Superior Powder": {
         name: "Superior Powder",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_superiorpowder"],
         maxRank: 2,
         reqPoints: 0,
         prereq: "Steel and Gunpowder",
@@ -1936,7 +1936,7 @@ export const data: TalentData = {
       "Superior Steel": {
         name: "Superior Steel",
         pos: "g2",
-        icon: icons["noicon"],
+        icon: icons["abi_superiorsteel"],
         maxRank: 2,
         reqPoints: 5,
         prereq: "Steel and Gunpowder",
@@ -2080,7 +2080,7 @@ export const data: TalentData = {
       "Hollowed Bullet": {
         name: "Hollowed Bullet",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_hollowedbullet"],
         maxRank: 1,
         reqPoints: 35,
         type: "skill",
@@ -2105,7 +2105,7 @@ export const data: TalentData = {
       "Rapid Reload": {
         name: "Rapid Reload",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_rapidreload"],
         maxRank: 1,
         reqPoints: 40,
         prereq: "Hollowed Bullet",
