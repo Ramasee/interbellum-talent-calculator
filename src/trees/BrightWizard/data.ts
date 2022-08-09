@@ -437,7 +437,7 @@ export const data: TalentData = {
         name: "Flaming Sword of Rhuin",
         pos: "e1",
         icon: icons["abi_flameofrhuin"],
-        maxRank: 1,
+        maxRank: 0,
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
