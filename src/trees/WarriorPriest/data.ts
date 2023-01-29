@@ -526,7 +526,7 @@ export const data: TalentData = {
         name: "Repent",
         pos: "e2",
         icon: icons["abi_repent"],
-        maxRank: 1,
+        maxRank: 0,
         reqPoints: 5,
         type: "ability",
         cost: "no cost",
