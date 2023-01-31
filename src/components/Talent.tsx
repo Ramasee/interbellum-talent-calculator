@@ -59,6 +59,13 @@ export const Talent: React.FC<Props> = ({ name }) => {
     }
     return "grey";
   })();
+  
+    const rankDisplayed = (() => {
+    if (talentState === "maxed" && rank === 0) {
+      return 1;
+    }
+    return rank;
+  })();
 
   return (
     <>
@@ -79,7 +86,7 @@ export const Talent: React.FC<Props> = ({ name }) => {
             className={`Talent-pointCount Talent-pointCount--${outlineColor}`}
             style={{ backgroundImage: `url(${talentBubble})` }}
           >
-            {rank}
+            {rankDisplayed}
           </div>
         )}
         {tooltipVisible && (
