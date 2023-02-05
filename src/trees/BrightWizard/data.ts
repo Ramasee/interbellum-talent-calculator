@@ -68,7 +68,7 @@ export const data: TalentData = {
       },
       "Intelligence": {
         name: "Intelligence",
-        pos: "g4",
+        pos: "f4",
         icon: icons["stat_int"],
         maxRank: 4,
         reqPoints: 5,
@@ -83,7 +83,7 @@ export const data: TalentData = {
       },
       "Strength": {
         name: "Strength",
-        pos: "f4",
+        pos: "e4",
         icon: icons["stat_str"],
         maxRank: 4,
         reqPoints: 5,
@@ -569,7 +569,7 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "g6", to: "g7" }
         ],
         type: "career tactic",
-        description: talentText`Cascading Fire Cloak no longer grants stacks of Enhanced or Reduced Armor/Corporeal Resistance. Instead you will deal 13% MAP + 100 elemental damage to enemies when you apply Blast to them.`,
+        description: talentText`Cascading Fire Cloak no longer grants stacks of Enhanced or Reduced Armor/Corporeal Resistance. Instead you will deal 13% MAP + 100 elemental damage to enemies when you are attacked.`,
       },
       "Explosive Force": {
         name: "Explosive Force",
@@ -671,14 +671,14 @@ export const data: TalentData = {
 		  30,
         ]}% chance to gain a stack of a buff that lasts 5 seconds. Each stack grants 1% increased outgoing damage and 1% increased incoming damage. Maximum of 10 stacks.`,
       },
-	  "Critical Mass": {
-        name: "Critical Mass",
+	  "Extra Crit": {
+        name: "Extra Crit",
         pos: "e7",
         icon: icons["noicon"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Your chance to criticall hit is increased by ${[
+        description: talentText`Your chance to critically hit is increased by ${[
           1,
           2,
 		  3,

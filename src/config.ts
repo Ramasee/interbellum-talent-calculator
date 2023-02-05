@@ -1,4 +1,4 @@
 export const config = {
-  TOTAL_POINTS: 42,
-  FIRST_POINT_LEVEL: -1,
+  TOTAL_POINTS: 31,
+  FIRST_POINT_LEVEL: 10,
 };
