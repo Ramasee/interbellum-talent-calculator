@@ -2097,3 +2097,4 @@ export const data: TalentData = {
     },
   },
 },
+};
