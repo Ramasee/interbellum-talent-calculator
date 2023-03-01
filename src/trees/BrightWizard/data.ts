@@ -682,6 +682,7 @@ export const data: TalentData = {
           2,
 		  3,
         ]} `,
+	  },
       "Reckless Funnel": {
         name: "Reckless Funnel",
         pos: "d8",
