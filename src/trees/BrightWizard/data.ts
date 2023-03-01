@@ -651,8 +651,8 @@ export const data: TalentData = {
           3,
         ]} stacks of Blast.`,
       },
-      "Boiling Blood": {
-        name: "Voiling Blood",
+      "Boiling Blood II-IV": {
+        name: "Boiling Blood II-IV",
         pos: "e7",
         icon: icons["noicon"],
         maxRank: 3,
