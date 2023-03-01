@@ -577,8 +577,10 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         prereq: "Boiling Blood",
+		arrows: [
           { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" },
+          { dir: "right-down-down", from: "f6", to: "f8" }
+        ],
         type: "career tactic",
         description: talentText`Boiling Blood will prevent the target from gaining stacks of Blast for the duration.`,
       },
