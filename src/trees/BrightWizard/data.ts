@@ -661,9 +661,9 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "e6", to: "e7" }],
         type: "passive",
         description: talentText`Boiling Blood is now a ${[
-          ailment,
-          ailment,
-          curse,
+          "ailment",
+          "ailment",
+          "curse",
         ]} with a ${[
           6,
           5,
