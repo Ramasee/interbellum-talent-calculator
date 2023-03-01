@@ -660,11 +660,15 @@ export const data: TalentData = {
         prereq: "Boiling Blood",
         arrows: [{ dir: "down", from: "e6", to: "e7" }],
         type: "passive",
-        description: talentText`${[
-          Boiling Blood now deals elemental damage.,
-          Boiling Blood now has a 5 second duration and deals elemental damage.,
-          Boiling Blood is now a curse with a 5s duration that deals elemental damage.,
-        ]}`,
+        description: talentText`Boiling Blood is now a ${[
+          ailment,
+          ailment,
+          curse,
+        ]} with a ${[
+          6,
+          5,
+          5,
+        ]} second duration that deals elemental damage.`,
       },
       "Extra Crit": {
         name: "Extra Crit",
