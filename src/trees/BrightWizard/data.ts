@@ -68,7 +68,7 @@ export const data: TalentData = {
       },
       "Intelligence": {
         name: "Intelligence",
-        pos: "g4",
+        pos: "f4",
         icon: icons["stat_int"],
         maxRank: 5,
         reqPoints: 5,
@@ -83,7 +83,7 @@ export const data: TalentData = {
       },
       "Strength": {
         name: "Strength",
-        pos: "f4",
+        pos: "e4",
         icon: icons["stat_str"],
         maxRank: 3,
         reqPoints: 5,
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 6% SAP elemental damage per stack.`,
+        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 218 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
+        description: talentText`(Basic Attack) Deals 253 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
       },
       "Fireball": {
         name: "Fireball",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 55% SAP + 313 elemental damage to target. You generate 15 Combustion.`,
+        description: talentText`Deals 62% SAP + 818 elemental damage to target. You generate 15 Combustion.`,
       },
       "Withering Heat": {
         name: "Withering Heat",
@@ -422,7 +422,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 20 Combustion",
-        description: talentText`Deals 20% SAP + 176 corporeal damage to the target.`,
+        description: talentText`Deals 19% SAP + 250 corporeal damage to the target.`,
       },
       "Smokescreen": {
         name: "Smokescreen",
@@ -438,7 +438,7 @@ export const data: TalentData = {
         description: talentText`Target enemy will deal 50% less damage to you for 15 seconds. This effect is removed if you hit the target with an ability.`,
       },
 	   "Sear": {
-        name: "a",
+        name: "Sear",
         pos: "h4",
         icon: icons["abi_sear"],
         maxRank: 1,
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "5s cooldown",
-        description: talentText`Deals 28% SAP + 158 elemental damage to target and applies a stack of Blast. You will take Explosion damage and gain 5 Combustion.`,
+        description: talentText`Deals 26% SAP + 350 elemental damage to target and applies a stack of Blast. You will take Explosion damage and gain 5 Combustion.`,
       },
 	   "Playing With Fire": {
         name: "Playing With Fire",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 15% SAP + 100 elemental damage to the healer and you generate 5 Combustion.`,
+        description: talentText`Applies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 20% SAP + 249 elemental damage to the healer and you generate 5 Combustion.`,
       },
       "Boiling Blood": {
         name: "Boiling Blood",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an ailment to the target for 6 seconds. At the end of the duration, target will take 25% SAP + 100 corporeal damage. You generate 5 Combustion`,
+        description: talentText`Applies an ailment to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 282 corporeal damage. You generate 5 Combustion`,
       },
       "Funnel Power": {
         name: "Funnel Power",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 20% SAP + 30 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds.`,
+        description: talentText`Deals 39% SAP + 527 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds. You generate 4 Combustion each time this deals damage.`,
       },
       "Spreading Flames": {
         name: "Spreading Flames",
@@ -541,7 +541,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Blast will now generate 2 Combustion per stack whenever it expires.`,
+        description: talentText`Blast will now generate 3 Combustion per stack whenever it expires.`,
       },
       "Devouring Flames": {
         name: "Devouring Flames",
@@ -605,8 +605,8 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Pyroclastic surge now deals ${[
-          4,
-          8,
+          6,
+          12,
         ]}% SAP additional damage.`,
       },
       "Hardened Casting": {
@@ -663,7 +663,7 @@ export const data: TalentData = {
         description: talentText`Boiling Blood is now a ${[
           "ailment",
           "ailment",
-          "curse",
+          "cripple",
         ]} with a ${[
           6,
           5,
