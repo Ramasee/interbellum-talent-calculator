@@ -1023,7 +1023,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 6% SAP elemental damage per stack.`,
+        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
       },
       "Sparking Swing": {
         name: "Sparking Swing",
@@ -1036,7 +1036,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 120 elemental damage to target enemy. You generate 22 action points.`,
+        description: talentText`(Basic Attack) Deals 110 elemental damage to target enemy. You generate 22 action points.`,
       },
       "Ignite": {
         name: "Ignite",
@@ -1063,7 +1063,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Combustion",
-        description: talentText`Deals 31% MAP + 224 corporeal damage to target enemy.`,
+        description: talentText`Deals 32% MAP + 400 corporeal damage to target enemy.`,
       },
       "Unquenchable Fury": {
         name: "Unquenchable Fury",
@@ -1117,7 +1117,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Castable while moving",
-        description: talentText`Applies an affliction to up to 9 enemies within 30ft in front of you for 9 seconds. You generate 2 Combustion and the target takes 8% SAP + 61 elemental damage every 3 seconds.`,
+        description: talentText`Applies an affliction to up to 9 enemies within 30ft in front of you for 9 seconds. You generate 2 Combustion and the target takes 8% SAP + 50 elemental damage every 3 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1130,7 +1130,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "60s cooldown",
-        description: talentText`You gain a buff for 5 seconds that reduces all incoming damage by 50% and all outgoing damage by 90%.`,
+        description: talentText`You gain a buff for 7 seconds that reduces all incoming damage by 50% and all outgoing damage by 90%.`,
       },
       "Cauterize": {
         name: "Cauterize",
@@ -1157,7 +1157,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Requires Ignite on the target. Dispels Ignite from the target to apply a cripple to the target and up to 8 additional enemies within 20ft of them for 12 seconds. You generate 1 Combustion and the target takes 4% SAP + 26 corporeal damage every 3 seconds.`,
+        description: talentText`Requires Ignite on the target. Dispels Ignite from the target to apply a cripple to the target and up to 8 additional enemies within 20ft of them for 12 seconds. You generate 1 Combustion and the target takes 5% SAP + 38 corporeal damage every 3 seconds.`,
       },
       "Cascading Fire Cloak": {
         name: "Cascading Fire Cloak",
@@ -1198,7 +1198,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Consumes all Combustion",
-        description: talentText`Deals 4% MAP + 20 corporeal damage per 10 Combustion consumed to up to 9 enemies within 30ft of you.\n\nAugmented: Does not consume Combustion.`,
+        description: talentText`Deals 6% MAP + 80 corporeal damage per 10 Combustion consumed to up to 9 enemies within 30ft of you.\n\nAugmented: Does not consume Combustion.`,
       },
       "Supernova": {
         name: "Supernova",
@@ -1229,7 +1229,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Breath of Fire now deals 15% SAP + 60 direct, corporeal damage to enemies on cast and will now hit up to 15 enemies.`,
+        description: talentText`Breath of Fire now deals 15% SAP + 226 direct, corporeal damage to enemies on cast and will now hit up to 15 enemies.`,
       },
       "Fiery Reserves": {
         name: "Fiery Reserves",
@@ -1238,7 +1238,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Blast that you apply will now generate 2 Combustion per stack whenever it expires.`,
+        description: talentText`Blast that you apply will now generate 3 Combustion per stack whenever it expires.`,
       },
       "Fan the Flames": {
         name: "Fan the Flames",
@@ -1249,7 +1249,7 @@ export const data: TalentData = {
         prereq: "Detonate",
         arrows: [{ dir: "down", from: "e5", to: "e6" }],
         type: "career tactic",
-        description: talentText`Ignite can now be cast on a target with Detonate. Detonate no longer dispels Ignite and will deal direct elemental damage equal to 10 + 3% SAP to the initial target for each stack of Blast they have..`,
+        description: talentText`Ignite can now be cast on a target with Detonate. Detonate no longer dispels Ignite and will deal direct elemental damage equal to 80 + 7% SAP to the initial target for each stack of Blast they have.`,
       },
       "Bleed Fire": {
         name: "Bleed Fire",
@@ -1263,7 +1263,7 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "g6", to: "g7" }
         ],
         type: "career tactic",
-        description: talentText`Cascading Fire Cloak no longer grants stacks of Enhanced or Reduced Armor/Corporeal Resistance. Instead you will deal 13% MAP + 100 elemental damage to enemies when you are attacked.`,
+        description: talentText`Cascading Fire Cloak no longer grants stacks of Enhanced or Reduced Armor/Corporeal Resistance. Instead you will deal 16% MAP + 218 elemental damage to enemies when you are attacked.`,
       },
       "Explosive Force": {
         name: "Explosive Force",
@@ -1293,8 +1293,8 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Blast now deals additional damage equal to ${[
-          3,
-          6,
+          4,
+          8,
         ]}% MAP.`,
       },
 	   "Master of Sparks": {
@@ -1318,9 +1318,9 @@ export const data: TalentData = {
         reqPoints: 10,
         type: "passive",
         description: talentText`Vigilance now only reduces your outgoing damage by ${[
-          80,
-          70,
-		  60,
+          75,
+          60,
+		  45,
         ]}%.`,
       },
       "Rhuination": {
