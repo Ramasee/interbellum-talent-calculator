@@ -1640,7 +1640,7 @@ export const data: TalentData = {
         pos: "i7",
         icon: icons["morale_empchamp"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 20,
         type: "morale 3",
         cost: "no cost",
         range: "self",
@@ -1871,10 +1871,11 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "spell",
-        cost: "100 action points",
+        cost: "no cost",
         range: "100ft range",
         cast: "6.0s channel",
         cooldown: "no cooldown",
+		blue: "Costs 60 Combustion",
         description: talentText`Deals 9% SAP + 135 elemental damage every second to up to 9 enemies within a 20ft area you select.`,
       },
 	  "Stop, Drop, and Roll": {
@@ -1996,7 +1997,7 @@ export const data: TalentData = {
         description: talentText`Blast applied by your group cause enemies to lose and groupmates to gain ${[
           1,
           2,
-        ]} morale per second per stack.`,
+        ]} adrenaline per second per stack.`,
       },
 	  "Red Tide": {
         name: "Red Tide",
@@ -2042,7 +2043,7 @@ export const data: TalentData = {
           6,
 		  8,
 		  10,
-        ]}% chance each time they deal damage to make the next Fiery Blast cast within 10s be instant cast.`,
+        ]}% chance each time they deal damage to make the next Fiery Blast cast within 10 seconds be instant cast.`,
       },
 	  "Explosive Exercise": {
         name: "Explosive Exercise",
@@ -2079,7 +2080,7 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`You have a {[
+        description: talentText`You have a ${[
           25,
           50,
           75,
