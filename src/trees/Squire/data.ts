@@ -12,15 +12,6 @@ export const data: TalentData = {
     background: backgrounds["captain"],
     icon: icons["archetype_tank"],
     talents: {
-      "Break Loose": {
-        name: "Break Loose",
-        pos: "a8",
-        icon: icons["rrtac_breakloose"],
-        maxRank: 1,
-        reqPoints: 25,
-        type: "renown tactic",
-        description: talentText`Movement skills you use will now remove Ensnared and Rooted from you.`,
-      },
       "Masochist": {
         name: "Masochist",
         pos: "a8",
@@ -29,33 +20,6 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "renown tactic",
         description: talentText`Whenever you are attacked while your Guard is active, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
-      "Dissipation Expert": {
-        name: "Dissipation Expert",
-        pos: "a8",
-        icon: icons["rrtac_dissipation"],
-        maxRank: 1,
-        reqPoints: 25,
-        type: "renown tactic",
-        description: talentText`Whenever you use an ability that removes a buff or debuff, you will gain 15 adrenaline per second for 3 seconds.`,
-      },
-      "Loved By All": {
-        name: "Loved By All",
-        pos: "a8",
-        icon: icons["rrtac_lovedbyall"],
-        maxRank: 1,
-        reqPoints: 25,
-        type: "renown tactic",
-        description: talentText`You always have Immovable. Your mass is decreased by 2.`,
-      },
-      "Verge of Victory": {
-        name: "Verge of Victory",
-        pos: "a8",
-        icon: icons["rrtac_vergeofvictory"],
-        maxRank: 1,
-        reqPoints: 25,
-        type: "renown tactic",
-        description: talentText`Whenever you land a killing blow, you will gain 20 adrenaline per second for 8 seconds. Whenever a groupmate within 100ft lands a killing blow, you will gain 5 adrenaline per second for 8 seconds.`,
       },
       "Agility": {
         name: "Agility",
@@ -201,33 +165,6 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Increase your mass by 1.`,
       },
-      "Fleet-Footed": {
-        name: "Fleet-Footed",
-        pos: "a4",
-        icon: icons["tac_arche"],
-        maxRank: 1,
-        reqPoints: 10,
-        type: "career tactic",
-        description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 1.`,
-      },
-      "Far Sight": {
-        name: "Far Sight",
-        pos: "a4",
-        icon: icons["tac_arche"],
-        maxRank: 1,
-        reqPoints: 10,
-        type: "career tactic",
-        description: talentText`Your range is increased by 20%.`,
-      },
-      "What a Rush": {
-        name: "What a Rush",
-        pos: "a4",
-        icon: icons["tac_arche"],
-        maxRank: 1,
-        reqPoints: 10,
-        type: "career tactic",
-        description: talentText`The action point cost of your skills is reduced by 33% on allies that are lower than 40% health.`,
-      },
       "Emperor's Ward": {
         name: "Emperor's Ward",
         pos: "a2",
@@ -253,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Vicious Slash will now apply a bleed to the target for 6 seconds which stacks up to 3 times. Deals 4% MAP + 20 physical damage every second.`,
+        description: talentText`Vicious Slash will now apply a bleed to the target for 6 seconds which stacks up to 3 times. Deals 3% MAP + 33 physical damage every second.`,
       },
       "Bellow Commands": {
         name: "Bellow Commands",
@@ -267,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["abi_greatswordmastery"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -388,7 +325,7 @@ export const data: TalentData = {
       "Mandate": {
         name: "Mandate",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_mandate"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -405,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 120 physical damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 110 physical damage to target enemy.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -432,7 +369,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 22% MAP + 160 physical damage to target enemy.`,
+        description: talentText`Deals 21% MAP + 280 physical damage to target enemy.`,
       },
       "Guard": {
         name: "Guard",
@@ -458,7 +395,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 12% MAP + 90 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 12% MAP + 152 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -566,7 +503,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Mandate",
-        description: talentText`You gain 125 action points.\nGroupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a enchantment for 60 seconds. For the duration, they will gain 360 HP4.`,
+        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a enchantment for 60 seconds. For the duration, they will gain 450 HP4.`,
       },
       "Emperor's Fury": {
         name: "Emperor's Fury",
@@ -651,7 +588,7 @@ export const data: TalentData = {
 	  "Loyalty to the Empire": {
         name: "Loyalty to the Empire",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_mandate"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -664,7 +601,7 @@ export const data: TalentData = {
 	  "Gilded Shield": {
         name: "Gilded Shield",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_onyourguard"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -676,7 +613,7 @@ export const data: TalentData = {
 	  "Engage": {
         name: "Engage",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_engage"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -689,7 +626,7 @@ export const data: TalentData = {
 	  "Improved Vicious Slash": {
         name: "Improved Vicious Slash",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_viciousslash"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -701,7 +638,7 @@ export const data: TalentData = {
 	  "Will to Survive": {
         name: "Will to Survive",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_perseverance"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -716,7 +653,7 @@ export const data: TalentData = {
 	  "Hold the Line": {
         name: "Hold the Line",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_cover"],
         maxRank: 1,
         reqPoints: 20,
         type: "passive",
@@ -725,7 +662,7 @@ export const data: TalentData = {
 	  "Band Together": {
         name: "Band Together",
         pos: "g7",
-        icon: icons["noicon"],
+        icon: icons["abi_bandtogether"],
         maxRank: 5,
         reqPoints: 20,
         type: "passive",
@@ -740,7 +677,7 @@ export const data: TalentData = {
       "Rush of Command": {
         name: "Rush of Command",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_rushofcommand"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
