@@ -739,7 +739,7 @@ export const data: TalentData = {
       },
       "Rush of Command": {
         name: "Rush of Command",
-        pos: "G8",
+        pos: "g8",
         icon: icons["noicon"],
         maxRank: 4,
         reqPoints: 25,
