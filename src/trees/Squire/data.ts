@@ -161,7 +161,7 @@ export const data: TalentData = {
         pos: "a4",
         icon: icons["tac_arche"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "career tactic",
         description: talentText`Increase your mass by 1.`,
       },
@@ -502,7 +502,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 30 Mandate",
+        blue: "Costs 35 Mandate",
         description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a enchantment for 60 seconds. For the duration, they will gain 450 HP4.`,
       },
       "Emperor's Fury": {
