@@ -161,7 +161,7 @@ export const data: TalentData = {
         pos: "a4",
         icon: icons["tac_arche"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "career tactic",
         description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 1.`,
       },
@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Exit Wound have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
+        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Hollowed Bullet have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -236,7 +236,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 22% MAP + 160 physical damage to target enemy. Generates 1 Combo Point on the target.`,
+        description: talentText`Deals 21% MAP + 280 physical damage to target enemy. Generates 1 Combo Point on the target.`,
       },
       "Burn at the Stake": {
         name: "Burn at the Stake",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 7% MAP + 70 physical damage every 2 seconds; the last tick will deal 30% MAP + 231 physical damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 6% MAP + 80 physical damage every 2 seconds; the last tick will deal 37% MAP + 505 physical damage.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 18% RAP + 138 physical damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
+        description: talentText`Deals 17% RAP + 228 physical damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
       },
       "Blessed Bullet": {
         name: "Blessed Bullet",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Deals 50% RAP + 472 physical damage to target enemy.`,
+        description: talentText`Deals 50% RAP + 663 physical damage to target enemy.`,
       },
       "Seal of Van Horstmann": {
         name: "Seal of Van Horstmann",
@@ -462,7 +462,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 10% MAP + 73 physical damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
+        description: talentText`Deals 10% MAP + 119 physical damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
       },
 	  "Seal of Wilhelm": {
         name: "Seal of Wilhelm",
@@ -475,7 +475,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`You gain a buff for the next 8 seconds. You gain 900 armor and 900 corporeal resistance but lose 900 elemental resistance and 900 spiritual resistance.`,
+        description: talentText`You gain a buff for the next 10 seconds. You gain 900 armor and 900 corporeal resistance but lose 900 elemental resistance and 900 spiritual resistance.`,
       },
 	  "Trial by Pain": {
         name: "Trial by Pain",
@@ -489,7 +489,7 @@ export const data: TalentData = {
         cast: "2.0s channel",
         cooldown: "no cooldown",
         blue: "Execute\nCastable while moving",
-        description: talentText`Deals 6% MAP + 66 physical damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
+        description: talentText`Deals 8% MAP + 117 physical damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
       },
 	  "Smash": {
         name: "Smash",
@@ -538,7 +538,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 22% MAP + 160 physical damage to the target and generate 1 Combo Point on them.`,
+        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 16% MAP + 205 physical damage to the target and generate 1 Combo Point on them.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -567,7 +567,7 @@ export const data: TalentData = {
         prereq: "Seal of Wilhelm",
         arrows: [{ dir: "right", from: "f6", to: "g6" }],
         type: "career tactic",
-        description: talentText`Seal of Wilhelm will no longer increase your armor and corporeal resistance. Instead it will apply a 8 second duration ailment to up to 48 enemies within 30ft of you that reduces armor and corporeal resistance by 600.`,
+        description: talentText`Seal of Wilhelm will no longer increase your armor and corporeal resistance. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor and corporeal resistance by 600.`,
       },
 	  "Find Weakness": {
         name: "Find Weakness",
@@ -630,7 +630,7 @@ export const data: TalentData = {
         pos: "e5",
         icon: icons["abi_menofaction"],
         maxRank: 3,
-        reqPoints: 0,
+        reqPoints: 10,
         type: "passive",
         description: talentText`Reduces the cast times of Blessed Bullet, Exit Wound, and Silence Heretic by ${[
           0.5,
@@ -658,7 +658,7 @@ export const data: TalentData = {
 	  "Extra Crit": {
         name: "Extra Crit",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_extracrit"],
         maxRank: 4,
         reqPoints: 15,
         type: "passive",
@@ -672,8 +672,8 @@ export const data: TalentData = {
 	  "Pain Unleashed": {
         name: "Pain Unleashed",
         pos: "d7",
-        icon: icons["noicon"],
-        maxRank: 1,
+        icon: icons["abi_concentratedfire"],
+        maxRank: 5,
         reqPoints: 20,
         prereq: "Trial by Pain",
         arrows: [{ dir: "right", from: "c7", to: "d7" }],
@@ -689,7 +689,7 @@ export const data: TalentData = {
       "Sanctified Oils": {
         name: "Sanctified Oils",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_sanctifiedoil"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -894,7 +894,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Exit Wound have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
+        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Hollowed Bullet have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1197,7 +1197,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Exit Wound have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
+        description: talentText`Burn at the Stake, Rupture, Blessed Bullet, and Hollowed Bullet have a 30% chance per Combo Point consumed to generate a Combo Point on the target.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
