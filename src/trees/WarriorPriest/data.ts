@@ -361,7 +361,7 @@ export const data: TalentData = {
         name: "Divine Light",
         pos: "d1",
         icon: icons["abi_divinelight"],
-        maxRank: o,
+        maxRank: 0,
         reqPoints: 0,
         type: "spell",
         cost: "no cost",
