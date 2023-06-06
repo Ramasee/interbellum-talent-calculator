@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Runescribe abilities fall under 3 ancestor rune categories: Grimnir, Valaya, and Grungni. Whenever an ability is used in that category, no other abilities may be cast in that category for a short period.`,
+        description: talentText`Runescribe abilities fall under 3 ancestor rune categories: Grimnir, Valaya, and Grungni. Whenever an ability is used in that category, no other abilities may be cast in that category for 8 seconds.`,
       },
       "Grimnir's Fury": {
         name: "Grimnir's Fury",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal 110 physical damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deal 110 physical damage to target enemy. Generates 22 action points.`,
       },
       "Rune Augmentation": {
         name: "Rune Augmentation",
@@ -389,7 +389,7 @@ export const data: TalentData = {
         name: "Rune of Immolatio",
         pos: "f1",
         icon: icons["abi_dw_runeoffire"],
-        maxRank: 1,
+        maxRank: 0,
         reqPoints: 0,
         type: "spell",
         cost: "no cost",
@@ -485,7 +485,7 @@ export const data: TalentData = {
 	   "Rune of Impact": {
         name: "Rune of Impact",
         pos: "d8",
-        icon: icons["abi_dw_symbol0"],
+        icon: icons["abi_dw_symbol05"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -601,17 +601,17 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
-        description: talentText`You gain effects whenever your runes are on shared cooldown. Grimnir: You deal ${[
+        description: talentText`You gain effects whenever your runes are on shared cooldown.\nGrimnir: You deal ${[
           2,
           4,
           6,
           8,
-        ]}% more damage. Valaya: You gain ${[
+        ]}% more damage.\nValaya: You gain ${[
           75,
           150,
           225,
           300,
-        ]} HP4. Grungni: You gain ${[
+        ]} HP4.\nGrungni: You gain ${[
           2,
           4,
           6,
