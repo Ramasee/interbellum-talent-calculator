@@ -344,8 +344,8 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`(Basic Attack) Deal 110 physical damage to target enemy. Generates 22 action points.`,
       },
-      "Takin' Chances": {
-        name: "Takin' Chances",
+      "Charge": {
+        name: "Charge",
         pos: "c1",
         icon: icons["abi_dw_charge"],
         maxRank: 0,
@@ -355,8 +355,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 35 Rage",
-        description: talentText`(Movement Skill) For the next 3 seconds, your movement speed is increased by 40%.`,
+        description: talentText`(Movement Skill) For the next 8 seconds, your movement speed is increased by 40%.`,
       },
       "Heavy Blow": {
         name: "Heavy Blow",
