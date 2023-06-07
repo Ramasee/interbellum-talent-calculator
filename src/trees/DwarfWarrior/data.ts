@@ -297,7 +297,7 @@ export const data: TalentData = {
       "Dwarven Sprint": {
         name: "Dwarven Sprint",
         pos: "i7",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_figure12"],
         maxRank: 1,
         reqPoints: 20,
         type: "morale 3",
@@ -521,7 +521,7 @@ export const data: TalentData = {
         type: "spell",
         cost: "150 action points",
         range: "self",
-        cast: "1.0s instant cast",
+        cast: "1.0s cast",
         cooldown: "30s cooldown",
         description: talentText`Up to 48 enemies within 30ft of you have their movement speed reduced by 90% for 3 seconds. Does not effect target that have Cover from you.`,
       },

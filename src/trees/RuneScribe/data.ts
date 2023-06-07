@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Target ally gains 3 stacks of Increased Elemental Resistance and Increased Spiritual Resistance.`,
+        description: talentText`Target ally gains 3 stacks of Enhanced Elemental Resistance and Enhanced Spiritual Resistance.`,
       },
       "Morale 2 Spec": {
         name: "Morale 2 Spec",
@@ -519,7 +519,7 @@ export const data: TalentData = {
         type: "spell",
         cost: "150 action points",
         range: "self",
-        cast: "1.0s instant cast",
+        cast: "1.0s cast",
         cooldown: "30s cooldown",
         description: talentText`Up to 48 enemies within 30ft of you have their movement speed reduced by 90% for 3 seconds. Does not effect target that have Cover from you.`,
       },
@@ -541,7 +541,7 @@ export const data: TalentData = {
         prereq: "Rune of Flight",
         arrows: [{ dir: "down", from: "c4", to: "c5" }],
         type: "career tactic",
-        description: talentText`Rune of Flight will now hit up to 8 other enemies between you and your target.`,
+        description: talentText`Rune of Flight will now hit up to 8 other enemies between you and your target for 50% damage.`,
       },
 	  "Into the Crucible": {
         name: "Into the Crucible",
