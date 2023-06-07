@@ -378,11 +378,11 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "60 action points",
+        cost: "no cost",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Must be Furious or Berserk",
+        blue: "Costs 25 Rage",
         description: talentText`Deals 18% MAP + 228 physical damage to target enemy and up to 2 other enemies within 15 feet of them.`,
       },
       "Fueled by Violence": {
