@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`You gain a buff for 5 seconds whenever you take or deal damage that increases your rage generated per second by 5.\nFurious (26-75 rage): Lose 50% of your armor and all resistances. Gain armor penetration equal to 20% of the amount lost.\nBerserk (76-100 rage): You lose 75% of your total incoming healing received stat. Gain melee attack power equal to 10 times the amount lost. `,
+        description: talentText`You gain a buff for 5 seconds whenever you take or deal damage that increases your rage generated per second by 5.\nFurious (26-75 rage): Lose 50% of your armor and all resistances. Gain armor penetration equal to 20% of the amount lost.\nBerserk (76-100 rage): You lose 75% of your total incoming healing received stat. Gain melee attack power equal to 10 times the amount lost.\n\nBloodthirst lasts for 60 seconds and stacks up to 5 times. Gain 1 rage per second per stack.`,
       },
       "Grimnir's Fury": {
         name: "Grimnir's Fury",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Applies Rooted and Immovable to target enemy. Generates 25 Rage.\n\nRooted prevents the character from moving for 5 seconds.\nImmovable prevents application of Rooted,, Knockback, and Pull effects for 20 seconds.`,
+        description: talentText`Applies Rooted and Immovable to target enemy. Generates 25 Rage.\n\nRooted prevents the character from moving for 5 seconds.\nImmovable prevents application of Rooted, Knockback, and Pull effects for 20 seconds.`,
       },
       "Deathblow": {
         name: "Deathblow",
@@ -506,7 +506,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`(toggle) While active: gain 150 maximum action points, gain 5 Rage per second, and Grimnir's Fury will for additional damage equal to 20% MAP but no longer generate action points.`,
+        description: talentText`(toggle) While active: gain 150 maximum action points, gain 5 Rage per second, and Grimnir's Fury will deal additional damage equal to 20% MAP but no longer generate action points.`,
       },
       "Inevitable Doom": {
         name: "Inevitable Doom",
@@ -579,7 +579,7 @@ export const data: TalentData = {
       },
 	  "Massacre": {
         name: "Massacre",
-        pos: "i8",
+        pos: "g8",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 25,
@@ -683,8 +683,8 @@ export const data: TalentData = {
         name: "Power Through",
         pos: "c8",
         icon: icons["abi_dw_grudgebornfury"],
-        maxRank: 1,
-        reqPoints: 4,
+        maxRank: 4,
+        reqPoints: 25,
         type: "passive",
         description: talentText`Whenever you are attacked you have a ${[
           10,
