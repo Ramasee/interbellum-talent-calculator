@@ -354,7 +354,7 @@ export const data: TalentData = {
         cost: "no cost",
         range: "self",
         cast: "instant cast",
-        cooldown: "no cooldown",
+        cooldown: "30s cooldown",
         description: talentText`(Movement Skill) For the next 8 seconds, your movement speed is increased by 40%.`,
       },
       "Heavy Blow": {
