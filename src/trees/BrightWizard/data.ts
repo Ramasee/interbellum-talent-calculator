@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["archetype_defsupport"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Target enemy gains 6 stacks of Reduced Armor.`,
+        description: talentText`Target enemy gains 3 stacks of Reduced Armor.`,
       },
       "Burnout": {
         name: "Burnout",
@@ -308,19 +308,19 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. For the duration, gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Burning Head": {
+        name: "Burning Head",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_burninghead"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Summons a Burning Head which charges forward affecting up to 24 allies and 96 enemies every second with a 3 second effect within 20ft of its location. Allies gain 50% critical chance and 15 adrenaline per second. Enemies take 10% SAP + 150 elemental damage every second and gain 15 adrenaline per second.`,
       },
       "Explosion and Blast": {
         name: "Explosion and Blast",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
+        description: talentText`Explosion stacks to 100 and you will gain 15% damage when above 89.\nExplosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 62% SAP + 818 elemental damage to target. You generate 15 Combustion.`,
+        description: talentText`Deals 62% SAP + 818 elemental damage to target. You generate 10 Combustion.`,
       },
       "Withering Heat": {
         name: "Withering Heat",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Consumes all Combustion",
-        description: talentText`You gain a buff for 10 seconds. For the duration, each skill you cast deals Explosion damage to you, and you will gain resistance penetration based on Combustion consumed.\n25 CBN: 10% WIL + 25\n50 CBN: 30% WIL + 60\n75 CBN: 60% WIL + 105\n100 CBN: 100% WIL + 160`,
+        description: talentText`You gain a buff for 10 seconds. For the duration, you will gain sagacity based on Combustion consumed. In addition, each skill you cast will deal Explosion damage to you.\n25 CBN: 10%\n50 CBN: 30%\n75 CBN: 60%\n100 CBN: 100%`,
       },
       "Unquenchable Fury": {
         name: "Unquenchable Fury",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "30ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Applies Rooted and Immovable to target enemy.\n\nRooted reduces target movement speed to 0 for 5 seconds. Immovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
+        description: talentText`Applies Rooted and Immovable to target enemy.\n\nRooted reduces target movement speed to 0 for 5 seconds.\nImmovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
       "Ignite": {
         name: "Ignite",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an ailment to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 282 corporeal damage. You generate 5 Combustion`,
+        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 282 corporeal damage. You generate 5 Combustion`,
       },
       "Funnel Power": {
         name: "Funnel Power",
@@ -488,7 +488,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "2s cooldown",
         blue: "Costs 40 Combustion\nOff the GCD",
-        description: talentText`You take Explosion damage and gain 1 stack of Enhanced Critical Damage.`,
+        description: talentText`You take Explosion damage and gain 1 stack of Enhanced Potency.`,
       },
       "Fireball Barrage": {
         name: "Fireball Barrage",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 39% SAP + 527 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds. You generate 4 Combustion each time this deals damage.`,
+        description: talentText`Deals 39% SAP + 527 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds. You generate 3 Combustion each time this deals damage.`,
       },
       "Spreading Flames": {
         name: "Spreading Flames",
@@ -568,7 +568,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you cast Meltdown, you will gain 1 stack of an enchantment for 8 seconds, stacking up to 3 times. Fireball will have a 50% reduced cast time and remove 1 stack.`,
+        description: talentText`Whenever you cast Meltdown, you will gain 1 stack of an enchantment for 8 seconds, stacking up to 3 times. Fireball will have a 40% reduced cast time and remove 1 stack.`,
       },
       "Rolling Boil": {
         name: "Rolling Boil",
@@ -587,7 +587,7 @@ export const data: TalentData = {
       "Explosive Action": {
         name: "Explosive Action",
         pos: "b3",
-        icon: icons["noicon"],
+        icon: icons["abi_blast"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -600,7 +600,7 @@ export const data: TalentData = {
       "Red Tide": {
         name: "Red Tide",
         pos: "h3",
-        icon: icons["noicon"],
+        icon: icons["abi_pyroclasticsurge"],
         maxRank: 2,
         reqPoints: 0,
         type: "passive",
@@ -612,7 +612,7 @@ export const data: TalentData = {
       "Hardened Casting": {
         name: "Hardened Casting",
         pos: "g5",
-        icon: icons["noicon"],
+        icon: icons["itm_ch_charredsoulgem"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -625,7 +625,7 @@ export const data: TalentData = {
       "Improved Fireball": {
         name: "Improved Fireball",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_fireball"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -640,7 +640,7 @@ export const data: TalentData = {
       "Searing Blast": {
         name: "Searing Blast",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_sear"],
         maxRank: 2,
         reqPoints: 15,
         prereq: "Sear",
@@ -654,7 +654,7 @@ export const data: TalentData = {
       "Boiling Blood II-IV": {
         name: "Boiling Blood II-IV",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_boilingblood"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Boiling Blood",
@@ -673,7 +673,7 @@ export const data: TalentData = {
       "Extra Crit": {
         name: "Extra Crit",
         pos: "b7",
-        icon: icons["noicon"],
+        icon: icons["abi_extracrit"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -686,7 +686,7 @@ export const data: TalentData = {
       "Reckless Funnel": {
         name: "Reckless Funnel",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_funnelpower"],
         maxRank: 4,
         reqPoints: 25,
         prereq: "Funnel Power",
@@ -701,8 +701,8 @@ export const data: TalentData = {
       },
     },
   },
-  "Arsonist": {
-    name: "Arsonist",
+  "Arsonist (semi-old)": {
+    name: "Arsonist (semi-old)",
     background: backgrounds["hothead"],
     icon: icons["archetype_dps"],
     talents: {
@@ -1394,8 +1394,8 @@ export const data: TalentData = {
       },
     },
   },
-  "Battle Wizard": {
-    name: "Battle Wizard",
+  "Battle Wizard (semi-old)": {
+    name: "Battle Wizard (semi-old)",
     background: backgrounds["battlewizard"],
     icon: icons["archetype_offsupport"],
     talents: {
