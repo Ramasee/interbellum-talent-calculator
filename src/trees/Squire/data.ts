@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Vicious Slash will now apply a bleed to the target for 6 seconds which stacks up to 3 times. Deals 3% MAP + 33 physical damage every second.`,
+        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 3% MAP + 33 ichor damage every second and generates 1 Mandate.`,
       },
       "Bellow Commands": {
         name: "Bellow Commands",
@@ -199,16 +199,16 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You gain 2 Mandate whenever you spend action points or use Strike. Abilities that spend Mandate will generate 125 action points for you. Strike no longer generates action points.`,
+        description: talentText`Abilities that spend Mandate will generate 125 action points for you. Strike no longer generates action points.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["abi_greatswordmastery"],
+        icon: icons["archetype_tank"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Specialization is able to equip these weapons.`,
+        description: talentText`Captains equip one-handed swords and shields.`,
       },
 	  "Hedgehog": {
         name: "Hedgehog",
@@ -308,10 +308,10 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Summon the Elector Counts": {
+        name: "Summon the Elector Counts",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["em_sword_2h_t5_02"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`All groupmates and up to 18 allies within 100 feet of you gain the blessing effects from all of your Mandates.`,
       },
       "Mandate": {
         name: "Mandate",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 110 physical damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 110 piercing damage to target enemy.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 physical damage to target enemy.`,
+        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.`,
       },
       "Guard": {
         name: "Guard",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, dodge, and block. You will lose these stats for the duration and for 5s after the effect is broken.`,
+        description: talentText`Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, and block. You will lose these stats for the duration and for 5 seconds after the effect is broken.`,
       },
       "Crippling Blow": {
         name: "Crippling Blow",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 12% MAP + 152 physical damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds. Momentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 12% MAP + 152 impact damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 8 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -489,7 +489,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
+        description: talentText`Applies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
       "Stand Strong!": {
         name: "Stand Strong!",
@@ -534,7 +534,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Crippling Blow will now apply to up to 2 other enemies within 15ft in front of you.`,
+        description: talentText`Crippling Blow will now apply to up to 2 other enemies within 15 feet of your target.`,
       },
 	  "Staying Power": {
         name: "Staying Power",
@@ -554,7 +554,7 @@ export const data: TalentData = {
         prereq: "Distract",
         arrows: [{ dir: "down", from: "h5", to: "h6" }],
         type: "career tactic",
-        description: talentText`Distract will now work on up to 23 additional enemies within 20ft of the target as long as those targets do not have cover.`,
+        description: talentText`Distract will now work on up to 23 additional enemies within 20 feet of the target as long as those targets do not have cover.`,
       },
 	  "Dirty Tricks": {
         name: "Dirty Tricks",
@@ -596,7 +596,7 @@ export const data: TalentData = {
           1,
           2,
           3,
-        ]} Mandate per second.`,
+        ]} Mandate each time you spend action points or use Strike.`,
       },
 	  "Gilded Shield": {
         name: "Gilded Shield",
@@ -648,7 +648,7 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% incoming damage reduction while under the effect of Perseverance.`,
+        ]}% damage reduction while under the effect of Perseverance.`,
       },
 	  "Hold the Line": {
         name: "Hold the Line",
@@ -666,7 +666,7 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Groupmates within 30 feet of you will have their incoming damage reduced by ${[
+        description: talentText`Groupmates within 30 feet of you will have their damage reduction increased by ${[
           2,
           4,
           6,

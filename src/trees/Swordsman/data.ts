@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -292,7 +292,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Applies 5 combo points to up to 9 enemies within 30ft of you.`,
+        description: talentText`Applies 5 combo points to up to 9 enemies within 30 feet of you.`,
       },
       "Emperor's Champion": {
         name: "Emperor's Champion",
@@ -308,24 +308,24 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Judge and Executioner": {
+        name: "Judge and Executioner",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_declareanathema"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Deals 6000 true damage to target enemy and applies Forlorn.`,
       },
       "Combo Points": {
         name: "Combo Points",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_tormentthewicked"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 66 physical damage to target enemy. Deals an additional 44 physical damage as a second hit if you are within 5ft of them. Generates 22 action points.`,
+        description: talentText`Deals 66 piercing damage to target enemy. Deals an additional 44 piercing damage as a second hit if you are within 5ft of them. Generates 22 action points.`,
       },
       "Stalk": {
         name: "Stalk",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 physical damage to target enemy. Generates 1 Combo Point on the target.`,
+        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy. Generates 1 Combo Point on the target.`,
       },
       "Burn at the Stake": {
         name: "Burn at the Stake",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 6% MAP + 80 physical damage every 2 seconds; the last tick will deal 37% MAP + 505 physical damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 6% MAP + 80 piercing damage every 2 seconds; the last tick will deal 37% MAP + 505 impact damage.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 17% RAP + 228 physical damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
+        description: talentText`Deals 17% RAP + 228 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
       },
       "Blessed Bullet": {
         name: "Blessed Bullet",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Deals 50% RAP + 663 physical damage to target enemy.`,
+        description: talentText`Deals 50% RAP + 663 piercing damage to target enemy.`,
       },
       "Seal of Van Horstmann": {
         name: "Seal of Van Horstmann",
@@ -423,7 +423,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`You gain a buff for the next 10 seconds. You gain 900 elemental resistance and 900 spiritual resistance but lose 900 armor and 900 corporeal resistance.`,
+        description: talentText`You gain a blessing for the next 10 seconds. You gain 3000 corporeal resistance, elemental resistance, and spiritual resistance but lose 1500 armor.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -436,7 +436,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "60s cooldown",
-        description: talentText`All damage you take is reduced by 50% but all damage you deal is reduced by 90% for 7 seconds.`,
+        description: talentText`Your damage reduction is increased by 50% but your outgoing damage is reduced by 90% for 7 seconds.`,
       },
 	  "Silence Heretic": {
         name: "Silence Heretic",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Silenced and Inevitable to target enemy.\n\nSilenced prevents the use of spells for 5 seconds. Inevitable prevents the application of Disarmed and Silenced.`,
+        description: talentText`Applies Silenced and Inevitable to target enemy.\n\nSilenced prevents the use of spells for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced.`,
       },
 	  "Razor Strike": {
         name: "Razor Strike",
@@ -462,7 +462,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 10% MAP + 119 physical damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
+        description: talentText`Deals 10% MAP + 119 piercing damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
       },
 	  "Seal of Wilhelm": {
         name: "Seal of Wilhelm",
@@ -475,7 +475,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`You gain a buff for the next 10 seconds. You gain 900 armor and 900 corporeal resistance but lose 900 elemental resistance and 900 spiritual resistance.`,
+        description: talentText`You gain a blessing for the next 10 seconds. You gain 1500 armor but lose 1500 corporeal resistance, elemental resistance and spiritual resistance.`,
       },
 	  "Trial by Pain": {
         name: "Trial by Pain",
@@ -489,7 +489,7 @@ export const data: TalentData = {
         cast: "2.0s channel",
         cooldown: "no cooldown",
         blue: "Execute\nCastable while moving",
-        description: talentText`Deals 8% MAP + 117 physical damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
+        description: talentText`Deals 8% MAP + 117 piercing damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
       },
 	  "Smash": {
         name: "Smash",
@@ -502,7 +502,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Feint and Reposition": {
         name: "Feint and Reposition",
@@ -538,7 +538,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 16% MAP + 205 physical damage to the target and generate 1 Combo Point on them.`,
+        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 16% MAP + 205 impact damage to the target and generate 1 Combo Point on them.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -547,7 +547,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you are flanking a target, you will deal additional damage equal to 50% of your accuracy.`,
+        description: talentText`Whenever you are flanking a target, you will gain outgoing damage equal to 50% of your accuracy.`,
       },
 	  "Encourage Confession": {
         name: "Encourage Confession",
@@ -556,7 +556,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Whenever you hit an enemy with an Execute, they will be crippled for 6 seconds reducing their block rate by 30%`,
+        description: talentText`Whenever you hit an enemy with an Execute, you will apply 2 stacks of Reduced Block on them.`,
       },
 	  "Sanitation Project": {
         name: "Sanitation Project",
@@ -567,7 +567,7 @@ export const data: TalentData = {
         prereq: "Seal of Wilhelm",
         arrows: [{ dir: "right", from: "f6", to: "g6" }],
         type: "career tactic",
-        description: talentText`Seal of Wilhelm will no longer increase your armor and corporeal resistance. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor and corporeal resistance by 600.`,
+        description: talentText`Seal of Wilhelm will no longer increase your armor. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor by 1000.`,
       },
 	  "Find Weakness": {
         name: "Find Weakness",
@@ -595,7 +595,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`You have a 100% chance whenever you get a killing blow and a 33% chance whenever you use an execute to reset the cooldown on Stalk.`,
+        description: talentText`You have a 100% chance whenever you get a killing blow and a 33% chance whenever you use an Execute to reset the cooldown on Stalk.`,
       },
 	  "Superior Steel": {
         name: "Superior Steel",

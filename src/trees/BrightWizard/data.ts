@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Summons a Burning Head which charges forward affecting up to 24 allies and 96 enemies every second with a 3 second effect within 20ft of its location. Allies gain 50% critical chance and 15 adrenaline per second. Enemies take 10% SAP + 150 elemental damage every second and gain 15 adrenaline per second.`,
+        description: talentText`Summons a Burning Head which charges forward affecting up to 24 allies and 96 enemies every second with a 3 second effect within 20 feet of its location.\n\nAllies gain 50% critical chance and 15 adrenaline per second. Enemies take 10% SAP + 150 elemental damage every second and gain 15 adrenaline per second.`,
       },
       "Explosion and Blast": {
         name: "Explosion and Blast",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion stacks to 100 and you will gain 15% damage when above 89.\nExplosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
+        description: talentText`Explosion stacks to 100 and you will gain 8% damage when above 89.\nExplosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -647,8 +647,8 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "h4", to: "h6" }],
         type: "passive",
         description: talentText`Sear will now apply ${[
-          2,
           3,
+          5,
         ]} stacks of Blast.`,
       },
       "Boiling Blood II-IV": {
