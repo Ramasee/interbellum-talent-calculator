@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["archetype_tank"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -308,19 +308,19 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. For the duration, You gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Avatar of Sigmar": {
+        name: "Avatar of Sigmar",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_avatarofsigmar"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Cleanses all Chaos Corruption from up to 96 allies and 96 enemies within 30 feet of you. You gain a buff for 30 seconds. For the duration, you generate 10 Righteous Fury per second, your outgoing damage is increased by 50%, your healing done is increased by 50%, and your HP4 is increased by 1000. At the end of the duration, you die and gain Forlorn.`,
       },
       "Shield of Faith": {
         name: "Shield of Faith",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Righteous Fury has a maximum value of 250./n/nShield of Faith absorbs up to 200 damage over 5 seconds. When Augmented, it will absorb 400 damage over 5 seconds and apply 1 stack of Enhanced Dodge.`,
+        description: talentText`Righteous Fury has a maximum value of 250.\n\nShield of Faith absorbs up to 200 damage over 5 seconds. When Augmented, it will absorb 75% more and apply 1 stack of Enhanced Dodge.`,
       },
 	  "Judgement": {
         name: "Judgement",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Righteous Fury",
-        description: talentText`Target groupmate gains Shield of Faith and an enchantment for 60 seconds that heals the target for 6% RP + 85 each time they hit an enemy with an ability.`,
+        description: talentText`Target groupmate gains Shield of Faith and an enchantment for 60 seconds that heals the target for 6% RP + 85 each time they use an ability.`,
       },
       "Wrath": {
         name: "Wrath",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 physical damage to target enemy. Generates 25 Righteous Fury.`,
+        description: talentText`Deals 21% MAP + 280 impact damage to target enemy. Generates 25 Righteous Fury.`,
       },
       "Vow of Silence": {
         name: "Vow of Silence",
@@ -409,7 +409,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Silenced and Inevitable to the target.\n\nSilenced prevents the use of spells for 5 seconds. Inevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
+        description: talentText`Applies Silenced and Inevitable to the target.\n\nSilenced prevents the use of spells for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
       "Divine Assault": {
         name: "Divine Assault",
@@ -436,7 +436,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "60s cooldown",
-        description: talentText`All damage you take is reduced by 50% but all damage you deal is reduced by 90% for 7 seconds.`,
+        description: talentText`Your damage reduction is increased by 50% but your outdoing damage is reduced by 90% for 7 seconds.`,
       },
 	  "Healing Hand": {
         name: "Healing Hand",
@@ -450,7 +450,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Righteous Fury",
-        description: talentText`Applies an enchantment to target ally that heals for 5% RP + 59 every 3 seconds for 15 seconds.`,
+        description: talentText`Applies an enchantment to target ally that heals for 6% RP + 71 every 3 seconds for 15 seconds.`,
       },
 	  "Radiance": {
         name: "Radiance",
@@ -463,7 +463,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 12% MAP + 152 spiritual damage to target enemy. Your defensive target gains 1 stack of Enhanced Block if they are within 75ft. Generates 30 Righteous Fury.`,
+        description: talentText`Deals 12% MAP + 152 impact damage to target enemy. Your defensive target gains 1 stack of Enhanced Block if they are within 75ft. Generates 30 Righteous Fury.`,
       },
 	  "Spirit of the Heldenhammer": {
         name: "Spirit of the Heldenhammer",
@@ -517,7 +517,7 @@ export const data: TalentData = {
         cast: "1.0s cast",
         cooldown: "30s cooldown",
         blue: "Costs 100 Righteous Fury",
-        description: talentText`Deals 13% SAP + 186 spiritual damage to up to 48 enemies within 30ft in front of you. For each target hit that did not have Cover, all groupmates within 150ft gain a stack. The stacks heal for 6% RP + 8 each at the end of their 2 second duration.`,
+        description: talentText`Deals 13% SAP + 186 spiritual damage to up to 48 enemies within 30ft in front of you. For each target hit that did not have Cover, all groupmates within 150ft gain a stack. The stacks heal for 6% RP + 8 each at the end of their 3 second duration.`,
       },
 	  "Exalted Defenses": {
         name: "Exalted Defenses",
@@ -544,7 +544,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Twin-Tailed Blow and Radiance now have a 30ft range.`,
+        description: talentText`Twin-Tailed Blow and Radiance now have a 30 foot range.`,
       },
 	  "Lay on Hands": {
         name: "Lay on Hands",
@@ -594,9 +594,9 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Shield of Faith now absorbs more damage equal to ${[
-          5,
-          10,
-          15,
+          3,
+          6,
+          9,
         ]}% RP.`,
       },
 	  "Improved Twin-Tailed Blow": {
@@ -607,8 +607,8 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Twin-Tailed Blow will deal additional damage equal to ${[
-          3,
-          6,
+          4,
+          8,
         ]}% MAP.`,
       },
 	  "Improved Vigilance": {
