@@ -12,6 +12,7 @@ const DwarfWarrior = lazy(() => import("./trees/DwarfWarrior"));
 const Engineer = lazy(() => import("./trees/Engineer"));
 const Oathbreaker = lazy(() => import("./trees/Oathbreaker"));
 const RuneScribe = lazy(() => import("./trees/RuneScribe"));
+const Archmage = lazy(() => import("./trees/Archmage"));
 
 export const App: React.FC = () => {
   return (
