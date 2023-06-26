@@ -1,2 +1,2 @@
-import { BrightWizard } from "./Archmage";
+import { Archmage } from "./Archmage";
 export default Archmage;

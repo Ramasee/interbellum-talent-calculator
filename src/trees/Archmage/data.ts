@@ -174,32 +174,32 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you deal direct damage to an enemy, you have a 33% chance to apply one of three debuffs to them. Effects do not refresh and last 6 seconds.\nDeals 3% MAP + 40 impact damage every second.\nDeals 6% RAP + 80 piercing damage every 2 seconds.\nDeals 9% SAP + 120 spiritual damage every 3 seconds.`,
       },
-      "Racial Tactic 2": {
+      "Form Ranks": {
         name: "Racial Tactic 2",
         pos: "b2",
         icon: icons["tac_arche"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Text of tactic.`,
+        description: talentText`Whenever you use a basic attack, each groupmate within 100 feet that has this tactic will gain 300 penetration and 300 sagacity for 3 seconds.`,
       },
-      "Class Tactic 1": {
-        name: "Class Tactic 1",
+      "Drain Magic": {
+        name: "Drain Magic",
         pos: "c2",
         icon: icons["tac_arche"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Text of tactic.`,
+        description: talentText`Whenever you hit an enemy with an augmented spell, you will dispel one enchantment from them.`,
       },
-      "Class Tactic 2": {
-        name: "Class Tactic 2",
+      "Run Between Worlds": {
+        name: "Run Between Worlds",
         pos: "d2",
         icon: icons["tac_arche"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Text of tactic.`,
+        description: talentText`Walk Between Worlds will no longer increase your cast times and will increase your movement speed by 25% for the duration.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -208,7 +208,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Specialization is able to equip these weapons.`,
+        description: talentText`Adepts of Ghyran equip staves.`,
       },
       "Morale 1 Class": {
         name: "Morale 1 Class",
