@@ -26,6 +26,7 @@ export const App: React.FC = () => {
         <Route path="/engineer" component={Engineer} />
         <Route path="/oathbreaker" component={Oathbreaker} />
         <Route path="/runescribe" component={RuneScribe} />
+        <Route path="/archmage" component={Archmage} />
       </Suspense>
     </div>
   );
