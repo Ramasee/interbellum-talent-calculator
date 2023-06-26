@@ -7,7 +7,7 @@ import { createTalentProvider } from "../../TalentContext";
 
 const TalentProvider = createTalentProvider(data);
 
-export const BrightWizard: React.FC = () => {
+export const Archmage: React.FC = () => {
   return (
     <TalentProvider>
       <KlassTrees klass="Archmage" />
