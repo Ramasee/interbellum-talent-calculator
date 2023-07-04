@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you with this tactic gain a 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -408,7 +408,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 50 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
+        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 106 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
       },
       "Meltdown": {
         name: "Meltdown",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 282 corporeal damage. You generate 5 Combustion`,
+        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 311 indirect, corporeal damage. You generate 5 Combustion`,
       },
       "Funnel Power": {
         name: "Funnel Power",

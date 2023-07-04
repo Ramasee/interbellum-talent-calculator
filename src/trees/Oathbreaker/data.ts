@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you die, you are instantly ressurected to 2000 health and deal 10% MAP + 150 physical damage to up to 24 enemeies within 30 feet. This effect can only happen once every 90 seconds.`,
+        description: talentText`Whenever you die, you are instantly ressurected to 2000 health and deal 10% MAP + 150 impact damage to up to 24 enemeies within 30 feet. This effect can only happen once every 90 seconds.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 15% MAP physical damage.`,
+        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 15% MAP impact damage.`,
       },
       "Even the Odds": {
         name: "Even the Odds",
@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`You gain a buff for 5 seconds whenever you take or deal damage that increases your rage generated per second by 5.\nFurious (26-75 rage): Lose 50% of your armor and all resistances. Gain armor penetration equal to 20% of the amount lost.\nBerserk (76-100 rage): You lose 75% of your total incoming healing received stat. Gain melee attack power equal to 10 times the amount lost.\n\nBloodthirst lasts for 60 seconds and stacks up to 5 times. Gain 1 rage per second per stack.`,
+        description: talentText`You gain a buff for 5 seconds whenever you take or deal damage that increases your rage generated per second by 5.\nFurious (26-75 rage): Lose 50% of your armor and all resistances. Gain penetration equal to 20% of the amount lost.\nBerserk (76-100 rage): You lose 75% of your total incoming healing received stat. Gain melee attack power equal to 10 times the amount lost.\n\nBloodthirst lasts for 60 seconds and stacks up to 5 times. Gain 1 rage per second per stack.`,
       },
       "Grimnir's Fury": {
         name: "Grimnir's Fury",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deal 110 physical damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deal 110 impact damage to target enemy. Generates 22 action points.`,
       },
       "Charge": {
         name: "Charge",
@@ -368,7 +368,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 physical damage to target enemy.`,
+        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.`,
       },
       "Cleft in Twain": {
         name: "Cleft in Twain",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Rage",
-        description: talentText`Deals 18% MAP + 228 physical damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        description: talentText`Deals 18% MAP + 228 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
       },
       "Fueled by Violence": {
         name: "Fueled by Violence",
@@ -423,7 +423,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
-        description: talentText`Deals 34% MAP + 468 physical damage to target enemy.`,
+        description: talentText`Deals 34% MAP + 468 impact damage to target enemy.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 9% MAP + 123 physical damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 9% MAP + 123 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Devastate": {
         name: "Devastate",
@@ -458,12 +458,12 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
-        cost: "no cost",
+        cost: "100 action points",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Must be Berserk",
-        description: talentText`Deals 34% MAP + 468 physical damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
+        description: talentText`Deals 34% MAP + 468 piercing damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
       },
 	  "Wild Swing": {
         name: "Wild Swing",
@@ -479,7 +479,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
-        description: talentText`Deals 12% MAP + 169 physical damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 169 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Cave-In": {
         name: "Cave-In",
@@ -518,7 +518,7 @@ export const data: TalentData = {
         range: "self",
         cast: "1.0s cast",
         cooldown: "30s cooldown",
-        description: talentText`Applies a 6 second duration cripple to up to 9 enemies within 30 feet of you. Every 2 seconds up to 9 enemies within 20 feet of the target will take 3% MAP + 27 physical damage.`,
+        description: talentText`Applies a 6 second duration cripple to up to 9 enemies within 30 feet of you. Every 2 seconds up to 9 enemies within 20 feet of the target will take 3% MAP + 27 ichor damage.`,
       },
 	  "Not Yet!": {
         name: "Not Yet!",
@@ -545,7 +545,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Your action point costs are reduced by 5 whenever you are Furious and by 10 whenever you are Berserk. Enemies that attack you gain 5 action points.`,
+        description: talentText`Your action point costs are reduced by 20% whenever you are Furious and by 40% whenever you are Berserk. Enemies that attack you gain 5 action points.`,
       },
 	  "Unbridled Ferocity": {
         name: "Unbridled Ferocity",
@@ -574,7 +574,7 @@ export const data: TalentData = {
         prereq: "Reckless Gamble",
 		arrows: [{ dir: "down", from: "b6", to: "b7" }],
         type: "career tactic",
-        description: talentText`Deals 7% MAP + 89 physical damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
+        description: talentText`Deals 3% MAP + 53 impact damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
       },
 	  "Massacre": {
         name: "Massacre",
@@ -632,7 +632,7 @@ export const data: TalentData = {
           8,
           12,
           16,
-        ]}% MAP indirect physical damage to them as well. You will deal half this amount to yourself.`,
+        ]}% MAP indirect ichor damage to them as well. You will deal half this amount to yourself.`,
       },
 	  "Improved Vigilance": {
         name: "Improved Vigilance",
@@ -654,11 +654,11 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Fueled by Violence has a ${[
-          33,
-          66,
-          100,
-        ]}% chance to generate an additional stack of Bloodthirst.`,
+        description: talentText`Fueled by Violence now generates ${[
+          90,
+          105,
+          120,
+        ]} action points.`,
       },
 	  "Wilder Swing": {
         name: "Wilder Swing",
@@ -958,7 +958,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Specialization is able to equip these weapons.`,
+        description: talentText`Exiled dual wield one-handed hammers.`,
       },
       "Morale 1 Class": {
         name: "Morale 1 Class",
@@ -1514,7 +1514,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Specialization is able to equip these weapons.`,
+        description: talentText`Giantslayers equip two-handed axes.`,
       },
       "Morale 1 Class": {
         name: "Morale 1 Class",

@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic gain a 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Cleanses all Chaos Corruption from up to 96 allies and 96 enemies within 30 feet of you. You gain a buff for 30 seconds. For the duration, you generate 10 Righteous Fury per second, your outgoing damage is increased by 50%, your healing done is increased by 50%, and your HP4 is increased by 1000. At the end of the duration, you die and gain Forlorn.`,
+        description: talentText`Cleanses all Chaos Corruption from up to 96 allies and 96 enemies within 30 feet of you. You gain a buff for 30 seconds. For the duration, you generate 10 Righteous Fury per second, your outgoing damage is increased by 75%, your healing done is increased by 75%, and your HP4 is increased by 1000. At the end of the duration, you die and gain Forlorn.`,
       },
       "Shield of Faith": {
         name: "Shield of Faith",
@@ -450,7 +450,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Righteous Fury",
-        description: talentText`Applies an enchantment to target ally that heals for 6% RP + 71 every 3 seconds for 15 seconds.`,
+        description: talentText`Applies an enchantment to target ally that heals for 7% RP + 82 every 3 seconds for 15 seconds.`,
       },
 	  "Radiance": {
         name: "Radiance",
@@ -476,7 +476,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies a buff to target ally that heals them for 7% of your wounds + 420 every second for 5 seconds. Applies a debuff to you that deals 7% of your wounds + 420 true damage every second and reduces your healing received by 100% for 5 seconds.`,
+        description: talentText`Applies a buff to target ally that heals them for 28% of your wounds + 420 every second for 5 seconds. Applies a debuff to you that deals 28% of your wounds + 420 true damage every second and reduces your healing received by 100% for 5 seconds.`,
       },
 	  "Repel": {
         name: "Repel",

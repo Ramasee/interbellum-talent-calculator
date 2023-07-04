@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic will gain a 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 3% MAP + 33 ichor damage every second and generates 1 Mandate.`,
+        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 4% MAP + 57 ichor damage every second and generates 1 Mandate.`,
       },
       "Bellow Commands": {
         name: "Bellow Commands",

@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, you will gain a 400 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic gain a 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 6% MAP + 80 piercing damage every 2 seconds; the last tick will deal 37% MAP + 505 impact damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 9% MAP + 113 piercing damage every 2 seconds; the last tick will deal 28% MAP + 372 impact damage.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -567,7 +567,7 @@ export const data: TalentData = {
         prereq: "Seal of Wilhelm",
         arrows: [{ dir: "right", from: "f6", to: "g6" }],
         type: "career tactic",
-        description: talentText`Seal of Wilhelm will no longer increase your armor. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor by 1000.`,
+        description: talentText`Seal of Wilhelm will no longer apply its blessing. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor by 1000.`,
       },
 	  "Find Weakness": {
         name: "Find Weakness",
@@ -1206,7 +1206,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Outriders equip one-handed swords and pistols.`,
+        description: talentText`Outriders equip one-handed swords and rifles.`,
       },
 	  "Exquisite Swordsmanship": {
         name: "Exquisitie Swordsmanship",
