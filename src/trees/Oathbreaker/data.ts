@@ -252,10 +252,10 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. For the duration, you gain 5 mass and 25% movement speed.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Unleashed Power": {
+        name: "Unleashed Power",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_unleashedpower"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Gain a buff for 20 seconds. Every second you gain 20 rage and 1 Bloodthirst; you gain 33% damage reduction for the duration.`,
       },
 	  "Sever Nerve": {
         name: "Sever Nerve",
@@ -364,11 +364,11 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "36 action points",
+        cost: "50 action points",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.`,
+        description: talentText`Deals 27% MAP + 356 piercing damage to target enemy.`,
       },
       "Cleft in Twain": {
         name: "Cleft in Twain",

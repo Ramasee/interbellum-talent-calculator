@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 5 second ailment to the target. They will take 3% MAP + 33 physical damage every second for every 35 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 3% MAP + 27 physical damage every second for every 35 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -278,21 +278,21 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`You gain a buff for 10 seconds that increases armor, corporeal, elemental, and spiritual resistances by 750.`,
+        description: talentText`You gain a buff for 10 seconds that increases armor by 2000.`,
       },
-      "Morale 2 Spec": {
+      "Recite the Dammaz Kron": {
         name: "Morale 2 Spec",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_face03"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Gain a buff for 15 seconds. Gain an additional 5 Grudge whenever a groupmate is attacked and deal 13% MAP + 160 ichor damage to the attacker.`,
       },
       "Dwarven Sprint": {
         name: "Dwarven Sprint",
@@ -308,19 +308,19 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. For the duration, you gain 5 mass and 25% movement speed.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Oathbound": {
+        name: "Oathbound",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_oathstone"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Gain a buff for 30 seconds. For the duration, you gain 1000 restoration power and each time you spend Grudge all groupmates within 100 feet gain a Runic Shield.`,
       },
       "Grudge": {
         name: "Grudge",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`You have a maximum of 100 Grudge. You gain 3 Grudge whenever any groupmate within 100ft of you is attacked but not when you are attacked.`,
+        description: talentText`You have a maximum of 100 Grudge. You gain 3 Grudge whenever any groupmate within 100 feet of you is attacked but not when you are attacked.`,
       },
       "Grudging Blow": {
         name: "Grudging Blow",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 110 physical damage to target enemy. You will generate 3 Grudge.`,
+        description: talentText`Deals 110 piercing damage to target enemy. You will generate 3 Grudge.`,
       },
       "Grudge Unleashed": {
         name: "Grudge Unleashed",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of you armor, resistances, dodge, and block. You will lose these stats for the duration and for 5 seconds after the effect is broken.`,
+        description: talentText`Applies Guard to target groupmate. While you are within 30 feet of them, they will gain 50% of you armor, resistances, and block. You will lose these stats for the duration and for 5 seconds after the effect is broken.`,
       },
       "Heavy Blow": {
         name: "Heavy Blow",
@@ -378,11 +378,11 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "36 action points",
+        cost: "50 action points",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% + 280 physical damage to target enemy.`,
+        description: talentText`Deals 27% + 356 piercing damage to target enemy.`,
       },
       "Binding Grudge": {
         name: "Binding Grudge",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 4% MAP + 60 physical damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 4% MAP + 60 ichor damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Inspiring Attack": {
         name: "Inspiring Attack",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 17% MAP + 220 physical damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
+        description: talentText`Deals 17% MAP + 220 piercing damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
       },
       "Away With Ye": {
         name: "Away With Ye",
@@ -495,8 +495,8 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 40 Grudge",
-        description: talentText`Deals 10% MAP + 124 physical damage to up to 9 enemies within 30ft in front of you.`,
+        blue: "Costs 35 Grudge",
+        description: talentText`Deals 10% MAP + 124 impact damage to up to 9 enemies within 30ft in front of you.`,
       },
       "Skin of Iron": {
         name: "Skin of Iron",
@@ -510,7 +510,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. For the duration, you will gain 1000 armor and corporeal resistance.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. For the duration, you will gain 1500 armor.`,
       },
       "Grip of Stone": {
         name: "Grip of Stone",
@@ -523,7 +523,7 @@ export const data: TalentData = {
         range: "self",
         cast: "1.0s cast",
         cooldown: "30s cooldown",
-        description: talentText`Up to 48 enemies within 30ft of you have their movement speed reduced by 90% for 3 seconds. Does not effect target that have Cover from you.`,
+        description: talentText`Up to 48 enemies within 30 feet of you have their movement speed reduced by 90% for 3 seconds. Does not effect target that have Cover from you.`,
       },
 	  "Alone but not Afraid": {
         name: "Alone but not Afraid",
@@ -541,8 +541,8 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you take direct damage, you will gain 750 armor and all resistances but lose 20% movement speed for 5 seconds.`,
-      },
+        description: talentText`Whenever you take direct damage, you will gain 2000 armor but lose 20% movement speed for 5 seconds.`,
+      },2
 	  "Oath of Reclamation": {
         name: "Oath of Reclamation",
         pos: "b6",
@@ -561,7 +561,7 @@ export const data: TalentData = {
         prereq: "Flashbang Grenade",
         arrows: [{ dir: "down", from: "g5", to: "g6" }],
         type: "career tactic",
-        description: talentText`Flashbang Grenade will now affect up to 23 other enemies within 20ft of the target if they do not have Cover from you.`,
+        description: talentText`Flashbang Grenade will now affect up to 23 other enemies within 20 feet of the target if they do not have Cover from you.`,
       },
 	  "Dwarven Riposte": {
         name: "Dwarven Riposte",
@@ -660,7 +660,7 @@ export const data: TalentData = {
         prereq: "Fire Bomb",
         arrows: [{ dir: "down", from: "h4", to: "h6" }],
         type: "passive",
-        description: talentText`Enemies you hit with Fire Bomb will receive a 5 seconf debuff. The next ally to hit them will gain ${[
+        description: talentText`Enemies you hit with Fire Bomb will receive a 5 second debuff. The next ally to hit them will gain ${[
           10,
           20,
         ]}% RP health.`,
@@ -681,7 +681,7 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Groupmates within 30ft of you have their damage reduction increased by ${[
+        description: talentText`Groupmates within 30 feet of you have their damage reduction increased by ${[
           2,
           4,
           6,
