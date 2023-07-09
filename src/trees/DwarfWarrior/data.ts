@@ -542,7 +542,7 @@ export const data: TalentData = {
         reqPoints: 10,
         type: "career tactic",
         description: talentText`Whenever you take direct damage, you will gain 2000 armor but lose 20% movement speed for 5 seconds.`,
-      },2
+      },
 	  "Oath of Reclamation": {
         name: "Oath of Reclamation",
         pos: "b6",
