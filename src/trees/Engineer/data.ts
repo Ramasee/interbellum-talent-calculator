@@ -219,15 +219,6 @@ talents: {
         type: "career tactic",
         description: talentText`Your mass is increased by 1.`,
       },
-	  "Ancestral Inheritance": {
-        name: "Archetype Tactic",
-        pos: "a2",
-        icon: icons["tac_race_dwarf"],
-        maxRank: 1,
-        reqPoints: 0,
-        type: "career tactic",
-        description: talentText`You are immune to effects that apply Reduced Armor.`,
-      },
       "Recycle": {
         name: "Recycle",
         pos: "c2",
