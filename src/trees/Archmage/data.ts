@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you deal direct damage to an enemy, you have a 33% chance to apply one of three debuffs to them. Effects do not refresh and last 6 seconds.\nDeals 3% MAP + 40 impact damage every second.\nDeals 6% RAP + 80 piercing damage every 2 seconds.\nDeals 9% SAP + 120 spiritual damage every 3 seconds.`,
+        description: talentText`Whenever you deal direct damage to an enemy, you have a 33% chance to apply one of three debuffs to them. Effects do not refresh and last 6 seconds.\nDeals 4% MAP + 56 impact damage every second.\nDeals 6% RAP + 80 piercing damage every 2 seconds.\nDeals 10% SAP + 134 spiritual damage every 3 seconds.`,
       },
       "Form Ranks": {
         name: "Racial Tactic 2",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Target enemy gains 2 stacks of Reduced Corporeal Resistance, Reduced Elemental Resistance, and Reduced Spiritual Resistance.`,
+        description: talentText`Target enemy gains 3 stacks of Reduced Corporeal Resistance, Reduced Elemental Resistance, and Reduced Spiritual Resistance.`,
       },
       "Net of Amyntok": {
         name: "Net of Amyntok",
@@ -252,8 +252,8 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`Gain a debuff for 5 seconds which reduces your mass by 8. Leap forward and apply Ensnared to up to 9 enemies within 20 feet of where you land.\n\nEnsnared reduces movement speed by 30% for 16 seconds.`,
       },
-      "Winter Frost": {
-        name: "Winter Frost",
+      "Winter's Frost": {
+        name: "Winter's Frost",
         pos: "i8",
         icon: icons["abi_de_shadowspike"],
         maxRank: 1,
@@ -306,7 +306,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 120% RP + 1600 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all afflictions and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
       "Winds of Magic": {
         name: "Winds of Magic",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Lore of Life",
-        description: talentText`Heal target ally for 30% RP + 411.\n\nAugmented: Apply a 12 second enchantment to the target. For the duration, target is healed for 7% RP + 116 every 3 seconds.`,
+        description: talentText`Heal target ally for 24% RP + 312.\n\nAugmented: Apply a 12 second enchantment to the target. For the duration, target is healed for 4% RP + 52 every 2 seconds.`,
       },
       "Shield of Saphery": {
         name: "Shield of Saphery",
@@ -379,10 +379,10 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "spell",
         cost: "80 action points",
-        range: "150ft range",
+        range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Target ally gains an enchantment for 8 seconds. They will absorb 20% RP + 258 damage over the duration.`,
+        description: talentText`Target ally gains an enchantment for 8 seconds. They will absorb 20% RP + 280 damage over the duration.`,
       },
       "Cleansing Light": {
         name: "Cleansing Light",
@@ -424,7 +424,7 @@ export const data: TalentData = {
         cast: "2.5s cast",
         cooldown: "no cooldown",
         blue: "Lore of Heavens",
-        description: talentText`Deals 22% SAP + 312 elemental damage to up to 9 enemies within a 20 foot area you select.\n\nAugmented: Reduce the cast time by 1.5 seconds.`,
+        description: talentText`Deals 17% SAP + 226 elemental damage to up to 9 enemies within a 20 foot area you select.\n\nAugmented: Reduce the cast time by 1.5 seconds.`,
       },
       "Walk Between Worlds": {
         name: "Walk Between Worlds",
@@ -451,7 +451,7 @@ export const data: TalentData = {
         cast: "1.0s cast",
         cooldown: "no cooldown",
         blue: "Lore of Light",
-        description: talentText`Heal target ally for 14% RP + 280 and dispel 1 stack of each Chaos corruption from them.\n\nAugmented: Heal for an additional 6% RP + 120.`,
+        description: talentText`Heal target ally for 15% RP + 180 and dispel 1 stack of each Chaos corruption from them.\n\nAugmented: Heal for an additional 7% RP + 75.`,
       },
 	  "Star Tide's Ebb": {
         name: "Star Tide's Ebb",
@@ -493,7 +493,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Lore of Light",
-        description: talentText`Deals 33% SAP + 440 spiritual damage to target enemy and applies 1 stack of Reduced Accuracy to them.\n\nAugmented: Deals 4% SAP + 48 spiritual damage to target and up to 8 other enemies within 20 feet of them also applying stacks.`,
+        description: talentText`Deals 32% SAP + 411 spiritual damage to target enemy and applies 1 stack of Reduced Accuracy to them.\n\nAugmented: Deals 4% SAP + 51 spiritual damage to target and up to 8 other enemies within 20 feet of them also applying stacks.`,
       },
       "Storm of Renewal": {
         name: "Storm of Renewal",
@@ -507,7 +507,7 @@ export const data: TalentData = {
         cast: "3.0s cast",
         cooldown: "15s cooldown",
         blue: "Lore of Life",
-        description: talentText`Applies a 15 second enchantment on all groupmates within 100 feet of you. For the duration they will be healed for 13% RP + 162 every 3 seconds.\n\nAugmented: Also applies to up to 4 allies within 20 feet of each groupmate.`,
+        description: talentText`Applies a 15 second enchantment on all groupmates within 100 feet of you. For the duration they will be healed for 12% RP + 162 every 3 seconds.\n\nAugmented: Also applies to up to 4 allies within 20 feet of each groupmate.`,
       },
       "Flames of the Phoenix": {
         name: "Flames of Phoenix",
@@ -538,7 +538,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Cleansing Light will now apply a 9 second enchantment to the target, stacking up to 3 times. For the duration, they will be healed for 2% + 21 every second.`,
+        description: talentText`Cleansing Light will now apply a 9 second enchantment to the target, stacking up to 3 times. For the duration, they will be healed for 2% + 23 every second.`,
       },
 	  "Eyes of Truth": {
         name: "Eyes of Truth",
@@ -569,7 +569,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`The healing over time effect of Regrowth can now critically heal.`,
+        description: talentText`The healing over time effect of Regrowth now heals for 14% RP + 188 every 3 seconds.`,
       },
 	  "Curse of Thorns": {
         name: "Curse of Thorns",
@@ -667,8 +667,8 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Regrowth's direct heal is ${[
-          15,
-          30,
+          10,
+          20,
         ]}% more effective on targets that have Regrowth's over time effect.`,
       },
 	  "Rampant Growth III": {

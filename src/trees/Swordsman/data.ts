@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Exquisite Swordsmanship": {
         name: "Exquisitie Swordsmanship",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 9% MAP + 113 piercing damage every 2 seconds; the last tick will deal 28% MAP + 372 impact damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. Target takes 12% MAP + 150 ichor damage every 2 seconds; the last tick will deal 15% MAP + 215 impact damage.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 17% RAP + 228 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
+        description: talentText`Deals 23% RAP + 297 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
       },
       "Blessed Bullet": {
         name: "Blessed Bullet",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Deals 50% RAP + 663 piercing damage to target enemy.`,
+        description: talentText`Deals 59% RAP + 782 piercing damage to target enemy.`,
       },
       "Seal of Van Horstmann": {
         name: "Seal of Van Horstmann",
@@ -462,7 +462,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 10% MAP + 119 piercing damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
+        description: talentText`Deals 10% MAP + 126 piercing damage to up to 9 enemies within 30ft of you. You will generate a Combo Point on each target hit.`,
       },
 	  "Seal of Wilhelm": {
         name: "Seal of Wilhelm",
@@ -489,7 +489,7 @@ export const data: TalentData = {
         cast: "2.0s channel",
         cooldown: "no cooldown",
         blue: "Execute\nCastable while moving",
-        description: talentText`Deals 8% MAP + 117 piercing damage to target enemy and up to 8 other enemies within 30ft of them every second.`,
+        description: talentText`Deals 10% MAP + 123 piercing damage to target enemy and up to 8 other enemies within 30 feet of them every second.`,
       },
 	  "Smash": {
         name: "Smash",
@@ -515,7 +515,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "60s cooldown",
-        description: talentText`Knock yourself back away from target enemy. Remove all Combo Points from each enemy within 50ft.`,
+        description: talentText`Knock yourself back away from target enemy. Remove all Combo Points from each enemy within 50 feet.`,
       },
       "Dragon Gun": {
         name: "Dragon Gun",
@@ -529,7 +529,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "30s cooldown",
         blue: "Castable while moving",
-        description: talentText`Applies an 8 second duration cripple and 5 Combo Points to up to 9 enemies 30ft in front of you. Each second the target and up to 9 enemies within 20ft of them will take 10% RAP + 100 elemental damage.`,
+        description: talentText`Applies an 8 second duration cripple and 5 Combo Points to up to 9 enemies 30 feet in front of you. Each second the target and up to 9 enemies within 20 feet of them will take 10% RAP + 100 elemental damage.`,
       },
 	  "Righteous Steel": {
         name: "Righteous Steel",
@@ -538,7 +538,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 16% MAP + 205 impact damage to the target and generate 1 Combo Point on them.`,
+        description: talentText`Bind Weapon, Silence Heretic, and Smash will now also deal 21% MAP + 280 impact damage to the target and generate 1 Combo Point on them.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -567,7 +567,7 @@ export const data: TalentData = {
         prereq: "Seal of Wilhelm",
         arrows: [{ dir: "right", from: "f6", to: "g6" }],
         type: "career tactic",
-        description: talentText`Seal of Wilhelm will no longer apply its blessing. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30ft of you that reduces armor by 1000.`,
+        description: talentText`Seal of Wilhelm will no longer apply its blessing. Instead it will apply a 10 second duration ailment to up to 48 enemies within 30 feet of you that reduces armor by 1000.`,
       },
 	  "Find Weakness": {
         name: "Find Weakness",

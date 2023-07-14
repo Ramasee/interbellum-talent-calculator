@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all afflictions and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100ft.`,
       },
       "Leading the Prayer": {
         name: "Leading the Prayer",
@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Applies Shield of Faith with the augmented modifer to all groupmates within 100ft.`,
+        description: talentText`Applies Shield of Faith with the augmented modifer to all groupmates within 100 feet.`,
       },
       "Hammer Time": {
         name: "Hammer Time",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 9% MAP + 123 spiritual damage to target enemy. Your defensive target will be healed for 150% of the damage dealt and applies Shield of Faith to groupmates within 75ft. Generates 30 Righteous Fury.`,
+        description: talentText`Deals 10% MAP + 115 spiritual damage to target enemy. Your defensive target will be healed for 150% of the damage dealt and applies Shield of Faith to groupmates within 75 feet. Generates 30 Righteous Fury.`,
       },
       "Divine Light": {
         name: "Divine Light",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 60 Righteous Fury",
-        description: talentText`Place a blessing on target ally that absorbs up to 24% RP + 324 damage over 5 seconds.`,
+        description: talentText`Place a blessing on target ally that absorbs up to 27% RP + 342 damage over 5 seconds.`,
       },
       "Prayer of Devotion": {
         name: "Prayer of Devotion",
@@ -423,7 +423,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
         blue: "Costs 80 Righteous Fury",
-        description: talentText`Deals 16% MAP + 201 spiritual damage to target enemy every second. Your defensive target will be healed for 150% of the damage you dealt if they were within 75ft.`,
+        description: talentText`Deals 21% MAP + 289 spiritual damage to target enemy every second. Your defensive target will be healed for 150% of the damage you dealt if they were within 75 feet.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -450,7 +450,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Righteous Fury",
-        description: talentText`Applies an enchantment to target ally that heals for 7% RP + 82 every 3 seconds for 15 seconds.`,
+        description: talentText`Applies an enchantment to target ally that heals for 6% RP + 65 every 3 seconds for 15 seconds.`,
       },
 	  "Radiance": {
         name: "Radiance",
@@ -463,7 +463,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 12% MAP + 152 impact damage to target enemy. Your defensive target gains 1 stack of Enhanced Block if they are within 75ft. Generates 30 Righteous Fury.`,
+        description: talentText`Deals 19% MAP + 250 impact damage to target enemy. Your defensive target gains 1 stack of Enhanced Block if they are within 75ft. Generates 30 Righteous Fury.`,
       },
 	  "Spirit of the Heldenhammer": {
         name: "Spirit of the Heldenhammer",
@@ -517,7 +517,7 @@ export const data: TalentData = {
         cast: "1.0s cast",
         cooldown: "30s cooldown",
         blue: "Costs 100 Righteous Fury",
-        description: talentText`Deals 13% SAP + 186 spiritual damage to up to 48 enemies within 30ft in front of you. For each target hit that did not have Cover, all groupmates within 150ft gain a stack. The stacks heal for 6% RP + 8 each at the end of their 3 second duration.`,
+        description: talentText`Deals 13% SAP + 186 spiritual damage to up to 48 enemies within 30 feet in front of you. For each target hit that did not have Cover, all groupmates within 150 feet gain a stack. The stacks heal for 6% RP + 8 each at the end of their 3 second duration.`,
       },
 	  "Exalted Defenses": {
         name: "Exalted Defenses",
@@ -535,7 +535,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Prayer of Devotion now applies to all groupmates within 150ft when cast, but now costs 75 Righteous Fury.`,
+        description: talentText`Prayer of Devotion now applies to all groupmates within 150 feet when cast, but now costs 75 Righteous Fury.`,
       },
 	  "Unberogen Creed": {
         name: "Unberogen Creed",
@@ -555,7 +555,7 @@ export const data: TalentData = {
         prereq: "Healing Hand",
         arrows: [{ dir: "down", from: "g4", to: "g6" }],
         type: "career tactic",
-        description: talentText`The range of Healing Hand is reduced to 75ft but it now heals for 33% more.`,
+        description: talentText`The range of Healing Hand is reduced to 75 feet but it now heals for 40% more.`,
       },
 	  "Preserving Light": {
         name: "Preserving Light",
@@ -575,7 +575,7 @@ export const data: TalentData = {
         prereq: "Spirit of the Heldenhammer",
         arrows: [{ dir: "down", from: "c6", to: "c7" }],
         type: "career tactic",
-        description: talentText`Spirit of the Heldenhammer now has a 30s CD, but you and the target will gain 30% movement speed for 5 seconds.`,
+        description: talentText`Spirit of the Heldenhammer now has a 30 second cooldown, but you and the target will gain 30% movement speed for 5 seconds.`,
       },
 	  "Leading the Charge": {
         name: "Leading the Charge",
@@ -659,9 +659,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Wrath will now generate ${[
-          5,
+          3,
+          6,
           10,
-          15,
         ]} more Righteous Fury.`,
       },
 	  "Circle of Friends": {

@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Vicious Slash will now apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 4% MAP + 57 ichor damage every second and generates 1 Mandate.`,
+        description: talentText`Vicious Slash will now generate 2 Mandate and apply an affliction to the target for 6 seconds which stacks up to 3 times. Deals 4% MAP + 57 ichor damage every second.`,
       },
       "Bellow Commands": {
         name: "Bellow Commands",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Shatter Confidence": {
         name: "Shatter Confidence",
@@ -356,7 +356,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies Guard to target groupmate. While you are within 30ft of them, they will gain 50% of your armor, resistances, and block. You will lose these stats for the duration and for 5 seconds after the effect is broken.`,
+        description: talentText`Applies Guard to target groupmate. While you are within 30 feet of them, they will gain 50% of your armor, resistances, and block. You will lose these stats for the duration and for 5 seconds after the effect is broken.`,
       },
       "Crippling Blow": {
         name: "Crippling Blow",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 12% MAP + 152 impact damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 17% MAP + 227 impact damage and applies Ensnared and Momentum to the target.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
       "To Victory!": {
         name: "To Victory!",
@@ -409,7 +409,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will have 1.0s faster cast times.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, they will gain 50% pushback immunity.`,
       },
       "Repel": {
         name: "Repel",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100ft gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100 feet gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
       },
 	  "Distract": {
         name: "Distract",
@@ -476,7 +476,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 2 action points per second.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will gain 15 adrenaline per second.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, they will gain 2 action points per second.`,
       },
 	  "Bind Weapon": {
         name: "Bind Weapon",
@@ -503,7 +503,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100ft gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100ft gain a enchantment for 60 seconds. For the duration, they will gain 450 HP4.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will have their AP costs reduced by 50%.\n\nGroupmates within 100 feet gain a enchantment for 60 seconds. For the duration, they will gain 450 HP4.`,
       },
       "Emperor's Fury": {
         name: "Emperor's Fury",
@@ -563,7 +563,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you block an attack, two groupmates within 100ft gain 1 stack of Enhanced Fortitude.`,
+        description: talentText`Whenever you block an attack, two groupmates within 100 feet gain 1 stack of Enhanced Fortitude.`,
       },
 	  "To Action!": {
         name: "To Action!",

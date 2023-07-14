@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 3% MAP + 27 physical damage every second for every 35 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 physical damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Mountain Spirit": {
         name: "Mountain Spirit",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 27% + 356 piercing damage to target enemy.`,
+        description: talentText`Deals 26% + 348 piercing damage to target enemy.`,
       },
       "Binding Grudge": {
         name: "Binding Grudge",
@@ -433,11 +433,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "spell",
         cost: "no cost",
-        range: "100ft range",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 18% RP + 360 for the duration.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 31% RP + 409 for the duration.`,
       },
 	  "Fire Bomb": {
         name: "Fire Bomb",
@@ -453,7 +453,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 220 corporeal damage to up to 3 enemies within a 20ft area you select.`,
+        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20ft area you select.`,
       },
 	  "Flashbang Grenade": {
         name: "Flashbang Grenade",
@@ -496,7 +496,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Grudge",
-        description: talentText`Deals 10% MAP + 124 impact damage to up to 9 enemies within 30ft in front of you.`,
+        description: talentText`Deals 12% MAP + 170 impact damage to up to 9 enemies within 30ft in front of you.`,
       },
       "Skin of Iron": {
         name: "Skin of Iron",

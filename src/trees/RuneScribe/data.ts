@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Rune of Sanctuary": {
         name: "Rune of Sanctuary",
@@ -383,7 +383,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`Deals 27% MAP + 356 impact damage to target enemy. Your defensive target will gain 1 stack of Enhanced Accuracy if they are within 100 feet.\n\nAugmented: You will also gain 1 stack of Enhanced Accuracy.`,
+        description: talentText`Deals 23% MAP + 289 impact damage to target enemy. Your defensive target will gain 1 stack of Enhanced Accuracy if they are within 100 feet.\n\nAugmented: You will also gain 1 stack of Enhanced Accuracy.`,
       },
 	  "Rune of Immolation": {
         name: "Rune of Immolation",
@@ -397,7 +397,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`Apply a 15 second ailment to target enemy. Every 3 seconds target will take 11% SAP + 145 elemental damage.\n\nAugmented: the effect is now a cripple.`,
+        description: talentText`Apply a 15 second ailment to target enemy. Every 3 seconds target will take 9% SAP + 128 elemental damage.\n\nAugmented: the effect is now a cripple.`,
       },
       "Rune of Binding": {
         name: "Rune of Binding",
@@ -425,7 +425,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 5% MAP + 54 piercing damage.\n\nAugmented: Ability has no cooldown.`,
+        description: talentText`Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 5% MAP + 49 piercing damage.\n\nAugmented: Ability has no cooldown.`,
       },
       "Thousand Meter Stare": {
         name: "Thousand Meter Stare",
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grungni Rune",
-        description: talentText`Throw your hammer at target enemy dealing 21% MAP + 273 impact damage before returning to you.\n\nAugmented: Deals additional impact damage equal to 18% MAP.`,
+        description: talentText`Throw your hammer at target enemy dealing 19% MAP + 257 impact damage before returning to you.\n\nAugmented: Deals additional impact damage equal to 18% MAP.`,
       },
 	  "Rune of Shielding": {
         name: "Rune of Shielding",
@@ -466,7 +466,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "8s cooldown",
         blue: "Valaya Rune",
-        description: talentText`Applies a 8 second enchantment to target ally. They will absorb up to 22% RP + 292 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
+        description: talentText`Applies a 8 second enchantment to target ally. They will absorb up to 25% RP + 312 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
       },
 	   "Rune of Burning": {
         name: "Rune of Burning",
@@ -480,7 +480,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`Deals 9% SAP + 107 elemental damage to up to 9 enemy targets within a 20 foot area you select.\n\nAugmented: will now hit up to 24 enemeies.`,
+        description: talentText`Deals 9% SAP + 101 elemental damage to up to 9 enemy targets within a 20 foot area you select.\n\nAugmented: will now hit up to 24 enemeies.`,
       },
 	   "Rune of Impact": {
         name: "Rune of Impact",
@@ -494,7 +494,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30ft of the target will take 5% SAP + 64 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
+        description: talentText`Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 5% SAP + 81 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
       },
       "Rune of the Furnace": {
         name: "Rune of the Furnace",
@@ -561,7 +561,7 @@ export const data: TalentData = {
         prereq: "Rune of Shielding",
         arrows: [{ dir: "down", from: "g5", to: "g6" }],
         type: "career tactic",
-        description: talentText`Rune of Shielding will deal 8% SAP + 98 elemental damage to up to 24 enemies within 30 feet whenever it breaks.`,
+        description: talentText`Rune of Shielding will deal 9% SAP + 107 elemental damage to up to 24 enemies within 30 feet whenever it breaks.`,
       },
 	  "Grimnir's Gift": {
         name: "Grimnir's Gift",
@@ -601,12 +601,12 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
-        description: talentText`You gain effects whenever your runes are on shared cooldown.\nGrimnir: You deal ${[
+        description: talentText`You gain effects whenever your runes are on shared cooldown.\nGrimnir: You gain ${[
           2,
           4,
           6,
           8,
-        ]}% more damage.\nValaya: You gain ${[
+        ]}% outgoing damage.\nValaya: You gain ${[
           75,
           150,
           225,
@@ -616,7 +616,7 @@ export const data: TalentData = {
           4,
           6,
           8,
-        ]}% Reduced Incoming Damage.`,
+        ]}% Damage Reduction.`,
       },
 	  "Improved Grimnir's Fury": {
         name: "Improved Grimnir's Fury",

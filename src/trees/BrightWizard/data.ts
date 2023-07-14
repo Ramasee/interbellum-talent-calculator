@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Unquenchable Fury is now applied to all groupmates within 100ft of you.`,
+        description: talentText`Unquenchable Fury is now applied to all groupmates within 100 feet of you.`,
       },
       "Aqshy's Aegis": {
         name: "Aqshy's Aegis",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 20 feet location you select are knocked straight up into the air.`,
       },
       "Melt Armor": {
         name: "Melt Armor",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion stacks to 100 and you will gain 8% damage when above 89.\nExplosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
+        description: talentText`Explosion stacks to 100 and you will gain 8% damage when above 89.\nExplosion deals 21% SAP + 280 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 62% SAP + 818 elemental damage to target. You generate 10 Combustion.`,
+        description: talentText`Deals 52% SAP + 716 elemental damage to target. You generate 10 Combustion.`,
       },
       "Withering Heat": {
         name: "Withering Heat",
@@ -408,7 +408,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 106 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
+        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 100 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
       },
       "Meltdown": {
         name: "Meltdown",
@@ -422,7 +422,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 20 Combustion",
-        description: talentText`Deals 19% SAP + 250 corporeal damage to the target.`,
+        description: talentText`Deals 22% SAP + 283 corporeal damage to the target.`,
       },
       "Smokescreen": {
         name: "Smokescreen",
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "5s cooldown",
-        description: talentText`Deals 26% SAP + 350 elemental damage to target and applies a stack of Blast. You will take Explosion damage and gain 5 Combustion.`,
+        description: talentText`Deals 25% SAP + 335 elemental damage to target and applies a stack of Blast. You will take Explosion damage and gain 5 Combustion.`,
       },
 	   "Playing With Fire": {
         name: "Playing With Fire",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 20% SAP + 249 elemental damage to the healer and you generate 5 Combustion.`,
+        description: talentText`Applies an affliction to the target for 10 seconds. Whenever the target is healed, you will deal 13% SAP + 183 elemental damage to the healer and you generate 5 Combustion.`,
       },
       "Boiling Blood": {
         name: "Boiling Blood",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 22% SAP + 311 indirect, corporeal damage. You generate 5 Combustion`,
+        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 17% SAP + 252 indirect, corporeal damage. You generate 5 Combustion`,
       },
       "Funnel Power": {
         name: "Funnel Power",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 39% SAP + 527 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds. You generate 3 Combustion each time this deals damage.`,
+        description: talentText`Deals 18% SAP + 227 elemental damage to the target and up to 2 additional enemies within 20ft of them every 1.5 seconds. You generate 3 Combustion each time this deals damage.`,
       },
       "Spreading Flames": {
         name: "Spreading Flames",

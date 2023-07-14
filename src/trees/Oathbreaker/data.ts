@@ -306,7 +306,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Rage and Bloodthirst": {
         name: "Rage and Bloodthirst",
@@ -368,7 +368,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 27% MAP + 356 piercing damage to target enemy.`,
+        description: talentText`Deals 26% MAP + 348 piercing damage to target enemy.`,
       },
       "Cleft in Twain": {
         name: "Cleft in Twain",
@@ -381,8 +381,8 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 25 Rage",
-        description: talentText`Deals 18% MAP + 228 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        blue: "Costs 30 Rage",
+        description: talentText`Deals 18% MAP + 232 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
       },
       "Fueled by Violence": {
         name: "Fueled by Violence",
@@ -423,7 +423,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
-        description: talentText`Deals 34% MAP + 468 impact damage to target enemy.`,
+        description: talentText`Deals 44% MAP + 590 impact damage to target enemy.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 9% MAP + 123 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Devastate": {
         name: "Devastate",
@@ -458,12 +458,12 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
-        cost: "100 action points",
+        cost: "80 action points",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Must be Berserk",
-        description: talentText`Deals 34% MAP + 468 piercing damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
+        description: talentText`Deals 37% MAP + 492 piercing damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
       },
 	  "Wild Swing": {
         name: "Wild Swing",
@@ -479,7 +479,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
-        description: talentText`Deals 12% MAP + 169 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Cave-In": {
         name: "Cave-In",
@@ -574,7 +574,7 @@ export const data: TalentData = {
         prereq: "Reckless Gamble",
 		arrows: [{ dir: "down", from: "b6", to: "b7" }],
         type: "career tactic",
-        description: talentText`Deals 3% MAP + 53 impact damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
+        description: talentText`Deals 3% MAP + 50 impact damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
       },
 	  "Massacre": {
         name: "Massacre",
@@ -673,9 +673,9 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`Wild Swing deals ${[
-          5,
-          10,
-          15,
+          8,
+          16,
+          24,
         ]}% more damage.`,
       },
       "Power Through": {
