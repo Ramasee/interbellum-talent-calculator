@@ -343,7 +343,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Blade Enchantment",
-        description: talentText`Deals 110 elemental damage to target enemy. Generates 22 action points.\n\nAsuryan - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second affliction that deals 5% SAP + 47 elemental damage every second.\n\nVaul - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second enchantment that will absorb 11% RP + 155.`,
+        description: talentText`(Basic Attack) Deals 110 elemental damage to target enemy. Generates 22 action points.\n\nAsuryan - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second affliction that deals 5% SAP + 47 elemental damage every second.\n\nVaul - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second enchantment that will absorb 11% RP + 155.`,
       },
       "Dragon's Talon": {
         name: "Dragon's Talon",
@@ -507,8 +507,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "blue text",
-        description: talentText`Deals 110 spiritual damage to target enemy. Generates 22 action points.\n\nAsuryan - Knocks up to 9 enemeies within 30 feet of you away and applies Immovable to them. This effect can only happen once every 20 seconds.\nVaul - Applies Knocked-down and Unstoppable to target enemy. This effect can only happen once every 20 seconds.\n\nKnocked-down prevents all control of your character for 3 seconds.\nImmovaled prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`(Basic Attack) Deals 110 spiritual damage to target enemy. Generates 22 action points.\n\nAsuryan - Knocks up to 9 enemeies within 30 feet of you away and applies Immovable to them. This effect can only happen once every 20 seconds.\nVaul - Applies Knocked-down and Unstoppable to target enemy. This effect can only happen once every 20 seconds.\n\nKnocked-down prevents all control of your character for 3 seconds.\nImmovaled prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Flames of the Phoenix": {
         name: "Flames of Phoenix",
@@ -600,7 +599,7 @@ export const data: TalentData = {
         description: talentText`Whenever you consume a Sigil of Vaul or Sigil of Asuryan, all groupmates within 100 feet of you have their damage reduction increased by ${[
           3,
           6,
-        ]}%.`,
+        ]}% for 5 seconds.`,
       },
 	  "Improved Bladeworks": {
         name: "Improved Bladeworks",
@@ -702,7 +701,7 @@ export const data: TalentData = {
   },
   "Swordmaster": {
     name: "Swordmaster",
-    background: backgrounds["Swordmaster"],
+    background: backgrounds["swordmaster"],
     icon: icons["archetype_dps"],
     talents: {
       "Break Loose": {
