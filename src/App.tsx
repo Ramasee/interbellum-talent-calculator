@@ -13,6 +13,7 @@ const Engineer = lazy(() => import("./trees/Engineer"));
 const Oathbreaker = lazy(() => import("./trees/Oathbreaker"));
 const RuneScribe = lazy(() => import("./trees/RuneScribe"));
 const Archmage = lazy(() => import("./trees/Archmage"));
+const Apprentice = lazy(() => import("./trees/Apprentice"));
 
 export const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ export const App: React.FC = () => {
         <Route path="/oathbreaker" component={Oathbreaker} />
         <Route path="/runescribe" component={RuneScribe} />
         <Route path="/archmage" component={Archmage} />
+        <Route path="/apprentice" component={Apprentice} />
       </Suspense>
     </div>
   );

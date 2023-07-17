@@ -53,6 +53,11 @@ const KLASSES = [
     icon: icons["class_archmage"],
     path: "/archmage",
   },
+  {
+    name: "Apprentice",
+    icon: icons["class_apprentice"],
+    path: "/apprentice",
+  },
 ];
 
 interface Props {}
