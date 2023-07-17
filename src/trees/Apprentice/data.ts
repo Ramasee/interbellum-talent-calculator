@@ -343,7 +343,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Blade Enchantment",
-        description: talentText`Deals 110 elemental damage to target enemy. Generates 22 action points.\nAsuryan - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second affliction that deals 5% SAP + 47 elemental damage every second.\nVaul - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second enchantment that will absorb 11% RP + 155.`,
+        description: talentText`Deals 110 elemental damage to target enemy. Generates 22 action points.\n\nAsuryan - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second affliction that deals 5% SAP + 47 elemental damage every second.\n\nVaul - Gain an enchantment for 10 seconds. Whenever you attack an enemy, you will apply a 6 second enchantment that will absorb 11% RP + 155.`,
       },
       "Dragon's Talon": {
         name: "Dragon's Talon",
@@ -357,7 +357,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Sigil of Asuryan",
-        description: talentText`Dispel one enchantment from target enemy.\nHoeth - Also dispel one blessing.\nEldrazor - Also deals 21% MAP + 280 elemental damage.`,
+        description: talentText`Dispel one enchantment from target enemy.\n\nHoeth - Also dispel one blessing.\nEldrazor - Also deals 21% MAP + 280 elemental damage.`,
       },
       "Quick Incision": {
         name: "Quick Incision",
@@ -398,12 +398,12 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
         blue: "Sigil of Vaul",
-        description: talentText`Deals 22% MAP + 312 spiritual damage every second to target enemy.\nEldrazor - Channel interval is reduced to 0.6 seconds.\nHoeth - Channel interval is increased to 2.0 seconds and the channel duration is increased to 6.0 seconds. For the duration, the target has its outoing damage and damage reduction reduced by 10%.`,
+        description: talentText`Deals 22% MAP + 312 spiritual damage every second to target enemy.\n\nEldrazor - Channel interval is reduced to 0.6 seconds.\nHoeth - Channel interval is increased to 2.0 seconds and the channel duration is increased to 6.0 seconds. For the duration, the target has its outoing damage and damage reduction reduced by 10%.`,
       },
       "Aethyric Dissipation": {
         name: "Aethyric Dissipation",
         pos: "g1",
-        icon: icons["abi_he_instillfear"],
+        icon: icons["abi_he_instilfear"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -453,7 +453,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Sigil of Hoeth",
-        description: talentText`Applies a 6 second affliction to target enemy. Deals 9% SAP + 105 elemental damage every 2 seconds.`,
+        description: talentText`Applies a 6 second affliction to target enemy. Deals 9% SAP + 105 spiritual damage every 2 seconds.`,
       },
 	  "Distract": {
         name: "Distract",
@@ -494,7 +494,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Sigil of Asuryan",
-        description: talentText`Dispel one affliction from target ally.\nHoeth - Also dispels one cripple.\nEldrazor - Target gains a 8 second enchantment. For the duration, they will be healed for 6% RP + 90 each time they hit an enemy with an ability.`,
+        description: talentText`Dispel one affliction from target ally.\n\nHoeth - Also dispels one cripple.\nEldrazor - Target gains a 8 second enchantment. For the duration, they will be healed for 6% RP + 90 each time they hit an enemy with an ability.`,
       },
       "Gusting Wind": {
         name: "Gusting Wind",
@@ -508,7 +508,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "blue text",
-        description: talentText`Deals 110 spiritual damage to target enemy. Generates 22 action points.\nAsuryan - Knocks up to 9 enemeies within 30 feet of you away and applies Immovable to them. This effect can only happen once every 20 seconds.\nVaul - Applies Knocked-down and Unstoppable to target enemy. This effect can only happen once every 20 seconds.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`Deals 110 spiritual damage to target enemy. Generates 22 action points.\n\nAsuryan - Knocks up to 9 enemeies within 30 feet of you away and applies Immovable to them. This effect can only happen once every 20 seconds.\nVaul - Applies Knocked-down and Unstoppable to target enemy. This effect can only happen once every 20 seconds.\n\nKnocked-down prevents all control of your character for 3 seconds.\nImmovaled prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
       "Flames of the Phoenix": {
         name: "Flames of Phoenix",
@@ -570,7 +570,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Dazzling Blade and  Heaven's Blade will apply stacks of Reduced Spiritual Resistance and Reduced Elemental Resistance whenever they deal damage.`,
+        description: talentText`Dazzling Blade, Heaven's Blade, Phoenix Wing will apply stacks of Reduced Spiritual Resistance and Reduced Elemental Resistance whenever they deal periodic damage.`,
       },
 	  "Adept Movements": {
         name: "Adept Movements",
@@ -634,7 +634,7 @@ export const data: TalentData = {
       },
 	  "Bladeshields": {
         name: "Bladeshields",
-        pos: "c9",
+        pos: "d6",
         icon: icons["abi_he_bladeshield"],
         maxRank: 4,
         reqPoints: 15,
