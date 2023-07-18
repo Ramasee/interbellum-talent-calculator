@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specaxe"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 21 second cripple to target enemy. Deals X% MAP + Y ichor damage every 3 seconds. Generates 1 Ferocity.`,
+        description: talentText`Applies a 21 second cripple to target enemy. Deals 25% MAP + 331 ichor damage every 3 seconds. Generates 1 Ferocity.`,
       },
       "Sundering Chop": {
         name: "Sundering Chop",
@@ -503,7 +503,7 @@ export const data: TalentData = {
         range: "65ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Marked, Bleeding, and a 6 second affliction to target enemy. At the end of the duration, target will take 27% MAP + 370 spiritual damage and you will generate 1 Ferocity.\n\nMarked lasts for 10 second and reduces target's damage reduction by 15% for the duration.`,
+        description: talentText`Applies Marked, Bleeding, and a 6 second affliction to target enemy. At the end of the duration, target will take 22% MAP + 288 spiritual damage and you will generate 1 Ferocity.\n\nMarked lasts for 10 second and reduces target's damage reduction by 15% for the duration.`,
       },
       "Echoing Roar": {
         name: "Echoing Roar",
@@ -569,7 +569,7 @@ export const data: TalentData = {
       },
 	  "Demolishing Blow": {
         name: "Demolishing Blow",
-        pos: "b9",
+        pos: "f7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
@@ -633,10 +633,9 @@ export const data: TalentData = {
 	  "Hack and Slash": {
         name: "Hack and Slash",
         pos: "g6",
-        icon: icons["abi_he_coordinatedstrike"],
+        icon: icons["abi_he_coordinatestrike"],
         maxRank: 5,
         reqPoints: 15,
-        prereq: "Wounds",
         type: "passive",
         description: talentText`Each time you use Hack, the damage of your next Coordinated Strike, Slashing Blade, or Sundering Chop will be increased by ${[
           4,
