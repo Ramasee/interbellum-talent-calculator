@@ -7,7 +7,7 @@ import { createTalentProvider } from "../../TalentContext";
 
 const TalentProvider = createTalentProvider(data);
 
-export const Apprentice: React.FC = () => {
+export const WhiteLion: React.FC = () => {
   return (
     <TalentProvider>
       <KlassTrees klass="WhiteLion" />
