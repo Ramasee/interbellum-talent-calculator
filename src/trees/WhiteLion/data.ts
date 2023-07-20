@@ -529,7 +529,7 @@ export const data: TalentData = {
       },
 	  "Bloodspatter": {
         name: "Bloodspatter",
-        pos: "d5",
+        pos: "b5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
@@ -666,7 +666,6 @@ export const data: TalentData = {
         icon: icons["abi_he_pounce"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Wounds",
         type: "passive",
         description: talentText`Reduce the cooldown on Pounce by ${[
           3,
