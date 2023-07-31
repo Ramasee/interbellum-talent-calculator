@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You gain 50% AP cost reduction for 5 seconds whenever you change stances.`,
+        description: talentText`You gain one charge of Brutal Assault and 50% AP cost reduction for 5 seconds whenever you change stances.`,
       },
       "Stance Dancer": {
         name: "Stance Dancer",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "10s cooldown",
         blue: "Off the GCD",
-        description: talentText`Applies Marked to target enemy. Marked reduces the target's damage reduction by 15% for 10 seconds.`,
+        description: talentText`Applies Marked to target enemy.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
       "Tar Arrow": {
         name: "Tar Arrow",
@@ -665,9 +665,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Tar Arrow will now deal ichor damage equal to ${[
-          1,
-          2,
-          3,
+          12,
+          24,
+          36,
         ]}% + 253. `,
       },
 	  "Extended Engagement": {
@@ -687,7 +687,7 @@ export const data: TalentData = {
           3,
           6,
           6,
-        ]} seconds. Increase the duration of Festering Arrorw by ${[
+        ]} seconds. Increase the duration of Festering Arrow by ${[
           0,
           2,
           2,
