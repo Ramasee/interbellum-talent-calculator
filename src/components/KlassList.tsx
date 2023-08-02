@@ -89,6 +89,7 @@ export const KlassList: React.FC<Props> = () => {
   console.log(icons);
 
   return (
+   <>
     <ul className="KlassList">
       {KLASSES.map((klass) => (
         <li className="KlassList-item" key={klass.name}>
@@ -107,5 +108,6 @@ export const KlassList: React.FC<Props> = () => {
         </li>
       ))}
     </ul>
+   </>
   );
 };
