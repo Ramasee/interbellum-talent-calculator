@@ -9,7 +9,7 @@ const icons = requireAll(require.context("../../assets/icons/chaos"));
 export const data: TalentData = {
   "Nurgle": {
     name: "Nurgle",
-    background: backgrounds["class1"],
+    background: backgrounds["chosen-nurgle"],
     icon: icons["archetype_tank"],
     talents: {
       "Masochist": {
@@ -692,7 +692,7 @@ export const data: TalentData = {
   },
   "Khorne": {
     name: "Khorne",
-    background: backgrounds["class2"],
+    background: backgrounds["chosen-khorne"],
     icon: icons["archetype_dps"],
     talents: {
       "Verge of Victory": {
@@ -1527,7 +1527,7 @@ export const data: TalentData = {
   },
   "Tzeentch": {
     name: "Tzeentch",
-    background: backgrounds["class3"],
+    background: backgrounds["chosen-tzeentch"],
     icon: icons["archetype_defsupport"],
     talents: {
       "Break Loose": {
