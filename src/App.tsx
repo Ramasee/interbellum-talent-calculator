@@ -35,7 +35,7 @@ export const App: React.FC = () => {
         <Route path="/apprentice" component={Apprentice} />
 		<Route path="/whitelion" component={WhiteLion} />
 		<Route path="/archer" component={Archer} />
-		<Route path="/chosen" component={Archer} />
+		<Route path="/chosen" component={Chosen} />
       </Suspense>
     </div>
   );
