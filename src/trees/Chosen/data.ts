@@ -213,7 +213,7 @@ export const data: TalentData = {
       "Inevitable Changing": {
         name: "Inevitable Changing",
         pos: "i4",
-        icon: icons["abi_ch_tzeenchamplification"],
+        icon: icons["abi_ch_tzeenchsamplifaction"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Apply all 4 corruption to every second to up to 96 enemies and 96 allies within 30 feet. You gain 500% benefit from all corruption on you.`,
+        description: talentText`For the next 20 seconds, apply all 4 corruption to every second to up to 96 enemies and 96 allies within 30 feet. You gain 500% benefit from all corruption on you.`,
       },
 	  "Hedgehog": {
         name: "Hedgehog",
@@ -446,7 +446,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet of you. Applies 1 random chaos corruption to up to 9 enemies and up to 9 allies within 30 ffet of you.`,
+        description: talentText`Deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet of you. Applies 1 random chaos corruption to up to 9 enemies and up to 9 allies within 30 feet of you.`,
       },
 	  "Dismiss": {
         name: "Dismiss",
@@ -490,7 +490,7 @@ export const data: TalentData = {
       "Asymptomatic Carrier": {
         name: "Asymptomatic Carrier",
         pos: "d9",
-        icon: icons["aci_ch_deepercunning"],
+        icon: icons["abi_ch_deepercunning"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -608,7 +608,7 @@ export const data: TalentData = {
       },
 	  "Engage": {
         name: "Engage",
-        pos: "c9",
+        pos: "e5",
         icon: icons["abi_engage"],
         maxRank: 3,
         reqPoints: 10,
