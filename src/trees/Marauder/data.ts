@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Gift of Savagery: Gain 20% movement speed. All of your abilities apply 1 stack of Khorne Corruption to the target and cast as well as 1 stack of Savagery to target. At 5 stacks of Savagery, all stacks are dispelled and the target gains Blood-marked.\nGift of Pride: Gain 50% pushback immunity. All abilities apply 1 stack of Slaanesh Corruption to target and caster as well as 1 stack of Pride. At 10 stacks of Pride, dispel all stacks and apply Sleepy to target for 5 seconds.\nGift of Plague: Gain 20% lifetap. All of your abilities apply 1 stack of Nurgle Corruption to target and caster as well as 1 stack of Plague.\n\nKhorne - Gain 1% outgoing damage and 400 potency. Lose 1% damage reduction and 1.4% healing done.\nSlaanesh - Gain 1 adrenaline per second and 2% AP cost reduction. Lose 400 fortitude and 400 block rating.`,
+        description: talentText`Gift of Savagery: Gain 20% movement speed. All of your abilities apply 1 stack of Khorne Corruption to the target and cast as well as 1 stack of Savagery to target. At 5 stacks of Savagery, all stacks are dispelled and the target gains Blood-marked.\n\nGift of Pride: Gain 50% pushback immunity. All abilities apply 1 stack of Slaanesh Corruption to target and caster as well as 1 stack of Pride. At 10 stacks of Pride, dispel all stacks and apply Sleepy to target for 5 seconds.\n\nGift of Plague: Gain 20% lifetap. All of your abilities apply 1 stack of Nurgle Corruption to target and caster as well as 1 stack of Plagued.`,
       },
       "Blow": {
         name: "Blow",
@@ -368,7 +368,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal X% MAP + Y ichor damage to target enemy and they gain 1 stack of Reduced Healing Received. You shift into Gift of Plague.\n\nPlagued stacks up to 5 times and lasts for 6 seconds. For the duration, deals X% MAP + Y ichor damage every second.`,
+        description: talentText`Deal 17% MAP + 227 ichor damage to target enemy and they gain 1 stack of Reduced Healing Received. You shift into Gift of Plague.\n\nPlagued stacks up to 5 times and lasts for 6 seconds. For the duration, deals X% MAP + Y ichor damage every second.`,
       },
       "Touched by the Gods": {
         name: "Touched by the Gods",
@@ -422,7 +422,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Must be Blood-marked",
-        description: talentText`Deals X% MAP + Y impact damage to target enemy per stack of Blood-marked on them. Removes one stack of Blood-marked. You shift into Gift of Savagery.`,
+        description: talentText`Deals 17% MAP + 227 impact damage to target enemy per stack of Blood-marked on them. Removes one stack of Blood-marked. You shift into Gift of Savagery.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction on the target for 10 seconds. Gift of Savagery: Target will take W% MAP + X impact damage whenever they use a spell. Gift of Pride: Target will take Y% MAP + Y piercing damage whenever they use a skill.`,
+        description: talentText`Applies an affliction on the target for 10 seconds. Gift of Savagery: Target will take 9% MAP + 116 impact damage whenever they use a spell. Gift of Pride: Target will take 9% MAP + 116 piercing damage whenever they use a skill.`,
       },
 	  "Rend": {
         name: "Rend",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y ichor damage to target enemy. Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal X% MAP + Y ichor damage every second. Gift of Savagery: Applies one stack of Reduced Toughness to target.`,
+        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy. Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal 3% MAP + 44 ichor damage every second. Gift of Savagery: Applies one stack of Reduced Toughness to target.`,
       },
 	  "Wrecking Ball": {
         name: "Wrecking Ball",
@@ -491,7 +491,7 @@ export const data: TalentData = {
         range: "self",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y piercing damage to up to 9 enemies within 30 feet of you.`,
+        description: talentText`Deals 7% MAP + 94 piercing damage to up to 9 enemies within 30 feet of you.`,
       },
       "Mutated Aggressor": {
         name: "Mutated Aggressor",
@@ -595,10 +595,10 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Whenever you swap stances, you will gain a buff for 5 seconds. Whenever you deal direct damage, you will deal an additional ${[
-          1,
-          2,
           3,
-        ]}% MAP + Y impact damage.`,
+          6,
+          9,
+        ]}% MAP + 75 impact damage.`,
       },
 	  "Improved Blow": {
         name: "Improved Blow",
