@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y ichor damage to target enemy. Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal X% MAP +`Y ichor damage every second. Gift of Savagery: Applies one stack of Reduced Toughness to target.,
+        description: talentText`Deals X% MAP + Y ichor damage to target enemy. Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal X% MAP + Y ichor damage every second. Gift of Savagery: Applies one stack of Reduced Toughness to target.`,
       },
 	  "Wrecking Ball": {
         name: "Wrecking Ball",
