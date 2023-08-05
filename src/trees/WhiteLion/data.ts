@@ -409,7 +409,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "30s cooldown",
         blue: "Castable While Moving",
-        description: talentText`Caster has their movement speed reduced by 30%. After 2.5 seconds, target enemy is Pulled and Immovable is applied to them.\n\nImmovable prevents application of Rooted, Knockback, and Pull effects for 20 seconds.`,
+        description: talentText`Caster has their movement speed reduced by 15%. After 2.5 seconds, target enemy is Pulled and Immovable is applied to them.\n\nImmovable prevents application of Rooted, Knockback, and Pull effects for 20 seconds.`,
       },
       "Shattering Blow": {
         name: "Shattering Blow",
@@ -638,11 +638,11 @@ export const data: TalentData = {
         reqPoints: 15,
         type: "passive",
         description: talentText`Each time you use Hack, the damage of your next Coordinated Strike, Slashing Blade, or Sundering Chop will be increased by ${[
-          4,
-          8,
+          3,
+          6,
+          9,
           12,
-          16,
-          20,
+          15,
         ]}%. Effect stacks up to 3 times.`,
       },
 	  "Practiced Swing": {
