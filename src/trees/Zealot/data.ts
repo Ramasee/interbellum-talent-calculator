@@ -674,7 +674,6 @@ export const data: TalentData = {
           0.3,
         ]} seconds.`,
       },
-      },
 	  "Blood in Mouth": {
         name: "Blood of Mouth",
         pos: "f8",
@@ -1559,7 +1558,6 @@ export const data: TalentData = {
           5,
         ]}`,
       },
-	  
     },
   },
   "Khorne": {
@@ -2430,7 +2428,6 @@ export const data: TalentData = {
           5,
         ]}`,
       },
-	  
     },
   },
 };
