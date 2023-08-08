@@ -18,7 +18,7 @@ const WhiteLion = lazy(() => import("./trees/WhiteLion"));
 const Archer = lazy(() => import("./trees/Archer"));
 const Chosen = lazy(() => import("./trees/Chosen"));
 const Marauder = lazy(() => import("./trees/Marauder"));
-const Marauder = lazy(() => import("./trees/Zealot"));
+const Zealot = lazy(() => import("./trees/Zealot"));
 
 export const App: React.FC = () => {
   return (
