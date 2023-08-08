@@ -255,7 +255,7 @@ export const data: TalentData = {
       "Eye of Sheerian": {
         name: "Eye of Sheerian",
         pos: "i8",
-        icon: icons["abi_ch_eyeofsheerian"],
+        icon: icons["abi_ch_eyesofsheerian"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 allies within 100 feet of you gain 1 stack of Enhanced for all resistances.`,
+        description: talentText`Up to 96 allies within 100 feet of you gain 2 stacks of Enhanced for all resistances.`,
       },
 	  "Return Life": {
         name: "Return Life",
@@ -356,7 +356,7 @@ export const data: TalentData = {
         cast: "1.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 2 Blood Sacrifice",
-        description: talentText`Deals X% SAP + Y spiritual damage to the target. Target and caster gain 1 stack of Tzeentch Corruption.`,
+        description: talentText`Deals 15% SAP + 201 spiritual damage to the target. Target and caster gain 1 stack of Tzeentch Corruption.`,
       },
       "Dark Medicine": {
         name: "Dark Medicine",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.5s cast",
         cooldown: "10s cooldown",
-        description: talentText`Restore X% RP + Y health to target ally.`,
+        description: talentText`Restore 37% RP + 503 health to target ally.`,
       },
       "Manipulation": {
         name: "Manipulation",
@@ -397,7 +397,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3 Blood Sacrifice",
-        description: talentText`Target ally gains a 12 second enchantment. For the duration, restore X% RP + Y health to the target every 3 seconds.`,
+        description: talentText`Target ally gains a 12 second enchantment. For the duration, restore 7% RP + 102 health to the target every 3 seconds.`,
       },
       "Aethyric Shock": {
         name: "Aethyric Shock",
@@ -438,7 +438,7 @@ export const data: TalentData = {
         cast: "2.5s cast",
         cooldown: "no cooldown",
         blue: "Costs 3 Blood Sacrifice",
-        description: talentText`Applies an 18 second affliction to target enemy. For the duration, they take X% SAP + Y elemental damage every 3 seconds.`,
+        description: talentText`Applies an 18 second affliction to target enemy. For the duration, they take 34% SAP + 440 elemental damage every 3 seconds.`,
       },
 	  "Leaping Alteration": {
         name: "Leaping Alteration",
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "1.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 5 Blood Sacrifice",
-        description: talentText`Restores X% RP + Y health to target ally and one other ally within 20 feet of the target.`,
+        description: talentText`Restores 13% RP + 155 health to target ally and one other ally within 20 feet of the target.`,
       },
 	  "Tzeentch's Reflection": {
         name: "Tzeentch's Reflection",
@@ -493,7 +493,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "6s cooldown",
         blue: "Costs 4 Blood Sacrifice",
-        description: talentText`Deals X% SAP + Y spiritual damage to target enemy.`,
+        description: talentText`Deals 28% SAP + 375 spiritual damage to target enemy.`,
       },
       "Tzeentch Shall Remake You": {
         name: "Tzeentch Shall Remake You",
@@ -506,7 +506,7 @@ export const data: TalentData = {
         range: "self",
         cast: "3.0s cast",
         cooldown: "15s cooldown",
-        description: talentText`Restores X% RP + Y health to all groupmates within 100 feet of you. Will not heal you.`,
+        description: talentText`Restores 22% RP + 440 health to all groupmates within 100 feet of you. Will not heal caster.`,
       },
       "The Great Change": {
         name: "The Great Change",
@@ -651,7 +651,7 @@ export const data: TalentData = {
 	  "Settling Dust": {
         name: "Settling Dust",
         pos: "c7",
-        icon: icons["abi_dustofpandemonium"],
+        icon: icons["abi_ch_dustofpandemonium"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
