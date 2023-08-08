@@ -76,10 +76,15 @@ const KLASSES2 = [
     icon: icons["class_chosen"],
     path: "/chosen",
   },
-    {
+  {
     name: "Marauder",
     icon: icons["class_marauder"],
     path: "/marauder",
+  },
+  {
+    name: "Zealot",
+    icon: icons["class_zealot"],
+    path: "/zealot",
   },
 ];
 

@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Chosen consume chaos corruption on targets to amplify their abilities. Corruption is spread by all chaos characters lasts 10 seconds and stack 10 times each.\n\nNurgle - Gain 31 HP4 and 1% damage reduction. Lose 200 accuracy rating and 250 ichor resistance.\nKhorne - Gain 1% outgoing damage and 400 potency. Lose 1% damage reduction and 1.4% healing done.\nSlaanesh - Gain 1 adrenaline per second and 2% AP cost reduction. Lose 400 fortitude and 400 block rating.\nTzeentch - Gain 2% reduced cast time and 1 second cooldown reduction. Lose 250 elemental resistance and 115 sagacity.`,
+        description: talentText`Chosen consume chaos corruption on targets to amplify their abilities. Corruption is spread by all chaos characters lasts 10 seconds and stack 10 times each.\n\nNurgle - Gain 31 HP4 and 1% damage reduction. Lose 200 accuracy rating and 250 ichor resistance.\nKhorne - Gain 1% outgoing damage and 400 potency. Lose 1% damage reduction and 1.4% healing done.\nSlaanesh - Gain 1 adrenaline per second and 2% AP cost reduction. Lose 400 fortitude and 400 block rating.\nTzeentch - Gain 2% reduced cast time and 1 second cooldown reduction. Lose 250 spiritual resistance and 115 sagacity.`,
       },
       "Blow": {
         name: "Blow",
@@ -500,7 +500,7 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Consume 3 Nurgle Corruption on self in order to dispel Shifting Carapace's damage. You will restore 19% RP + 262 health.`,
       },
-      "The Grand Plague": {
+      "The Great Plague": {
         name: "The Grand Plague",
         pos: "f9",
         icon: icons["abi_ch_befuddlinggreenfire"],
