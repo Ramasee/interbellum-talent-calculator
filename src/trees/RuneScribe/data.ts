@@ -1167,7 +1167,7 @@ export const data: TalentData = {
       },
 	  "Rune of Immolation": {
         name: "Rune of Immolation",
-        pos: "f1",
+        pos: "h6",
         icon: icons["abi_dw_runeoffire"],
         maxRank: 1,
         reqPoints: 15,
@@ -1228,7 +1228,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Rune on Mending will now apply a 5 second enchantment on the target. For the duration, they will absorb up to 12% RP + 169`,
+        description: talentText`Rune on Mending will now apply a 5 second enchantment on the target. For the duration, they will absorb up to 12% RP + 169 damage.`,
       },
 	  "No Place Like Home": {
         name: "No Place Like Home",
@@ -1407,7 +1407,7 @@ export const data: TalentData = {
           25,
           37.5,
           50,
-        ]}% chance whenever you are hit by an enemy ability to cause your next ability used within 5 seconds to be instant cast.`,
+        ]}% chance whenever you are hit by an enemy ability to cause your next ability used within 5 seconds to have a 50% faster cast time.`,
       },
     },
   },
