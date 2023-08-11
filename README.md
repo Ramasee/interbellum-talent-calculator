@@ -1,4 +1,4 @@
-# Interbellum Talent Calculator
+# Interbellum Roundtable
 
 Talent calculator for Interbellum private server.
 
