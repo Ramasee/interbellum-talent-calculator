@@ -1984,7 +1984,7 @@ export const data: TalentData = {
         pos: "c7",
         icon: icons["tac_spec_5"],
         maxRank: 1,
-        reqPoints: 0,
+        reqPoints: 20,
         prereq: "Rune of Speed",
 		arrows: [
           { dir: "down", from: "c6", to: "c7" },
@@ -1994,7 +1994,7 @@ export const data: TalentData = {
       },
 	  "Concussive Rune": {
         name: "Concussive Rune",
-        pos: "e8",
+        pos: "b8",
         icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 25,
