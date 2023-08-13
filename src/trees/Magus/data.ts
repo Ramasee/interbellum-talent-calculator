@@ -9,7 +9,7 @@ const icons = requireAll(require.context("../../assets/icons/chaos"));
 export const data: TalentData = {
   "Doomweaver": {
     name: "Doomweaver",
-    background: backgrounds["mara_slaanesh"],
+    background: backgrounds["magus-slaanesh"],
     icon: icons["archetype_dps"],
     talents: {
       "Verge of Victory": {
@@ -329,12 +329,12 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Your spells generate insanity as you get magic directly from the Chaos Gods. Insanity drops at a value of 1 per second, with a maximum of 100. At 60 insanity, you have Slaanesh Fanaticism. At 80 insanity, you have Nurgle Fanatacism. At 90 insanity, you have Tzeentch Fanatacism.`,
+        description: talentText`Your spells generate insanity as you get magic directly from the Chaos Gods. Insanity has a maximum of 100.\n\nAt 60 insanity, you have Slaanesh Fanaticism.\nAt 80 insanity, you have Nurgle Fanatacism.\nAt 90 insanity, you have Tzeentch Fanatacism.`,
       },
       "Rend Winds": {
         name: "Rend Winds",
         pos: "b1",
-        icon: icons["abi_ch_rendwind"],
+        icon: icons["abi_ch_rendwinds"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 74% SAP + 996 elemental damage to target enemy. Applies 1 stack of Slaanesh Corruption to target and caster. Generates 15 Insanity.\n\nSlaanesh Fanatacism: you will also deal the damage to yourself.`,
+        description: talentText`Deals 74% SAP + 996 elemental damage to target enemy. Applies 1 stack of Slaanesh Corruption to target and caster. Generates 18 Insanity.\n\nSlaanesh Fanatacism: you will also deal the damage to yourself.`,
       },
       "Summon Seeker": {
         name: "Summon Seeker",
@@ -368,7 +368,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`Summons a daemon of Slaanesh and bind them to the summoning circle. Generates 10 Insanity. The seeker will deal 110 elemental damage to enemies within 100 feet of it, and will apply 1 Slaanesh Corruption to you if you are within 30 feet of it. You may only have one daemon active.`,
+        description: talentText`Summons a daemon of Slaanesh and bind them to the summoning circle. Generates 12 Insanity. The seeker will deal 110 elemental damage to enemies within 100 feet of it, and will apply 1 Slaanesh Corruption to you if you are within 30 feet of it. You may only have one daemon active.`,
       },
       "Glamour of Slaanesh": {
         name: "Glamour of Slaanesh",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "10s cooldown",
         blue: "Off the GCD",
-        description: talentText`You daemon will deal 14% SAP + 206 elemental damage to your target and applies 1 stack of Reduced Elemental Resistance. Generates 5 Insanity.`,
+        description: talentText`You daemon will deal 14% SAP + 206 elemental damage to your target and applies 1 stack of Reduced Elemental Resistance. Generates 6 Insanity.`,
       },
       "Gift of Flesh": {
         name: "Infernal Flesh",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Off the GCD",
-        description: talentText`Give your seeker a piece of your flesh in order to reduce your Insanity by 20.`,
+        description: talentText`Deals 1200 true damage to your daemon in order to reduce your Insanity by 18.`,
       },
       "Tzeentch's Grasp": {
         name: "Tzeentch's Grasp",
@@ -422,7 +422,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 23% SAP + 305 spiritual damage to target enemy. Applies Tzeentch Corruption to target and caster. Generates 8 Insanity.\n\nTzeentch Fanatacism: the ability has a 50% chance to hit a random target within 15 feet of the original for 25% additional damage instead of the original target.`,
+        description: talentText`Deals 23% SAP + 305 spiritual damage to target enemy. Applies Tzeentch Corruption to target and caster. Generates 9 Insanity.\n\nTzeentch Fanatacism: the ability has a 50% chance to hit a random target within 15 feet of the original for 25% additional damage instead of the original target.`,
       },
       "Smokescreen": {
         name: "Smokescreen",
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 7% SAP + 80 elemental damage per second to up to 9 enemies within a 20 foot area you select. Generates 6 Insanity per second.\n\nSlaanesh Fanaticism: Increase the action point cost by 25.\nNurgle Fanaticism: Increase the channel time and tick interval by 20%.\nTzeentch Fanaticism: reduces your damage reduction by 100% for the channel duration.`,
+        description: talentText`Deals 7% SAP + 80 elemental damage per second to up to 9 enemies within a 20 foot area you select. Generates 23 Insanity.\n\nSlaanesh Fanaticism: Increase the action point cost by 25.\nNurgle Fanaticism: Increase the channel time and tick interval by 20%.\nTzeentch Fanaticism: reduces your damage reduction by 100% for the channel duration.`,
       },
 	  "Withered Soul": {
         name: "Withered Soul",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 1 stack of Nurgle Corruption to target and caster. Generates 6 Insanity. Applies a 15 second ailment to target. For the duration, target will take 11% SAP + 137 corporeal damage every 3 seconds.\n\nNurgle Fanaticsm: Has a 50% chance to also apply a 15 second blessing to target. For the duration, target will restore 7% RP + 92 health every 3 seconds.`,
+        description: talentText`Applies 1 stack of Nurgle Corruption to target and caster. Generates 8 Insanity. Applies a 15 second ailment to target. For the duration, target will take 11% SAP + 137 corporeal damage every 3 seconds.\n\nNurgle Fanaticsm: Has a 50% chance to also apply a 15 second blessing to target. For the duration, target will restore 7% RP + 92 health every 3 seconds.`,
       },
 	  "Eternal Pleasure": {
         name: "Eternal Pleasure",
@@ -474,11 +474,11 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 14% SAP + 190 corporeal damage to target every second. Applies 1 Slaanesh Corruption to target and caster every second. Generates 5 Insanity every second.\n\nSlaanesh Fanaticism: your damage reduction is reduced by 50% for the duration of the channel.`,
+        description: talentText`Deals 14% SAP + 190 corporeal damage to target every second. Applies 1 Slaanesh Corruption to target and caster every second. Generates 6 Insanity every second.\n\nSlaanesh Fanaticism: your damage reduction is reduced by 50% for the duration of the channel.`,
       },
 	  "Surge of Insanity": {
         name: "Surge of Insanity",
-        pos: "a9",
+        pos: "c8",
         icon: icons["abi_ch_waveofhorror"],
         maxRank: 1,
         reqPoints: 25,
@@ -590,7 +590,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`The cooldown of Summon Seeker is now 15 seconds and the cooldown of Gift of Flesh is now 5 seconds.`,
+        description: talentText`The cooldown of Summon Seeker is now 15 seconds and the cooldown of Glamour of Slaanesh is now 5 seconds.`,
       },
 	  "Sacred Number of Slaanesh": {
         name: "Passive 1",
@@ -625,7 +625,7 @@ export const data: TalentData = {
         name: "Improved Rend Winds",
         pos: "e5",
         icon: icons["abi_ch_rendwinds"],
-        maxRank: 5,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Rend Winds will deal additional damage equal to ${[
@@ -650,10 +650,10 @@ export const data: TalentData = {
           2,
         ]} stacks of Tzeentch Corruption.`,
       },
-	  "Improved Flickering red Fire": {
+	  "Improved Flickering Red Fire": {
         name: "Improved Flickering Red Fire",
         pos: "f6",
-        icon: icons["ani_ch_flingredfire"],
+        icon: icons["abi_ch_flingredfire"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -715,10 +715,10 @@ export const data: TalentData = {
 	  
     },
   },
-  "class2": {
-    name: "class2",
-    background: backgrounds["class2"],
-    icon: icons["archetype_tank/defsupport/healer/offsupport/dps"],
+  "Soulflayer": {
+    name: "Soulflayer",
+    background: backgrounds["magus-nurgle"],
+    icon: icons["archetype_dps"],
     talents: {
       "Break Loose": {
         name: "Break Loose",
@@ -1530,10 +1530,10 @@ export const data: TalentData = {
 	  
     },
   },
-  "class3": {
-    name: "class3",
-    background: backgrounds["class3"],
-    icon: icons["archetype_tank/defsupport/healer/offsupport/dps"],
+  "Cataclyst": {
+    name: "Cataclyst",
+    background: backgrounds["magus-tzeentch"],
+    icon: icons["archetype_defsupport"],
     talents: {
       "Break Loose": {
         name: "Break Loose",
