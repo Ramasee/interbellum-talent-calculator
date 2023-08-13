@@ -712,7 +712,6 @@ export const data: TalentData = {
           5,
         ]}.`,
       },
-	  
     },
   },
   "Soulflayer": {
