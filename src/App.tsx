@@ -19,6 +19,7 @@ const Archer = lazy(() => import("./trees/Archer"));
 const Chosen = lazy(() => import("./trees/Chosen"));
 const Marauder = lazy(() => import("./trees/Marauder"));
 const Zealot = lazy(() => import("./trees/Zealot"));
+const Magus = lazy(() => import("./trees/Magus"));
 
 export const App: React.FC = () => {
   return (
@@ -40,6 +41,7 @@ export const App: React.FC = () => {
 		<Route path="/chosen" component={Chosen} />
 		<Route path="/marauder" component={Marauder} />
 		<Route path="/zealot" component={Zealot} />
+		<Route path="/Magus" component={Magus} />
       </Suspense>
     </div>
   );
