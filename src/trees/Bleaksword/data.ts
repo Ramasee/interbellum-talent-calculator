@@ -1546,8 +1546,8 @@ export const data: TalentData = {
           5,
         ]}`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Passive 8": {
+        name: "Passive 8",
         pos: "e8",
         icon: icons["noicon"],
         maxRank: 4,
@@ -2414,8 +2414,8 @@ export const data: TalentData = {
           5,
         ]}`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Passive 8": {
+        name: "Passive 8",
         pos: "e8",
         icon: icons["noicon"],
         maxRank: 4,
