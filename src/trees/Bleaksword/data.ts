@@ -161,7 +161,7 @@ export const data: TalentData = {
         pos: "a4",
         icon: icons["tac_arche"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "career tactic",
         description: talentText`Increase your mass by 1.`,
       },
@@ -195,7 +195,7 @@ export const data: TalentData = {
       "Driven by Hate": {
         name: "Driven by Hate",
         pos: "d2",
-        icon: icons["tac_classs_2"],
+        icon: icons["tac_class_2"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
@@ -553,7 +553,7 @@ export const data: TalentData = {
         reqPoints: 15,
 		prereq: "Distract",
 		arrows: [
-          { dir: "right-down", from: "g5", to: "g6" },
+          { dir: "down", from: "g5", to: "g6" },
         ],
         type: "career tactic",
         description: talentText`Distract will now work on up to 23 additional enemies within 20 feet of the target as long as those targets do not have Cover from you.`,
@@ -645,7 +645,7 @@ export const data: TalentData = {
         name: "Passive 4",
         pos: "e6",
         icon: icons["abi_de_shroudingdarkness"],
-        maxRank: 5,
+        maxRank: 4,
         reqPoints: 15,
         type: "passive",
         description: talentText`Whenever you spend Hatred, up to ${[
@@ -658,13 +658,13 @@ export const data: TalentData = {
       },
 	  "Passive 5": {
         name: "Passive 5",
-        pos: "d7",
+        pos: "e7",
         icon: icons["abi_de_shroudingdarkness"],
         maxRank: 1,
         reqPoints: 20,
         prereq: "Passive 4",
 		arrows: [
-          { dir: "down", from: "e5", to: "e6" },
+          { dir: "down", from: "e6", to: "e7" },
         ],
         type: "passive",
         description: talentText`Passive 4 will now apply 2 stacks.`,
@@ -691,12 +691,12 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`You generate 1 ${[
+        description: talentText`You generate ${[
           1,
           2,
           3,
           4,
-        ]}adrenaline per second for each enchantment effect from Hatred spenders you cast that are active on you.`,
+        ]} adrenaline per second for each enchantment effect from Hatred spenders you cast that are active on you.`,
       },
     },
   },
