@@ -639,7 +639,7 @@ export const data: TalentData = {
           6,
           8,
           10,
-        ]} for 5 seconds.`,
+        ]}% for 5 seconds.`,
       },
 	  "Passive 4": {
         name: "Passive 4",
