@@ -45,7 +45,7 @@ export const App: React.FC = () => {
 		<Route path="/zealot" component={Zealot} />
 		<Route path="/Magus" component={Magus} />
 		<Route path="/Bleaksword" component={Bleaksword} />
-		<Route path="/brideofkhaine" component={brideofkhaine} />
+		<Route path="/brideofkhaine" component={BrideofKhaine} />
       </Suspense>
     </div>
   );
