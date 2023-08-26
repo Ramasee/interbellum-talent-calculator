@@ -455,6 +455,7 @@ export const data: TalentData = {
         pos: "c5",
         icon: icons["abi_de_envenomedblade"],
         maxRank: 1,
+		reqPoints: 10,
         type: "spell",
         cost: "30 action points",
         range: "self",
