@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use attack an enemy, there is a 25% chance you will deal X% MAP + Y direct piercing damage to them.`,
+        description: talentText`Whenever you use attack an enemy, there is a 25% chance you will deal 10% MAP + 140 direct piercing damage to them.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -263,8 +263,8 @@ export const data: TalentData = {
         range: "self",
         cast: "5.0s channel",
         cooldown: "no cooldown",
-        blue: "Costs 3600 adrenaline\n\nCastable while moving.",
-        description: talentText`You gain 100% dodge for the duration. Every 0.5 seconds, you will deal X% MAP + Y piercing damage to up to 12 enemies within 30 feet of you.`,
+        blue: "Costs 3600 adrenaline\nCastable while moving.",
+        description: talentText`You gain 100% dodge for the duration. Every 0.5 seconds, you will deal 15% MAP + 200 piercing damage to up to 12 enemies within 30 feet of you.`,
       },
 	  "Sever Nerve": {
         name: "Sever Nerve",
@@ -360,7 +360,7 @@ export const data: TalentData = {
       "Sacrificial Stab": {
         name: "Sacrificial Stab",
         pos: "d1",
-        icon: icons["abi_de_sacrificalstab"],
+        icon: icons["abi_de_sacrificialstab"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -560,7 +560,7 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "h4", to: "h6" }
         ],
         type: "career tactic",
-        description: talentText`Blade Spin and Frenzied Mayhem will not hit up to 24 enemies.`,
+        description: talentText`Blade Spin and Frenzied Mayhem will now hit up to 24 enemies.`,
       },
 	  "Taste of Blood": {
         name: "Taste of Blood",
@@ -713,7 +713,7 @@ export const data: TalentData = {
           16.5,
           24.75,
           33,
-        ]}% chance to generate 1 Bloodlist whenever you use any ability.`,
+        ]}% chance to generate 1 Bloodlust whenever you use any ability.`,
       },
     },
   },
