@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies a buff for 60 seconds. For the duration, whenever you deal direct damage to an enemy, you will apply a 8 second duration affliction to them. Stacks 5 times. For the duration, target will take 2% SAP + 6 ichor damage every second.`,
+        description: talentText`Applies a buff for 60 seconds. For the duration, whenever you deal direct damage to an enemy, you will apply a 8 second duration affliction to them. Stacks 5 times. For the duration, target will take 2% SAP + 6 ichor damage every second. Shares cooldown with Envenomed Blade.`,
       },
 	  "Frenzied Mayhem": {
         name: "Frenzied Mayhem",
@@ -578,7 +578,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Witchbrew will cost no action points and spend no Bloodlust once every 20 seconds.`,
+        description: talentText`Witchbrew will cost no action points and spend no Bloodlust once every 15 seconds.`,
       },
 	  "Sever and Slit": {
         name: "Sever and Slit",
@@ -674,7 +674,7 @@ export const data: TalentData = {
         icon: icons["abi_de_envenomedblade"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Wounds",
+        prereq: "Heart-Render Toxin",
 		arrows: [
           { dir: "down", from: "c5", to: "c7" }
         ],
