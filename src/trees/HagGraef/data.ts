@@ -460,7 +460,6 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "blue text",
         description: talentText`Target groupmate gains an enchantment for 60 second. For the duration, whenever they deal direct damage they will restore 5% RP + 47 health. Generates 10 animosity.`,
       },
 	  "Soul Infusion": {
@@ -626,11 +625,6 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 2,
         reqPoints: 15,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
         description: talentText`Fist of Khaine deals additional damage equal to ${[
           3,
@@ -676,7 +670,7 @@ export const data: TalentData = {
         name: "Indemnity",
         pos: "h7",
         icon: icons["noicon"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 20,
         type: "passive",
         description: talentText`Whenever you cast Patch Wounds or Restore Essence, up to 9 allies within 30ft of you gain ${[
