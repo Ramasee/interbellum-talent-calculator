@@ -699,6 +699,7 @@ export const data: TalentData = {
           32,
         ]}% damage reduction for 3 seconds.`,
     },
+    },
   },
   "Khaanite Assassin": {
     name: "Khaanite Assassin",
