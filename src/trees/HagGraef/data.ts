@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["de_chalice_1h_t1_01"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -213,7 +213,7 @@ export const data: TalentData = {
       "Life's End": {
         name: "Life's End",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_de_lifesend"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -227,7 +227,7 @@ export const data: TalentData = {
       "Khaine's Withdrawal": {
         name: "Khaine's Withdrawal",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_khaineswithdrawal"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -255,7 +255,7 @@ export const data: TalentData = {
       "Thousand and One Dark Blessings": {
         name: "Thousand and One Dark Blessings",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_thousandandonedarkblessings"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -325,7 +325,7 @@ export const data: TalentData = {
       "Animosity": {
         name: "Animosity",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_drivenbyhate"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -334,7 +334,7 @@ export const data: TalentData = {
       "Fist of Khaine": {
         name: "Fist of Khaine",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_banishweakness"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Cleave Soul": {
         name: "Ceave Soul",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_cleavesoul"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -355,12 +355,12 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy. You lose 10 Animosity.\n\nAnimosity:\n0-20: Deals 60% damage\n21-40: Deals 80% damage\n41-60: Deals 100% damage\n61-80: Deals 120% damage\n81-100: Deals 100% damage`,
+        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy. You lose 10 Animosity.\n\nAnimosity:\n0-20: Deals 60% damage.\n21-40: Deals 80% damage.\n41-60: Deals 100% damage.\n61-80: Deals 120% damage.\n81-100: Deals 100% damage.`,
       },
       "Restore Essence": {
         name: "Restore Essence",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_fellsacrifice"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -373,7 +373,7 @@ export const data: TalentData = {
       "Soul Ward": {
         name: "Soul Ward",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_renewsoul"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -386,7 +386,7 @@ export const data: TalentData = {
       "Patch Wounds": {
         name: "Patch Wounds",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_patchwounds"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -412,7 +412,7 @@ export const data: TalentData = {
       "Covenant of Punishment": {
         name: "Core Ability 7",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_covenantofcelerity"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -438,7 +438,7 @@ export const data: TalentData = {
 	  "Essence Lash": {
         name: "Essence Lash",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_de_essencelash"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -452,7 +452,7 @@ export const data: TalentData = {
 	  "Covenant of Vitality": {
         name: "Covenant of Vitality",
         pos: "b5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_covenantofvitality"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -465,7 +465,7 @@ export const data: TalentData = {
 	  "Soul Infusion": {
         name: "Soul Infusion",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_restoration"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -478,7 +478,7 @@ export const data: TalentData = {
 	  "Khaine's Vigor": {
         name: "Khaine's Vigor",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_khainesvigor"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -492,7 +492,7 @@ export const data: TalentData = {
       "Restored Motivation": {
         name: "Restored Motivation",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_khainesembrace"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -506,7 +506,7 @@ export const data: TalentData = {
       "Transfer Essence": {
         name: "Transfer Essence",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_inmalekithsname"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -594,7 +594,7 @@ export const data: TalentData = {
 	  "Tempered in Blood": {
         name: "Temepered in Blood",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_de_cleavesoul"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -608,7 +608,7 @@ export const data: TalentData = {
 	  "Soul Shielding": {
         name: "Soul Shielding",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_renewsoul"],
         maxRank: 4,
         reqPoints: 10,
         type: "passive",
@@ -622,7 +622,7 @@ export const data: TalentData = {
 	  "Improved Fist of Khaine": {
         name: "Improved Fist of Khaine",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_banishweakness"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -637,7 +637,7 @@ export const data: TalentData = {
 	  "Black Ark of the Covenant": {
         name: "Black Ark of the Covenant",
         pos: "g6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_covenantoftenacity"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -652,7 +652,7 @@ export const data: TalentData = {
 	  "Celerity Infusion": {
         name: "Celereity Infusion",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_charge"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Soul Infusion",
@@ -669,11 +669,11 @@ export const data: TalentData = {
 	  "Indemnity": {
         name: "Indemnity",
         pos: "h7",
-        icon: icons["noicon"],
+        icon: icons["abi_de_khainesrefreshment"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Whenever you cast Patch Wounds or Restore Essence, up to 9 allies within 30ft of you gain ${[
+        description: talentText`Whenever you cast Patch Wounds or Restore Essence, up to 9 allies within 30 feet of you gain ${[
           4,
           8,
           12,
