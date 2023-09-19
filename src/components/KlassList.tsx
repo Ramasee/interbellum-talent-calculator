@@ -106,6 +106,11 @@ const KLASSES2 = [
     icon: icons["class_haggraef"],
     path: "/haggraef",
   },
+  {
+    name: "Sorcerer",
+    icon: icons["class_sorcerer"],
+    path: "/sorcerer",
+  },
 ];
 
 interface Props {}
