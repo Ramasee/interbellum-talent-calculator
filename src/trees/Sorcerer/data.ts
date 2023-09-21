@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -227,7 +227,7 @@ export const data: TalentData = {
       "Shroud of Darkness": {
         name: "Shroud of Darkness",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_darkstarcloak"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -334,7 +334,7 @@ export const data: TalentData = {
       "Bladewind": {
         name: "Bladewind",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_chillwind"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Doombolt": {
         name: "Doombolt",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_doombolt"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -360,7 +360,7 @@ export const data: TalentData = {
       "Word of Pain": {
         name: "Word of Pain",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_dreadaspect"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -373,7 +373,7 @@ export const data: TalentData = {
       "Gloom": {
         name: "Gloom",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_gloomburst"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -387,7 +387,7 @@ export const data: TalentData = {
       "Curse of Anraheir": {
         name: "Curse of Anraheir",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_disastrouscascade"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -401,7 +401,7 @@ export const data: TalentData = {
       "Choking Shadows": {
         name: "Choking Shadows",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_chokingfury"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -415,7 +415,7 @@ export const data: TalentData = {
       "Soul Harvest": {
         name: "Soul Harvest",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_absorbvitality"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -429,7 +429,7 @@ export const data: TalentData = {
       "Boar's Hide": {
         name: "Boar's Hide",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_shroudingdarkness"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -443,7 +443,7 @@ export const data: TalentData = {
 	  "Ashes and Dust": {
         name: "Ashes and Dust",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_de_shatteredshadows"],
         maxRank: 1,
         reqPoints: 5,
         type: "spell",
@@ -457,7 +457,7 @@ export const data: TalentData = {
 	  "Mockery of Death": {
         name: "Mockery of Death",
         pos: "a5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_gloomofnight"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -471,7 +471,7 @@ export const data: TalentData = {
 	  "Pit of Shades": {
         name: "Pit of Shades",
         pos: "b6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_pitofshades"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -485,7 +485,7 @@ export const data: TalentData = {
 	  "Aspect of the Dreadknight": {
         name: "Aspect of the Dreadknight",
         pos: "h8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_blackhorror"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -499,7 +499,7 @@ export const data: TalentData = {
       "Shadow Bolt": {
         name: "Shadow Bolt",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_cataclysmicdarkness"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -513,7 +513,7 @@ export const data: TalentData = {
       "Power of Darkness": {
         name: "Power of Darkness",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_echoofpower"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -598,8 +598,8 @@ export const data: TalentData = {
 	  "Embodiment of Ulgu": {
         name: "Embodiment of Ulgu",
         pos: "e3",
-        icon: icons["noicon"],
-        maxRank: 3,
+        icon: icons["abi_de_gripoffear"],
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Whenever you augment a Lore of Shadow spell, you will gain ${[
@@ -613,7 +613,7 @@ export const data: TalentData = {
 	  "Improved Bladewind": {
         name: "Improved Bladewind",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_chillwind"],
         maxRank: 4,
         reqPoints: 10,
         type: "passive",
@@ -627,8 +627,8 @@ export const data: TalentData = {
 	  "Improved Ashes and Dust": {
         name: "Improved Ashes and Dust",
         pos: "h6",
-        icon: icons["noicon"],
-        maxRank: 5,
+        icon: icons["abi_de_shatteredshadows"],
+        maxRank: 2,
         reqPoints: 15,
         prereq: "Ashes and Dust",
 		arrows: [
@@ -643,7 +643,7 @@ export const data: TalentData = {
 	  "Improved Word of Pain": {
         name: "Passive 4",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_dreadaspect"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -684,7 +684,7 @@ export const data: TalentData = {
 	  "Horn of Andor": {
         name: "Horn of Andor",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_recklessgathering"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
