@@ -85,8 +85,8 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 5,
-        reqPoints: 2,
+        maxRank: 2,
+        reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
           100,
@@ -100,8 +100,8 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 5,
-        reqPoints: 2,
+        maxRank: 2,
+        reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
           100,
