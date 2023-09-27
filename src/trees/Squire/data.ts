@@ -356,7 +356,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain 1 stack of Enhanced Toughness and a enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will have their block chance increased by 35%.\nGroupmates within 100ft gain an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Toughness every 10 seconds.`,
       },
       "Vicious Slash": {
         name: "Vicious Slash",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100 feet gain 1 stack of Enhanced Willpower and an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, they will gain 20% healing received.\nGroupmates within 100 feet gain 1 an enchantment for 60 seconds. For the duration, they will gain 1 stack of Enhanced Willpower every 10 seconds.`,
       },
 	  "Distract": {
         name: "Distract",

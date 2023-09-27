@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Your spells generate insanity as you get magic directly from the Chaos Gods. Insanity has a maximum of 100.\n\nAt 60 insanity, you have Slaanesh Fanaticism.\nAt 80 insanity, you have Nurgle Fanatacism.\nAt 90 insanity, you have Tzeentch Fanatacism.`,
+        description: talentText`Your spells generate insanity as you get magic directly from the Chaos Gods. Insanity has a maximum of 100.\n\nAt 60 insanity, you have Slaanesh Fanaticism.\nAt 70 insanity, you have Nurgle Fanatacism.\nAt 90 insanity, you have Tzeentch Fanatacism.`,
       },
       "Rend Winds": {
         name: "Rend Winds",
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 7% SAP + 80 elemental damage per second to up to 9 enemies within a 20 foot area you select. Generates 23 Insanity.\n\nSlaanesh Fanaticism: Increase the action point cost by 25.\nNurgle Fanaticism: Increase the channel time and tick interval by 20%.\nTzeentch Fanaticism: reduces your damage reduction by 100% for the channel duration.`,
+        description: talentText`Deals 7% SAP + 80 elemental damage per second to up to 9 enemies within a 20 foot area you select. Generates 22 Insanity.\n\nSlaanesh Fanaticism: Increase the action point cost by 25.\nNurgle Fanaticism: Increase the channel time and tick interval by 20%.\nTzeentch Fanaticism: reduces your damage reduction by 100% for the channel duration.`,
       },
 	  "Withered Soul": {
         name: "Withered Soul",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 1 stack of Nurgle Corruption to target and caster. Generates 8 Insanity. Applies a 15 second ailment to target. For the duration, target will take 11% SAP + 137 corporeal damage every 3 seconds.\n\nNurgle Fanaticsm: Has a 50% chance to also apply a 15 second blessing to target. For the duration, target will restore 7% RP + 92 health every 3 seconds.`,
+        description: talentText`Applies 1 stack of Nurgle Corruption to target and caster. Generates 7 Insanity. Applies a 15 second ailment to target. For the duration, target will take 11% SAP + 137 corporeal damage every 3 seconds.\n\nNurgle Fanaticsm: Has a 50% chance to also apply a 15 second blessing to target. For the duration, target will restore 7% RP + 92 health every 3 seconds.`,
       },
 	  "Eternal Pleasure": {
         name: "Eternal Pleasure",
