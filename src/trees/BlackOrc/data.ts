@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specexpertshield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -269,7 +269,7 @@ export const data: TalentData = {
       "No Choppin' Me": {
         name: "No Choppin' Me",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_canthitme"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -283,7 +283,7 @@ export const data: TalentData = {
       "Save Da Runts": {
         name: "Save Da Runts",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_savedarunts"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -297,7 +297,7 @@ export const data: TalentData = {
       "Puddle O' Muck": {
         name: "Puddle O' Muck",
         pos: "i7",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_puddleomuck"],
         maxRank: 1,
         reqPoints: 20,
         type: "morale 3",
@@ -311,7 +311,7 @@ export const data: TalentData = {
       "Gork Smash": {
         name: "Gork Smash",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_waaagh"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -325,7 +325,7 @@ export const data: TalentData = {
       "Fightiness": {
         name: "Fightiness",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure14"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -334,7 +334,7 @@ export const data: TalentData = {
       "Clobber": {
         name: "Clobber",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_yernothin"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Clobberin' Time": {
         name: "Clobberin' Time",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_armor01"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -361,16 +361,16 @@ export const data: TalentData = {
       "Right in Da Jibblies": {
         name: "Right in Da Jibblies",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_crotch01"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "36 action points",
+        cost: "20 action points",
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Deals 21% MAP + 280 impact damage to target enemy. Generates 1 Fightiness.`,
+        description: talentText`Deals X% MAP + Y impact damage to target enemy. Generates 2 Fightiness.`,
       },
       "Guard": {
         name: "Guard",
@@ -388,7 +388,7 @@ export const data: TalentData = {
       "Skull Thumper": {
         name: "Skull Thumper",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_eadbutt"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -402,7 +402,7 @@ export const data: TalentData = {
       "Buh-Bye": {
         name: "Buh-Bye",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_walkitoff"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -416,7 +416,7 @@ export const data: TalentData = {
       "Trip 'Em Up": {
         name: "Trip 'Em Up",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_foot3"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -430,7 +430,7 @@ export const data: TalentData = {
       "Can't Hit Me": {
         name: "Can't Hit Me",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_shield01"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -443,7 +443,7 @@ export const data: TalentData = {
 	  "Big Swing": {
         name: "big Swing",
         pos: "b4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_bigswing"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -470,7 +470,7 @@ export const data: TalentData = {
 	  "Follow Me Lead": {
         name: "Follow Me Lead",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_followmelead"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -483,7 +483,7 @@ export const data: TalentData = {
 	  "Big Slash": {
         name: "Big Slash",
         pos: "c8",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_dabigun"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -497,7 +497,7 @@ export const data: TalentData = {
       "We'z Bigger": {
         name: "We'z Bigger",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_wezbigger"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -510,7 +510,7 @@ export const data: TalentData = {
       "Waaagh!": {
         name: "Waagh!",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_waaagh"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -523,7 +523,7 @@ export const data: TalentData = {
 	  "Leg Breaka": {
         name: "Leg Breaka",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -541,7 +541,7 @@ export const data: TalentData = {
 	  "Big Brawlin'": {
         name: "Big Brawlin'",
         pos: "e6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -563,7 +563,7 @@ export const data: TalentData = {
 	  "You'z See Me Block Dat?!": {
         name: "You'z See Me Block Dat?!",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -572,7 +572,7 @@ export const data: TalentData = {
 	  "Tactic 6": {
         name: "T6",
         pos: "b7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 20,
         prereq: "Big Swing",
@@ -585,7 +585,7 @@ export const data: TalentData = {
 	  "Good Wif Shield": {
         name: "Good Wif Shield",
         pos: "g8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -594,162 +594,96 @@ export const data: TalentData = {
 	  "Passive 1": {
         name: "Passive 1",
         pos: "e3",
-        icon: icons["noicon"],
-        maxRank: 5,
+        icon: icons["abi_or_figure14"],
+        maxRank: 3,
         reqPoints: 0,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}`,
+        description: talentText`You have a ${[
+          33,
+          66,
+          100,
+        ]}% chance to gain an extra Fightiness whenever you gain Fightiness.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
-        pos: "c4",
-        icon: icons["noicon"],
+	  "Improved Block": {
+        name: "Improved Block",
+        pos: "h4",
+        icon: icons["skl_specexpertshield"],
         maxRank: 5,
         reqPoints: 5,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
-          2,
+        description: talentText`Increase your chance to block by ${[
           3,
-          4,
-          5,
-        ]}`,
+          6,
+          9,
+          12,
+          15,
+        ]}%.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
-        pos: "e5",
-        icon: icons["noicon"],
-        maxRank: 5,
-        reqPoints: 10,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
-        type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}`,
-      },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Engage": {
+        name: "Engage",
         pos: "d6",
-        icon: icons["noicon"],
-        maxRank: 5,
+        icon: icons["abi_engage"],
+        maxRank: 3,
         reqPoints: 15,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
+        description: talentText`Enemies that you deal direct damage to will have their outgoing damage reduced by ${[
           2,
-          3,
           4,
-          5,
-        ]}`,
+          6,
+        ]}% for 5 seconds.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
-        pos: "e6",
-        icon: icons["noicon"],
-        maxRank: 5,
+	  "Savin' Me Hide": {
+        name: "Savin' Me Hide",
+        pos: "f6",
+        icon: icons["abi_or_face19"],
+        maxRank: 4,
         reqPoints: 15,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
+        description: talentText`Whenever you cast Can't Hit Me, you will gain ${[
           2,
-          3,
           4,
-          5,
-        ]}`,
+          6,
+          8,
+        ]} stacks of Savin' Me Hide.\n\nSavin' Me Hide lasts 10 seconds and stacks up to 10 times. For the duration, gain 100% block chance and lose 1 stack each time you block.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
-        pos: "d7",
-        icon: icons["noicon"],
-        maxRank: 5,
-        reqPoints: 20,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
-        type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}`,
-      },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Hold the Line": {
+        name: "Hold the Line",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_cover"],
+        maxRank: 1,
+        reqPoints: 20,
+        type: "passive",
+        description: talentText`Groupmates within 50 feet behind you have Cover from all enemies up to 100 feet in front of you.\n\nCover reduces the damage of area of effect attacks by 25% in addition to providing immunity to some effects.`,
+      },
+	  "Band Together": {
+        name: "Band Together",
+        pos: "h7",
+        icon: icons["abi_bandtogether"],
         maxRank: 5,
         reqPoints: 20,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
-          1,
+        description: talentText`Groupmates within 30 feet of you will have their damage reduction increased by ${[
           2,
-          3,
           4,
-          5,
-        ]}`,
+          6,
+          8,
+          10,
+        ]}%. This effect is supressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
 	  "Passive 8": {
         name: "Passive 8",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure04"],
         maxRank: 4,
         reqPoints: 25,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
-        description: talentText`Insert tooltip. ${[
+        description: talentText`Whenever you cast Clobberin' Time, each groupmate within 65 feet of you will gain ${[
           1,
           2,
           3,
           4,
           5,
-        ]}`,
+        ]} stacks of Savin' Me Hide.\n\nSavin' Me Hide lasts 10 seconds and stacks up to 10 times. For the duration, gain 100% block chance and lose 1 stack each time you block.`,
       },
     },
   },
