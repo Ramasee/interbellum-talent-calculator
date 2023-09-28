@@ -269,7 +269,7 @@ export const data: TalentData = {
       "No Choppin' Me": {
         name: "No Choppin' Me",
         pos: "i4",
-        icon: icons["abi_or_canthitme"],
+        icon: icons["abi_gs_canthitme"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Fightiness has a base of 0 and a max of 30. You lose 1 Fightiness anytime you are hit by an ability that you do not block.`,
+        description: talentText`Fightiness has a base of 0 and a max of 30. You lose 1 Fightiness any time you are hit by an ability that you do not block.`,
       },
       "Clobber": {
         name: "Clobber",
@@ -370,7 +370,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Deals X% MAP + Y impact damage to target enemy. Generates 2 Fightiness.`,
+        description: talentText`Deals 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
       },
       "Guard": {
         name: "Guard",
@@ -397,7 +397,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals X% MAP + Y impact damage to target enemy and apply 1 stack of Reduced Block to them.`,
+        description: talentText`Deals 26% MAP + 348 impact damage to target enemy and apply 1 stack of Reduced Block to them.`,
       },
       "Buh-Bye": {
         name: "Buh-Bye",
@@ -416,7 +416,7 @@ export const data: TalentData = {
       "Trip 'Em Up": {
         name: "Trip 'Em Up",
         pos: "h1",
-        icon: icons["abi_or_foot3"],
+        icon: icons["abi_or_foot03"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals X% MAP + Y impact damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Distract": {
         name: "Distract",
