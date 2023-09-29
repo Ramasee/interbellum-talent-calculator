@@ -116,6 +116,21 @@ const KLASSES2 = [
     icon: icons["class_blackorc"],
     path: "/blackorc",
   },
+  {
+    name: "Da Boyz",
+    icon: icons["class_daboyz"],
+    path: "/daboyz",
+  },
+  {
+    name: "Goblin",
+    icon: icons["class_goblin"],
+    path: "/goblin",
+  },
+  {
+    name: "Night Goblin",
+    icon: icons["class_nightgoblin"],
+    path: "/notgoblin",
+  },
 ];
 
 interface Props {}

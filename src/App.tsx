@@ -25,6 +25,9 @@ const BrideofKhaine = lazy(() => import("./trees/BrideofKhaine"));
 const HagGraef = lazy(() => import("./trees/HagGraef"));
 const Sorcerer = lazy(() => import("./trees/Sorcerer"));
 const BlackOrc = lazy(() => import("./trees/BlackOrc"));
+const DaBoyz = lazy(() => import("./trees/DaBoyz"));
+const Goblin = lazy(() => import("./trees/Goblin"));
+const NightGoblin = lazy(() => import("./trees/NightGoblin"));
 
 export const App: React.FC = () => {
   return (
@@ -52,6 +55,9 @@ export const App: React.FC = () => {
 		<Route path="/haggraef" component={HagGraef} />
 		<Route path="/sorcerer" component={Sorcerer} />
 		<Route path="/blackorc" component={BlackOrc} />
+		<Route path="/daboyz" component={DaBoyz} />
+		<Route path="/goblin" component={Goblin} />
+		<Route path="/nightgoblin" component={NightGoblin} />
       </Suspense>
     </div>
   );
