@@ -292,7 +292,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Apply a 2s debuff to target enemy. Deals X% SAP + Y elemental damage to the target every second. The duration of the debuff is refreshed whenever the target moves.`,
+        description: talentText`Apply a 2s debuff to target enemy. Deals 10% SAP + 150 elemental damage to the target every second. The duration of the debuff is refreshed whenever the target moves.`,
       },
       "Ain't Dun Yet": {
         name: "Ain't Dun Yet",
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Deals X% SAP + Y elemental damage to target enemy. Up to 23 enemies within 20 feet of the target also take that damage and are knocked-back.`,
+        description: talentText`Deals 33% SAP + 446 elemental damage to target enemy. Up to 23 enemies within 20 feet of the target also take that damage and are knocked-back.`,
       },
       "Paranoia": {
         name: "Paranoia",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`(basic attack)Deals 253 elemental damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 253 elemental damage to target enemy.`,
       },
       "Fungus Beer": {
         name: "Fungus Beer",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "2.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second enchantment to target ally. For the duration, restore X% RP + Y health to them every 3 seconds.\n\nAugmented: Restore X% RP + Y health to target on spell cast.`,
+        description: talentText`Applies a 12 second enchantment to target ally. For the duration, restore 19% RP + 252 health to them every 3 seconds.\n\nAugmented: Restore 18% RP + 215 health to target on spell cast.`,
       },
       "Summon Mushroom": {
         name: "Summon Mushroom",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Summons a "pet" mushroom. This mushroom will heal allies within 30 feet every 2 seconds for X% RP + Y.`,
+        description: talentText`Summons a "pet" mushroom. This mushroom will heal allies within 30 feet every 2 seconds for 5% RP + 46.`,
       },
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second affliction to target enemy. For the duration, deal X% SAP + Y corporeal damage every 3 seconds to them.\n\nAugmented: Deals X% SAP + Y elemental damage on cast to target.`,
+        description: talentText`Applies a 12 second affliction to target enemy. For the duration, deal 21% SAP + 274 corporeal damage every 3 seconds to them.\n\nAugmented: Deals 12% SAP + 166 elemental damage on cast to target.`,
       },
       "Eeek!": {
         name: "Eeek!",
@@ -434,7 +434,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "45s cooldown",
-        description: talentText`(movement skill) For the next 6 seconds, your movement speed is increased by 25%.`,
+        description: talentText`(Movement Skill) For the next 6 seconds, your movement speed is increased by 25%.`,
       },
 	  "Mork'll Fix It": {
         name: "Mork'll Fix It",
@@ -447,7 +447,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Restore X% RP + Y health to target ally.\n\nAugmented: ability is now instant cast.`,
+        description: talentText`Restore 22% RP + 293 health to target ally.\n\nAugmented: ability is now instant cast.`,
       },
 	  "Puff of Poison": {
         name: "Puff of Poison",
@@ -461,7 +461,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "6s cooldown",
         blue: "Off the GCD",
-        description: talentText`Applies a 9 second affliction to up to 9 enemies within 30 feet of your mushroom. For the duration, deals X% SAP + Y corporeal damage every 3 seconds.\n\nAugmented: now deals X% SAP + Y corporeal damage every 3 seconds.`,
+        description: talentText`Applies a 9 second affliction to up to 9 enemies within 30 feet of your mushroom. For the duration, deals 5% SAP + 60 corporeal damage every 3 seconds.\n\nAugmented: now deals 7% SAP + 90 corporeal damage every 3 seconds.`,
       },
 	  "Blightbloom": {
         name: "Blightbloom",
@@ -475,11 +475,11 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "6s cooldown",
         blue: "Off the GCD",
-        description: talentText`Restores X% RP + Y health to up to 9 allies within 30 feet of your mushroom.\n\nAugmented: restores X% RP + Y health instead.`,
+        description: talentText`Restores 5% RP + 50 health to up to 9 allies within 30 feet of your mushroom.\n\nAugmented: restores 7% RP + 76 health instead.`,
       },
 	  "Mycotoxin": {
         name: "Mycotoxin",
-        pos: "c8",
+        pos: "e8",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 25,
@@ -488,7 +488,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional X% SAP + Y corporeal damage and remove 1 stack.`,
+        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 9% SAP + 114 corporeal damage and remove 1 stack.`,
       },
       "Gather Round": {
         name: "Gather Round",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Restores X% RP + Y health to up to 9 allies within a 30 foot area you select.\n\nAugmented: ability is now instant cast.`,
+        description: talentText`Restores 11% RP + 153 health to up to 9 allies within a 30 foot area you select.\n\nAugmented: ability is now instant cast.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -532,7 +532,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`If your Summon Mushroom is killed, all groupmates within 100 feet of you gain a buff for 5 second. For the duration, gain 5 adrenaline per second and restore X% RP + Y health every second.`,
+        description: talentText`If your Summon Mushroom is killed, all groupmates within 100 feet of you gain a buff for 5 second. For the duration, gain 5 adrenaline per second and restore 5% RP + 40 health every second.`,
       },
 	  "Fungal Hyphae": {
         name: "Fungal Hyphae",
@@ -568,7 +568,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you heal an ally with Bigger, Better, an' Greener or Mork'll Fix It; you will apply a 6 second enchantment to an ally within 50 feet of the target. Absorb up to X% RP + Y damage for the duration.`,
+        description: talentText`Whenever you heal an ally with Bigger, Better, an' Greener or Mork'll Fix It; you will apply a 6 second enchantment to an ally within 50 feet of the target. Absorb up to 21% RP + 280 damage for the duration.`,
       },
 	  "Ere We Go": {
         name: "Ere We Go",
