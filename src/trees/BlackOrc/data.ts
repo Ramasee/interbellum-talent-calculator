@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 110 piercing damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 110 piercing damage to target enemy. Generates 22 action points.`,
       },
       "Clobberin' Time": {
         name: "Clobberin' Time",

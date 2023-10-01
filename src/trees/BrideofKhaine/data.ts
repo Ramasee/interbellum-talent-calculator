@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(basic attack) Deals 110 piercing damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 110 piercing damage to target enemy.`,
       },
       "Puncture": {
         name: "Puncture",

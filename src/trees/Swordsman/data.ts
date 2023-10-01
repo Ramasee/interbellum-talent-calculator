@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 66 piercing damage to target enemy. Deals an additional 44 piercing damage as a second hit if you are within 5ft of them. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 66 piercing damage to target enemy. Deals an additional 44 piercing damage as a second hit if you are within 5ft of them. Generates 22 action points.`,
       },
       "Stalk": {
         name: "Stalk",

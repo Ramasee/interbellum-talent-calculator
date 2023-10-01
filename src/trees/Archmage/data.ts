@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`(basic attack) Deals 253 elemental damage to target enemy. You generate 40 action points.`,
+        description: talentText`(Basic Attack) Deals 253 elemental damage to target enemy. You generate 40 action points.`,
       },
       "Courage of Aenarion": {
         name: "Courage of Aenarion",
@@ -720,7 +720,7 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Whenever you critically heal someone, you will apply an enchantment on them for 5 seconds. Effect does not refresh. At the end of the duration, target will be healed for ${[
+        description: talentText`Whenever you critically heal someone, you will apply an enchantment on them for 5 seconds. Effect does not refresh. At the end of the duration, target will be healed for 40 + ${[
           8,
           16,
           24,

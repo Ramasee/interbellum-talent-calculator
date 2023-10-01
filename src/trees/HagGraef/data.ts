@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 94 impact damage to target enemy. Generates 22 action points and 3 Animosity.`,
+        description: talentText`(Basic Attack) Deals 94 impact damage to target enemy. Generates 22 action points and 3 Animosity.`,
       },
       "Cleave Soul": {
         name: "Ceave Soul",

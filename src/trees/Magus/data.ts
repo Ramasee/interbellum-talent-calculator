@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 253 elemental damage to target enemy. Generates 40 action points and 3 Insanity.`,
+        description: talentText`(Basic Attack) Deals 253 elemental damage to target enemy. Generates 40 action points and 3 Insanity.`,
       },
       "Flickering Red Fire": {
         name: "Flickering Red Fire",

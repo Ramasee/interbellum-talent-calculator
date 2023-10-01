@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(basic attack) Deals 110 ichor damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 110 ichor damage to target enemy. Generates 22 action points.`,
       },
       "Blindside": {
         name: "Blindside",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "self",
         cast: "0.75s cast",
         cooldown: "30s cooldown",
-        description: talentText`(movement skill) You leap forward.`,
+        description: talentText`(Movement Skill) You leap forward.`,
       },
       "Cleave Limb": {
         name: "Cleave Limb",

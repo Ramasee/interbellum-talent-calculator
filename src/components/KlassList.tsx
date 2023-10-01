@@ -129,7 +129,7 @@ const KLASSES2 = [
   {
     name: "Night Goblin",
     icon: icons["class_nightgoblin"],
-    path: "/notgoblin",
+    path: "/nightgoblin",
   },
 ];
 

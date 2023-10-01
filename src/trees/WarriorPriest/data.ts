@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack)Deals 94 spiritual damage to target enemy. You generate 22 action points.`,
+        description: talentText`(Basic Attack) Deals 94 spiritual damage to target enemy. You generate 22 action points.`,
       },
       "Twin-Tailed Blow": {
         name: "Twin-Tailed Blow",

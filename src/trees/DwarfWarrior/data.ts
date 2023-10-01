@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 110 piercing damage to target enemy. You will generate 3 Grudge.`,
+        description: talentText`(Basic Attack) Deals 110 piercing damage to target enemy. You will generate 3 Grudge.`,
       },
       "Grudge Unleashed": {
         name: "Grudge Unleashed",

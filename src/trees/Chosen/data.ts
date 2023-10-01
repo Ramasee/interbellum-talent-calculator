@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 110 impact damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) Deals 110 impact damage to target enemy. Generates 22 action points.`,
       },
       "Corruption": {
         name: "Corruption",
