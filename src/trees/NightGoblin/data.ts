@@ -269,7 +269,7 @@ export const data: TalentData = {
       "Too Smart For Dat": {
         name: "Too Smart For Dat",
         pos: "i4",
-        icon: icons["abi_gs_getnsmarter"],
+        icon: icons["abi_gs_getsmarter"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Fungus Beer": {
         name: "Fungus Beer",
         pos: "c1",
-        icon: icons["item_ge_slimepurple"],
+        icon: icons["itm_ge_slimepurple"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -408,7 +408,7 @@ export const data: TalentData = {
         range: "30ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Knocks target enemy away from you and applies Immovable to them.\n\nImmoveable prevents application of Knockbacks, Pulls, and Roots for 20 seconds.`,
+        description: talentText`Knocks target enemy away from you and applies Immovable to them.\n\nImmovable prevents application of Knockbacks, Pulls, and Roots for 20 seconds.`,
       },
       "Sticky Feetz": {
         name: "Sticky Feetz",

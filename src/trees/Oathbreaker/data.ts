@@ -694,9 +694,9 @@ export const data: TalentData = {
       },
     },
   },
-  "Exiled": {
+  "Brother of Grimnir": {
     name: "Exiled",
-    background: backgrounds["exiled"],
+    background: backgrounds["Brother of Grimnir"],
     icon: icons["archetype_tank"],
     talents: {
       "Break Loose": {
