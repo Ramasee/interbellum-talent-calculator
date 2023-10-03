@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -269,7 +269,7 @@ export const data: TalentData = {
       "Too Smart For Dat": {
         name: "Too Smart For Dat",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_getnsmarter"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
@@ -283,7 +283,7 @@ export const data: TalentData = {
       "Gork Sez Stop": {
         name: "Gork Sez Stop",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_hand02"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -297,7 +297,7 @@ export const data: TalentData = {
       "Ain't Dun Yet": {
         name: "Ain't Dun Yet",
         pos: "i7",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_gimmie"],
         maxRank: 1,
         reqPoints: 20,
         type: "morale 3",
@@ -311,7 +311,7 @@ export const data: TalentData = {
       "Fist of Gork": {
         name: "Fist of Gork",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_fistsofgork"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -325,7 +325,7 @@ export const data: TalentData = {
       "Paranoia": {
         name: "Paranoia",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_donthitme"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -334,7 +334,7 @@ export const data: TalentData = {
       "Touch of Gork": {
         name: "Touch of Gork",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_hand03"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Fungus Beer": {
         name: "Fungus Beer",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["item_ge_slimepurple"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -361,7 +361,7 @@ export const data: TalentData = {
       "Bigger, Better, an' Greener": {
         name: "Bigger, Better, an' Greener",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_fickskin"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -374,7 +374,7 @@ export const data: TalentData = {
       "Summon Mushroom": {
         name: "Summon Mushroom",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_symbol03"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -387,7 +387,7 @@ export const data: TalentData = {
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_eyquitbleedin"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -400,7 +400,7 @@ export const data: TalentData = {
       "Eeek!": {
         name: "Eeek!",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_eeeek"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -413,7 +413,7 @@ export const data: TalentData = {
       "Sticky Feetz": {
         name: "Sticky Feetz",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_speedyfeet"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -426,7 +426,7 @@ export const data: TalentData = {
       "RUN AWAY!": {
         name: "RUN AWAY!",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_runaway"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -439,7 +439,7 @@ export const data: TalentData = {
 	  "Mork'll Fix It": {
         name: "Mork'll Fix It",
         pos: "g4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_degreenest"],
         maxRank: 1,
         reqPoints: 5,
         type: "spell",
@@ -452,7 +452,7 @@ export const data: TalentData = {
 	  "Puff of Poison": {
         name: "Puff of Poison",
         pos: "h5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_mushroom01"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -466,7 +466,7 @@ export const data: TalentData = {
 	  "Blightbloom": {
         name: "Blightbloom",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_mushroom02"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -480,7 +480,7 @@ export const data: TalentData = {
 	  "Mycotoxin": {
         name: "Mycotoxin",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee18"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -493,7 +493,7 @@ export const data: TalentData = {
       "Gather Round": {
         name: "Gather Round",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_or_symbol01"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -506,7 +506,7 @@ export const data: TalentData = {
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_windupdawaaagh"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -516,10 +516,10 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`Up to 10 enemies within a 30 foot area you select gain a debuff for 1 second if they do not have cover from you. At the end of the duration, they apply 1 stack of a 6 second debuff to up to 96 enemies within 30 feet of them. Enemies lose 5% damage reduction per stack.`,
       },
-	  "Outta Way!": {
-        name: "Outta Way!",
+	  "Outta Ere!": {
+        name: "Outta Ere!",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -528,7 +528,7 @@ export const data: TalentData = {
 	  "Spore Pods": {
         name: "Spore Pods",
         pos: "b5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -537,7 +537,7 @@ export const data: TalentData = {
 	  "Fungal Hyphae": {
         name: "Fungal Hyphae",
         pos: "a6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -546,7 +546,7 @@ export const data: TalentData = {
 	  "Lookit What I Did!": {
         name: "Lookit What I Did!",
         pos: "c6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -555,7 +555,7 @@ export const data: TalentData = {
 	  "Fungal Infestation": {
         name: "Fungal Infestation",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -564,7 +564,7 @@ export const data: TalentData = {
 	  "Pass It On": {
         name: "Pass It On",
         pos: "b7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -573,7 +573,7 @@ export const data: TalentData = {
 	  "Ere We Go": {
         name: "Ere We Go",
         pos: "f8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
         prereq: "Mycotoxin",
@@ -586,7 +586,7 @@ export const data: TalentData = {
 	  "Fungal Growth": {
         name: "Fungal Growth",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_stealyerthunder"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -601,7 +601,7 @@ export const data: TalentData = {
 	  "Run Fasta'": {
         name: "Run Fasta'",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_runaway"],
         maxRank: 3,
         reqPoints: 5,
         type: "passive",
@@ -614,7 +614,7 @@ export const data: TalentData = {
 	  "Bleed Fer Me": {
         name: "Bleed Fer Me",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_eyquitbleedin"],
         maxRank: 2,
         reqPoints: 10,
         type: "passive",
@@ -626,7 +626,7 @@ export const data: TalentData = {
 	  "I'll Take That": {
         name: "I'll Take That",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure17"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -641,7 +641,7 @@ export const data: TalentData = {
 	  "Mork Iz Betta!": {
         name: "Mork Iz Betta!",
         pos: "g6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_mob"],
         maxRank: 5,
         reqPoints: 15,
         prereq: "Mork'll Fix It",
@@ -660,7 +660,7 @@ export const data: TalentData = {
 	  "Mushroom Farmer": {
         name: "Mushroom Farmer",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_symbol03"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -673,7 +673,7 @@ export const data: TalentData = {
 	  "Mighty Shrooms": {
         name: "Mighty Shrooms",
         pos: "h7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_mushroom03"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Puff of Poison",
@@ -690,7 +690,7 @@ export const data: TalentData = {
 	  "Don' Feel Nuthin'": {
         name: "Don' Feel Nuthin'",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure08"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
