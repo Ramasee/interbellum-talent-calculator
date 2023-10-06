@@ -584,13 +584,13 @@ export const data: TalentData = {
       },
 	  "Yer All Bleedin' Now": {
         name: "Yer All Bleedin' Now",
-        pos: "d8",
+        pos: "e8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
         prereq: "Bleed 'Em Out",
 		arrows: [
-          { dir: "right", from: "c8", to: "d8" },
+          { dir: "right", from: "d8", to: "e8" },
         ],
         type: "career tactic",
         description: talentText`Bleed 'Em Out will now hit an additional enemy within 15 feet of the target.`,
