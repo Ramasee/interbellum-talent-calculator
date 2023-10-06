@@ -422,7 +422,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Applies a 5 second ailment to target enemy. Deals X% SAP + Y impact damage to them at the end of the duration.`,
+        description: talentText`Applies a 6 second ailment to target enemy. Deals 33% SAP + 425 impact damage to them at the end of the duration.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Quit Yer Yappin'": {
         name: "Quit Yer Yappin'",
@@ -480,7 +480,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals X% MAP + Y piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Bleed 'Em Out": {
         name: "Bleed 'Em Out",
@@ -494,7 +494,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
         blue: "Castable While Moving",
-        description: talentText`Applies one stack of a 6 second ailment to target enemy every second with a maximum of 4 stacks. For the duration, deals X% MAP + Y ichor damage every 3 seconds.`,
+        description: talentText`Applies one stack of a 6 second ailment to target enemy every second with a maximum of 4 stacks. For the duration, deals 13% MAP + 175 ichor damage every 3 seconds.`,
       },
       "Hurtin' Time": {
         name: "Hurtin' Time",
@@ -584,13 +584,13 @@ export const data: TalentData = {
       },
 	  "Yer All Bleedin' Now": {
         name: "Yer All Bleedin' Now",
-        pos: "b8",
+        pos: "d8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
         prereq: "Bleed 'Em Out",
 		arrows: [
-          { dir: "right", from: "e6", to: "f6" },
+          { dir: "right", from: "c8", to: "d8" },
         ],
         type: "career tactic",
         description: talentText`Bleed 'Em Out will now hit an additional enemy within 15 feet of the target.`,
