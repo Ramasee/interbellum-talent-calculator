@@ -437,8 +437,8 @@ export const data: TalentData = {
         cooldown: "60s cooldown",
         description: talentText`All damage you take is reduced by 50% but all damage you deal is reduced by 90% for 7 seconds.`,
       },
-	  "Lotsa Choppin": {
-        name: "Lotsa Choppin",
+	  "Lotsa Choppin'": {
+        name: "Lotsa Choppin'",
         pos: "g4",
         icon: icons["noicon"],
         maxRank: 1,
