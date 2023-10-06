@@ -536,7 +536,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you are flanking a target, you will deal additional damage equal to 50% of your accuracy.`,
+        description: talentText`Whenever you hit an enemy you are flanking, you will gain a buff for 2 seconds. For the duration, you will gain outgoing damage equal to 100% of your accuracy.`,
       },
 	  "Short Temper": {
         name: "Short Temper",
