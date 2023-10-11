@@ -1013,7 +1013,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1237,7 +1237,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 21% MAP + 310 piercing damage to target enemy. Deals 30% MAP + 387 piercing damage to Bleeding targets.`,
+        description: talentText`Deals 30% MAP + 387 piercing damage to target enemy removing 1 charge. Deals 37% MAP + 492 piercing damage to Bleeding targets. Gains 1 charge every 8 seconds with a maximum of 2 charges.`,
       },
       "Rotten Arrer": {
         name: "Rotten Arrer",
