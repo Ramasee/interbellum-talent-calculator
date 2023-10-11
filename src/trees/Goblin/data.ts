@@ -1136,7 +1136,7 @@ export const data: TalentData = {
       },
       "Sever Nerve": {
         name: "Sever Nerve",
-        pos: "f2",
+        pos: "i4",
         icon: icons["morale_severnerve"],
         maxRank: 0,
         reqPoints: 0,
@@ -1146,7 +1146,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Morale 2 Spec": {
         name: "Morale 2 Spec",
@@ -1223,7 +1223,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.25s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y piercing damage to target enemy.`,
+        description: talentText`Deals 37% RAP + 484 piercing damage to target enemy.`,
       },
       "Stabbity": {
         name: "Stabbity",
@@ -1237,7 +1237,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals X% MAP + Y piercing damage to target enemy. Deals X% MAP + Y damage to Bleeding targets.`,
+        description: talentText`Deals 21% MAP + 310 piercing damage to target enemy. Deals 30% MAP + 387 piercing damage to Bleeding targets.`,
       },
       "Rotten Arrer": {
         name: "Rotten Arrer",
@@ -1250,7 +1250,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 10 second affliction to target enemy. For the duration, deals X% RAP + Y ichor damage every 2 seconds.`,
+        description: talentText`Applies a 10 second affliction to target enemy. For the duration, deals 12% RAP + 143 ichor damage every 2 seconds.`,
       },
       "Run N Shoot": {
         name: "Run N Shoot",
@@ -1291,7 +1291,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Cowardice",
-        description: talentText`Applies a 10 second cripple to target enemy. For the duration deals X% MAP + Y ichor damage to target every 2 seconds.`,
+        description: talentText`Applies a 10 second cripple to target enemy. For the duration deals 13% MAP + 168 ichor damage to target every 2 seconds.`,
       },
       "Don't Eat Me!": {
         name: "Don't Eat Me!",
@@ -1318,7 +1318,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals X% MAP + Y piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 126 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Shrapnel Arrer": {
         name: "Shrapnel Arrer",
@@ -1331,11 +1331,11 @@ export const data: TalentData = {
           { dir: "down", from: "h4", to: "h5" },
         ],
         type: "skill",
-        cost: "50 action points",
+        cost: "60 action points",
         range: "100ft range",
-        cast: "1.0s instant cast",
+        cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 10 second affliction to up to 9 enemies within a 30 foot area you select. For the duration, deals X% RAP + Y ichor damage every 2 seconds.`,
+        description: talentText`Applies a 10 second affliction to up to 9 enemies within a 30 foot area you select. For the duration, deals 4% RAP + 43 ichor damage every 2 seconds.`,
       },
 	  "Explodin' Arrer": {
         name: "Explodin' Arrer",
@@ -1348,7 +1348,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.25s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y impact damage to up to 9 enemies within a 30 foot area you select.`,
+        description: talentText`Deals 18% RAP + 253 impact damage to up to 9 enemies within a 30 foot area you select.`,
       },
 	  "Stop Runnin'": {
         name: "Stop Runnin'",
@@ -1374,7 +1374,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y piercing damage to target enemy every second.`,
+        description: talentText`Deals 21% RAP + 294 piercing damage to target enemy every second.`,
       },
       "Penetrating Arrow": {
         name: "Penetrating Arrow",
@@ -1450,7 +1450,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Whenever you deal direct damage to an enemy under 50% health, you will deal an additional X% RAP + Y indirect ichor damage to them.`,
+        description: talentText`Whenever you deal direct damage to an enemy under 50% health, you will deal an additional 7% RAP + 140 indirect ichor damage to them.`,
       },
 	  "Sharpened Arrers": {
         name: "Sharpened Arrers",
@@ -1458,11 +1458,6 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 5,
         reqPoints: 0,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
         description: talentText`Plink, Stabbity, and Explodin' Arrer have a ${[
           8,
@@ -1489,7 +1484,7 @@ export const data: TalentData = {
         name: "Longa Range",
         pos: "d6",
         icon: icons["noicon"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 15,
         type: "passive",
         description: talentText`Increase the range on your bow skills by ${[
