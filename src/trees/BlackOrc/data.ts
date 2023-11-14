@@ -181,16 +181,16 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that have this tactic gain 1 Fightiness, gain 3 Pyschic Energy, lose 1 Cowardice, or lose 1 Paranoia.`,
+        description: talentText`Da Waaagh calls, whenever you use a basic attack, all groupmates within 100 feet that have this tactic gain 1 Fightiness, gain 3 Pyschic Energy, lose 1 Cowardice, or lose 1 Paranoia.`,
       },
-      "Lookin' For Opp'tunity": {
-        name: "Lookin' For Opp'tunity",
+      "Scrappin' Time": {
+        name: "Scrappin' Time ",
         pos: "c2",
         icon: icons["tac_class_1"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Clobberin' Time now costs 5 less Fightiness.`,
+        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.`,
       },
       "Guud at Big Choppin'": {
         name: "Guud at Big Choppin'",
@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You will now retain 0.5 times your block chance while under the effects of Clobberin' Time.`,
+        description: talentText`Nothin' like a big scrap! You will now retain 0.5 times your block chance while under the effects of Clobberin' Time.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -208,7 +208,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Fightas equip swords, shields, and two-handed axes.`,
+        description: talentText`Anyfin' that chopz and bashes gits iz useful. Fightas equip swords, shields, and two-handed axes.`,
       },
 	  "Hedgehog": {
         name: "Hedgehog",
@@ -308,8 +308,8 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`Up to 12 enemies within 30 feet of you gain Ensnared.\n\nEnsnared reduces your movement speed by 30% for 16 seconds.`,
       },
-      "Gork Smash": {
-        name: "Gork Smash",
+      "Gork iz 'Ere": {
+        name: "Gork iz 'Ere",
         pos: "i8",
         icon: icons["abi_or_waaagh"],
         maxRank: 1,
@@ -320,7 +320,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`You gain a buff for 30 seconds. For the duration, gain 10 Fightiness per second, 100% outgoing damage, 50% damage reduction, and 1000 HP4. You die at the end of the duration and gain Forlorn.`,
+        description: talentText`Gork w'll krump n' bash their 'eads for ya! For 30 seconds you gain 10 Fightiness per second, 100% outgoing damage, 50% damage reduction, and 1000 HP4. You'll die at the end of the duration and gain Forlorn.`,
       },
       "Fightiness": {
         name: "Fightiness",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "7.5ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 110 piercing damage to target enemy. Generates 22 action points.`,
+        description: talentText`(Basic Attack) A guud clobber, deals 110 piercing damage to target enemy. Generates 22 action points.`,
       },
       "Clobberin' Time": {
         name: "Clobberin' Time",
@@ -356,7 +356,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Off the GCD\nCosts 25 Fightiness",
-        description: talentText`Gain a buff for 10 seconds. For the duration, you cannot block and will lose access to certain skills, but will enable your two-handed axe skills.`,
+        description: talentText`You want to fight harder than ever! For 10 seconds you cannot block and will lose access to certain skills, but will enable your two-handed axe skills.`,
       },
       "Right in Da Jibblies": {
         name: "Right in Da Jibblies",
@@ -370,7 +370,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Deals 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
+        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
       },
       "Guard": {
         name: "Guard",
@@ -397,10 +397,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals 26% MAP + 348 impact damage to target enemy and apply 1 stack of Reduced Block to them.`,
+        description: talentText`A smash to the 'ead that deals 26% MAP + 348 impact damage to target enemy and apply 1 stack of Reduced Block to them.`,
       },
-      "Buh-Bye": {
-        name: "Buh-Bye",
+      "Outta' My Way": {
+        name: "Outta' My Way",
         pos: "g1",
         icon: icons["abi_gs_walkitoff"],
         maxRank: 0,
@@ -411,10 +411,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "10s cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Knocks the enemy away and applies Immovable to them.\n\nImmovable prevents the application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
+        description: talentText`A guud bash of your shield knocks the enemy away and applies Immovable to them.\n\nImmovable prevents the application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
-      "Trip 'Em Up": {
-        name: "Trip 'Em Up",
+      "Knowhere ta' Go": {
+        name: "Knowhere ta' Go",
         pos: "h1",
         icon: icons["abi_or_foot03"],
         maxRank: 0,
@@ -425,7 +425,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Deals 17% MAP + 227 impact damage and applies Ensnared and Momentum to target enemy.\n\nEnsanred reduced movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`You swipe at their legs dealing 17% MAP + 227 impact damage and applies Ensnared and Momentum to target enemy.\n\nEnsanred reduced movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Can't Hit Me": {
         name: "Can't Hit Me",
@@ -438,10 +438,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "20s cooldown",
-        description: talentText`Gain a blessing for 8 seconds. For the duration, your block chance is increased by 50%.`,
+        description: talentText`Shield up and gain a blessing for 8 seconds. Your block chance is increased by 50%.`,
       },
 	  "Big Swing": {
-        name: "big Swing",
+        name: "Big Swing",
         pos: "b4",
         icon: icons["abi_gs_bigswing"],
         maxRank: 1,
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`A maddening swing deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Distract": {
         name: "Distract",
@@ -477,11 +477,11 @@ export const data: TalentData = {
         cost: "60 action points",
         range: "self",
         cast: "instant cast",
-        cooldown: "no cooldown",
+        cooldown: "10s cooldown",
         description: talentText`All groupmates within 100 feet of you gain an enchantment for 5 seconds. For the duration they will gain 5 action points per second and 5 adrenaline per second.`,
       },
-	  "Big Slash": {
-        name: "Big Slash",
+	  "Big Scrappin": {
+        name: "Big Scrappin",
         pos: "c8",
         icon: icons["abi_gs_dabigun"],
         maxRank: 1,
@@ -518,7 +518,7 @@ export const data: TalentData = {
         range: "self",
         cast: "2.0s channel",
         cooldown: "30s cooldown",
-        description: talentText`You interrupt up to 48 enemies who do not have Cover from you within 30 feet every 0.5 seconds. Whenever you successfully interrupt an enemy, you will deal 10% MAP + 50 ichor damage to them and up to 17 other enemies within 20 feet of them.`,
+        description: talentText`A rampaging bellow that interrupts up to 48 enemies who do not have Cover from you within 30 feet every 0.5 seconds. Whenever you successfully interrupt an enemy, you will deal 10% MAP + 50 ichor damage to them and up to 17 other enemies within 20 feet of them.`,
       },
 	  "Leg Breaka": {
         name: "Leg Breaka",
@@ -527,7 +527,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Trip 'Em Up will now hit up to 2 other enemies within 20 feet.`,
+        description: talentText`Why not a stop to all ther' gits? Knowhere ta' Go will now hit up to 2 other enemies within 20 feet.`,
       },
 	  "Keep It Goin'": {
         name: "Keep It Goin'",
@@ -536,7 +536,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Buh-Bye, Trip 'Em Up, and Distract now generates 1 Fightiness.`,
+        description: talentText`Outta My Way, Knowhere ta Go, and Distract now generates 1 Fightiness.`,
       },
 	  "Big Brawlin'": {
         name: "Big Brawlin'",
@@ -569,8 +569,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you block an attack, you will deal 6% MAP + 90 impact damage to up to 9 enemies within 30 feet of you and gain 1 Fightiness. This effect cannot happen more than once every 2 seconds.`,
       },
-	  "Tactic 6": {
-        name: "T6",
+	  "'Ead Bashers": {
+        name: "'Ead Bashers",
         pos: "b7",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -591,8 +591,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you block an attack, you will gain 15% damage reduction for 5 seconds. Big Swing will now cost 10 less action points.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Krump 'em": {
+        name: "Krump 'em",
         pos: "e3",
         icon: icons["abi_or_figure14"],
         maxRank: 3,
@@ -670,8 +670,8 @@ export const data: TalentData = {
           10,
         ]}%. This effect is supressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
+	  "Stop Muckin' About": {
+        name: "Stop Muckin' About",
         pos: "e8",
         icon: icons["abi_or_figure04"],
         maxRank: 4,

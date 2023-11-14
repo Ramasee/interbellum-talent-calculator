@@ -2,9 +2,9 @@ import { TalentData } from "../../TalentContext";
 import { talentText, requireAll } from "../../utils";
 
 const backgrounds = requireAll(
-  require.context("../../assets/tree-backgrounds/dwarf"),
+  require.context("../../assets/tree-backgrounds/greenskin"),
 );
-const icons = requireAll(require.context("../../assets/icons/dwarf"));
+const icons = requireAll(require.context("../../assets/icons/greenskin"));
 
 export const data: TalentData = {
   "Big Un": {
@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specdualwield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -288,11 +288,11 @@ export const data: TalentData = {
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Gain a buff for 15 seconds. Convert 20 action points into 30 psychic energy every second. This effect is dispelled if you run out of action points.`,
       },
       "Puddle O' Muck": {
         name: "Puddle O' Muck",
@@ -325,7 +325,7 @@ export const data: TalentData = {
       "Psychic Energy": {
         name: "Psychic Energy",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure10"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -347,7 +347,7 @@ export const data: TalentData = {
       "Slasha": {
         name: "Slasha",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee11"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -360,7 +360,7 @@ export const data: TalentData = {
       "Supa Chop": {
         name: "Supa Chop",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_supachop"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -387,7 +387,7 @@ export const data: TalentData = {
       "Chop Fasta": {
         name: "Chop Fasta",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee09"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -400,7 +400,7 @@ export const data: TalentData = {
       "Sit Down!": {
         name: "Sit Down!",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_sitdown"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -440,7 +440,7 @@ export const data: TalentData = {
 	  "Lotsa Choppin'": {
         name: "Lotsa Choppin'",
         pos: "g4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_wildswing"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -453,7 +453,7 @@ export const data: TalentData = {
 	  "Quit Yer Yappin'": {
         name: "Quit Yer Yappin'",
         pos: "c5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_throatslasha"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -467,7 +467,7 @@ export const data: TalentData = {
 	  "Wild Choppin'": {
         name: "Wild Choppin'",
         pos: "g6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee02"],
         maxRank: 1,
         reqPoints: 15,
         prereq: "Lotsa Choppin'",
@@ -485,7 +485,7 @@ export const data: TalentData = {
 	  "Bleed 'Em Out": {
         name: "Bleed 'Em Out",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_bleedemout"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -499,7 +499,7 @@ export const data: TalentData = {
       "Hurtin' Time": {
         name: "Hurtin' Time",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_or_combo02"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -526,7 +526,7 @@ export const data: TalentData = {
 	  "Dat Tickles": {
         name: "Dat Tickles",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -544,7 +544,7 @@ export const data: TalentData = {
 	  "Wot Rules?": {
         name: "Wot Rules?",
         pos: "b6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -553,7 +553,7 @@ export const data: TalentData = {
 	  "No More Helpin'": {
         name: "No More Helpin'",
         pos: "f6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -562,7 +562,7 @@ export const data: TalentData = {
 	  "Furious Choppin'": {
         name: "Furious Choppin'",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -571,7 +571,7 @@ export const data: TalentData = {
 	  "Extra Choppin'": {
         name: "Extra Choppin'",
         pos: "h7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         prereq: "Wild Choppin'",
@@ -598,7 +598,7 @@ export const data: TalentData = {
 	  "Long Lasta": {
         name: "Long Lasta",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure10"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -612,7 +612,7 @@ export const data: TalentData = {
 	  "Improved Clobber": {
         name: "Improved Clobber",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_yernothin"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -627,7 +627,7 @@ export const data: TalentData = {
 	  "Shrug It Off": {
         name: "Shrug It Off",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure12"],
         maxRank: 2,
         reqPoints: 10,
         type: "passive",
@@ -655,7 +655,7 @@ export const data: TalentData = {
 	  "Reckless Gamble": {
         name: "Reckless Gamble",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee15"],
         maxRank: 4,
         reqPoints: 15,
         type: "passive",
@@ -684,7 +684,7 @@ export const data: TalentData = {
 	  "Improved Wild Choppin'": {
         name: "Improved Wild Choppin'",
         pos: "g7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee02"],
         maxRank: 4,
         reqPoints: 20,
         prereq: "Wild Choppin'",
@@ -701,7 +701,7 @@ export const data: TalentData = {
 	  "Don' Hate Da' Choppa": {
         name: "Don' Hate Da' Choppa",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_blood01"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",

@@ -606,7 +606,7 @@ export const data: TalentData = {
         name: "Improved Grudging Blow",
         pos: "c4",
         icon: icons["abi_dw_melee11"],
-        maxRank: 1,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Grudging Blow will now deal ${[
