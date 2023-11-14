@@ -283,7 +283,7 @@ export const data: TalentData = {
       "Morale 2 Spec": {
         name: "Morale 2 Spec",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_tantrum"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -374,7 +374,7 @@ export const data: TalentData = {
       "Charge": {
         name: "Charge",
         pos: "e1",
-        icon: icons["abi_dw_charge"],
+        icon: icons["abi_charge"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -413,7 +413,7 @@ export const data: TalentData = {
       "Bring Da Pain": {
         name: "Bring Da Pain",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_tiredalready"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
