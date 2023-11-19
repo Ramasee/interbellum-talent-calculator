@@ -671,7 +671,7 @@ export const data: TalentData = {
         name: "Extra Crit",
         pos: "b7",
         icon: icons["abi_extracrit"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 20,
         type: "passive",
         description: talentText`Your chance to critically hit is increased by ${[
@@ -685,7 +685,7 @@ export const data: TalentData = {
         name: "Improved Wild Choppin'",
         pos: "g7",
         icon: icons["abi_or_melee02"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 20,
         prereq: "Wild Choppin'",
 		arrows: [
