@@ -578,7 +578,7 @@ talents: {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Self Destruct no longer destroys your deployable, but costs 3 kit.`,
+        description: talentText`Self Destruct no longer destroys your deployable and deals 21% RAP + 266 corporeal damage, but costs 3 kit.`,
       },
 	  "Depleted Runic Rounds": {
         name: "Depleted Runic Rounds",
@@ -1758,8 +1758,8 @@ talents: {
         name: "Bugman's Best",
         pos: "e1",
         icon: icons["abi_keg"],
-        maxRank: 1,
-        reqPoints: 5,
+        maxRank: 0,
+        reqPoints: 0,
         type: "skill",
         cost: "no cost",
         range: "self",
@@ -1932,7 +1932,7 @@ talents: {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Self Destruct no longer destroys your deployable, but costs 3 kit.`,
+        description: talentText`Self Destruct no longer destroys your deployable and deals 21% RAP + 266 corporeal damage, but costs 3 kit.`,
       },
 	  "Pierce Defenses": {
         name: "Pierce Defenses",
