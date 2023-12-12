@@ -1784,7 +1784,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies a 10 second affliction to target enemy. Every 2 seconds, deals X% MAP + Y ichor damage and applies Bleeding.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
+        description: talentText`Applies a 10 second affliction to target enemy. Every 2 seconds, deals 9% MAP + 126 ichor damage and applies Bleeding.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
       },
       "Can't Hit Me": {
         name: "Can't Hit Me",
@@ -1825,7 +1825,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Applies a 6 second affliction to target enemy. At the end of the duration, deals X% MAP + Y ichor damage to target.`,
+        description: talentText`Applies a 6 second affliction to target enemy. At the end of the duration, deals 25% MAP + 312 ichor damage to target.`,
       },
 	  "Chop Fasta": {
         name: "Chop Fasta",
@@ -1853,7 +1853,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take X% MAP + Y piercing damage and lose a stack.`,
+        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take 5% MAP + 73 piercing damage and lose a stack.`,
       },
       "Ability 8": {
         name: "Ability 8",
@@ -1867,7 +1867,7 @@ export const data: TalentData = {
         cast: "2.5s channel",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time\nCastable While Moving",
-        description: talentText`Deals X% MAP + Y piercing damage every 0.5 seconds to target enemy.`,
+        description: talentText`Deals 13% MAP + 182 piercing damage every 0.5 seconds to target enemy.`,
       },
       "Waaagh!": {
         name: "Waagh!",
@@ -1986,7 +1986,7 @@ export const data: TalentData = {
         name: "Passive 6",
         pos: "e5",
         icon: icons["noicon"],
-        maxRank: 5,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Ability 5 has a ${[
@@ -2031,11 +2031,6 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
         description: talentText`${[
           "Ability 5",
