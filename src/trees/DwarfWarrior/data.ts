@@ -1363,7 +1363,7 @@ export const data: TalentData = {
         prereq: "Ability 3",
 		arrows: [
           { dir: "right-down", from: "g6", to: "h6" },
-          { dir: "right-down-down", from: "h7", to: "h8" }
+          { dir: "right-down-down", from: "h6", to: "h7" }
         ],
         type: "passive",
         description: talentText`Ability 3 deals ${[
@@ -1839,7 +1839,7 @@ export const data: TalentData = {
       },
 	  "Ability 2": {
         name: "Ability 2",
-        pos: "i5",
+        pos: "g5",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 10,
@@ -1852,7 +1852,7 @@ export const data: TalentData = {
       },
 	  "Ability 3": {
         name: "Ability 3",
-        pos: "i6",
+        pos: "g6",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 15,
@@ -1876,7 +1876,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "10s cooldown",
         blue: "Costs 20 Grudge",
-        description: talentText`Applies Marked to target enemy./n/nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
+        description: talentText`Applies Marked to target enemy\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
       "Ability 13": {
         name: "Ability 13",
@@ -1999,7 +1999,7 @@ export const data: TalentData = {
       },
 	  "Passive 2": {
         name: "Passive 2",
-        pos: "f6",
+        pos: "d6",
         icon: icons["noicon"],
         maxRank: 2,
         reqPoints: 15,
@@ -2011,7 +2011,7 @@ export const data: TalentData = {
       },
 	  "Passive 7": {
         name: "Passive 7",
-        pos: "e6",
+        pos: "h6",
         icon: icons["noicon"],
         maxRank: 5,
         reqPoints: 15,
