@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "self",
         cast: "2.5s cast",
         cooldown: "45s cooldown",
-        blue: "Castable while moving",
+        blue: "Castable while Moving",
         description: talentText`(Movement Skill) You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
       },
       "Torment": {

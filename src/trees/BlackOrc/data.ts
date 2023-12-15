@@ -1948,7 +1948,7 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Ability 7",
 		arrows: [
-          { dir: "right-down", from: "e8", to: "g8" },
+          { dir: "right", from: "e8", to: "g8" },
         ],
         type: "career tactic",
         description: talentText`Ability 7 now applies 10 stacks.`,
