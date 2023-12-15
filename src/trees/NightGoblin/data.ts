@@ -1065,7 +1065,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% SAP + Y elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
+        description: talentText`Deals 14% SAP + 171 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
       },
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
@@ -1143,7 +1143,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% SAP + Y elemental damage to target enemy. Then will jump to another enemy within 20 feet. Jumps twice.\n\nAugmented: each jump will explode dealing X% SAP + Y elemental damage to 1 additional enemy within 20 feet.`,
+        description: talentText`Deals 36% SAP + 485 elemental damage to target enemy. Then will jump to another enemy within 20 feet. Jumps twice.\n\nAugmented: each jump will explode dealing 7% SAP + 95 elemental damage to 1 additional enemy within 20 feet.`,
       },
 	  "Ability 4": {
         name: "Ability 4",
@@ -1182,7 +1182,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "2.25s channel",
         cooldown: "10s cooldown",
-        description: talentText`Deals X% SAP + Y elemental damage to target enemy every 0.75 seconds.\n\nAugmented: removes the cooldown.`,
+        description: talentText`Deals 16% SAP + 200 elemental damage to target enemy every 0.75 seconds.\n\nAugmented: removes the cooldown.`,
       },
       "Ability 6": {
         name: "Ability 6",
@@ -1195,7 +1195,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Marked and an 8 second cripple to target enemy. At the end of the duration, deal X% SAP + corporeal damage to them.\n\nMarked reduces the target's damage reductiob by 15% for 10 seconds.`,
+        description: talentText`Applies Marked and an 8 second cripple to target enemy. At the end of the duration, deal 28% SAP + 376 corporeal damage to them.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1221,7 +1221,7 @@ export const data: TalentData = {
       },
 	  "Tactic 2": {
         name: "Tactic 2",
-        pos: "b5",
+        pos: "g5",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 10,
@@ -1260,7 +1260,7 @@ export const data: TalentData = {
         pos: "b7",
         icon: icons["tac_spec_3"],
         maxRank: 1,
-        reqPoints: 25,
+        reqPoints: 20,
         prereq: "Mycotoxin",
 		arrows: [
           { dir: "down", from: "b6", to: "b7" },
@@ -1343,7 +1343,6 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Wounds",
         type: "passive",
         description: talentText`You always have ${[
           3,
@@ -1821,7 +1820,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y corporeal damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 130 corporeal damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Ability 8": {
         name: "Ability 8",
@@ -1851,7 +1850,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "12s cooldown",
-        description: talentText`Place a 20 foot wide pool around you for 4 seconds. Every second, up to 9 enemies in the pool will gain 1 stack of a 9 second affliction. Every 3 seconds, target takes X% SAP + Y corporeal damage.\n\nAugmented: pool lasts for 6 seconds.`,
+        description: talentText`Place a 20 foot wide pool around you for 4 seconds. Every second, up to 9 enemies in the pool will gain 1 stack of a 9 second affliction. Every 3 seconds, target takes 5% SAP + 65 corporeal damage.\n\nAugmented: pool lasts for 6 seconds.`,
       },
 	  "Ability 1": {
         name: "Ability 1",
@@ -1864,7 +1863,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% SAP + Y elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
+        description: talentText`Deals 14% SAP + 171 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
       },
       "Ability 10": {
         name: "Ability 10",
@@ -1872,12 +1871,13 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 30,
-        type: "ability skill spell",
+        type: "spell",
         cost: "100 action points",
         range: "30ft range",
-        cast: "instant cast",
+        cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 10 stacks to target enemy. Each time they are hit by an ability, they take X% SAP + elemental damage and lose a stack.\n\nAugmented: add 4 stacks.`,
+		blue: "Castable while Moving",
+        description: talentText`Applies 10 stacks to target enemy. Each time they are hit by an ability, they take 6% SAP + 66 elemental damage and lose a stack.\n\nAugmented: add 4 stacks.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1894,7 +1894,7 @@ export const data: TalentData = {
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
-        pos: "b5",
+        pos: "a5",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 10,
@@ -1952,7 +1952,7 @@ export const data: TalentData = {
       },
 	  "Tactic 7": {
         name: "Tactic 7",
-        pos: "b8",
+        pos: "d8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
@@ -2035,7 +2035,6 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Wounds",
         type: "passive",
         description: talentText`You always have ${[
           3,
