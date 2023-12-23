@@ -398,7 +398,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Pet",
-        description: talentText`Commands your pet to attack its current target.\n\nHorned: deals X% MAP + Y impact damage.\nSpiked: deals X% RAP + Y piercing damage.\nGas: deals X% RAP + Y ichor damage.`,
+        description: talentText`Commands your pet to attack its current target.\n\nHorned/Battle: deals 27% MAP + 348 impact damage.\nSpiked: deals 17% RAP + 224 piercing damage.\nGas: deals 20% RAP + 251 ichor damage.`,
       },
       "Ability 3": {
         name: "Ability 3",
@@ -466,7 +466,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Coward!",
-        description: talentText`Deals X% RAP + Y ichor damage to target enemy. Has a 20% chance to summon a Basic Squig.`,
+        description: talentText`Deals 16% RAP + 205 ichor damage to target enemy. Has a 20% chance to summon a Basic Squig.`,
       },
 	  "Explosive Squig": {
         name: "Explosive Squig",
@@ -479,7 +479,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Summon an explosive squig that promptly explodes dealing X% RAP + Y ichor damage to up to 9 enemies within 30 feet of you.`,
+        description: talentText`Summon an explosive squig that promptly explodes dealing 7% RAP + 102 ichor damage to up to 9 enemies within 30 feet of you.`,
       },
 	  "Ability 5": {
         name: "Ability 5",
@@ -1846,7 +1846,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Pet",
-        description: talentText`Commands your pet to attack its current target.\n\nHorned: deals X% MAP + Y impact damage.\nSpiked: deals X% RAP + Y piercing damage.\nGas: deals X% RAP + Y ichor damage.`,
+        description: talentText`Commands your pet to attack its current target.\n\nHorned/Battle: deals 27% MAP + 348 impact damage.\nSpiked: deals 17% RAP + 224 piercing damage.\nGas: deals 20% RAP + 251 ichor damage.`,
       },
 	  "Tastes Like Stuntie": {
         name: "Tastes Like Stuntie",
@@ -1860,7 +1860,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Squig Armor",
-        description: talentText`Deals X% MAP + Y piercing damage to target enemy. You are healed for 100% of the damage dealt.`,
+        description: talentText`Deals 19% MAP + 262 piercing damage to target enemy. You are healed for 100% of the damage dealt.`,
       },
 	  "Ability 8": {
         name: "Ability 8",
@@ -1887,7 +1887,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Squig Armor",
-        description: talentText`Deals X% MAP + Y ichor damage to up to 24 enemies within 30 feet of you. You lose Squig Armor and knock yourself backwards.`,
+        description: talentText`Deals 10% MAP + 126 ichor damage to up to 24 enemies within 30 feet of you. You lose Squig Armor and knock yourself backwards.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",

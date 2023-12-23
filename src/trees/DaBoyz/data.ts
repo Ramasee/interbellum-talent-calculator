@@ -511,7 +511,7 @@ export const data: TalentData = {
         description: talentText`Gain a buff for 60 seconds. For the duration, you have +15% outgoing damage but you will lose 30 Psychic Energy every second. This effect will be dispelled if you run out of Psychic Energy.`,
       },
       "Waaagh!": {
-        name: "Waagh!",
+        name: "Waaagh!",
         pos: "f9",
         icon: icons["abi_gs_waaagh"],
         maxRank: 1,
@@ -1973,7 +1973,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 20,
-        prereq: "Wounds",
+        prereq: "Ability 3 NG",
 		arrows: [
           { dir: "down", from: "g4", to: "g7" },
         ],
