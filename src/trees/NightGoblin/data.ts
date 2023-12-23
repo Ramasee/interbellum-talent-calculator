@@ -534,8 +534,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`If your Summon Mushroom is killed, all groupmates within 100 feet of you gain a buff for 5 second. For the duration, gain 5 adrenaline per second and restore 5% RP + 40 health every second.`,
       },
-	  "Fungal Hyphae": {
-        name: "Fungal Hyphae",
+	  "Fungus Gud For Ya": {
+        name: "Fungus Gud For Ya",
         pos: "a6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
@@ -583,8 +583,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Mycotoxin now applies to all groupmates within 100 feet of you.`,
       },
-	  "Fungal Growth": {
-        name: "Fungal Growth",
+	  "Fungral Growth": {
+        name: "Fungral Growth",
         pos: "e3",
         icon: icons["abi_gs_stealyerthunder"],
         maxRank: 3,
@@ -657,8 +657,8 @@ export const data: TalentData = {
           50,
         ]}%`,
       },
-	  "Mushroom Farmer": {
-        name: "Mushroom Farmer",
+	  "Shroom Git": {
+        name: "Shroom Git",
         pos: "e7",
         icon: icons["abi_or_symbol03"],
         maxRank: 3,

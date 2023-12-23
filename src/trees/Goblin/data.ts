@@ -547,7 +547,7 @@ export const data: TalentData = {
         reqPoints: 15,
         prereq: "Spore Toss",
 		arrows: [
-          { dir: "right-down", from: "c5", to: "c6" },
+          { dir: "down", from: "c5", to: "c6" },
         ],
         type: "career tactic",
         description: talentText`Spore Toss no longer requires Coward! and will always summon a basic squig, but now has a cooldown of 10 seconds.`,
@@ -581,7 +581,7 @@ export const data: TalentData = {
       },
 	  "Tactic 6": {
         name: "Tactic 6",
-        pos: "g7",
+        pos: "g8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
@@ -1836,7 +1836,7 @@ export const data: TalentData = {
       },
 	  "Ability 2": {
         name: "Ability 2",
-        pos: "c4",
+        pos: "c5",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 10,
