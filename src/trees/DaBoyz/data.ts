@@ -1094,7 +1094,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "10s cooldown",
-        description: talentText`Deals X% RAP + Y piercing (66%) damage to target enemy every second and apply 1 stack of Reduced Agility, Dodge, or Block.`,
+        description: talentText`Deals 11% RAP + 140 piercing damage to target enemy every second and apply 1 stack of Reduced Agility, Dodge, or Block.`,
       },
       "Ability 2": {
         name: "Ability 2",
@@ -1108,7 +1108,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Psychic Energy",
-        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals X% MAP + Y ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals 16% MAP + 206 ichor damage every 3 seconds.`,
       },
       "Drop That!": {
         name: "Drop That!",
@@ -1134,7 +1134,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y piercing (66%) damage to target enemy, applies 1 stack of Reduced Outgoing Healing, and applies a 5 second affliction. For the duration, target has 33% slower cast times.`,
+        description: talentText`Deals 14% RAP + 191 piercing damage to target enemy, applies 1 stack of Reduced Outgoing Healing, and applies a 5 second affliction. For the duration, target has 33% slower cast times.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1151,7 +1151,7 @@ export const data: TalentData = {
       },
 	  "Shrapnel Arrer": {
         name: "Shrapnel Arrer",
-        pos: "h5",
+        pos: "h4",
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 5,
@@ -1201,7 +1201,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "15s cooldown",
-        description: talentText`Applies 3 stacks of Reduced Armor and a 15 second affliction to target enemy. For the duration, deals X% ichor + Y piercing damage every 3 seconds.`,
+        description: talentText`Applies 3 stacks of Reduced Armor and a 15 second affliction to target enemy. For the duration, deals 10% RAP + 113 ichor damage every 3 seconds.`,
       },
       "Da Big Arrer": {
         name: "Da Big Arrer",
@@ -1214,7 +1214,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "15s cooldown",
-        description: talentText`Deals X% RAP + Y piercing damage to target enemy.`,
+        description: talentText`Deals 73% RAP + 974 piercing damage to target enemy.`,
       },
       "Penetrating Arrow": {
         name: "Penetrating Arrow",
@@ -1285,7 +1285,7 @@ export const data: TalentData = {
           { dir: "down", from: "h4", to: "h7" },
         ],
         type: "career tactic",
-        description: talentText`Shrapnel Arrer now reduces Outgoing Damage and Outgoing healing by 5%; and Pushback Immunity by 33%.`,
+        description: talentText`Shrapnel Arrer now reduces Outgoing Damage and Outgoing Healing by 5%; and Pushback Immunity by 33%.`,
       },
 	  "Tactic 3": {
         name: "Tactic 3",
@@ -1328,7 +1328,7 @@ export const data: TalentData = {
         reqPoints: 10,
         prereq: "Passive 2",
 		arrows: [
-          { dir: "right-down", from: "b4", to: "b5" },
+          { dir: "down", from: "b4", to: "b5" },
         ],
         type: "passive",
         description: talentText`Whenever you spend Psychic Energy, you will gain ${[
@@ -1771,7 +1771,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Deals X%SAP + Y impact damage to target enemy.`,
+        description: talentText`Deals 57% SAP + 771 impact damage to target enemy.`,
       },
       "Bring Da Pain": {
         name: "Bring Da Pain",
@@ -1826,7 +1826,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Psychic Energy",
-        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals X% MAP + Y ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals 16% MAP + 206 ichor damage every 3 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1866,7 +1866,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "5s cooldown",
         blue: "Costs 35 Psychic Energy",
-        description: talentText`Deals X% SAP + Y impact damage to target enemy and slows their movement by 25% for 1 second.`,
+        description: talentText`Deals 16% SAP + 205 impact damage to target enemy and slows their movement by 25% for 1 second.`,
       },
 	  "Wild Choppin'": {
         name: "Wild Choppin'",
@@ -1894,7 +1894,7 @@ export const data: TalentData = {
         cast: "3.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals X% SAP + Y impact damage to target enemy every second.`,
+        description: talentText`Deals 32% SAP + 424 impact damage to target enemy every second.`,
       },
       "Ability 8": {
         name: "Ability 8",
@@ -1942,7 +1942,7 @@ export const data: TalentData = {
       },
 	  "Tactic 1": {
         name: "Tactic 1",
-        pos: "g6",
+        pos: "a6",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 15,
@@ -2002,7 +2002,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]} Psychic Energy.`,
+        ]} Psychic Energy every 2 seconds.`,
       },
 	  "Passive 8": {
         name: "Passive 8",
@@ -2011,7 +2011,7 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
-        description: talentText`The cast time of Ability 2 is reduced by ${[
+        description: talentText`The cast time of Ability 5 is reduced by ${[
           0.1,
           0.2,
           0.3,
@@ -2062,7 +2062,7 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Ability 5 will now cost ${[
+        description: talentText`Ability 2 will now cost ${[
           28,
           15,
           0,
