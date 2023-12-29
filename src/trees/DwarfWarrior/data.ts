@@ -644,11 +644,11 @@ export const data: TalentData = {
         reqPoints: 15,
         type: "passive",
         description: talentText`Your chance to block is increased by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}.`,
       },
 	  "Shell Shock": {
