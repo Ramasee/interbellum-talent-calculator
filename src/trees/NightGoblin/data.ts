@@ -1057,7 +1057,7 @@ export const data: TalentData = {
       "Ability 1": {
         name: "Ability 1",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee14"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1083,7 +1083,7 @@ export const data: TalentData = {
       "Ability 2": {
         name: "Ability 2",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_wotsdarush"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1148,7 +1148,7 @@ export const data: TalentData = {
 	  "Ability 4": {
         name: "Ability 4",
         pos: "c5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_shrugitoff"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -1174,7 +1174,7 @@ export const data: TalentData = {
 	  "Ability 5": {
         name: "Abiltity 5",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure16"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1187,7 +1187,7 @@ export const data: TalentData = {
       "Ability 6": {
         name: "Ability 6",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure18"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1240,7 +1240,7 @@ export const data: TalentData = {
 	  "Tactic 1": {
         name: "Tactic 1",
         pos: "f6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -1249,7 +1249,7 @@ export const data: TalentData = {
 	  "Tactic 3": {
         name: "Tactic 3",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1271,7 +1271,7 @@ export const data: TalentData = {
 	  "Tactic 4": {
         name: "Tactic 4",
         pos: "c8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -1280,7 +1280,7 @@ export const data: TalentData = {
 	  "Passive 1": {
         name: "Passive 1",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_lemmeout"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -1309,7 +1309,7 @@ export const data: TalentData = {
 	  "Passive 2": {
         name: "Passive 2",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_face17"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -1321,7 +1321,7 @@ export const data: TalentData = {
 	  "Passive 3": {
         name: "Passive 3",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_ge_zap"],
         maxRank: 5,
         reqPoints: 15,
         prereq: "Ability 3",
@@ -1340,7 +1340,7 @@ export const data: TalentData = {
 	  "Passive 5": {
         name: "Passive 5",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_face06"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1366,7 +1366,7 @@ export const data: TalentData = {
 	  "Passive 6": {
         name: "Passive 6",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_figure17"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1812,7 +1812,7 @@ export const data: TalentData = {
 	  "Ability 7": {
         name: "Ability 7",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_go_face01"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -1839,7 +1839,7 @@ export const data: TalentData = {
 	  "Ability 9": {
         name: "Ability 9",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_puddleomuck"],
         maxRank: 1,
         reqPoints: 15,
         prereq: "Ability 7",
@@ -1856,7 +1856,7 @@ export const data: TalentData = {
 	  "Ability 1": {
         name: "Ability 1",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee14"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1869,7 +1869,7 @@ export const data: TalentData = {
       "Ability 10": {
         name: "Ability 10",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_gorksbarb"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1905,7 +1905,7 @@ export const data: TalentData = {
 	  "Tactic 5": {
         name: "Tactic 5",
         pos: "g5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -1914,7 +1914,7 @@ export const data: TalentData = {
 	  "Tactic 6": {
         name: "Tactic 6",
         pos: "b6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -1923,7 +1923,7 @@ export const data: TalentData = {
 	  "Tactic 3": {
         name: "Tactic 3",
         pos: "f6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -1932,7 +1932,7 @@ export const data: TalentData = {
 	  "Tactic 4": {
         name: "Tactic 4",
         pos: "b7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1941,7 +1941,7 @@ export const data: TalentData = {
 	  "Tactic 8": {
         name: "Tactic 8",
         pos: "h7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         prereq: "Ability 9",
@@ -1954,7 +1954,7 @@ export const data: TalentData = {
 	  "Tactic 7": {
         name: "Tactic 7",
         pos: "d8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -1963,7 +1963,7 @@ export const data: TalentData = {
 	  "Passive 10": {
         name: "Passive 10",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_stalk"],
         maxRank: 5,
         reqPoints: 0,
         type: "passive",
@@ -1991,7 +1991,7 @@ export const data: TalentData = {
 	  "Passive 7": {
         name: "Passive 7",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_fickskin"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -2003,7 +2003,7 @@ export const data: TalentData = {
 	  "Passive 8": {
         name: "Passive 8",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee18"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2033,7 +2033,7 @@ export const data: TalentData = {
 	  "Passive 5": {
         name: "Passive 5",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_face06"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2046,7 +2046,7 @@ export const data: TalentData = {
 	  "Passive 9": {
         name: "Passive 9",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_go_face03"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",

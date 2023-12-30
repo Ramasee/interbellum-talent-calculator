@@ -1583,7 +1583,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["skl_specadvanceshield"],
+        icon: icons["skl_specadvancedshield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1797,7 +1797,7 @@ export const data: TalentData = {
       "Ability 6": {
         name: "Ability 6",
         pos: "h1",
-        icon: icons["abi_or_squig2"],
+        icon: icons["abi_or_squig02"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -2053,7 +2053,7 @@ export const data: TalentData = {
 	  "Passive 9": {
         name: "Passive 9",
         pos: "e7",
-        icon: icons["abi_squig_spikes"],
+        icon: icons["abi_squig_spikeshield"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2068,7 +2068,7 @@ export const data: TalentData = {
 	  "Passive 10": {
         name: "Passive 10",
         pos: "e8",
-        icon: icons["abi_or_squig2"],
+        icon: icons["abi_or_squig02"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
