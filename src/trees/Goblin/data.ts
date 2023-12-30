@@ -1033,7 +1033,7 @@ export const data: TalentData = {
       "Shoot 'Em": {
         name: "Shoot 'Em",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_ge_shoot"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1046,7 +1046,7 @@ export const data: TalentData = {
       "Plink": {
         name: "Plink",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_plink"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1073,7 +1073,7 @@ export const data: TalentData = {
       "Rotten Arrer": {
         name: "Rotten Arrer",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_rottenarrer"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1086,7 +1086,7 @@ export const data: TalentData = {
       "Run N Shoot": {
         name: "Run N Shoot",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_runnshoot"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1100,7 +1100,7 @@ export const data: TalentData = {
       "Drop That!": {
         name: "Drop That!",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_dropthat"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1154,7 +1154,7 @@ export const data: TalentData = {
 	  "Shrapnel Arrer": {
         name: "Shrapnel Arrer",
         pos: "h5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_shrapnelarrer"],
         maxRank: 1,
         reqPoints: 10,
         prereq: "Wide Stabbin'",
@@ -1171,7 +1171,7 @@ export const data: TalentData = {
 	  "Explodin' Arrer": {
         name: "Explodin' Arrer",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_explodinarrer"],
         maxRank: 1,
         reqPoints: 15,
         type: "skill",
@@ -1184,7 +1184,7 @@ export const data: TalentData = {
 	  "Stop Runnin'": {
         name: "Stop Runnin'",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_foot01"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1197,7 +1197,7 @@ export const data: TalentData = {
       "Lots O' Arrers": {
         name: "Lots O' Arrers",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_lotsofshootin"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
