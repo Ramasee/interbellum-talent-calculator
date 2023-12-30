@@ -1576,7 +1576,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specdagger"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1869,7 +1869,7 @@ export const data: TalentData = {
       "Ability 10": {
         name: "Ability 10",
         pos: "d9",
-        icon: icons["abi_gs_gorksbarb"],
+        icon: icons["abi_gs_gorksbarbs"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
