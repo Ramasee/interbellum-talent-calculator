@@ -1113,7 +1113,7 @@ export const data: TalentData = {
       "Ability 1": {
         name: "Ability 1",
         pos: "h1",
-        icon: icons["abi_dw_symbol01"],
+        icon: icons["abi_dw_symbol10"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1180,7 +1180,7 @@ export const data: TalentData = {
 	  "Ability 4": {
         name: "Ability 4",
         pos: "e8",
-        icon: icons["abi_figure01"],
+        icon: icons["abi_dw_figure01"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1375,7 +1375,7 @@ export const data: TalentData = {
 	  "Passive 6": {
         name: "Passive 6",
         pos: "f8",
-        icon: icons["abi_figure01"],
+        icon: icons["abi_dw_figure01"],
         maxRank: 4,
         reqPoints: 25,
         prereq: "Ability 4",
@@ -1786,7 +1786,7 @@ export const data: TalentData = {
       "Ability 4": {
         name: "Ability 4",
         pos: "g1",
-        icon: icons["abi_figure01"],
+        icon: icons["abi_dw_figure01"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
