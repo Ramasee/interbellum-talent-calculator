@@ -1970,7 +1970,7 @@ export const data: TalentData = {
 	  "Passive 8": {
         name: "Passive 8",
         pos: "e3",
-        icon: icons["abi_dw_face08"],
+        icon: icons["abi_grudge"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",

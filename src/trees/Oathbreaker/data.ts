@@ -1583,7 +1583,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["skil_specgreatweapon"],
+        icon: icons["skl_specgreatweapon"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1863,7 +1863,7 @@ export const data: TalentData = {
 	  "Ability 2": {
         name: "Ability 2",
         pos: "e8",
-        icon: icons["abi_dw_pulverize"],
+        icon: icons["abi_dw_pulverizingstrike"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",

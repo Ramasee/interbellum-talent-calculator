@@ -1234,7 +1234,7 @@ talents: {
 	  "Tactic 7": {
         name: "T7",
         pos: "b5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -1261,7 +1261,7 @@ talents: {
 	  "Tactic 6": {
         name: "T6",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1281,7 +1281,7 @@ talents: {
 	  "Bombardment": {
         name: "Bombardment",
         pos: "c8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -1290,7 +1290,7 @@ talents: {
 	  "Rucksack": {
         name: "Rucksack",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_scattershot"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -1304,7 +1304,7 @@ talents: {
 	  "Pull the Pin": {
         name: "Pull the Pin",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_range09"],
         maxRank: 4,
         reqPoints: 10,
         type: "passive",
@@ -1330,7 +1330,7 @@ talents: {
 	  "Throwing Arm": {
         name: "Throwing Arm",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_fist03"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -1345,7 +1345,7 @@ talents: {
 	  "Passive 4": {
         name: "Passive 4",
         pos: "b7",
-        icon: icons["noicon"],
+        icon: icons["abi_ammopack"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1375,7 +1375,7 @@ talents: {
 	  "Passive 6": {
         name: "Passive 6",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_foot06"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1910,7 +1910,7 @@ talents: {
 	  "Tactic 1": {
         name: "T1",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -1946,7 +1946,7 @@ talents: {
 	  "Tactic 2": {
         name: "T5",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1966,7 +1966,7 @@ talents: {
 	  "Full Metal Jacket": {
         name: "Full Metal Jacket",
         pos: "g8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 25,
         prereq: "Flak Jacket",
@@ -1979,7 +1979,7 @@ talents: {
 	  "Three Post Depot": {
         name: "Passive 1",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_melee13"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -2044,7 +2044,7 @@ talents: {
 	  "Passive 5": {
         name: "Passive 5",
         pos: "b7",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_giveall"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2057,7 +2057,7 @@ talents: {
 	  "Passive 6": {
         name: "Passive 6",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_redirect"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
