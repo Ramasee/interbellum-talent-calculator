@@ -675,10 +675,10 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Your chance to critically hit is increased by ${[
-          1,
-		  2,
-          3,
+          2,
 		  4,
+          6,
+		  8,
         ]}.`,
       },
 	  "Improved Wild Choppin'": {

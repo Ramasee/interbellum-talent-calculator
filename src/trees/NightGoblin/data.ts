@@ -1135,7 +1135,7 @@ export const data: TalentData = {
 	  "Ability 3": {
         name: "Ability 3",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_ge_zap"],
         maxRank: 1,
         reqPoints: 5,
         type: "spell",
@@ -1706,7 +1706,7 @@ export const data: TalentData = {
       "Goblin Basic Attack": {
         name: "Goblin Basic Attack",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee05"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1825,7 +1825,7 @@ export const data: TalentData = {
 	  "Ability 8": {
         name: "Ability 8",
         pos: "c5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_nofightinback"],
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
@@ -1833,6 +1833,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
+		blue: "Disabled by Coward!",
         description: talentText`Deal 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
 	  "Ability 9": {

@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specspear"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -325,7 +325,7 @@ export const data: TalentData = {
       "Cowardice and Basic Squig": {
         name: "Cowardice and Basic Squig",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_notindaface"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -334,7 +334,7 @@ export const data: TalentData = {
       "Goblin Basic Attack": {
         name: "Goblin Basic Attack",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee05"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -348,7 +348,7 @@ export const data: TalentData = {
       "Ability 1": {
         name: "Ability 1",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_nofightinback"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -357,12 +357,12 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.\n\nAugmented: counts as a basic attack.`,
+        description: talentText`Deals 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
       "Stabbity": {
         name: "Stabbity",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_stabbity"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -376,7 +376,7 @@ export const data: TalentData = {
       "Summon Horned/Spiked/Gas Squig": {
         name: "Summon Horned/Spiked/Gas Squig",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig12"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -389,7 +389,7 @@ export const data: TalentData = {
       "Ability 2": {
         name: "Ability 2",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig13"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -403,7 +403,7 @@ export const data: TalentData = {
       "Ability 3": {
         name: "Ability 3",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig05"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -417,7 +417,7 @@ export const data: TalentData = {
       "Ability 4": {
         name: "Ability 4",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig11"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -443,7 +443,7 @@ export const data: TalentData = {
 	  "Wide Stabbin'": {
         name: "Wide Stabbin'",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee20"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -457,7 +457,7 @@ export const data: TalentData = {
 	  "Spore Toss": {
         name: "Spore Toss",
         pos: "c5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig15"],
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
@@ -471,7 +471,7 @@ export const data: TalentData = {
 	  "Explosive Squig": {
         name: "Explosive Squig",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig09"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -484,7 +484,7 @@ export const data: TalentData = {
 	  "Ability 5": {
         name: "Ability 5",
         pos: "c8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig07"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -498,7 +498,7 @@ export const data: TalentData = {
       "Squigpede": {
         name: "Squigpede",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig16"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -524,7 +524,7 @@ export const data: TalentData = {
 	  "Tactic 1": {
         name: "Tactic 1",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -533,7 +533,7 @@ export const data: TalentData = {
 	  "Tactic 5": {
         name: "Tactic 5",
         pos: "g5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -555,7 +555,7 @@ export const data: TalentData = {
 	  "Tactic 3": {
         name: "Tactic 3",
         pos: "f6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -564,7 +564,7 @@ export const data: TalentData = {
 	  "Tactic 2": {
         name: "Tactic 2",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -573,7 +573,7 @@ export const data: TalentData = {
 	  "Tactic 14": {
         name: "Tactic 14",
         pos: "e7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -582,7 +582,7 @@ export const data: TalentData = {
 	  "Tactic 6": {
         name: "Tactic 6",
         pos: "g8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -591,7 +591,7 @@ export const data: TalentData = {
 	  "Gotta Herd Em All": {
         name: "Gotta Herd Em All",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig16"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -606,7 +606,7 @@ export const data: TalentData = {
 	  "Passive 1": {
         name: "Passive 1",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig13"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -618,7 +618,7 @@ export const data: TalentData = {
 	  "Passive 2": {
         name: "Passive 2",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_donthitme"],
         maxRank: 2,
         reqPoints: 10,
         type: "passive",
@@ -630,7 +630,7 @@ export const data: TalentData = {
 	  "Passive 3": {
         name: "Passive 3",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig09"],
         maxRank: 4,
         reqPoints: 15,
         prereq: "Explosive Squig",
@@ -646,7 +646,7 @@ export const data: TalentData = {
         ]}% chance whenever you summon a basic squig to also summon an Explosive Squig.`,
       },
 	  "Improved Vigilance": {
-        name: "blueprint",
+        name: "Improved Vigilance",
         pos: "g6",
         icon: icons["abi_vigilance"],
         maxRank: 3,
@@ -661,7 +661,7 @@ export const data: TalentData = {
 	  "Passive 5": {
         name: "Passive 5",
         pos: "b7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_stabbity"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -676,7 +676,7 @@ export const data: TalentData = {
 	  "Passive 4": {
         name: "Passive 4",
         pos: "h7",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee20"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Wide Stabbin'",
@@ -693,7 +693,7 @@ export const data: TalentData = {
 	  "Passive 6": {
         name: "Passive 6",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig08"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -903,7 +903,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specbow"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1024,7 +1024,7 @@ export const data: TalentData = {
       "Cowardice": {
         name: "Cowardice",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_notindaface"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1059,7 +1059,7 @@ export const data: TalentData = {
       "Stabbity": {
         name: "Stabbity",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_stabbity"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1113,7 +1113,7 @@ export const data: TalentData = {
       "Cut Ya!": {
         name: "Cut Ya!",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_cutya"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1127,7 +1127,7 @@ export const data: TalentData = {
       "Don't Eat Me!": {
         name: "Don't Eat Me!",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_stophittinme"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -1140,7 +1140,7 @@ export const data: TalentData = {
 	  "Wide Stabbin'": {
         name: "Wide Stabbin'",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee20"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -1286,7 +1286,7 @@ export const data: TalentData = {
 	  "Sharpened Arrers": {
         name: "Sharpened Arrers",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_or_blood02"],
         maxRank: 5,
         reqPoints: 0,
         type: "passive",
@@ -1301,7 +1301,7 @@ export const data: TalentData = {
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_ge_shoot"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -1314,7 +1314,7 @@ export const data: TalentData = {
 	  "Longa Range": {
         name: "Longa Range",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_range05"],
         maxRank: 3,
         reqPoints: 15,
         type: "passive",
@@ -1327,7 +1327,7 @@ export const data: TalentData = {
 	  "Make It Last": {
         name: "Make It Last",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee18"],
         maxRank: 4,
         reqPoints: 15,
         type: "passive",
@@ -1341,7 +1341,7 @@ export const data: TalentData = {
 	  "Bleedin' N Splodin'": {
         name: "Bleedin' N Splodin'",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_explodinarrer"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Explodin' Arrer",
@@ -1358,7 +1358,7 @@ export const data: TalentData = {
 	  "Open Wounds": {
         name: "Open Wounds",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_he_festeringwound"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1373,7 +1373,7 @@ export const data: TalentData = {
 	  "Sharp Toofs": {
         name: "Sharp Toofs",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_blood01"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1583,7 +1583,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specadvanceshield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1704,7 +1704,7 @@ export const data: TalentData = {
       "Cowardice": {
         name: "Cowardice",
         pos: "a1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_notindaface"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1713,7 +1713,7 @@ export const data: TalentData = {
       "Goblin Basic Attack": {
         name: "Goblin Basic Attack",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee05"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1727,7 +1727,7 @@ export const data: TalentData = {
       "Ability 1": {
         name: "Ability 1",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_nofightinback"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1736,12 +1736,12 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.\n\nAugmented: counts as a basic attack.`,
+        description: talentText`Deals 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
       "Stabbity": {
         name: "Stabbity",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_stabbity"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1755,7 +1755,7 @@ export const data: TalentData = {
       "Summon Battle Squig": {
         name: "Summon Battle Squig",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig01"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1769,7 +1769,7 @@ export const data: TalentData = {
       "Squig Armor": {
         name: "Squig Armor",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_squigarmor"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -1783,7 +1783,7 @@ export const data: TalentData = {
       "Ability 7": {
         name: "Ability 7",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig14"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1797,7 +1797,7 @@ export const data: TalentData = {
       "Ability 6": {
         name: "Ability 6",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig2"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1810,7 +1810,7 @@ export const data: TalentData = {
       "Ability 4": {
         name: "Ability 4",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig11"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1823,7 +1823,7 @@ export const data: TalentData = {
 	  "Wide Stabbin'": {
         name: "Wide Stabbin'",
         pos: "h4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee20"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -1837,7 +1837,7 @@ export const data: TalentData = {
 	  "Ability 2": {
         name: "Ability 2",
         pos: "c5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig13"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -1851,7 +1851,7 @@ export const data: TalentData = {
 	  "Tastes Like Stuntie": {
         name: "Tastes Like Stuntie",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_squig_bite"],
         maxRank: 1,
         reqPoints: 15,
         type: "skill",
@@ -1865,7 +1865,7 @@ export const data: TalentData = {
 	  "Ability 8": {
         name: "Ability 8",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_squig_bounce"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1878,7 +1878,7 @@ export const data: TalentData = {
       "Ability 9": {
         name: "Ability 9",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_squig_shout"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1905,7 +1905,7 @@ export const data: TalentData = {
 	  "Tactic 1": {
         name: "Tactic 1",
         pos: "a5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -1914,7 +1914,7 @@ export const data: TalentData = {
 	  "Tactic 10": {
         name: "Tactic 10",
         pos: "g5",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
@@ -1923,7 +1923,7 @@ export const data: TalentData = {
 	  "Tactic 3": {
         name: "Tactic 3",
         pos: "b6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -1932,7 +1932,7 @@ export const data: TalentData = {
 	  "Tactic 13": {
         name: "Tactic 13",
         pos: "e6",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
@@ -1941,7 +1941,7 @@ export const data: TalentData = {
 	  "Tactic 8": {
         name: "Tactic 8",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1950,7 +1950,7 @@ export const data: TalentData = {
 	  "Tactic 12": {
         name: "Tactic 12",
         pos: "h7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 20,
         prereq: "Tastes Like Stuntie",
@@ -1963,7 +1963,7 @@ export const data: TalentData = {
 	  "Tactic 11": {
         name: "Tactic 11",
         pos: "f8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -1972,7 +1972,7 @@ export const data: TalentData = {
 	  "Passive 7": {
         name: "Passive 7",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_squig_ardnoggin"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -1985,7 +1985,7 @@ export const data: TalentData = {
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "b4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_melee15"],
         maxRank: 3,
         reqPoints: 5,
         type: "passive",
@@ -1998,7 +1998,7 @@ export const data: TalentData = {
 	  "Passive 2": {
         name: "Passive 2",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_donthitme"],
         maxRank: 2,
         reqPoints: 10,
         type: "passive",
@@ -2010,7 +2010,7 @@ export const data: TalentData = {
 	  "Passive 8": {
         name: "Passive 8",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig11"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -2053,7 +2053,7 @@ export const data: TalentData = {
 	  "Passive 9": {
         name: "Passive 9",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_squig_spikes"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2068,7 +2068,7 @@ export const data: TalentData = {
 	  "Passive 10": {
         name: "Passive 10",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_or_squig2"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
