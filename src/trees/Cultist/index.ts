@@ -1,2 +1,2 @@
-import { Zealot } from "./Cultist";
+import { Cultist } from "./Cultist";
 export default Cultist;
