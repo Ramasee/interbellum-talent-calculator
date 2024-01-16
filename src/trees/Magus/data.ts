@@ -7,8 +7,8 @@ const backgrounds = requireAll(
 const icons = requireAll(require.context("../../assets/icons/chaos"));
 
 export const data: TalentData = {
-  "Doomweaver": {
-    name: "Doomweaver",
+  "Soulflayer": {
+    name: "Soulflayer",
     background: backgrounds["magus-slaanesh"],
     icon: icons["archetype_dps"],
     talents: {
@@ -714,10 +714,10 @@ export const data: TalentData = {
       },
     },
   },
-  "Soulflayer": {
-    name: "Soulflayer",
-    background: backgrounds["magus-nurgle"],
-    icon: icons["archetype_dps"],
+  "Doomweaver": {
+    name: "Doomweaver",
+    background: backgrounds["magus-tzeentch"],
+    icon: icons["archetype_defsupport"],
     talents: {
       "Break Loose": {
         name: "Break Loose",
@@ -1529,10 +1529,10 @@ export const data: TalentData = {
 	  
     },
   },
-  "Cataclyst": {
-    name: "Cataclyst",
-    background: backgrounds["magus-tzeentch"],
-    icon: icons["archetype_defsupport"],
+  "Poxbringer": {
+    name: "Poxbringer",
+    background: backgrounds["magus-nurgle"],
+    icon: icons["archetype_dps"],
     talents: {
       "Break Loose": {
         name: "Break Loose",

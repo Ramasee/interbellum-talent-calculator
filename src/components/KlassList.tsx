@@ -14,9 +14,9 @@ const KLASSES = [
     path: "/brightwizard",
   },
   {
-    name: "Squire",
+    name: "Knight",
     icon: icons["class_squire"],
-    path: "/squire",
+    path: "/knight",
   },
   {
     name: "Swordsman",
@@ -82,9 +82,9 @@ const KLASSES2 = [
     path: "/marauder",
   },
   {
-    name: "Zealot",
+    name: "Cultist",
     icon: icons["class_zealot"],
-    path: "/zealot",
+    path: "/Cultist",
   },
   {
     name: "Magus",

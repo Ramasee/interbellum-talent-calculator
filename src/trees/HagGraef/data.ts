@@ -695,9 +695,9 @@ export const data: TalentData = {
     },
     },
   },
-  "Khaanite Assassin": {
-    name: "Khaanite Assassin",
-    background: backgrounds["assassin"],
+  "Executioner": {
+    name: "Executioner",
+    background: backgrounds["executioner"],
     icon: icons["archetype_dps"],
     talents: {
       "Break Loose": {
@@ -959,7 +959,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Assassins equip a single dagger.`,
+        description: talentText`Executioners equip two-handed swords.`,
       },
       "Morale 1 Class": {
         name: "Morale 1 Class",
@@ -1563,9 +1563,9 @@ export const data: TalentData = {
       },
     },
   },
-  "Executioner": {
-    name: "Executioner",
-    background: backgrounds["executioner"],
+  "Khaanite Assassin": {
+    name: "Khaanite Assassin",
+    background: backgrounds["assassin"],
     icon: icons["archetype_dps"],
     talents: {
       "Break Loose": {
@@ -1827,7 +1827,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Executioners equip two-handed swords.`,
+        description: talentText`Assassins equip a single dagger.`,
       },
       "Morale 1 Class": {
         name: "Morale 1 Class",

@@ -1394,7 +1394,7 @@ export const data: TalentData = {
       },
     },
   },
-  "Battle Wizard (semi-old)": {
+  "Firewarden (semi-old)": {
     name: "Battle Wizard (semi-old)",
     background: backgrounds["battlewizard"],
     icon: icons["archetype_offsupport"],

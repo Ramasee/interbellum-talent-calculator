@@ -5,7 +5,7 @@ import "./App.css";
 import { KlassList } from "./components/KlassList";
 
 const BrightWizard = lazy(() => import("./trees/BrightWizard"));
-const Squire = lazy(() => import("./trees/Squire"));
+const Knight = lazy(() => import("./trees/Knight"));
 const Swordsman = lazy(() => import("./trees/Swordsman"));
 const WarriorPriest = lazy(() => import("./trees/WarriorPriest"));
 const DwarfWarrior = lazy(() => import("./trees/DwarfWarrior"));
@@ -18,7 +18,7 @@ const WhiteLion = lazy(() => import("./trees/WhiteLion"));
 const Archer = lazy(() => import("./trees/Archer"));
 const Chosen = lazy(() => import("./trees/Chosen"));
 const Marauder = lazy(() => import("./trees/Marauder"));
-const Zealot = lazy(() => import("./trees/Zealot"));
+const Cultist = lazy(() => import("./trees/Cultist"));
 const Magus = lazy(() => import("./trees/Magus"));
 const Bleaksword = lazy(() => import("./trees/Bleaksword"));
 const BrideofKhaine = lazy(() => import("./trees/BrideofKhaine"));
@@ -35,7 +35,7 @@ export const App: React.FC = () => {
       <KlassList />
       <Suspense fallback={null}>
         <Route path="/brightwizard" component={BrightWizard} />
-        <Route path="/squire" component={Squire} />
+        <Route path="/knight" component={Knight} />
         <Route path="/swordsman" component={Swordsman} />
         <Route path="/warriorpriest" component={WarriorPriest} />
         <Route path="/dwarfwarrior" component={DwarfWarrior} />
@@ -48,7 +48,7 @@ export const App: React.FC = () => {
 		<Route path="/archer" component={Archer} />
 		<Route path="/chosen" component={Chosen} />
 		<Route path="/marauder" component={Marauder} />
-		<Route path="/zealot" component={Zealot} />
+		<Route path="/cultist" component={Cultist} />
 		<Route path="/magus" component={Magus} />
 		<Route path="/bleaksword" component={Bleaksword} />
 		<Route path="/brideofkhaine" component={BrideofKhaine} />

@@ -717,8 +717,8 @@ export const data: TalentData = {
       },
     },
   },
-  "Death Hag": {
-    name: "Death Hag",
+  "Burning Blood": {
+    name: "Burning Blood",
     background: backgrounds["deathhag"],
     icon: icons["archetype_offsupport"],
     talents: {
@@ -1585,8 +1585,8 @@ export const data: TalentData = {
       },
     },
   },
-  "Hag Queen": {
-    name: "Hag Queen",
+  "Death Hag": {
+    name: "Death Hag",
     background: backgrounds["hagqueen"],
     icon: icons["archetype_defsupport"],
     talents: {
