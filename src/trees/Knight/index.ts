@@ -1,2 +1,2 @@
-import { Squire } from "./Knight";
+import { Knight } from "./Knight";
 export default Knight;
