@@ -1275,15 +1275,15 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Every 2 seconds, you lose 1 stack of each non-Khorne corruption to deal ${[
-          X,
-          X,
-          X,
-          X,
+          3,
+          6,
+          9,
+          12,
         ]}% MAP + ${[
-          Y,
-          Y,
-          Y,
-          Y,
+          20,
+          40,
+          60,
+          80,
         ]} piercing damage on your next attack.`,
       },
 	  "Eternal War": {
