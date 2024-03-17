@@ -183,8 +183,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that have this tactic gain 1 Fightiness, gain 3 Pyschic Energy, lose 1 Cowardice, or lose 1 Paranoia.`,
       },
-      "Class Tactic 1": {
-        name: "Class Tactic 1",
+      "Keep Runnin": {
+        name: "Keep Runnin",
         pos: "c2",
         icon: icons["tac_class_1"],
         maxRank: 0,
@@ -539,8 +539,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Rotten Arrer and Cut Ya! now apply Bleeding to the target.`,
       },
-	  "Tactic 4": {
-        name: "T3",
+	  "Dat's da gud Rot": {
+        name: "Dat's da gud Rot",
         pos: "f6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
@@ -566,8 +566,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Shrapnel Arrer and Explodin' Arrer now hit up to 24 targets.`,
       },
-	  "Tactic 7": {
-        name: "T6",
+	  "I gotz you": {
+        name: "I gotz you",
         pos: "g7",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -602,7 +602,7 @@ export const data: TalentData = {
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "e5",
-        icon: icons["abi_ge_shoot"],
+        icon: icons["noicon"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",

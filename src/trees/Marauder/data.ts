@@ -505,7 +505,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "30s cooldown",
         blue: "Off the GCD",
-        description: talentText`Consume all Khorne Corruption on yourself to gain a buff whose duration equals stacks consumed. For the duration, your outgoing damage is increased by 20%.`,
+        description: talentText`Consume all Khorne Corruption on yourself to gain a buff whose duration equals stacks consumed. For the duration, your outgoing damage is increased by 25%.`,
       },
       "The Great Slaughter": {
         name: "The Grand Slaughter",
@@ -628,8 +628,8 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`Wave of Chaos deals ${[
-          8,
-          15,
+          5,
+          10,
         ]}% more damage and has a ${[
           50,
           100,
