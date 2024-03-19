@@ -394,7 +394,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage`,
+        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage and interrupts them.`,
       },
       "Wither": {
         name: "Wither",
@@ -890,7 +890,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specpolearm"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1080,7 +1080,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage`,
+        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage and interrupts them.`,
       },
       "Tzeentch's Reflection": {
         name: "Tzeentch's Reflection",
@@ -1138,7 +1138,7 @@ export const data: TalentData = {
 	  "Skull Harvesting": {
         name: "Skull Harvesting",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_markofspelldestroyer"],
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
@@ -1146,7 +1146,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target whose duration is equal to 2 + 2 times the number of Blood-marked stacks on the target. Deals X% MAP + Y piercing damage every second to target.`,
+        description: talentText`Applies an affliction to the target whose duration is equal to 2 + 2 times the number of Blood-marked stacks on the target. Deals 6% MAP + 94 piercing damage every second to target.`,
       },
 	  "Wrecking Ball": {
         name: "Wrecking Ball",
@@ -1159,7 +1159,7 @@ export const data: TalentData = {
         range: "self",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 7% MAP + 94 piercing damage to up to 9 enemies within 30 feet of you.`,
+        description: talentText`Deals 7% MAP + 94 piercing damage every second to up to 9 enemies within 30 feet of you.`,
       },
 	  "Soporific Musk": {
         name: "Soporific Musk",
@@ -1177,7 +1177,7 @@ export const data: TalentData = {
       "Call of Battle": {
         name: "Call of Battle",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["itm_ge_skullhorned"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1243,7 +1243,7 @@ export const data: TalentData = {
 	  "Revel in Slaughter": {
         name: "Revel in Slaughter",
         pos: "a7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1252,7 +1252,7 @@ export const data: TalentData = {
 	  "Khorne's Corruption": {
         name: "Khorne's Corruption",
         pos: "e7",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
@@ -1261,7 +1261,7 @@ export const data: TalentData = {
 	  "The Way of Wrath": {
         name: "The Way of Wrath",
         pos: "c8",
-        icon: icons["tac_spec_1"],
+        icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
@@ -1270,7 +1270,7 @@ export const data: TalentData = {
 	  "Slaughter Incarnate": {
         name: "Slaughter Incarnate",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_overwhelmingterror"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -1289,7 +1289,7 @@ export const data: TalentData = {
 	  "Eternal War": {
         name: "Eternal War",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_invokeorangefire"],
         maxRank: 4,
         reqPoints: 5,
         type: "passive",
@@ -1298,7 +1298,7 @@ export const data: TalentData = {
           4,
           7,
           10,
-        ]}% outgoign damage for their duration.`,
+        ]}% outgoing damage for their duration.`,
       },
 	  "Wave of Khorne": {
         name: "Wave of Khorne",
@@ -1325,7 +1325,7 @@ export const data: TalentData = {
         pos: "c6",
         icon: icons["abi_ch_downfall"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 15,
         type: "passive",
         description: talentText`Your basic attacks will deal ${[
           75,
@@ -1338,7 +1338,7 @@ export const data: TalentData = {
 	  "Too Hateful to Die": {
         name: "Too Hateful to Die",
         pos: "d7",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_taunt"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1351,7 +1351,7 @@ export const data: TalentData = {
 	  "Wrecking Blood": {
         name: "Wrecking Blood",
         pos: "f7",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_wreckingball"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Wrecking Ball",
@@ -1368,7 +1368,7 @@ export const data: TalentData = {
 	  "Blood Feasting": {
         name: "Blood Feasting",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_paralyzingterror"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1578,7 +1578,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specsword"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1742,7 +1742,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage`,
+        description: talentText`Consume 3 Tzeentch Corruption on a target to deal 22% SAP + 300 spiritual damage and interrupts them.`,
       },
       "Seeping Wound": {
         name: "Seeping Wound",
@@ -1870,7 +1870,7 @@ export const data: TalentData = {
         type: "spell",
         cost: "75 action points",
         range: "self",
-        cast: "2.0s instant cast",
+        cast: "instant cast",
         cooldown: "30s cooldown",
         description: talentText`Removes Ensnared, Rooted, Silenced, Disarmed, Knocked-down, and Staggered from all groupmates within 100 feet of you.`,
       },
@@ -1930,7 +1930,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Ravage will now apply an 8 second debudd to the target, reducing their mass by 1.`,
+        description: talentText`Ravage will now apply an 8 second debuff to the target, reducing their mass by 1.`,
       },
 	  "Way of Deceit": {
         name: "Way of Deceit",
