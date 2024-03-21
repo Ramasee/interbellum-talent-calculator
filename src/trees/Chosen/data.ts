@@ -1917,8 +1917,8 @@ export const data: TalentData = {
 	  "Way of Fate": {
         name: "Way of Fate",
         pos: "c6",
-        icon: icons["tac_spec_1"],
-        maxRank: 3,
+        icon: icons["tac_spec_3"],
+        maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
         description: talentText`Every time you use an ability with a cooldown, each groupmate within 100 feet of you gains 1 Tzeentch Corruption.`,
@@ -1926,8 +1926,8 @@ export const data: TalentData = {
 	  "Way of Doom": {
         name: "Way of Doom",
         pos: "c7",
-        icon: icons["tac_spec_1"],
-        maxRank: 2,
+        icon: icons["tac_spec_2"],
+        maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
         description: talentText`Ravage will now apply an 8 second debuff to the target, reducing their mass by 1.`,
@@ -1935,8 +1935,8 @@ export const data: TalentData = {
 	  "Way of Deceit": {
         name: "Way of Deceit",
         pos: "g7",
-        icon: icons["tac_spec_1"],
-        maxRank: 7,
+        icon: icons["tac_spec_7"],
+        maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
         description: talentText`Momentum you apply now lasts 6 seconds. Immovable and Inevitable you apply now lasts 16 seconds. Unstoppable you apply now lasts 24 seconds.`,
@@ -2054,7 +2054,7 @@ export const data: TalentData = {
 	  "Mutagenic Energies": {
         name: "Mutagenic Energies",
         pos: "e8",
-        icon: icons["abi_ch_banefulshielding"],
+        icon: icons["abi_ch_waveofhorror"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
