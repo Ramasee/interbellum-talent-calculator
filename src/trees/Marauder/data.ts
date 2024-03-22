@@ -1573,7 +1573,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specsword"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1691,6 +1691,15 @@ export const data: TalentData = {
         blue: "Costs 3600 adrenaline",
         description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
+	  "Gifts of the Gods": {
+        name: "Gifts of the Gods",
+        pos: "a1",
+        icon: icons["abi_ch_giftofrelease"],
+        maxRank: 0,
+        reqPoints: 0,
+        type: "passive",
+        description: talentText`Gift of Savagery: Gain 20% movement speed. All of your abilities apply 1 stack of Khorne Corruption to the target and cast as well as 1 stack of Savagery to target. At 5 stacks of Savagery, all stacks are dispelled and the target gains Blood-marked.\n\nGift of Pride: Gain 50% pushback immunity. All abilities apply 1 stack of Slaanesh Corruption to target and caster as well as 1 stack of Pride. At 10 stacks of Pride, dispel all stacks and apply Sleepy to target for 5 seconds.\n\nGift of Plague: Gain 20% lifetap. All of your abilities apply 1 stack of Nurgle Corruption to target and caster as well as 1 stack of Plagued.`,
+      },
       "Blow": {
         name: "Blow",
         pos: "b1",
@@ -1773,7 +1782,7 @@ export const data: TalentData = {
       "Draining Swipes": {
         name: "Draining Swipes",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_thegreatfang"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1781,12 +1790,12 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "6.0s channel",
         cooldown: "no cooldown",
-        description: talentText`You shift into Gift of Pride. You deal X% MAP + Y piercing damage to target enemy every 2 second2. For the duration, the target has its outgoing damage and damage reduction reduced by 10%.`,
+        description: talentText`You shift into Gift of Pride. You deal 22% MAP + 312 piercing damage to target enemy every 2 second2. For the duration, the target has its outgoing damage and damage reduction reduced by 10%.`,
       },
       "Pain for Pleasure": {
         name: "Pain for Pleasure",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_ruinousguardian"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1794,7 +1803,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "15s cooldown",
-        description: talentText`Consume all Slaanesh Corruption on yourself and gain a blessing whose duration is equal to the number of stacks consumed. For the duration, all abilities that enemies make against groupmates within 30 feet of you are redirected to you.`,
+        description: talentText`Consume all Slaanesh Corruption on yourself and gain a blessing whose duration is equal to the number of stacks consumed. For the duration, all abilities that enemies make against groupmates within 30 feet of you are redirected to you.\n\nCounts as a Guard effect.`,
       },
 	  "Wave of Chaos": {
         name: "Wave of Chaos",
@@ -1851,13 +1860,14 @@ export const data: TalentData = {
       "Carnival for the Damned": {
         name: "Carnival for the Damned",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_horrifyingvisions"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
         cost: "no cost",
         range: "self",
         cast: "instant cast",
+		blue: "Castable While Moving",
         cooldown: "30s cooldown",
         description: talentText`You gain 10 stacks of Slaanesh Corruption and gain 5 stacks of Nurgle Corruption, but lose 10 stacks of Khorne Corruption and lose 5 stacks of Tzeentch Corruption.`,
       },
@@ -1944,7 +1954,7 @@ export const data: TalentData = {
 	  "Harvester of Souls": {
         name: "Harvester of Souls",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_warpreality"],
         maxRank: 2,
         reqPoints: 0,
         type: "passive",
@@ -1964,8 +1974,8 @@ export const data: TalentData = {
       },
 	  "Unstable Convulsions": {
         name: "Unstable Convulsions",
-        pos: "c9",
-        icon: icons["noicon"],
+        pos: "e5",
+        icon: icons["abi_potionofpaindenied"],
         maxRank: 5,
         reqPoints: 10,
         type: "passive",
@@ -2007,9 +2017,9 @@ export const data: TalentData = {
 	  "Wave of Slaanesh": {
         name: "Wave of Slaanesh",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_concussivejolt"],
         maxRank: 2,
-        reqPoints: 0,
+        reqPoints: 15,
         prereq: "Wave of Chaos",
 		arrows: [
           { dir: "down", from: "h4", to: "h6" },
@@ -2018,7 +2028,7 @@ export const data: TalentData = {
         description: talentText`Wave of Chaos now deals piercing damage, has a ${[
           35,
           70,
-        ]}% chance to apply 1 stack of Reduced Weapon Skill and a ${[
+        ]}% chance to apply 1 stack of Reduced Weapon Skill, and a ${[
           50,
           100,
         ]}% chance to apply 1 stack of Slaanesh Corruption.`,
@@ -2039,7 +2049,7 @@ export const data: TalentData = {
 	  "Improved Flail": {
         name: "Improved Flail",
         pos: "g7",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_infallibleprotection"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2052,9 +2062,9 @@ export const data: TalentData = {
 	  "Invigorating Essence": {
         name: "Invigorating Essence",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_giftofrelease"],
         maxRank: 4,
-        reqPoints: 0,
+        reqPoints: 25,
         type: "passive",
         description: talentText`Slaanesh gives you an extra touch during Touched by the Gods. For its duration, you will have ${[
           6,
