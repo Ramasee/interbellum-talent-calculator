@@ -1975,7 +1975,7 @@ export const data: TalentData = {
 	  "Unstable Convulsions": {
         name: "Unstable Convulsions",
         pos: "e5",
-        icon: icons["abi_potionofpaindenied"],
+        icon: icons["abi_ch_potionofpaindenied"],
         maxRank: 5,
         reqPoints: 10,
         type: "passive",
