@@ -459,7 +459,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Knocks back target enemy.`,
+        description: talentText`Knocks back target enemy. and applies Immovable to them.\n\nImmovable revents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
 	  "Tzeentch's Reflection": {
         name: "Tzeentch's Reflection",
@@ -1794,7 +1794,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Knocks back target enemy.`,
+        description: talentText`Knocks back target enemy. and applies Immovable to them.\n\nImmovable revents application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
       "Shifting Carapace": {
         name: "Shifting Carapace",
