@@ -461,7 +461,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal 15% MAP + 204 impact damage to target enemy and apply an affliction on the target for 10 seconds.<BR>Gift of Savagery: Target will take 9% MAP + 116 impact damage whenever they use a spell. Gift of Pride: Target will take 9% MAP + 116 piercing damage whenever they use a skill.`,
+        description: talentText`Deal 15% MAP + 204 impact damage to target enemy and apply an affliction on the target for 10 seconds.\nGift of Savagery: Target will take 9% MAP + 116 impact damage whenever they use a spell.\nGift of Pride: Target will take 9% MAP + 116 piercing damage whenever they use a skill.`,
       },
 	  "Rend": {
         name: "Rend",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy.<BR>Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal 3% MAP + 44 ichor damage every second.<BR>Gift of Savagery: Applies one stack of Reduced Toughness to target.`,
+        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy.\nGift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal 3% MAP + 44 ichor damage every second.\nGift of Savagery: Applies one stack of Reduced Toughness to target.`,
       },
 	  "Wrecking Ball": {
         name: "Wrecking Ball",
@@ -887,7 +887,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_spechammer"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1096,7 +1096,7 @@ export const data: TalentData = {
       "Contaminating Claws": {
         name: "Contaminating Claws",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_banefulclutch"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1104,7 +1104,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an 18 second affliction to target enemy. For the duration, target will take X% MAP + Y ichor damage every 3 seconds.`,
+        description: talentText`Applies an 18 second affliction to target enemy. For the duration, target will take 18% MAP + 231 ichor damage every 3 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1143,12 +1143,12 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy. Gift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal 3% MAP + 44 ichor damage every second. Gift of Savagery: Applies one stack of Reduced Toughness to target.`,
+        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy.\nGift of Plague: Apply a 10 second affliction to them that stacks up to 3 times; for the duration, deal 3% MAP + 44 ichor damage every second.\nGift of Savagery: Applies one stack of Reduced Toughness to target.`,
       },
 	  "Blissful Coquetry": {
         name: "Blissful Coquetry",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_demonicinfestation"],
         maxRank: 1,
         reqPoints: 15,
         type: "skill",
@@ -1156,12 +1156,12 @@ export const data: TalentData = {
         range: "65ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Deals X% SAP + Y (20 ap) impact damage to target.<BR>Gift of Pride: Jams the target for 3 seconds, interupting the next ability cast.<BR>Gift of Plague: deals X% SAP + Y (40ap) ichor damage per stack of Plagued on the target.`,
+        description: talentText`Deals 12% SAP + 163 piercing damage to target.\nGift of Pride: Jams the target for 3 seconds, interupting the next ability cast.\nGift of Plague: deals 6% SAP + 80 ichor damage per stack of Plagued on the target.`,
       },
 	  "Feeding on Fear": {
         name: "Feeding on Fear",
         pos: "h8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_exhaustivepower"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1169,12 +1169,12 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`All groupmates within 100 feet gain 1 stack of Nurgle Corruption and 1 stack of Khorne Corruption. In addition, their next attack within 10 seconds will deal additional X% MAP + Y ichor damage.`,
+        description: talentText`All groupmates within 100 feet gain 1 stack of Nurgle Corruption and 1 stack of Khorne Corruption. In addition, their next attack within 10 seconds will deal additional 7% SAP + 99 ichor damage.`,
       },
       "Deadly Clutch": {
         name: "Deadly Clutch",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_drainingswipe"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1182,7 +1182,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% MAP + Y ichor damage. Deals an additional 50% damage per stack of Plagued, Contaminating Claw, and Rend on the target.`,
+        description: talentText`Deals 8% MAP + 92 ichor damage. Deals an additional 50% damage per stack of Plagued, Contaminating Claw, and Rend on the target.`,
       },
       "The Great Plague": {
         name: "The Grand Plague",
@@ -1271,7 +1271,7 @@ export const data: TalentData = {
 	  "Debilitation": {
         name: "Debilitation",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_touchofpalsy"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -1281,11 +1281,11 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]} enemy within 30 feet of you will gain 1 stack of Reduced Ichor Resistance and 1 stack of Reduced Impact Resistance.`,
+        ]} enemies within 30 feet of you will gain 1 stack of Reduced Ichor Resistance and 1 stack of Reduced Impact Resistance.`,
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
-        pos: "b4",
+        pos: "c4",
         icon: icons["abi_ch_downfall"],
         maxRank: 5,
         reqPoints: 5,
@@ -1306,7 +1306,8 @@ export const data: TalentData = {
         reqPoints: 15,
         prereq: "Wave of Chaos",
 		arrows: [
-          { dir: "down", from: "h4", to: "h6" },
+          { dir: "right-down", from: "g4", to: "h4" },
+          { dir: "right-down-down", from: "h4", to: "h6" }
         ],
         type: "passive",
         description: talentText`Wave of Chaos now deals ichor damage, deals ${[
@@ -1320,7 +1321,7 @@ export const data: TalentData = {
 	  "Plague Paragon": {
         name: "Plague Paragon",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_uncontrollablewarping"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -1335,7 +1336,7 @@ export const data: TalentData = {
 	  "More Contamination": {
         name: "More Contamination",
         pos: "a7",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_banefulclutch"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1362,7 +1363,7 @@ export const data: TalentData = {
 	  "Curse of the Leper": {
         name: "Curse of the Leper",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_tzeentchshallremakeyou"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
