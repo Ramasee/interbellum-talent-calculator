@@ -1583,11 +1583,11 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specaxe"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Khorne Zealots equip one-handed axes and fetishes.`,
+        description: talentText`Slaughterpriests equip one-handed axes and fetishes.`,
       },
       "Changer's Touch": {
         name: "Changer's Touch",
@@ -1726,7 +1726,7 @@ export const data: TalentData = {
       "Plunder": {
         name: "Plunder",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_cleave"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1739,7 +1739,7 @@ export const data: TalentData = {
       "Pulverize": {
         name: "Pulverize",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_throwingaxe"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1748,7 +1748,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3 Blood Sacrifice",
-        description: talentText`Deals X% MAP + Y corporeal damage to target enemy.`,
+        description: talentText`Deals 28% MAP + 371 corporeal damage to target enemy.`,
       },
       "Charge": {
         name: "Charge",
@@ -1766,7 +1766,7 @@ export const data: TalentData = {
       "Harbinger of Death": {
         name: "Harbinger of Death",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_thunderousblow"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1859,7 +1859,7 @@ export const data: TalentData = {
 	  "Skulls for the Skullthrone": {
         name: "Skulls for the Skullthrone",
         pos: "h8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_tumultuoswarping"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1867,7 +1867,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Deals X% MAP + Y corporeal damage to target. This ability deals 100% more damage for every 10 Blood Sacrifice you have.`,
+        description: talentText`Deals 14% MAP + 186 corporeal damage to target. This ability deals 100% more damage for every 10 Blood Sacrifice you have.`,
       },
       "Mutated Aggressor": {
         name: "Mutated Aggressor",
@@ -1960,22 +1960,17 @@ export const data: TalentData = {
       },
 	  "Scourge": {
         name: "Scourge",
-        pos: "b9",
+        pos: "g7",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "career tactic",
         description: talentText`Blow and Plunder will now apply 1 stack of Khorne Corruption on you. Pulverize and Harbinger of Death will apply 1 stack of Khorne Corruption on their targets.`,
       },
 	  "Kill for Khorne": {
         name: "Kill for Khorne",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["item_ge_skullhorned"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -2085,10 +2080,10 @@ export const data: TalentData = {
           32,
         ]}% damage reduction for 3 seconds.`,
       },
-	  "Spoild of Battle": {
+	  "Spoils of Battle": {
         name: "Spoils of Battle",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_ravage"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",

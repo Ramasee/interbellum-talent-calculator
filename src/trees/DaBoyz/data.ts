@@ -566,7 +566,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Chop Fasta will now deal 50% additional damage to a target under the negative effect of Guard.`,
+        description: talentText`Chop Fasta will deal 50% additional damage to a target that has casted an active Guard effect.`,
       },
 	  "Extra Choppin'": {
         name: "Extra Choppin'",

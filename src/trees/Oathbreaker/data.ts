@@ -559,7 +559,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Cleft in Twain will deal 50% additional damage to a target under the negative effect of Guard.`,
+        description: talentText`Cleft in Twain will deal 50% additional damage to a target that has casted an active Guard effect.`,
       },
 	  "Reckless Abandon": {
         name: "Reckless Abandon",
@@ -1937,7 +1937,7 @@ export const data: TalentData = {
           { dir: "down", from: "h4", to: "h7" },
         ],
         type: "career tactic",
-        description: talentText`Cleft in Twain will deal 50% additional damage to a target under the negative effect of Guard.`,
+        description: talentText`Cleft in Twain will deal 50% additional damage to a target that has casted an active Guard effect.`,
       },
 	  "Tactic 7": {
         name: "Tactic 7",

@@ -1805,7 +1805,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`For the next 6 seconds, your squig will get hit by all abilities that would hit groupmates within 30 feet of it. If you are in Squig Armor, the abilities are redirected to you instead.`,
+        description: talentText`For the next 6 seconds, your squig will get hit by all abilities that would hit groupmates within 30 feet of it. If you are in Squig Armor, the abilities are redirected to you instead and the ability counts as a Guard effect.`,
       },
       "Ability 4": {
         name: "Ability 4",
