@@ -1250,7 +1250,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Reduce the cast time on Carnal Insence by 1.25 seconds and reduce the damage by X%.`,
+        description: talentText`Reduce the cast time on Carnal Insence by 1.25 seconds and reduce the damage by 33%.`,
       },
 	  "Energy Ripple": {
         name: "Energy Ripple",
@@ -1859,7 +1859,7 @@ export const data: TalentData = {
 	  "Skulls for the Skullthrone": {
         name: "Skulls for the Skullthrone",
         pos: "h8",
-        icon: icons["abi_ch_tumultuoswarping"],
+        icon: icons["abi_ch_tumultuouswarping"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1960,7 +1960,7 @@ export const data: TalentData = {
       },
 	  "Scourge": {
         name: "Scourge",
-        pos: "g7",
+        pos: "g8",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 25,
@@ -1970,7 +1970,7 @@ export const data: TalentData = {
 	  "Kill for Khorne": {
         name: "Kill for Khorne",
         pos: "e3",
-        icon: icons["item_ge_skullhorned"],
+        icon: icons["itm_ge_skullhorned"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -2083,7 +2083,7 @@ export const data: TalentData = {
 	  "Spoils of Battle": {
         name: "Spoils of Battle",
         pos: "f8",
-        icon: icons["abi_ch_ravage"],
+        icon: icons["abi_ch_rendingblade"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -2093,7 +2093,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]} enemy within 30 feet of you takes the damage as well.`,
+        ]} enemies within 30 feet of you takes the damage as well.`,
       },
     },
   },
