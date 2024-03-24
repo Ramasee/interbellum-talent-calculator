@@ -1179,7 +1179,7 @@ export const data: TalentData = {
       "Whisper Glory": {
         name: "Whisper Glory",
         pos: "d9",
-        icon: icons["abi_ch_aegisoforangefire"],
+        icon: icons["abi_ch_ageisoforangefire"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
