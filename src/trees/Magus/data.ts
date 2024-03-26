@@ -1733,7 +1733,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1756,7 +1756,7 @@ export const data: TalentData = {
       "Revel in Malady": {
         name: "Revel in Malady",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_chaoticcontamination"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
@@ -1765,7 +1765,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Summons a Nurgling.`,
+        description: talentText`Summons a Nurgling of Nurgle.`,
       },
       "Winds of Insanity": {
         name: "Winds of Insanity",
@@ -1877,7 +1877,7 @@ export const data: TalentData = {
       "Pestilent Growth": {
         name: "Pestilent Growth",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_aegisofyellowfire"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1886,12 +1886,12 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Generates 7 Insanity\nCastable While Moving",
-        description: talentText`Deals 10% SAP + 121 corporeal damage to target enemy and applies a 9 second affliction to them that stacks up to 5 times. Apples 1 stack of Nurgle Corruption to target and caster. For the duration, target takes 4% SAP + 58 corporeal damage every 3 seconds.\n\nNurgle Fanatacism: Applies 5 stacks to target enemy, 5 stacks to up to 2 allies within 30 feet of the target, and 5 stacks to yourself.`,
+        description: talentText`Deals 10% SAP + 121 corporeal damage to target enemy and applies a 9 second affliction to them that stacks up to 5 times. Apples 1 stack of Nurgle Corruption to target and caster. For the duration, target takes 4% SAP + 58 corporeal damage every 3 seconds.\n\nNurgle Fanatacism: Applies 2 stacks to target enemy, 5 stacks to up to 2 allies within 30 feet of the target, and 5 stacks to yourself.`,
       },
       "Summon Nurgling": {
         name: "Summon Nurgling",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_chaoticcontamination"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1905,7 +1905,7 @@ export const data: TalentData = {
       "Spore Diffusion": {
         name: "Spore Diffusion",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_dissolvingmist"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -2001,7 +2001,7 @@ export const data: TalentData = {
 	  "Speckled Hide": {
         name: "Speckled Hide",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_demonspittle"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -2009,13 +2009,13 @@ export const data: TalentData = {
         range: "65ft range",
         cast: "instant cast",
         cooldown: "6s cooldown",
-        blue: "Generates 14 Insanity",
+        blue: "Generates 14 Insanity\nOff the GCD",
         description: talentText`Commands your Nurgling to apply 2 stacks of Nurgle Corruption and a 12 second affliction to target enemy. For the duration, target takes 9% MAP + 133 corporeal damage every 2 seconds.`,
       },
 	  "Seed of Chaos": {
         name: "Seed of Chaos",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_seedofchaos"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -2029,7 +2029,7 @@ export const data: TalentData = {
       "Nurgle's Visitation": {
         name: "Nurgle's Visitation",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_demonicconsumption"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -2113,7 +2113,7 @@ export const data: TalentData = {
       },
 	  "Highly Infectious": {
         name: "Highly Infectious",
-        pos: "b9",
+        pos: "d8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
@@ -2123,7 +2123,7 @@ export const data: TalentData = {
 	  "Sacred Number of Nurgle": {
         name: "Sacred Number of Nurgle",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_plunderingpower"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -2139,7 +2139,7 @@ export const data: TalentData = {
         pos: "c4",
         icon: icons["abi_ch_rendwinds"],
         maxRank: 3,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "passive",
         description: talentText`Your basic attacks will deal ${[
           50,
@@ -2152,7 +2152,7 @@ export const data: TalentData = {
 	  "Infernal Blast": {
         name: "Infernal Blast",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_inevitablechanging"],
         maxRank: 1,
         reqPoints: 10,
         prereq: "Wounds",
@@ -2177,7 +2177,7 @@ export const data: TalentData = {
 	  "Decay and Change": {
         name: "Decay and Change",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_indigofireofchange"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2192,7 +2192,7 @@ export const data: TalentData = {
 	  "Contagious Horde": {
         name: "Contagious Horde",
         pos: "e7",
-        icon: icons["abi_ch_tzeentchsfirestorm"],
+        icon: icons["abi_ch_pandemonium"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2222,7 +2222,7 @@ export const data: TalentData = {
 	  "Weight of Plague": {
         name: "Weight of Plague",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_ch_denyvitality"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
