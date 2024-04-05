@@ -1465,7 +1465,7 @@ export const data: TalentData = {
       },
       "Intelligence": {
         name: "Intelligence",
-        pos: "g4",
+        pos: "f4",
         icon: icons["stat_int"],
         maxRank: 3,
         reqPoints: 5,
@@ -1480,7 +1480,7 @@ export const data: TalentData = {
       },
       "Strength": {
         name: "Strength",
-        pos: "f4",
+        pos: "e4",
         icon: icons["stat_str"],
         maxRank: 2,
         reqPoints: 5,
@@ -1913,7 +1913,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "20s cooldown",
         blue: "Costs 40 Combustion",
-        description: talentText`Applies a buff for 5s and a blessing for 10s to each groupmate within 100 feet. For the buff duration, groupmate and up to 9 enemies within 30 feet of them gain a stack of Blast every second. For the blessing duration, groupmate gains 1000 elemental resistance.`,
+        description: talentText`Applies a buff for 5s and a blessing for 10s to each groupmate within 100 feet. For the buff duration, groupmate and up to 9 enemies within 30 feet of them gain a stack of Blast every second. For the blessing duration, groupmate gains 2000 elemental resistance.`,
       },
       "Spreading Flames": {
         name: "Spreading Flames",
@@ -2005,10 +2005,7 @@ export const data: TalentData = {
         description: talentText`Blast stacks cause allies to gain ${[
           1,
           2,
-        ]} adrenaline per second per stack and enemies to lose ${[
-          1,
-          2,
-        ]} adrenaline per second.`,
+        ]} adrenaline per second per stack.`,
       },
 	  "Red Tide": {
         name: "Red Tide",
@@ -2061,7 +2058,7 @@ export const data: TalentData = {
       },
 	  "Explosive Exercise": {
         name: "Explosive Exercise",
-        pos: "g6",
+        pos: "c6",
         icon: icons["abi_fuelfire"],
         maxRank: 3,
         reqPoints: 15,
