@@ -1161,7 +1161,8 @@ export const data: TalentData = {
         cost: "60 action points",
         range: "100ft range",
         cast: "instant cast",
-        cooldown: "Requires Ignite on Target",
+        cooldown: "no cooldown",
+		blue: "Requires Ignite on Target",
         description: talentText`Dispels Ignite from the target to apply a 12 second cripple to the target and up to 8 additional enemies within 20 feet of them. For the duration, target takes 5% SAP + 62 corporeal damage and you gain 1 Combustion every 3 seconds.`,
       },
       "Cascading Fire Cloak": {
@@ -1175,7 +1176,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`You gain a blessing for 10 seconds. For the duration, whenever you use Sparks or Flaming Sword of Rhuin you will gain 1 stack of Enhanced Armor.\n\nFor the duration, whenever an enemy hits you with an ability, you will gain 1 stack of Reduced Armor and up to 9 enemies within 30 feet of you will take 5% SAP + 57 elemental damage.`,
+        description: talentText`You gain a blessing for 10 seconds. For the duration, whenever you use Sparks or Flaming Sword of Rhuin you will gain 1 stack of Enhanced Armor.\n\nFor the duration, whenever an enemy hits you with an ability, you will gain 1 stack of Reduced Armor and up to 9 enemies within 30 feet of you will take 5% SAP + 57 elemental damage. (1s ICD)`,
       },
 	  "Burning Step": {
         name: "Burning Step",
@@ -1330,12 +1331,12 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 15,
         type: "passive",
-        description: talentText`Flaming Sword of Rhuin now costs ${[
+        description: talentText`Flaming Sword of Rhuin will now refund ${[
           2,
           4,
 		  6,
 		  8,
-        ]} less Combustion.`,
+        ]} Combustion.`,
       },
       "Singeing Disinfectant": {
         name: "Singeing Disinfectant",
@@ -1394,7 +1395,7 @@ export const data: TalentData = {
           10,
 		  15,
 		  20,
-        ]}% of your Ranged Attack Power.${[
+        ]}% of your Ranged Attack Power. ${[
           "",
           "The damage over time from Detonate can now critically hit.",
 		  "The damage over time from Breath of Fire and Detonate can now critically hit.",
@@ -1848,7 +1849,7 @@ export const data: TalentData = {
       },
 	  "Detonate": {
         name: "Detonate",
-        pos: "e5",
+        pos: "h5",
         icon: icons["abi_detonate"],
         maxRank: 1,
         reqPoints: 10,
@@ -1856,7 +1857,8 @@ export const data: TalentData = {
         cost: "60 action points",
         range: "100ft range",
         cast: "instant cast",
-        cooldown: "Requires Ignite on Target",
+        cooldown: "no cooldown",
+		blue: "Requires Ignite on Target",
         description: talentText`Dispels Ignite from the target to apply a 12 second cripple to the target and up to 8 additional enemies within 20 feet of them. For the duration, target takes 5% SAP + 62 corporeal damage and you gain 1 Combustion every 3 seconds.`,
       },
 	  "Playing With Fire": {
@@ -1944,23 +1946,25 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Fireball now has a 1.5s cast time, deals 50% less damage, and generates 15 Combustion.`,
       },
-	  "Fiery Reserves": {
-        name: "Fiery Reserves",
-        pos: "b6",
-        icon: icons["tac_spec_8"],
-        maxRank: 1,
-        reqPoints: 15,
-        type: "career tactic",
-        description: talentText`Blast will now generate 3 Combustion per stack whenever it expires.`,
-      },
 	  "Bleed Fire": {
         name: "Bleed Fire",
-        pos: "h6",
+        pos: "b7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
-        reqPoints: 15,
+        reqPoints: 20,
         type: "career tactic",
         description: talentText`Breath of Fire, Detonate, Fiery Blast, and Rain of Fire will now hit up to 24 enemies. Flaming Sword of Rhuin will now hit up to 8 other enemies within 30 feet of the target, but deals 50% less damage.`,
+      },
+	  "Fan the Flames": {
+        name: "Fan the Flames",
+        pos: "h6",
+        icon: icons["tac_spec_9"],
+        maxRank: 1,
+        reqPoints: 15,
+        prereq: "Detonate",
+        arrows: [{ dir: "down", from: "h5", to: "h6" }],
+        type: "career tactic",
+        description: talentText`Ignite can now be cast on a target with Detonate. Detonate no longer dispels Ignite and will deal 7% + 80 elemental damage to the initial target for each stack of Blast they have.`,
       },
 	  "Exquisite Firecraft": {
         name: "Exquisite Firecraft",
@@ -2010,12 +2014,13 @@ export const data: TalentData = {
         name: "Red Tide",
         pos: "b3",
         icon: icons["abi_pyroclasticsurge"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Pyroclastic surge now deals ${[
           50,
           100,
+		  150,
         ]}% additional damage.`,
       },
 	  "Hardened Casting": {
