@@ -355,7 +355,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Brutality.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
+        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Savagery.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
       },
       "Tainted Claw": {
         name: "Tainted Claw",
@@ -1038,7 +1038,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Brutality.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
+        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Savagery.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
       },
       "Tainted Claw": {
         name: "Tainted Claw",
@@ -1724,7 +1724,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Brutality.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
+        description: talentText`Deal 21% MAP + 280 impact damage to target enemy. You shift into Gift of Savagery.\n\nBlood-marked lasts for 8 second and stacks up to 3 times. Khorne abilities often gain special benefits against Blood-marked targets.`,
       },
       "Tainted Claw": {
         name: "Tainted Claw",
@@ -1790,7 +1790,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "6.0s channel",
         cooldown: "no cooldown",
-        description: talentText`You shift into Gift of Pride. You deal 22% MAP + 312 piercing damage to target enemy every 2 second2. For the duration, the target has its outgoing damage and damage reduction reduced by 10%.`,
+        description: talentText`You shift into Gift of Pride. You deal 22% MAP + 312 piercing damage to target enemy every 2 seconds. For the duration, the target has its outgoing damage and damage reduction reduced by 10%.`,
       },
       "Pain for Pleasure": {
         name: "Pain for Pleasure",
@@ -1975,7 +1975,7 @@ export const data: TalentData = {
 	  "Unstable Convulsions": {
         name: "Unstable Convulsions",
         pos: "e5",
-        icon: icons["abi_ch_potionofpaindenied"],
+        icon: icons["abi_ch_potionoofpaindenied"],
         maxRank: 5,
         reqPoints: 10,
         type: "passive",

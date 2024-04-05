@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["archetype_defsupport"],
+        icon: icons["archetype_skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Target enemy gains 3 stacks of Reduced Armor.`,
+        description: talentText`Target enemy gains 4 stacks of Reduced Armor.`,
       },
       "Burnout": {
         name: "Burnout",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion stacks to 100 and you will gain 8% damage when above 89.\nExplosion deals 21% SAP + 280 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
+        description: talentText`Explosion stacks to 100 and you will gain 8% outgoing damage when above 89.\nExplosion deals 21% SAP + 280 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP + 90 elemental damage per stack.`,
       },
       "Pyroclastic Surge": {
         name: "Pyroclastic Surge",
@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 253 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
+        description: talentText`(Basic Attack) Deals 6% SAP + 133 corporeal damage to the target. You generate 40 action points and 5 Combustion.`,
       },
       "Fireball": {
         name: "Fireball",
@@ -408,7 +408,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 100 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
+        description: talentText`Applies an ailment to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 100 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
       },
       "Meltdown": {
         name: "Meltdown",
@@ -437,7 +437,7 @@ export const data: TalentData = {
         cooldown: "15s cooldown",
         description: talentText`Target enemy will deal 50% less damage to you for 15 seconds. This effect is removed if you hit the target with an ability.`,
       },
-	   "Sear": {
+	  "Sear": {
         name: "Sear",
         pos: "h4",
         icon: icons["abi_sear"],
@@ -450,7 +450,7 @@ export const data: TalentData = {
         cooldown: "5s cooldown",
         description: talentText`Deals 25% SAP + 335 elemental damage to target and applies a stack of Blast. You will take Explosion damage and gain 5 Combustion.`,
       },
-	   "Playing With Fire": {
+	  "Playing With Fire": {
         name: "Playing With Fire",
         pos: "e5",
         icon: icons["abi_playingwithfire"],
@@ -586,7 +586,7 @@ export const data: TalentData = {
       },
       "Explosive Action": {
         name: "Explosive Action",
-        pos: "b3",
+        pos: "e3",
         icon: icons["abi_blast"],
         maxRank: 3,
         reqPoints: 0,
@@ -599,15 +599,15 @@ export const data: TalentData = {
       },
       "Red Tide": {
         name: "Red Tide",
-        pos: "h3",
+        pos: "b3",
         icon: icons["abi_pyroclasticsurge"],
         maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Pyroclastic surge now deals ${[
-          6,
-          12,
-        ]}% SAP additional damage.`,
+          50,
+          100,
+        ]}% additional damage.`,
       },
       "Hardened Casting": {
         name: "Hardened Casting",
@@ -678,9 +678,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Your chance to critically hit is increased by ${[
-          1,
           2,
-		  3,
+          4,
+		  6,
         ]} `,
 	  },
       "Reckless Funnel": {
@@ -692,17 +692,22 @@ export const data: TalentData = {
         prereq: "Funnel Power",
         arrows: [{ dir: "right", from: "c8", to: "d8" }],
         type: "passive",
-        description: talentText`Funnel Power will now cost ${[
+        description: talentText`Funnel Power will now refund ${[
           5,
           10,
           15,
           20,
-        ]} less combustion.`,
+        ]} combustion and has a ${[
+          5,
+          15,
+          30,
+          50,
+        ]}% chance to also apply a stack of Enhanced Critical Hit Rating.`,
       },
     },
   },
-  "Arsonist (semi-old)": {
-    name: "Arsonist (semi-old)",
+  "Arsonist": {
+    name: "Arsonist",
     background: backgrounds["hothead"],
     icon: icons["archetype_dps"],
     talents: {
@@ -898,7 +903,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specsword"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -916,7 +921,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Target enemy gains 6 stacks of Reduced Armor.`,
+        description: talentText`Target enemy gains 4 stacks of Reduced Armor.`,
       },
       "Burnout": {
         name: "Burnout",
@@ -946,19 +951,19 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`You gain a buff for 20 seconds. For the duration, gain 250 ballistic skill, 250 intelligence, and 250 strength.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Burning Head": {
+        name: "Burning Head",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_burninghead"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Summons a Burning Head which charges forward affecting up to 24 allies and 96 enemies every second with a 3 second effect within 20 feet of its location.\n\nAllies gain 50% critical chance and 15 adrenaline per second. Enemies take 10% SAP + 150 elemental damage every second and gain 15 adrenaline per second.`,
       },
       "Disengage": {
         name: "Disengage",
@@ -988,7 +993,7 @@ export const data: TalentData = {
         blue: "Costs 720 adrenaline",
         description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
       },
-	   "Explosive Impact": {
+	  "Explosive Impact": {
         name: "Explosive Impact",
         pos: "h2",
         icon: icons["morale_explosiveimpact"],
@@ -1023,7 +1028,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Explosion deals 20% SAP + 300 elemental damage to you whenever you gain Combustion when you have 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP elemental damage per stack.`,
+        description: talentText`Explosion stacks to 100 and you will gain 8% outgoing damage when above 89.\nExplosion deals 21% SAP + 280 elemental damage to you whenever you gain Combustion that takes you above 100. (1s ICD)\n\nBlast is a debuff that lasts for 4 seconds and stacks 10 times. At the end of the duration, target takes 8% SAP + 90 elemental damage per stack.`,
       },
       "Sparking Swing": {
         name: "Sparking Swing",
@@ -1033,10 +1038,10 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 110 elemental damage to target enemy. You generate 22 action points.`,
+        description: talentText`(Basic Attack) Deals 4% MAP + 30 elemental damage to target enemy. You generate 22 action points.`,
       },
       "Ignite": {
         name: "Ignite",
@@ -1049,7 +1054,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 50 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
+        description: talentText`Applies an ailment to target enemy for 15 seconds. You generate 3 Combustion and the target takes 8% SAP + 100 elemental damage every 3 seconds.\n\nCannot be applied to targets under the effect of Detonate.`,
       },
       "Flaming Sword of Rhuin": {
         name: "Flaming Sword of Rhuin",
@@ -1059,11 +1064,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Combustion",
-        description: talentText`Deals 32% MAP + 400 corporeal damage to target enemy.`,
+        description: talentText`Deals 35% MAP + 469 corporeal damage to target enemy.`,
       },
       "Unquenchable Fury": {
         name: "Unquenchable Fury",
@@ -1117,7 +1122,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Castable while moving",
-        description: talentText`Applies an affliction to up to 9 enemies within 30ft in front of you for 9 seconds. You generate 2 Combustion and the target takes 8% SAP + 50 elemental damage every 3 seconds.`,
+        description: talentText`Applies an ailment to up to 9 enemies within 30 feet in front of you for 9 seconds. For the duration, the target takes 10% SAP + 132 elemental damage and you gain 2 Combustion every 3 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1144,7 +1149,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 10 Combustion",
-        description: talentText`Dispel 1 enchantment from target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself but refresh the stack duration.`,
+        description: talentText`Dispel 1 enchantment from and apply 1 stack of Purity to target enemy. Dispel 1 affliction from yourself. Dispel 2 stacks of Blast from yourself. Apply 2 stack of Purity to yourself.`,
       },
 	  "Detonate": {
         name: "Detonate",
@@ -1156,8 +1161,8 @@ export const data: TalentData = {
         cost: "60 action points",
         range: "100ft range",
         cast: "instant cast",
-        cooldown: "no cooldown",
-        description: talentText`Requires Ignite on the target. Dispels Ignite from the target to apply a cripple to the target and up to 8 additional enemies within 20ft of them for 12 seconds. You generate 1 Combustion and the target takes 5% SAP + 38 corporeal damage every 3 seconds.`,
+        cooldown: "Requires Ignite on Target",
+        description: talentText`Dispels Ignite from the target to apply a 12 second cripple to the target and up to 8 additional enemies within 20 feet of them. For the duration, target takes 5% SAP + 62 corporeal damage and you gain 1 Combustion every 3 seconds.`,
       },
       "Cascading Fire Cloak": {
         name: "Cascading Fire Cloak",
@@ -1170,7 +1175,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`You gain a buff for 15 seconds. For the duration, whenever you use Sparks or Flaming Sword of Rhuin you will gain 1 stack of Enhanced Armor and 1 stack of Enhanced Corporeal Resistance.\n\nFor the duration, whenever an enemy deals direct damage to you, they will gain a stack of Blast and you will gain 1 stack of Reduced Armor or 1 stack of Reduced Corporeal Resistance.`,
+        description: talentText`You gain a blessing for 10 seconds. For the duration, whenever you use Sparks or Flaming Sword of Rhuin you will gain 1 stack of Enhanced Armor.\n\nFor the duration, whenever an enemy hits you with an ability, you will gain 1 stack of Reduced Armor and up to 9 enemies within 30 feet of you will take 5% SAP + 57 elemental damage.`,
       },
 	  "Burning Step": {
         name: "Burning Step",
@@ -1213,7 +1218,7 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`Deal 10% SAP + 50 elemental damage to up to 24 enemies within 30ft of you every second. Each enemy hit will increase your outgoing damage by 10% up to a maximum of 100 stacks. Effect is dispelled when channel ends. This ability deals no damage to targets that have Cover from you.\n\nAugmented: 100% pushback immunity.`,
       },
-	   "Spontaneous Combustion": {
+	  "Spontaneous Combustion": {
         name: "Spontaneous Combustion",
         pos: "a5",
         icon: icons["tac_spec_5"],
@@ -1229,7 +1234,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Breath of Fire now deals 15% SAP + 226 direct, corporeal damage to enemies on cast and will now hit up to 15 enemies.`,
+        description: talentText`Breath of Fire now deals 14% SAP + 187 corporeal damage to enemies on cast.`,
       },
       "Fiery Reserves": {
         name: "Fiery Reserves",
@@ -1249,7 +1254,7 @@ export const data: TalentData = {
         prereq: "Detonate",
         arrows: [{ dir: "down", from: "e5", to: "e6" }],
         type: "career tactic",
-        description: talentText`Ignite can now be cast on a target with Detonate. Detonate no longer dispels Ignite and will deal direct elemental damage equal to 80 + 7% SAP to the initial target for each stack of Blast they have.`,
+        description: talentText`Ignite can now be cast on a target with Detonate. Detonate no longer dispels Ignite and will deal 7% + 80 elemental damage to the initial target for each stack of Blast they have.`,
       },
       "Bleed Fire": {
         name: "Bleed Fire",
@@ -1257,13 +1262,8 @@ export const data: TalentData = {
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
-        prereq: "Cascading Fire Cloak",
-        arrows: [
-          { dir: "right-down", from: "f6", to: "g6" },
-          { dir: "right-down-down", from: "g6", to: "g7" }
-        ],
         type: "career tactic",
-        description: talentText`Cascading Fire Cloak no longer grants stacks of Enhanced or Reduced Armor/Corporeal Resistance. Instead you will deal 16% MAP + 218 elemental damage to enemies when you are attacked.`,
+        description: talentText`Breath of Fire, Detonate, and Fiery Blast will now hit up to 24 enemies. Flaming Sword of Rhuin will now hit up to 8 other enemies within 30 feet of the target, but deals 50% less damage.`,
       },
       "Explosive Force": {
         name: "Explosive Force",
@@ -1272,7 +1272,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you take Explosion damage, all groupmates and up to 9 enemies within 30ft of you also take Explosion damage.`,
+        description: talentText`Whenever you take Explosion damage, all groupmates and up to 9 enemies within 30 feet of you also take Explosion damage.`,
       },
       "Trailblazer": {
         name: "TrailBlazer",
@@ -1283,32 +1283,32 @@ export const data: TalentData = {
         prereq: "Burning Step",
         arrows: [{ dir: "right", from: "d8", to: "e8" }],
         type: "career tactic",
-        description: talentText`The cooldown on Burning Step is reduced by 5 seconds.`,
+        description: talentText`The cooldown on Burning Step is reduced by 8 seconds.`,
       },
       "Tempered Blast": {
         name: "Tempered Blast",
-        pos: "b3",
+        pos: "e3",
         icon: icons["abi_blast"],
         maxRank: 2,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Blast now deals additional damage equal to ${[
-          4,
-          8,
-        ]}% MAP.`,
+        description: talentText`Blast now deals ${[
+          35,
+          70,
+        ]}% additional damage.`,
       },
-	   "Master of Sparks": {
+	  "Master of Sparks": {
         name: "Master of Sparks",
-        pos: "h3",
+        pos: "b3",
         icon: icons["abi_sparks"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Sparking Swing will deal an additional ${[
-          4,
-          8,
-		  12,
-        ]}% MAP elemental damage.`,
+          75,
+          150,
+		  225,
+        ]}% damage.`,
       },
       "Improved Vigilance": {
         name: "Improved Vigilance",
@@ -1340,7 +1340,7 @@ export const data: TalentData = {
       "Singeing Disinfectant": {
         name: "Singeing Disinfectant",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_cauterize"],
         maxRank: 3,
         reqPoints: 15,
         prereq: "Cauterize",
@@ -1350,16 +1350,20 @@ export const data: TalentData = {
           3,
           4,
 		  5,
-        ]} stacks of Blast from you.`,
+        ]} stacks of Blast from you and apply ${[
+          3,
+          4,
+		  5,
+        ]} stacks of Purity to you.`,
       },
 	  "World on Fire": {
         name: "World on Fire",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_conflagrationofdoom"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Whenever you deal periodic damage, you have a ${[
+        description: talentText`Whenever your Breath of Fire, Detonate, or Ignite deals damage, you have a ${[
           10,
           20,
 		  30,
@@ -1368,29 +1372,34 @@ export const data: TalentData = {
 	  "Extra Crit": {
         name: "Extra Crit",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_extracrit"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
         description: talentText`Your chance to critically hit is increased by ${[
-          1,
           2,
-		  3,
+          4,
+		  6,
         ]} `,
       },
 	  "Oppressive Heat": {
         name: "Oppressive Heat",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_heavensfury"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`You gain corporeal penetration and elemental penetration equal to ${[
+        description: talentText`You gain sagacity equal to ${[
           5,
           10,
 		  15,
 		  20,
-        ]}% of your Ranged Attack Power.`,
+        ]}% of your Ranged Attack Power.${[
+          "",
+          "The damage over time from Detonate can now critically hit.",
+		  "The damage over time from Breath of Fire and Detonate can now critically hit.",
+		  "The damage over time from Breath of Fire, Detonate, and Ignite can now critically hit.",
+        ]}`,
       },
     },
   },
