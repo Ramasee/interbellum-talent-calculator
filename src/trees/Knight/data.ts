@@ -1069,7 +1069,7 @@ export const data: TalentData = {
       },
 	  "Bind Weapon": {
         name: "Bind Weapon",
-        pos: "g1",
+        pos: "f1",
         icon: icons["abi_bindweapon"],
         maxRank: 0,
         reqPoints: 0,
@@ -1096,7 +1096,7 @@ export const data: TalentData = {
 	  "Press the Attack": {
         name: "Press the Attack",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_grimdetermination"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1123,7 +1123,7 @@ export const data: TalentData = {
 	  "Glorious Assault!": {
         name: "Glorious Assault!",
         pos: "g4",
-        icon: icons["noicon"],
+        icon: icons["abi_em_gloriousassault"],
         maxRank: 1,
         reqPoints: 5,
         type: "spell",
@@ -1174,10 +1174,10 @@ export const data: TalentData = {
         cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
-	  "Defend the Weak": {
-        name: "Defend the Weak",
+	  "Defend the Weak!": {
+        name: "Defend the Weak!",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_em_guard"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1273,7 +1273,7 @@ export const data: TalentData = {
 	  "Will of the Emperor": {
         name: "Will of the Emperor",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_em_myrmidiasfury"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -1286,7 +1286,7 @@ export const data: TalentData = {
 	  "Outmanuever": {
         name: "Outmanuever",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_em_grimdetermination"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -1338,7 +1338,7 @@ export const data: TalentData = {
 	  "Combat Treatise": {
         name: "Combat Treatise",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_bindweapon"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1351,7 +1351,7 @@ export const data: TalentData = {
 	  "Vanguard": {
         name: "Vanguard",
         pos: "g7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_interception"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1364,7 +1364,7 @@ export const data: TalentData = {
 	  "Chivalry": {
         name: "Chivalry",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_guard"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1717,7 +1717,7 @@ export const data: TalentData = {
 	  "Press the Attack": {
         name: "Press the Attack",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_grimdetermination"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1744,7 +1744,7 @@ export const data: TalentData = {
 	  "Cleansing Blade": {
         name: "Cleansing Blade",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_cower"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1757,7 +1757,7 @@ export const data: TalentData = {
 	  "Blazing Blade": {
         name: "Blazing Blade",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_sweepingimpact"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1837,7 +1837,7 @@ export const data: TalentData = {
 	  "Glorious Assault!": {
         name: "Glorious Assault!",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_em_gloriousassault"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -1851,7 +1851,7 @@ export const data: TalentData = {
 	  "Judgement Blade": {
         name: "Judgement Blade",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_funnelpower"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1864,7 +1864,7 @@ export const data: TalentData = {
 	  "Into the Breach!": {
         name: "Into the Breach!",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_em_presstheattack"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1976,7 +1976,7 @@ export const data: TalentData = {
 	  "Improved Blazing Blade": {
         name: "Improved Blazing Blade",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_em_sweepingimpact"],
         maxRank: 4,
         reqPoints: 10,
         type: "passive",
@@ -2001,8 +2001,8 @@ export const data: TalentData = {
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
-        pos: "f7",
-        icon: icons["noicon"],
+        pos: "g6",
+        icon: icons["abi_strike"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2030,7 +2030,7 @@ export const data: TalentData = {
 	  "Improved Glorious Assault": {
         name: "Improved Glorious Assault",
         pos: "f7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_gloriousassault"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Glorious Assault!",
@@ -2048,7 +2048,7 @@ export const data: TalentData = {
 	  "Runefang": {
         name: "Runefang",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_shiningblade"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
