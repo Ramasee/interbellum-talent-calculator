@@ -1908,7 +1908,7 @@ export const data: TalentData = {
         icon: icons["noicon"],
         maxRank: 1,
         reqPoints: 3,
-        prereq: "Glorious Assault",
+        prereq: "Glorious Assault!",
 		arrows: [
           { dir: "right-down", from: "e6", to: "f6" },
           { dir: "right-down-down", from: "f6", to: "f7" }
