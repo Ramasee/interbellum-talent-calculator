@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["archetype_skl_specstaff"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -474,7 +474,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to the target for 6 seconds. At the end of the duration, target will take 17% SAP + 252 indirect, corporeal damage. You generate 5 Combustion`,
+        description: talentText`Applies an ailment to the target for 6 seconds. At the end of the duration, target will take 17% SAP + 252 indirect, corporeal damage. You generate 5 Combustion`,
       },
       "Funnel Power": {
         name: "Funnel Power",
