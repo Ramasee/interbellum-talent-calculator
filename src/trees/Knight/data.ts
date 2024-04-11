@@ -1132,7 +1132,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30 feet of them will take X% MAP + Y elemental damage every 2 seconds.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, each time they deal damage with a basic attack, they will deal X% MAP + Y impact damage.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30 feet of them will take 3% MAP + 40 elemental damage every 2 seconds.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, each time they deal damage with a basic attack, they will deal 3% MAP + 40 impact damage.`,
       },
 	  "Distract": {
         name: "Distract",
@@ -1186,7 +1186,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`You gain 15 stacks of Chivalry which each last 8 seconds.\n\nChivalry causes an attack made against groupmates within 30 feet of you to be redirected to you.`,
+        description: talentText`You gain 15 stacks of Chivalry which each last 8 seconds.\n\nChivalry causes an attack made against groupmates within 30 feet of you to be redirected to you. Counts as a guard effect.`,
       },
 	  "Emperor's Fury": {
         name: "Emperor's Fury",
@@ -1373,7 +1373,7 @@ export const data: TalentData = {
           2,
           3,
           5,
-        ]} stacks of Chivalry.\n\nChivalry causes an attack made against groupmates within 30 feet of you to be redirected to you.`,
+        ]} stacks of Chivalry.\n\nChivalry causes an attack made against groupmates within 30 feet of you to be redirected to you. Counts as a guard effect.`,
       },
     },
   },
@@ -1846,7 +1846,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Mandate",
-        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30 feet of them will take X% MAP + Y elemental damage every 2 seconds.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, each time they deal damage with a basic attack, they will deal X% MAP + Y impact damage.`,
+        description: talentText`Groupmates within 100 feet gain a blessing for 8 seconds. For the duration, up to 9 enemies within 30 feet of them will take 3% MAP + 40 elemental damage every 2 seconds.\nGroupmates within 100 feet gain an enchantment for 60 seconds. For the duration, each time they deal damage with a basic attack, they will deal 3% MAP + 40 impact damage.`,
       },
 	  "Judgement Blade": {
         name: "Judgement Blade",
