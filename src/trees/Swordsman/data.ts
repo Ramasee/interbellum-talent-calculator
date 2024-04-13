@@ -381,7 +381,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 21 second ailment and 1 Combo Point to target enemy. For the duratiom, target takes 15% MAP + 190 ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second ailment and 1 Combo Point to target enemy. For the duration, target takes 15% MAP + 190 ichor damage every 3 seconds.`,
       },    
       "Bind Weapon": {
         name: "Bind Weapon",
@@ -568,7 +568,7 @@ export const data: TalentData = {
 	  "State-Issued Weapons": {
         name: "State-Issued Weapons",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_em_blessedweaponsofpurity"],
         maxRank: 5,
         reqPoints: 0,
         type: "passive",
@@ -618,7 +618,7 @@ export const data: TalentData = {
           6,
 		  8,
 		  10,
-        ]}.`,
+        ]}%.`,
       },
 	  "Protection From Heresy": {
         name: "Protection From Heresy",
@@ -870,7 +870,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specpistol"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1008,7 +1008,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 3% RAP + 15 piercing damage to target enemy and generates 11 action points. Deals an additional 3% MAP + 15 piercing damage as a second hit and generates 11 more action points if you are within 8ft of them.`,
+        description: talentText`(Basic Attack) Deals 3% RAP + 15 piercing damage to target enemy and generates 11 action points. Deals an additional 3% MAP + 15 piercing damage as a second hit and generates 11 more action points if you are within 8 feet of them.`,
       },
       "Stalk": {
         name: "Stalk",
@@ -1049,7 +1049,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. For the duration, target gains 1 stack of Purity and takes 12% MAP + 150 ichor damage every 2 seconds; the last tick will deal 15% MAP + 215 impact damage.`,
+        description: talentText`Applies an affliction to target enemy for 10 seconds. For the duration, target gains 1 stack of Purity and takes 18% MAP + 140 ichor damage every 2 seconds; the last tick will deal 23% MAP + 305 impact damage.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -1062,7 +1062,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 23% RAP + 297 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
+        description: talentText`Deals 30% RAP + 400 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
       },
       "Blessed Bullet": {
         name: "Blessed Bullet",
@@ -1286,10 +1286,10 @@ export const data: TalentData = {
         description: talentText`While in Stalk, your movement speed is increased by ${[
           7,
           15,
-        ]}%, and the AP cost of your Executes is reduced by ${[
+        ]}%, the AP cost of your Executes is reduced by ${[
           50,
           100,
-        ]}%.`,
+        ]}%, and all groupmates within 100 feet gain 1 stack of Purity every 3 seconds.`,
       },
 	  "Men of Action": {
         name: "Men of Action",
@@ -1386,7 +1386,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 5,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1416,7 +1416,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 5,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -1431,7 +1431,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1446,7 +1446,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1461,7 +1461,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -1476,7 +1476,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 5,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1491,7 +1491,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 5,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1506,7 +1506,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 5,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1522,7 +1522,7 @@ export const data: TalentData = {
         pos: "a4",
         icon: icons["tac_arche"],
         maxRank: 1,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "career tactic",
         description: talentText`Your base movement speed is increased by 15%. Your mass is decreased by 1.`,
       },
@@ -1565,7 +1565,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_spechandgun"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1703,7 +1703,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 3% RAP + 15 piercing damage to target enemy and generates 11 action points. Deals an additional 3% MAP + 15 piercing damage as a second hit and generates 11 more action points if you are within 8ft of them.`,
+        description: talentText`(Basic Attack) Deals 3% RAP + 15 piercing damage to target enemy and generates 11 action points. Deals an additional 3% MAP + 15 piercing damage as a second hit and generates 11 more action points if you are within 8 feet of them.`,
       },
       "Exit Wound": {
         name: "Exit Wound",
@@ -1716,7 +1716,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 23% RAP + 297 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
+        description: talentText`Deals 30% RAP + 400 piercing damage to the target and gives them 1 stack of Reduced Healing Received. Generates 1 Combo Point.`,
       },
       "Blessed Bullet": {
         name: "Blessed Bullet",
@@ -1735,7 +1735,7 @@ export const data: TalentData = {
       "Battle Steed": {
         name: "Battle Steed",
         pos: "e1",
-        icon: icons["noicon"],
+        icon: icons["abi_charge"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -1757,7 +1757,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 21 second ailment and 1 Combo Point to target enemy. For the duratiom, target takes 15% MAP + 190 ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second ailment and 1 Combo Point to target enemy. For the duration, target takes 15% MAP + 190 ichor damage every 3 seconds.`,
       },  
       "Silence Heretic": {
         name: "Silence Heretic",
@@ -1775,7 +1775,7 @@ export const data: TalentData = {
       "Split Shot": {
         name: "Split Shot",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_gun01"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1783,7 +1783,7 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y piercing damage to target and up to 2 enemies within 20 feet of them. Generates 1 Combo Point on each target hit.`,
+        description: talentText`Deals 24% RAP + 310 piercing damage to target and up to 2 enemies within 20 feet of them. Generates 1 Combo Point on each target hit.`,
       },
       "Smokescreen": {
         name: "Smokescreen",
@@ -1814,7 +1814,7 @@ export const data: TalentData = {
 	  "Quick Shot": {
         name: "Quick Shot",
         pos: "a5",
-        icon: icons["noicon"],
+        icon: icons["abi_em_blessedbulletsofconfession"],
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
@@ -1822,12 +1822,12 @@ export const data: TalentData = {
         range: "50ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals X% RAP + Y piercing damage to target enemy and applies 1 Combo Point and 1 stack of Reduced Agility to them.`,
+        description: talentText`Deals 27% RAP + 375 piercing damage to target enemy and applies 1 Combo Point and 1 stack of Reduced Agility to them.`,
       },
 	  "Spread Shot": {
         name: "Spread Shot",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_em_supressapostasy"],
         maxRank: 1,
         reqPoints: 15,
         type: "skill",
@@ -1836,7 +1836,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Execute",
-        description: talentText`Deals X% RAP + Y piercing damage to target enemy and up to 8 enemies within 20 feet of them.`,
+        description: talentText`Deals 18% RAP + 229 piercing damage to target enemy and up to 8 enemies within 20 feet of them.`,
       },
 	  "Marked for Death": {
         name: "Marked for Death",
@@ -1855,7 +1855,7 @@ export const data: TalentData = {
       "Hail of Bullets": {
         name: "Hail of Bullets",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_em_absolution"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1864,7 +1864,7 @@ export const data: TalentData = {
         cast: "4.5s channel",
         cooldown: "no cooldown",
         blue: "Castable While Moving\nRequires Battle Steed",
-        description: talentText`Deals X% RAP + Y piercing damage every 0.5 seconds.`,
+        description: talentText`Deals 15% RAP + 182 piercing damage every 0.5 seconds.`,
       },
       "Dragon Gun": {
         name: "Dragon Gun",
@@ -1945,12 +1945,12 @@ export const data: TalentData = {
           { dir: "right", from: "c8", to: "d8" },
         ],
         type: "career tactic",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Marked for Death will apply to another enemy within 30 feet of the original target.`,
       },
 	  "Shooting Range": {
         name: "Passive 1",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_em_favourablewinds"],
         maxRank: 5,
         reqPoints: 0,
         type: "passive",
@@ -1965,7 +1965,7 @@ export const data: TalentData = {
 	  "Pistolkorps": {
         name: "Pistolkorps",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_menofaction"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -1990,7 +1990,7 @@ export const data: TalentData = {
 	  "Blinkers": {
         name: "Blinkers",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_charge"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2011,7 +2011,7 @@ export const data: TalentData = {
 	  "Mercury Tips": {
         name: "Mercury Tips",
         pos: "a7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_blessedbulletsofconfession"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Quick Shot",
@@ -2032,7 +2032,7 @@ export const data: TalentData = {
 	  "Rifled Barrels": {
         name: "Rifled Barrels",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_dw_range06"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2045,7 +2045,7 @@ export const data: TalentData = {
 	  "Suppresive Fire": {
         name: "Suppressive Fire",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_suddenaccusation"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
