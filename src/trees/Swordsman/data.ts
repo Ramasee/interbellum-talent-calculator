@@ -204,7 +204,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["skl_spec_dualwield"],
+        icon: icons["skl_specdualwield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -328,7 +328,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
       "Torment": {
         name: "Torment",

@@ -342,7 +342,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -1025,7 +1025,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
       "On Your Guard!": {
         name: "On Your Guard!",
@@ -1712,7 +1712,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy.`,
+        description: talentText`(Basic Attack) Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
 	  "Press the Attack": {
         name: "Press the Attack",
