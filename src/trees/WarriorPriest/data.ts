@@ -627,7 +627,7 @@ export const data: TalentData = {
 	  "Improved Block": {
         name: "Improved Block",
         pos: "e6",
-        icon: icons["archetype_tank"],
+        icon: icons["noicon"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -1860,6 +1860,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
+		blue: "Off the GCD",
         description: talentText`Toggle: While active, all of your abilities will be augmented. You lose 30 Righteous Fury per second and this effect ends if you run out.`,
       },
       "Charge": {
@@ -1903,7 +1904,7 @@ export const data: TalentData = {
       },
       "Prayer of Righteousness": {
         name: "Prayer of Righesousness",
-        pos: "e1",
+        pos: "h1",
         icon: icons["noicon"],
         maxRank: 0,
         reqPoints: 0,
@@ -1940,7 +1941,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Castable While Moving",
-        description: talentText`Deals X% SAP + Y spiritual damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 13% SAP + 184 spiritual damage to up to 9 enemies within 30 feet in front of you.\n\nAugmented: deals 25% more damage.`,
       },
 	  "Sigmar's Comet": {
         name: "Sigmar's Comet",
@@ -1954,7 +1955,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Righteous Fury\nOff the GCD",
-        description: talentText`Applies a 5 second cripple to target enemy. At the end of the duration, you deal X% SAP + Y impact damage to target enemy and apply 2 stacks of Purity to them. This ability has 2 charges and generates 1 charge every 8 seconds.`,
+        description: talentText`Applies a 5 second cripple to target enemy. At the end of the duration, you deal 25% SAP + 346 impact damage to target enemy and apply 2 stacks of Purity to them. This ability has 2 charges and generates 1 charge every 8 seconds.\n\nAugmented: applies to two other enemies within 20 feet of primary target.`,
       },
 	  "Smash": {
         name: "Smash",
@@ -1995,7 +1996,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "8s cooldown",
         blue: "Costs 60 Righteous Fury",
-        description: talentText`Deals X% MAP + Y impact damage to target enemy. Generates 60 Righteous Fury if used on an enemy below 40% health.`,
+        description: talentText`Deals 44% MAP + 590 impact damage to target enemy. If used on an enemy under 40% health, you will generate 60 Righteous Fury.\n\nAugmented: ability has no cooldown.`,
       },
       "Whirlwind": {
         name: "Whirlwind",
@@ -2062,7 +2063,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you critically hit an enemy, you will apply a 6 second ailment to them. For the duration, deal X% SAP + Y spiritual damage every 3 seconds to them.`,
+        description: talentText`Whenever you critically hit an enemy, you will apply a 6 second ailment to them. For the duration, deal 8% SAP + 97 spiritual damage every 3 seconds to them.`,
       },
 	  "Leading the Charge": {
         name: "Leading the Charge",
@@ -2094,11 +2095,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "passive",
         description: talentText`Whenever enemies attack allies with your Shield of Faith, you will deal ${[
-          "X% MAP + Y",
-          "X% MAP + Y",
-          "X% MAP + Y",
-          "X% MAP + Y",
-          "X% MAP + Y",
+          "4% MAP + 40",
+          "8% MAP + 80",
+          "12% MAP + 120",
+          "16% MAP + 160",
+          "20% MAP + 200",
         ]} impact damage to them.`,
       },
 	  "Improved Vigilance": {
@@ -2128,7 +2129,7 @@ export const data: TalentData = {
       },
 	  "Extra Crit": {
         name: "Extra Crit",
-        pos: "d6",
+        pos: "f6",
         icon: icons["abi_extracrit"],
         maxRank: 5,
         reqPoints: 15,
@@ -2179,10 +2180,10 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "passive",
         description: talentText`Soulfire will now deal ${[
-          "X% MAP + Y",
-          "X% MAP + Y",
-          "X% MAP + Y",
-          "X% MAP + Y",
+          "3% MAP + 61",
+          "6% MAP + 122",
+          "9% MAP + 183",
+          "12% MAP + 244",
         ]} spiritual damage every 2 seconds to up to 9 enemies within 30 feet of you.`,
       },
     },
