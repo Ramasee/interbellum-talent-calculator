@@ -579,7 +579,7 @@ export const data: TalentData = {
       },
 	  "Leading the Charge": {
         name: "Leading the Charge",
-        pos: "d8",
+        pos: "b8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
@@ -891,7 +891,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["em_book_1h_t1_01"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1034,7 +1034,7 @@ export const data: TalentData = {
       "Penance": {
         name: "Penance",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_divineaegis"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1042,7 +1042,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Dispels 1 ailment from target ally and applied a Shield of Faith to them. Generates 10 Righteous Fury.`,
+        description: talentText`Dispels 1 ailment from target ally and applies a Shield of Faith to them. Generates 10 Righteous Fury.`,
       },
       "Divine Light": {
         name: "Divine Light",
@@ -1075,7 +1075,7 @@ export const data: TalentData = {
       "Prayer of Immaculate Flesh": {
         name: "Prayer of Immaculate Flesh",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_divinegaze"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1102,7 +1102,7 @@ export const data: TalentData = {
       "Prayer of Absolution": {
         name: "Prayer of Absolution",
         pos: "h1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_prayerofabsolution"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1116,7 +1116,7 @@ export const data: TalentData = {
       "Repent": {
         name: "Repent",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_em_repent01"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
@@ -1184,7 +1184,7 @@ export const data: TalentData = {
       "Supplication": {
         name: "Supplication",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_em_supplication"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1278,20 +1278,20 @@ export const data: TalentData = {
 	  "Divine Replenishment": {
         name: "Divine Replenishment",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_em_divinereplenishment"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Generates ${[
-          6,
+          4,
+          8,
           12,
-          18,
         ]} Righteous Fury every 3 seconds.`,
       },
 	  "Castigation": {
         name: "Castigation",
         pos: "b4",
-        icon: icons["noicon"],
+        icon: icons["abi_judgement"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -1303,7 +1303,7 @@ export const data: TalentData = {
 	  "Beacon of Courage": {
         name: "Beacon of Courage",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_em_hammerofsigmar"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -1318,7 +1318,7 @@ export const data: TalentData = {
 	  "Armor of the Righteous": {
         name: "Armor of the Righteous",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_em_flawlessdefense"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -1345,7 +1345,7 @@ export const data: TalentData = {
 	  "Faith's Bastion": {
         name: "Faith's Bastion",
         pos: "d7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_penance"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1360,7 +1360,7 @@ export const data: TalentData = {
 	  "Touch of the Divine": {
         name: "Touch of the Divine",
         pos: "f7",
-        icon: icons["noicon"],
+        icon: icons["abi_em_touchofthedivine"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1373,7 +1373,7 @@ export const data: TalentData = {
 	  "Pious Restoration": {
         name: "Pious Restoration",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_divineamazement"],
         maxRank: 4,
         reqPoints: 25,
         prereq: "Sigmar's Comet",
@@ -1382,10 +1382,10 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`Sigmar's Comet will now restore ${[
-          "X% RP + Y",
-          "X% RP + Y",
-          "X% RP + Y",
-          "X% RP + Y",
+          "2% RP + 60",
+          "3% RP + 90",
+          "4% RP + 120",
+          "6% RP + 180",
         ]} health to allies that attack enemies affected by it.`,
       },
     },
@@ -1864,7 +1864,7 @@ export const data: TalentData = {
 	  "Word of Damnation": {
         name: "Word of Damnation",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_em_absenceoffaith"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
