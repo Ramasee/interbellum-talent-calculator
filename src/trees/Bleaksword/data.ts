@@ -1091,10 +1091,10 @@ export const data: TalentData = {
       },
       "Spiteful Slam": {
         name: "Spiteful Slam",
-        pos: "f8",
+        pos: "g1",
         icon: icons["abi_de_crushingspite"],
-        maxRank: 1,
-        reqPoints: 25,
+        maxRank: 0,
+        reqPoints: 0,
         type: "skill",
         cost: "60 action points",
         range: "8ft range",
@@ -1158,7 +1158,7 @@ export const data: TalentData = {
       },
 	  "Wave of Scorn": {
         name: "Wave of Scorn",
-        pos: "h6",
+        pos: "f6",
         icon: icons["abi_de_crushinganger"],
         maxRank: 1,
         reqPoints: 15,
