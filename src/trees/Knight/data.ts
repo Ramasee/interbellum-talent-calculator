@@ -172,7 +172,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic will gain a 300 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you with this tactic gain a 20% wounds + 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -855,7 +855,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic will gain a 300 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you with this tactic gain a 20% wounds + 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",
@@ -1542,7 +1542,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you that have this tactic will gain a 300 absorb for 3 seconds.`,
+        description: talentText`Whenever you use a basic attack, all groupmates within 100 feet of you with this tactic gain a 20% wounds + 300 absorb for 3 seconds.`,
       },
       "Sigmar's Favored": {
         name: "Sigmar's Favored",

@@ -1087,7 +1087,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Off the GCD",
-        description: talentText`Deals X% MAP + Y piercing damage to target enemy. Has 1 charge. Generates a charge every 8 seconds.`,
+        description: talentText`Deals 15% MAP + 204 piercing damage to target enemy. Has 1 charge. Generates a charge every 8 seconds.`,
       },
       "Spiteful Slam": {
         name: "Spiteful Slam",
