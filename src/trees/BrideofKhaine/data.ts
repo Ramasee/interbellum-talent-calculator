@@ -422,6 +422,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
+		blue: "Frenzy",
         description: talentText`You gain a blessing for 10 seconds. For the duration, whenever you deal direct damage, you will deal an additional 13% SAP + 108 ichor damage.`,
       },
       "Vigilance": {
@@ -452,7 +453,7 @@ export const data: TalentData = {
       },
 	  "Heart-Render Toxin": {
         name: "Heart-Render Toxin",
-        pos: "c5",
+        pos: "b5",
         icon: icons["abi_de_envenomedblade"],
         maxRank: 1,
 		reqPoints: 10,
@@ -479,7 +480,7 @@ export const data: TalentData = {
         range: "self",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        blue: "Frenzy\n\nCastable while moving",
+        blue: "Frenzy\nCastable while moving",
         description: talentText`Deal 13% MAP + 119 ichor damage to up to 9 enemies within 30 feet of you every second.`,
       },
 	  "Vehement Blades": {
@@ -531,14 +532,18 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Your Bleeding effect can now stack up to 3 times on a target. In addition, whenever Bleeding expires it has a 20% chance to reapply.`,
       },
-	  "Blood Spatter": {
-        name: "Blood Spatter",
-        pos: "b5",
+	  "Envenomed Hearts": {
+        name: "Envenomed Hearts",
+        pos: "c5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
+		prereq: "Heart-Render Toxin",
+		arrows: [
+          { dir: "right", from: "b5", to: "c5" }
+        ],
         type: "career tactic",
-        description: talentText`Whenever you hit a Bleeding enemy with a basic attack, you will apply Bloody Mess to the target and up to 8 other enemies within 20 feet.\n\nBloody Mess stacks up to 8 times and reduces movement speed by 2% for 8 seconds per stack.`,
+        description: talentText`Envenomed Blade will deal 50% additional damage against targets with Heart-Render Toxin on them.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -574,7 +579,7 @@ export const data: TalentData = {
       },
 	  "For the Hag Queens": {
         name: "For the Hag Queens",
-        pos: "b7",
+        pos: "c7",
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 20,
@@ -594,19 +599,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Puncture now applies Bleeding, Disarmed, Silenced, and Inevitable to target, but now has a 20 second cooldown.`,
       },
-	  "Split Artery": {
-        name: "Split Artery",
+	  "Improved Poisons": {
+        name: "Improved Poisons",
         pos: "e3",
-        icon: icons["abi_he_festeringwound"],
+        icon: icons["abi_de_pillageessence"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Your Bleeding effects now deal ${[
+        description: talentText`Your Poison Skills now deal ${[
+          15,
+          30,
           50,
-          100,
-          150,
-          200,
-          250,
         ]}% additional damage.`,
       },
 	  "Improved Basic Attack": {
@@ -671,13 +674,13 @@ export const data: TalentData = {
       },
 	  "Exotic Venom": {
         name: "Exotic Venom",
-        pos: "c7",
+        pos: "b7",
         icon: icons["abi_de_envenomedblade"],
         maxRank: 3,
         reqPoints: 20,
         prereq: "Heart-Render Toxin",
 		arrows: [
-          { dir: "down", from: "c5", to: "c7" }
+          { dir: "down", from: "b5", to: "b7" }
         ],
         type: "passive",
         description: talentText`Heart-Render Toxin can now stack up to ${[
@@ -1191,7 +1194,7 @@ export const data: TalentData = {
         range: "self",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        blue: "Frenzy\n\nCastable while moving",
+        blue: "Frenzy\nCastable while moving",
         description: talentText`Deal 13% MAP + 119 ichor damage to up to 9 enemies within 30 feet of you every second.`,
       },
 	  "Vehement Blades": {
@@ -1301,11 +1304,26 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Puncture now applies Bleeding, Disarmed, Silenced, and Inevitable to target, but now has a 20 second cooldown.`,
       },
+	  "Split Artery": {
+        name: "Split Artery",
+        pos: "e3",
+        icon: icons["abi_he_festeringwound"],
+        maxRank: 3,
+        reqPoints: 0,
+        type: "passive",
+        description: talentText`Your Bleeding effects now deal ${[
+          50,
+          100,
+          150,
+          200,
+          250,
+        ]}% additional damage.`,
+      },
 	  "Serrated Blades": {
         name: "Serrated Blades",
-        pos: "e3",
+        pos: "c4",
         icon: icons["abi_de_slice"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Direct damage you deal has a ${[
@@ -1313,21 +1331,6 @@ export const data: TalentData = {
           30,
           45,
         ]}% chance to apply Bloody Mess to the target.\n\nBloody Mess stacks up to 8 times and reduces movement speed by 2% for 8 seconds per stack.`,
-      },
-	  "Khainemarked": {
-        name: "Khainemarked",
-        pos: "c4",
-        icon: icons["abi_de_khaineswithdrawal"],
-        maxRank: 2,
-        reqPoints: 5,
-        type: "passive",
-        description: talentText`Whenever you apply Bloody Mess to a target, you are healed for ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}% of your maximum health. This effect cannot trigger more than once every second.`,
       },
 	  "Improved Vigilance": {
         name: "Improved Vigilance",
@@ -1776,6 +1779,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
+		blue: "Frenzy",
         description: talentText`You gain a blessing for 10 seconds. For the duration, whenever you deal direct damage, you will deal an additional 13% SAP + 108 ichor damage.`,
       },
       "Elixir of the Cauldron": {
@@ -1874,7 +1878,7 @@ export const data: TalentData = {
       },
 	  "Elixir of Insane Power": {
         name: "Elixir of Insane Power",
-        pos: "c6",
+        pos: "e6",
         icon: icons["abi_de_flingpoison"],
         maxRank: 1,
         reqPoints: 15,
@@ -1911,7 +1915,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
         blue: "Frenzy",
-        description: talentText`Deals X% MAP + Y piercing damage every 0.33 seconds.`,
+        description: talentText`Deals 12% MAP + 161 piercing damage every 0.33 seconds.`,
       },
       "Transfer Essence": {
         name: "Transfer Essence",
@@ -1933,7 +1937,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you cast Elixir of the Cauldron, or Elixir of Insane Power, up to 9 enemies will be affected by Engage V. reducing their outgoing damage by 10% for 5 seconds.`,
+        description: talentText`Whenever you cast Elixir of the Cauldron, or Elixir of Insane Power, up to 9 enemies will be affected by Engage V, reducing their outgoing damage by 10% for 5 seconds.`,
       },
 	  "Bloodscourge": {
         name: "Bloodscourge",
@@ -1946,7 +1950,7 @@ export const data: TalentData = {
       },
 	  "Double the Pain": {
         name: "Double the Pain",
-        pos: "a6",
+        pos: "f6",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 15,
@@ -2017,7 +2021,7 @@ export const data: TalentData = {
         pos: "e5",
         icon: icons["abi_de_shadowprowler"],
         maxRank: 3,
-        reqPoints: 20,
+        reqPoints: 10,
         type: "passive",
         description: talentText`Whenever you are critically hit, you will gain a buff for 5 seconds. For the duration or until you dodge, you will gain ${[
           20,
@@ -2099,8 +2103,8 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "passive",
         description: talentText`Blood now has a maximum of ${[
-          13,
-          16,
+          12,
+          15,
           19,
           25,
         ]} stacks.`,
