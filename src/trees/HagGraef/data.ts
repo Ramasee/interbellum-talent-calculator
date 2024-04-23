@@ -1233,7 +1233,7 @@ export const data: TalentData = {
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 15,
-        prereq: "Essence Last",
+        prereq: "Essence Lash",
 		arrows: [
           { dir: "right-down", from: "g4", to: "g6" },
         ],
