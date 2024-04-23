@@ -1634,7 +1634,7 @@ export const data: TalentData = {
       "Purge the Weak": {
         name: "Purge the Weak",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_heartrendertoxin"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -1751,7 +1751,7 @@ export const data: TalentData = {
       },
       "Stalk": {
         name: "Stalk",
-        pos: "c1",
+        pos: "e1",
         icon: icons["abi_stalk"],
         maxRank: 0,
         reqPoints: 0,
@@ -1874,7 +1874,7 @@ export const data: TalentData = {
       "Bound by Contract": {
         name: "Bound by Contract",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_lacerate"],
         maxRank: 1,
         reqPoints: 30,
         type: "passive",
@@ -1883,7 +1883,7 @@ export const data: TalentData = {
       "Shroud of Darkness": {
         name: "Shroud of Darkness",
         pos: "f9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_sanguinaryextension"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -2018,10 +2018,6 @@ export const data: TalentData = {
         icon: icons["abi_de_juggernaut"],
         maxRank: 2,
         reqPoints: 15,
-        prereq: "Curse of Khaine",
-		arrows: [
-          { dir: "down", from: "b5", to: "b6" },
-        ],
         type: "passive",
         description: talentText`Curse of Khaine now always has a 5 second ${[
           "duration",
@@ -2046,7 +2042,7 @@ export const data: TalentData = {
 	  "Black-hearted Rogue": {
         name: "Black-hearted Rogue",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_de_drivenbyhate"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2075,7 +2071,7 @@ export const data: TalentData = {
       },
 	  "Ceremonial Weapons": {
         name: "Ceremonial Weapons",
-        pos: "e8",
+        pos: "d8",
         icon: icons["abi_de_umbralstrikes"],
         maxRank: 4,
         reqPoints: 25,
