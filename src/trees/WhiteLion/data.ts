@@ -1200,7 +1200,7 @@ export const data: TalentData = {
       "Defeaning Roar": {
         name: "Defeaning Roar",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_he_trainedtothreaten"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1743,7 +1743,7 @@ export const data: TalentData = {
       "Summon War Lion Lion": {
         name: "Summon War Lion Lion",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_bite"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1757,7 +1757,7 @@ export const data: TalentData = {
       "Kill Command": {
         name: "Kill Command",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_fangandclaw"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1895,7 +1895,7 @@ export const data: TalentData = {
       "Pack Assault": {
         name: "Pack Assault",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_he_packassault"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1994,7 +1994,7 @@ export const data: TalentData = {
 	  "Trained to Kill": {
         name: "Trained to Kill",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_he_throatbite"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
