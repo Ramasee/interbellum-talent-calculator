@@ -1586,7 +1586,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1716,7 +1716,7 @@ export const data: TalentData = {
       "Calming Wind": {
         name: "Calming Wind",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_disspatingenergies"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1772,7 +1772,7 @@ export const data: TalentData = {
       "Martial Prowess": {
         name: "Martial Prowess",
         pos: "f1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_challenge"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1855,7 +1855,7 @@ export const data: TalentData = {
 	  "Whispering Wind": {
         name: "Whispering Wind",
         pos: "c6",
-        icon: icons["noicon"],
+        icon: icons["abi_he_crushingadvance"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -1869,7 +1869,7 @@ export const data: TalentData = {
 	  "Graceful Strike": {
         name: "Graceful Strike",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_feyillusion"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1883,7 +1883,7 @@ export const data: TalentData = {
       "Gifts of Isha": {
         name: "Gifts of Isha",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_he_funnelenergy"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1972,7 +1972,7 @@ export const data: TalentData = {
 	  "Balanced Signing": {
         name: "Balanced Signing",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_he_firststrike"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -2001,7 +2001,7 @@ export const data: TalentData = {
         name: "The White Bulwark",
         pos: "e6",
         icon: icons["abi_he_shieldofvalor"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 15,
         type: "passive",
         description: talentText`All of your absorb effects are ${[
@@ -2047,7 +2047,7 @@ export const data: TalentData = {
 	  "Touched by the Everqueen": {
         name: "Touched by the Everqueen",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_he_naturesblade"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2060,7 +2060,7 @@ export const data: TalentData = {
 	  "Restorative Protections": {
         name: "Restorative Protections",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_guardofsteel"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -2070,8 +2070,7 @@ export const data: TalentData = {
           30,
           50,
         ]}% chance to apply 1 stack of Enhanced Healing Received.`,
-      },
-	  
+      },  
     },
   },
 };
