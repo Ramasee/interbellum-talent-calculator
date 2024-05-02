@@ -1870,10 +1870,6 @@ export const data: TalentData = {
         icon: icons["abi_he_shotofcynath"],
         maxRank: 1,
         reqPoints: 15,
-        prereq: "Spiral-Fletched Arrow",
-		arrows: [
-          { dir: "down", from: "g4", to: "g6" },
-        ],
         type: "skill",
         cost: "90 action points",
         range: "75ft range",
