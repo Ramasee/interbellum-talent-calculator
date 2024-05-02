@@ -441,7 +441,7 @@ export const data: TalentData = {
         pos: "g4",
         icon: icons["abi_he_spiralfletchedarrow"],
         maxRank: 1,
-        reqPoints: 1,
+        reqPoints: 5,
         type: "skill",
         cost: "75 action points",
         range: "75ft range",
@@ -681,10 +681,10 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Tar Arrow will now deal ichor damage equal to ${[
-          12,
-          24,
-          36,
-        ]}% + 253. `,
+          "7% RAP + 78",
+          "13% RAP + 177",
+          "20% RAP + 255",
+        ]}`,
       },
 	  "Extended Engagement": {
         name: "Exteneded Engagement",
@@ -909,7 +909,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specadvancedshield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1105,7 +1105,7 @@ export const data: TalentData = {
       "Blade Tap": {
         name: "Blade Tap",
         pos: "g1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_counterblow"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1146,7 +1146,7 @@ export const data: TalentData = {
         pos: "g4",
         icon: icons["abi_he_spiralfletchedarrow"],
         maxRank: 1,
-        reqPoints: 1,
+        reqPoints: 5,
         type: "skill",
         cost: "75 action points",
         range: "75ft range",
@@ -1183,7 +1183,7 @@ export const data: TalentData = {
 	  "Eye Shot": {
         name: "Eye Shot",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_closingshot"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
@@ -1271,7 +1271,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`While in Skirmish Stance you gain the benefits of Engage III and Band Together V.\n\nEngage III - Enemies that you deal direct damage to will have their outgoign damage reduced by 6% for 5 seconds.\n\nBand Together V - Groupmates within 30 feet of you will have their damage reduction increased bt 10%. This effect is surpressed for 5 seconds whenever you are hit by a single-target ability.`,
+        description: talentText`While in Skirmish Stance you gain the benefits of Engage III and Band Together V.\n\nEngage III - Enemies that you deal direct damage to will have their outgoing damage reduced by 6% for 5 seconds.\n\nBand Together V - Groupmates within 30 feet of you will have their damage reduction increased bt 10%. This effect is surpressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
 	  "Asur Riposte": {
         name: "Asur Riposte",
@@ -1285,7 +1285,7 @@ export const data: TalentData = {
 	  "Improved Marking": {
         name: "Improved Marking",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_he_vengenceofnagarthe"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -1299,7 +1299,7 @@ export const data: TalentData = {
 	  "Shattered Glass": {
         name: "Shattered Glass",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_he_criticalshot"],
         maxRank: 2,
         reqPoints: 5,
         type: "passive",
@@ -1329,7 +1329,7 @@ export const data: TalentData = {
 	  "Plant Feet": {
         name: "Plant Feet",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_he_scoutstance"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -1349,8 +1349,8 @@ export const data: TalentData = {
       },
 	  "Professional Soldier": {
         name: "Professional Soldier",
-        pos: "e5",
-        icon: icons["noicon"],
+        pos: "e6",
+        icon: icons["abi_he_multishot"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -1374,9 +1374,9 @@ export const data: TalentData = {
 	  "Beachhead Builder": {
         name: "Beachhead Builder",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_he_skirmishstance"],
         maxRank: 5,
-        reqPoints: 2,
+        reqPoints: 20,
         type: "passive",
         description: talentText`While in Skirmish Stance, you will have ${[
           3,
@@ -1389,23 +1389,23 @@ export const data: TalentData = {
           "-2",
           "-1",
           "0",
-          "1",
+          "+1",
         ]} mass.`,
       },
 	  "Storm Riders": {
         name: "Storm Riders",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_assaultstance"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Each time you attack an enemy while in Assautl Stance, you will apply ${[
+        description: talentText`Each time you attack an enemy while in Assault Stance, you will apply ${[
           1,
           2,
           3,
           4,
           5,
-        ]} out of 4 effects to them. Reduced Impact Resistance; Reduced Corporeal Resistance; Reduced Elemental Resistance; or Reduced Spiritual Resistance.`,
+        ]} out of 4 effects to them.\n\nReduced Impact Resistance; Reduced Corporeal Resistance; Reduced Elemental Resistance; or Reduced Spiritual Resistance.`,
       },	  
     },
   },
@@ -1606,7 +1606,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specdualwield"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1736,7 +1736,7 @@ export const data: TalentData = {
       "Blade Tap": {
         name: "Blade Tap",
         pos: "b1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_counterblow"],
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
@@ -1841,7 +1841,7 @@ export const data: TalentData = {
 	  "Sweeping Slash": {
         name: "Sweeping Slash",
         pos: "g4",
-        icon: icons["noicon"],
+        icon: icons["abi_he_sweepingslash"],
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
@@ -1854,7 +1854,7 @@ export const data: TalentData = {
 	  "Draw Blood": {
         name: "Draw Blood",
         pos: "h5",
-        icon: icons["noicon"],
+        icon: icons["abi_he_drawblood"],
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
@@ -1880,9 +1880,9 @@ export const data: TalentData = {
 	  "Double Tap": {
         name: "Double Tap",
         pos: "d8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_unsuspectingstrike"],
         maxRank: 1,
-        reqPoints: 20,
+        reqPoints: 25,
         type: "skill",
         cost: "30 action points",
         range: "8ft range",
@@ -1894,7 +1894,7 @@ export const data: TalentData = {
       "Harpoon Arrow": {
         name: "Harpoon Arrow",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_he_arteryshot"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1988,7 +1988,7 @@ export const data: TalentData = {
 	  "Commando": {
         name: "Commando",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_he_shadowssting"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -2001,9 +2001,9 @@ export const data: TalentData = {
 	  "Retreat into Shadows": {
         name: "Retreat into Shadows",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_stalk"],
         maxRank: 2,
-        reqPoints: 0,
+        reqPoints: 5,
         type: "passive",
         description: talentText`Your movement speed is increased by ${[
           7,
@@ -2041,7 +2041,7 @@ export const data: TalentData = {
 	  "Plant Feet": {
         name: "Plant Feet",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_he_scoutstance"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2062,7 +2062,7 @@ export const data: TalentData = {
 	  "Sustained Assault": {
         name: "Sustained Assault",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_he_brutalassault"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2080,15 +2080,15 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Tar Arrow will now deal ichor damage equal to ${[
-          12,
-          24,
-          36,
-        ]}% + 253. `,
+          "7% RAP + 78",
+          "13% RAP + 177",
+          "20% RAP + 255",
+        ]}`,
       },
 	  "Combined Arms": {
         name: "Combined Arms",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_exploitweakness"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
