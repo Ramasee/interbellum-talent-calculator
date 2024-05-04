@@ -1196,7 +1196,7 @@ export const data: TalentData = {
       "Leading Shot": {
         name: "Leading Shot",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_he_acidarrow"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1889,7 +1889,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Off the GCD",
-        description: talentText`Deals 8% MAP + 108 ichor damage to target enemy.`,
+        description: talentText`Deals 16% MAP + 216 ichor damage to target enemy.`,
       },
       "Harpoon Arrow": {
         name: "Harpoon Arrow",
@@ -1981,7 +1981,7 @@ export const data: TalentData = {
         pos: "f8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
-        reqPoints: 0,
+        reqPoints: 25,
         type: "career tactic",
         description: talentText`Skirmish Stance now removes 3.0s cast time from all your abilities.`,
       },
