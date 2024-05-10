@@ -516,7 +516,7 @@ export const data: TalentData = {
         range: "self",
         cast: "2.0s cast",
         cooldown: "30s cooldown",
-        description: talentText`Fire an arrow 65 feet in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
+        description: talentText`Fire an arrow 30 feet wide, 65 feet long in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
       },
 	  "Smokebomb": {
         name: "Smokebomb",
@@ -1217,7 +1217,7 @@ export const data: TalentData = {
         range: "self",
         cast: "2.0s cast",
         cooldown: "30s cooldown",
-        description: talentText`Fire an arrow 65 feet in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
+        description: talentText`Fire an arrow 30 feet wide, 65 feet long in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
       },
 	  "Smokebomb": {
         name: "Smokebomb",
@@ -1916,7 +1916,7 @@ export const data: TalentData = {
         range: "self",
         cast: "2.0s cast",
         cooldown: "30s cooldown",
-        description: talentText`Fire an arrow 65 feet in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
+        description: talentText`Fire an arrow 30 feet wide, 65 feet long in front of you. First enemy hit takes 5% RAP + 50 piercing damage. Each subsequent enemy takes additional damage.`,
       },
 	  "Starmetal Blade": {
         name: "Starmetal Blade",
