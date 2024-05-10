@@ -1422,7 +1422,7 @@ export const data: TalentData = {
         description: talentText`Whenever you augment Lightning Bolt or Urannon's Thunderbolt, it will apply a 2 second debuff to targets hit. At the end of the duration, the target will take ${[
           "2% SAP + 27",
           "4% SAP + 54",
-          "6% SAP + 81,
+          "6% SAP + 81",
         ]} spiritual damage. This effect can critically hit and triggers Shocked.`,
       },
 	  "Aftershock": {
