@@ -1634,7 +1634,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1777,7 +1777,7 @@ export const data: TalentData = {
       "Boon of Hysh": {
         name: "Boon of Hysh",
         pos: "c1",
-        icon: icons["noicon"],
+        icon: icons["abi_he_boonofhyshr"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1928,7 +1928,7 @@ export const data: TalentData = {
 	  "Healing Energy": {
         name: "Healing Energy",
         pos: "d9",
-        icon: icons["abi_he_blessingofisha"],
+        icon: icons["abi_he_healingenergy"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -2026,7 +2026,7 @@ export const data: TalentData = {
 	  "Lightbloom": {
         name: "Lightbloom",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_he_blessingofisha"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
@@ -2055,7 +2055,7 @@ export const data: TalentData = {
 	  "Enlightenment": {
         name: "Enlightenment",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_he_embodimentofminaith"],
         maxRank: 1,
         reqPoints: 10,
         type: "passive",
@@ -2076,7 +2076,7 @@ export const data: TalentData = {
 	  "Speed of Light": {
         name: "Speed of Light",
         pos: "e6",
-        icon: icons["noicon"],
+        icon: icons["abi_he_boonofhyshr"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2091,7 +2091,7 @@ export const data: TalentData = {
 	  "Inspiration": {
         name: "Inspiration",
         pos: "c7",
-        icon: icons["noicon"],
+        icon: icons["abi_he_lawofgold"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2117,7 +2117,7 @@ export const data: TalentData = {
 	  "Purifying Lights": {
         name: "Purifying Lights",
         pos: "g8",
-        icon: icons["noicon"],
+        icon: icons["abi_he_magicalinfusion"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
