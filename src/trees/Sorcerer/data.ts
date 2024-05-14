@@ -907,7 +907,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specpolearm"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1132,7 +1132,7 @@ export const data: TalentData = {
       "Pann's Impenetrable Pelt": {
         name: "Pann's Impenetrable Pelt",
         pos: "i1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_whirlinglaceration"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1173,7 +1173,7 @@ export const data: TalentData = {
 	  "Bestial Surge": {
         name: "Bestial Surge",
         pos: "h6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_impendingdoom"],
         maxRank: 1,
         reqPoints: 15,
         type: "spell",
@@ -1187,7 +1187,7 @@ export const data: TalentData = {
 	  "Okkham's Mindrazor": {
         name: "Okkham's Mindrazor",
         pos: "c8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_surgingpain"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1201,7 +1201,7 @@ export const data: TalentData = {
       "Transformation of Kadon": {
         name: "Transformation of Kadon",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_overwhelmingdread"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
@@ -1295,7 +1295,7 @@ export const data: TalentData = {
 	  "Wings of the Falcon": {
         name: "Wings of the Falcon",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_de_consumeresolve"],
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
@@ -1309,7 +1309,7 @@ export const data: TalentData = {
 	  "Embodiment of Ghur": {
         name: "Embodiment of Ghur",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_de_consumestrength"],
         maxRank: 1,
         reqPoints: 5,
         type: "passive",
@@ -1332,7 +1332,7 @@ export const data: TalentData = {
 	  "Amber Trance": {
         name: "Amber Trance",
         pos: "d6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_fleetfooted"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
@@ -1344,7 +1344,7 @@ export const data: TalentData = {
 	  "Vengeful Hood": {
         name: "Vengeful Hood",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_windwovenshell"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -1372,7 +1372,7 @@ export const data: TalentData = {
 	  "Flock of Doom": {
         name: "Flock of Doom",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_de_shadesofdeath"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -1385,7 +1385,7 @@ export const data: TalentData = {
 	  "The Beast Unleashed": {
         name: "The Beast Unleashed",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_cripplingterror"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -1596,7 +1596,7 @@ export const data: TalentData = {
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
         pos: "e2",
-        icon: icons["noicon"],
+        icon: icons["skl_specstaff"],
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
@@ -1752,7 +1752,7 @@ export const data: TalentData = {
       "Morr's Peace": {
         name: "Morr's Peace",
         pos: "d1",
-        icon: icons["noicon"],
+        icon: icons["abi_de_bestowvitality"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
@@ -1848,7 +1848,7 @@ export const data: TalentData = {
 	  "Okkham's Mindrazor": {
         name: "Okkham's Mindrazor",
         pos: "h5",
-        icon: icons["noicon"],
+        icon: icons["abi_de_surgingpain"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
@@ -1876,7 +1876,7 @@ export const data: TalentData = {
 	  "Pann's Impenetrable Pelt": {
         name: "Pann's Impenetrable Pelt",
         pos: "f8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_whirlinglaceration"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
@@ -1890,7 +1890,7 @@ export const data: TalentData = {
       "Amanrath": {
         name: "Amanrath",
         pos: "d9",
-        icon: icons["noicon"],
+        icon: icons["abi_de_bloodoffering"],
         maxRank: 1,
         reqPoints: 30,
         type: "spell",
@@ -1961,7 +1961,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Soul Harvest deals 50% additional damage but not longer has innate lifetap.`,
+        description: talentText`Soul Harvest deals 50% additional damage but no longer has innate lifetap.`,
       },
 	  "Purple Pall of Shyish": {
         name: "Purple Pall of Shyish",
@@ -1970,7 +1970,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you augment a Lore of Death spell, you will gain a blessing for 8 seconds. For the duratin absorb up to 11% RP + 149 damage.`,
+        description: talentText`Whenever you augment a Lore of Death spell, you will gain a blessing for 8 seconds. For the duration, absorb up to 11% RP + 149 damage.`,
       },
 	  "Master of Shyish": {
         name: "Master of Shyish",
@@ -1984,7 +1984,7 @@ export const data: TalentData = {
 	  "Embodiment of Shyish": {
         name: "Embodiment of Shyish",
         pos: "e3",
-        icon: icons["noicon"],
+        icon: icons["abi_de_consumeessence"],
         maxRank: 2,
         reqPoints: 0,
         type: "passive",
@@ -1996,14 +1996,9 @@ export const data: TalentData = {
 	  "Aspect of the Dreadknight": {
         name: "Aspect of the Dreadknight",
         pos: "c4",
-        icon: icons["noicon"],
+        icon: icons["abi_de_daemonicchill"],
         maxRank: 4,
         reqPoints: 5,
-        prereq: "Wounds",
-		arrows: [
-          { dir: "right-down", from: "e6", to: "f6" },
-          { dir: "right-down-down", from: "f6", to: "f8" }
-        ],
         type: "passive",
         description: talentText`Aspect of the Dreadknight will now heal for ${[
           16,
@@ -2043,7 +2038,7 @@ export const data: TalentData = {
 	  "Acceptance of Fate": {
         name: "Acceptance of Fate",
         pos: "f6",
-        icon: icons["noicon"],
+        icon: icons["abi_de_bestowvitality"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -2072,7 +2067,7 @@ export const data: TalentData = {
 	  "Final Words": {
         name: "Final Words",
         pos: "g7",
-        icon: icons["noicon"],
+        icon: icons["abi_de_consumewill"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
@@ -2085,7 +2080,7 @@ export const data: TalentData = {
 	  "Spirit Leech": {
         name: "Spirit Leech",
         pos: "e8",
-        icon: icons["noicon"],
+        icon: icons["abi_de_handofruin"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
@@ -2094,7 +2089,7 @@ export const data: TalentData = {
           16,
           24,
           32,
-        ]} less damage but will heal your defensive target for ${[
+        ]}% less damage but will heal your defensive target for ${[
           15,
           45,
           90,
