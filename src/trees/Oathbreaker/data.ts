@@ -25,7 +25,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 1,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -55,7 +55,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -70,7 +70,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -85,7 +85,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -100,7 +100,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Whenever you die, you are instantly ressurected to 2000 health and deal 10% MAP + 150 impact damage to up to 24 enemeies within 30 feet. This effect can only happen once every 90 seconds.`,
+        description: talentText`Whenever you die, you are instantly ressurected to 2000 health and deal 10% MAP + 150 impact damage to up to 24 enemies within 30 feet. This effect can only happen once every 90 seconds.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 15% MAP impact damage.`,
+        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 10% MAP + 100 indirect, impact damage.`,
       },
       "Even the Odds": {
         name: "Even the Odds",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Gain a buff for 20 seconds. Every second you gain 20 rage and 1 Bloodthirst; you gain 33% damage reduction for the duration.`,
+        description: talentText`Gain a buff for 20 seconds. Every second, you gain 20 rage and 1 Bloodthirst; you gain 33% damage reduction for the duration.`,
       },
 	  "Sever Nerve": {
         name: "Sever Nerve",
@@ -274,7 +274,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
@@ -292,7 +292,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Rage",
-        description: talentText`Deals 18% MAP + 232 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        description: talentText`Deals 18% MAP + 232 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
       },
       "Fueled by Violence": {
         name: "Fueled by Violence",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "2s cooldown",
         blue: "Off the GCD\nCosts 50 Rage",
-        description: talentText`Generates 75 action points and 1 Bloodthirst.`,
+        description: talentText`Generates 55 action points and 1 Bloodthirst.`,
       },
       "Anklecrusher": {
         name: "Anklecrusher",
@@ -449,7 +449,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Devastate": {
         name: "Devastate",
@@ -458,12 +458,12 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "skill",
-        cost: "80 action points",
+        cost: "no cost",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Rage",
-        description: talentText`Deals 37% MAP + 492 piercing damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
+        description: talentText`Deals 37% MAP + 492 piercing damage to target enemy. Generates 1 Bloodthirst.`,
       },
 	  "Wild Swing": {
         name: "Wild Swing",
@@ -550,7 +550,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Each stack of Bloodthirst now generates 2 Rage per second but reduces your adrenaline per second by 1.`,
+        description: talentText`Each stack of Bloodthirst now generates 2 Rage per second but reduces your adrenaline regen by 1.`,
       },
 	  "Crushing Force": {
         name: "Crushing Force",
@@ -570,10 +570,10 @@ export const data: TalentData = {
         prereq: "Reckless Gamble",
 		arrows: [{ dir: "down", from: "b6", to: "b7" }],
         type: "career tactic",
-        description: talentText`Deals 3% MAP + 50 impact damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
+        description: talentText`Deals 3% MAP + 50 indirect, impact damage every 3 seconds to yourself and up to 9 enemies within 30 feet of you for each stack of Bloodthirst you have.`,
       },
-	  "Massacre": {
-        name: "Massacre",
+	  "Extended Battle": {
+        name: "Extended Battle",
         pos: "g8",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -581,13 +581,13 @@ export const data: TalentData = {
         prereq: "Wild Swing",
 		arrows: [{ dir: "down", from: "g6", to: "g8" }],
         type: "career tactic",
-        description: talentText`Flurry and Wild Swing will now hit up to 24 enemies.`,
+        description: talentText`Flurry, Slam, and Wild Swing will now hit up to 24 enemies.`,
       },
 	  "Fierce Might": {
         name: "Fierce Might",
         pos: "e3",
         icon: icons["abi_dw_face07"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Gain ${[
@@ -597,11 +597,23 @@ export const data: TalentData = {
           4,
         ]}% chance to critically hit for each stack of Bloodthirst.`,
       },
-	  "Hack and Slash": {
-        name: "Hack and Slash",
+	  "Doomseeker": {
+        name: "Doomseeker",
+        pos: "c4",
+        icon: icons["abi_dw_fierceness"],
+        maxRank: 2,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Your outgoing damage is increased by ${[
+          8,
+          16,
+        ]}% whenever you are below 40% health.`,
+      },
+	  "The Slayer Oath": {
+        name: "The Slayer Oath",
         pos: "e5",
         icon: icons["abi_dw_melee11"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Grimnir's Fury now generates ${[
@@ -628,7 +640,7 @@ export const data: TalentData = {
           8,
           12,
           16,
-        ]}% MAP indirect ichor damage to them as well. You will deal half this amount to yourself.`,
+        ]}% MAP indirect, ichor damage to them as well. You will deal half this amount to yourself.`,
       },
 	  "Improved Vigilance": {
         name: "Improved Vigilance",
@@ -651,9 +663,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Fueled by Violence now generates ${[
-          90,
-          105,
-          120,
+          70,
+          85,
+          100,
         ]} action points.`,
       },
 	  "Wilder Swing": {
@@ -669,9 +681,9 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`Wild Swing deals ${[
-          8,
-          16,
-          24,
+          5,
+          10,
+          15,
         ]}% more damage.`,
       },
       "Power Through": {
@@ -682,9 +694,9 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "passive",
         description: talentText`Whenever you are attacked you have a ${[
-          10,
-          20,
-          30,
+          4,
+          12,
+          24,
           40,
         ]}% chance to gain 1 stack of Enhanced Initiative.`,
       },
@@ -708,7 +720,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 1,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -738,7 +750,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -753,7 +765,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -768,7 +780,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -783,7 +795,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -798,7 +810,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -905,7 +917,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 15% MAP impact damage.`,
+        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 10% MAP + 100 indirect, impact damage.`,
       },
       "Even the Odds": {
         name: "Even the Odds",
@@ -957,11 +969,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -975,7 +987,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -989,7 +1001,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -1003,7 +1015,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Rage and Bloodthirst": {
         name: "Rage and Bloodthirst",
@@ -1034,12 +1046,12 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "80 action points",
+        cost: "no cost",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Rage",
-        description: talentText`Deals 37% MAP + 492 piercing damage to target enemy. Generates 1 Bloodthirst and sets your Rage to 0.`,
+        description: talentText`Deals 28% MAP + 369 piercing damage to target enemy. Generates 1 Bloodthirst.`,
       },
       "Heavy Blow": {
         name: "Heavy Blow",
@@ -1106,7 +1118,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "2s cooldown",
         blue: "Off the GCD\nCosts 50 Rage",
-        description: talentText`Generates 75 action points and 1 Bloodthirst.`,
+        description: talentText`Generates 55 action points and 1 Bloodthirst.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1132,10 +1144,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 1": {
-        name: "Ability 1",
+	  "Deep Wound": {
+        name: "Deep Wound",
         pos: "c5",
         icon: icons["abi_dw_melee01"],
         maxRank: 1,
@@ -1146,7 +1158,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
-        description: talentText`Applies a 9 second affliction to target enemy stacking up to 3 times. Every 3 seconds, the target takes 20% MAP + 280 ichor damage.`,
+        description: talentText`Applies a 9 second affliction to target enemy stacking up to 3 times. Every 3 seconds, the target takes 23% MAP + 314 indirect, ichor damage.`,
       },
 	  "Wild Swing": {
         name: "Wild Swing",
@@ -1164,8 +1176,8 @@ export const data: TalentData = {
         blue: "Costs Bloodthirst",
         description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 2": {
-        name: "Ability 2",
+	  "Grievous Harm": {
+        name: "Grevious Harm",
         pos: "e8",
         icon: icons["abi_dw_pulverizingstrike"],
         maxRank: 1,
@@ -1175,11 +1187,11 @@ export const data: TalentData = {
         range: "30ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 30 Rage",
-        description: talentText`Applies a 6 second affliction on target enemy. Deals 28% MAP + 358 ichor damage to them at the end of the duration and generates 1 Bloodthirst for you.`,
+        blue: "Costs 40 Rage",
+        description: talentText`Applies a 6 second cripple on target enemy. Deals 25% MAP + 346 indirect, ichor damage to them at the end of the duration and generates 1 Bloodthirst for you.`,
       },
-      "Capstone Passive 2": {
-        name: "Capstone Passive 2",
+      "The Harder They Fall": {
+        name: "The Harder They Fall",
         pos: "d9",
         icon: icons["abi_dw_perilousassault"],
         maxRank: 1,
@@ -1218,26 +1230,28 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you hit an enemy you are flanking, you will gain a buff for 2 seconds. For the duration, you will gain outgoing damage equal to 100% of your accuracy.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Violent Impacts": {
+        name: "Violent Impacts",
         pos: "c6",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 15,
+		prereq: "Deep Wound",
+        arrows: [{ dir: "down", from: "c5", to: "c6" }],
         type: "career tactic",
-        description: talentText`Cave-In will generate 1 Bloodthirst and deal 17% MAP + 227 impact damage.`,
+        description: talentText`Deep Wound and Grevious Harm can now critically hit.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Pulverize": {
+        name: "Pulverize",
         pos: "f6",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Fueled by Violence now grants an additional Bloodthirst.`,
+        description: talentText`Devestate now grants an additional Bloodthirst.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Breaking Point": {
+        name: "Breaking Point",
         pos: "a7",
         icon: icons["tac_spec_5"],
         maxRank: 1,
@@ -1245,8 +1259,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you hit an enemy with 40% or less health, you will apply a 5 second cripple to them. For the duration, they have -20% healing received.`,
       },
-	  "Massacre": {
-        name: "Massacre",
+	  "Extended Battle": {
+        name: "Extended Battle",
         pos: "g7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1254,10 +1268,10 @@ export const data: TalentData = {
         prereq: "Wild Swing",
 		arrows: [{ dir: "down", from: "g6", to: "g7" }],
         type: "career tactic",
-        description: talentText`Flurry and Wild Swing will now hit up to 24 enemies.`,
+        description: talentText`Flurry, Slam, and Wild Swing will now hit up to 24 enemies.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Deadly Determination": {
+        name: "Deadly Determination",
         pos: "f8",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1265,25 +1279,36 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you drop below 25% health, gain a 5 second blessing. This effect can only happen once every 60 seconds. For the duration, gain 30% outgoing damage, 100% damage reduction, -100% outgoing healing, and -100% healing received.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "The Bigger They Are": {
+        name: "The Bigger They Are",
         pos: "e3",
         icon: icons["abi_dw_retribution"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Gain ${[
-          500,
-          1000,
-          1500,
+          666,
+          1333,
           2000,
         ]} potency for 4 seconds stacking up to 5 times whenever you spend Bloodthirst.`,
       },
-	  "Hack and Slash": {
-        name: "Hack and Slash",
+	  "Doomseeker": {
+        name: "Doomseeker",
+        pos: "c4",
+        icon: icons["abi_dw_fierceness"],
+        maxRank: 2,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Your outgoing damage is increased by ${[
+          8,
+          16,
+        ]}% whenever you are below 40% health.`,
+      },
+	  "The Slayer Oath": {
+        name: "The Slayer Oath",
         pos: "e5",
         icon: icons["abi_dw_melee11"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Grimnir's Fury now generates ${[
@@ -1306,9 +1331,9 @@ export const data: TalentData = {
         reqPoints: 15,
         type: "passive",
         description: talentText`Fueled by Violence now generates ${[
-          90,
-          105,
-          120,
+          70,
+          85,
+          100,
         ]} action points.`,
       },
 	  "Extra Crit": {
@@ -1352,24 +1377,24 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`Wild Swing deals ${[
-          8,
-          16,
-          24,
+          5,
+          10,
+          15,
         ]}% more damage.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Enervating Blow": {
+        name: "Enervating Blow",
         pos: "d8",
         icon: icons["abi_dw_grievousharm"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Deathblow has a ${[
-          10,
-          20,
-          30,
-          40,
-        ]}% chance to generate Bloodthirst.`,
+        description: talentText`Deathblow and Wild Swing now apply ${[
+          1,
+          2,
+          3,
+          4,
+        ]} stacks of a 15 second buff. At 12 stacks, all stacks are removed and you gain 1 Bloodthirst.`,
       },
     },
   },
@@ -1391,7 +1416,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1436,7 +1461,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1451,7 +1476,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 3,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1481,7 +1506,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1496,7 +1521,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1588,7 +1613,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 15% MAP impact damage.`,
+        description: talentText`For 60 seconds, the next 8 basic attacks you do will deal an additional 10% MAP + 100 indirect, impact damage.`,
       },
       "Even the Odds": {
         name: "Even the Odds",
@@ -1644,7 +1669,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -1654,7 +1679,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
@@ -1672,7 +1697,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -1686,7 +1711,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "Rage and Bloodthirst": {
         name: "Rage and Bloodthirst",
@@ -1705,7 +1730,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         description: talentText`(Basic Attack) Deal 4% MAP + 30 impact damage to target enemy. Generates 22 action points.`,
@@ -1722,7 +1747,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "2s cooldown",
         blue: "Off the GCD\nCosts 50 Rage",
-        description: talentText`Generates 75 action points and 1 Bloodthirst.`,
+        description: talentText`Generates 55 action points and 1 Bloodthirst.`,
       },
       "Heavy Blow": {
         name: "Heavy Blow",
@@ -1737,8 +1762,8 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Deals 26% MAP + 348 piercing damage to target enemy.`,
       },
-      "Ability 4": {
-        name: "Ability 4",
+      "Rune of Absorption": {
+        name: "Rune of Absorption",
         pos: "e1",
         icon: icons["abi_dw_figure11"],
         maxRank: 0,
@@ -1748,8 +1773,8 @@ export const data: TalentData = {
         range: "30ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 30 Rage",
-        description: talentText`Apply a 5 second enchantment to target ally. For the duration, they will absorb up to 21% RP + 277 damage. Also apply a 5 second blessing to target ally. For the duration, they gain toughness equal to 50% of your toughness.`,
+        blue: "Costs 30 Rage\nOff the GCD",
+        description: talentText`Apply a 5 second enchantment to target ally. For the duration, they will absorb up to 21% RP + 277 damage. Also apply a 5 second blessing to target ally. For the duration, they gain toughness equal to 50% of your toughness. This counts as a guard effect.`,
       },
       "Anklecrusher": {
         name: "Anklecrusher",
@@ -1777,8 +1802,8 @@ export const data: TalentData = {
         cooldown: "10s cooldown",
         description: talentText`Knocks target enemy away from you.`,
       },
-      "Ability 5": {
-        name: "Ability 5",
+      "Untouchable": {
+        name: "Untouchable",
         pos: "h1",
         icon: icons["abi_dw_figure03"],
         maxRank: 0,
@@ -1812,11 +1837,11 @@ export const data: TalentData = {
         reqPoints: 5,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Rage",
-        description: talentText`Deals 18% MAP + 232 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        description: talentText`Deals 18% MAP + 232 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
       },
 	  "Cave-In": {
         name: "Cave-In",
@@ -1826,7 +1851,7 @@ export const data: TalentData = {
         reqPoints: 10,
         type: "skill",
         cost: "60 action points",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents the application of Knocked-down and Staggered for 30 seconds.`,
@@ -1853,14 +1878,14 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs Bloodthirst",
         description: talentText`Deals 44% MAP + 590 impact damage to target enemy.`,
       },
-	  "Capstone Passive 1": {
-        name: "Capstone Passive 1",
+	  "Retribution": {
+        name: "Retribution",
         pos: "d9",
         icon: icons["abi_dw_untouchable"],
         maxRank: 1,
@@ -1890,8 +1915,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Vigilance will now set your Rage to 0 and generate 1 Bloodthirst.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "Blood of Grimnir": {
+        name: "Blood of Grimnir",
         pos: "g5",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1908,8 +1933,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Your action point costs are reduced by 20% whenever you are Furious and by 40% whenever you are Berserk. Enemies that attack you gain 5 action points.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Gudrun's Warcry": {
+        name: "Gudrun's Warcry",
         pos: "g6",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -1917,14 +1942,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Fueled by Violence now grants an additional Bloodthirst.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Can't Touch This": {
+        name: "Can't Touch This",
         pos: "b7",
         icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Ability 4 will now only cost 1 Bloodthirst, but always lasts 4 seconds and has a 10 second cooldown.`,
+        description: talentText`Untouchable will now only cost 1 Bloodthirst and always lasts 4 seconds, but has a 10 second cooldown.`,
       },
 	  "Crushing Force": {
         name: "Crushing Force",
@@ -1939,8 +1964,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Cleft in Twain will deal 50% additional damage to a target that has casted an active Guard effect.`,
       },
-	  "Tactic 7": {
-        name: "Tactic 7",
+	  "Taking Chances": {
+        name: "Taking Chances",
         pos: "f8",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1948,12 +1973,12 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Your mechanic no longer grants you penetration or melee attack power. Instead, groupmates within 30 feet of you will gain stats equal to half of what you lost.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
-        pos: "e3",
+	  "No Escape": {
+        name: "No Escape",
+        pos: "b4",
         icon: icons["abi_dw_madness"],
         maxRank: 2,
-        reqPoints: 0,
+        reqPoints: 5,
         type: "passive",
         description: talentText`You gain ${[
           1,
@@ -1963,12 +1988,12 @@ export const data: TalentData = {
           5,
         ]}% accuracy per stack of Bloodthrist.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
-        pos: "b4",
+	  "Oaths of Old": {
+        name: "Oaths of Old",
+        pos: "e5",
         icon: icons["abi_dw_oathfriend"],
         maxRank: 3,
-        reqPoints: 5,
+        reqPoints: 10,
         type: "passive",
         description: talentText`You gain restoration power equal to ${[
           10,
@@ -1978,12 +2003,12 @@ export const data: TalentData = {
           50,
         ]}% of your melee attack power.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
-        pos: "e5",
+	  "Looks Like a Challenge": {
+        name: "Looks Like a Challenge",
+        pos: "e3",
         icon: icons["abi_dw_gudrunswarcry"],
         maxRank: 3,
-        reqPoints: 10,
+        reqPoints: 0,
         type: "passive",
         description: talentText`Whenever you spend Rage, you have a ${[
           33,
@@ -1991,8 +2016,8 @@ export const data: TalentData = {
           100,
         ]}% chance to gain 1 stack of Enhanced Initiative, Weaponskill, or Willpower.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Embrace the Pain": {
+        name: "Embrace the Pain",
         pos: "d6",
         icon: icons["abi_dw_hand04"],
         maxRank: 2,
@@ -2026,9 +2051,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Fueled by Violence now generates ${[
-          90,
-          105,
-          120,
+          70,
+          85,
+          100,
         ]} action points.`,
       },
 	  "Engage": {
@@ -2044,8 +2069,8 @@ export const data: TalentData = {
           6,
         ]}% for 5 seconds.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Numbing Strikes": {
+        name: "Numbing Strikes",
         pos: "e8",
         icon: icons["abi_dw_melee14"],
         maxRank: 4,
@@ -2056,14 +2081,14 @@ export const data: TalentData = {
         ],
         type: "passive",
         description: talentText`You have a ${[
-          25,
-          50,
-          75,
+          10,
+          30,
+          60,
           100,
         ]}% chance when you hit an enemy with Deathblow and a ${[
-          10,
-          20,
-          30,
+          4,
+          12,
+          24,
           40,
         ]} when you hit an enemy with Wild Swing to apply a stack of Reduced Strength to the target.`,
       },
