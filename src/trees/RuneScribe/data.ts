@@ -55,7 +55,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -70,7 +70,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -85,7 +85,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -145,7 +145,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Call upon Divine intervention to heal your friends and shield them from harm. All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`Call upon Divine intervention to heal your friends and shield them from harm. All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Change the fate of your companions undoing all bodily harm. Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Change the fate of your companions undoing all bodily harm. Removes all ailments and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
       "Rune of Sanctuary": {
         name: "Rune of Sanctuary",
@@ -292,7 +292,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Once activated this rune breaks the enemies' fighting spirit. Applies a debuff to up to 9 enemies within a 20 foot area you select. For the next 10 seconds, they will have their adenaline per second reduced by 18.`,
+        description: talentText`Once activated this rune breaks the enemies' fighting spirit. Applies a debuff to up to 9 enemies within a 20 foot area you select. For the next 10 seconds, they will have their adenaline regen reduced by 18.`,
       },
       "Dwarven Sprint": {
         name: "Dwarven Sprint",
@@ -370,7 +370,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
 		blue: "Grimnir Rune",
-        description: talentText`Unleash merciless flames stored within your runes to immolate your foe. Deals 33% SAP + 455 elemental damage to target enemy.\n\nAugmented: deals additional damage equal to 15% SAP.`,
+        description: talentText`Unleash merciless flames stored within your runes to immolate your foe. Deals 33% SAP + 455 elemental damage to target enemy.\n\nAugmented: deals 25% more damage.`,
       },
       "Rune of Mending": {
         name: "Rune of Mending",
@@ -384,7 +384,7 @@ export const data: TalentData = {
         cast: "2.5s cast",
         cooldown: "no cooldown",
         blue: "Valaya Rune",
-        description: talentText`Your rune releases a powerful restorative burst. that heal your allies. Restore 37% RP + 490 health to target ally. \n\nAugmented: restore 42% RP + 573 health instead.`,
+        description: talentText`Your rune releases a powerful restorative burst. that heal your allies. Restore 46% RP + 611 health to target ally. \n\nAugmented: heals for an additional 25%.`,
       },
       "Rune of Gifting": {
         name: "Rune of Gifting",
@@ -425,7 +425,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Allies fighting with this rune active will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 5% MAP + 49 piercing damage.\n\nAugmented: Ability has no cooldown.`,
+        description: talentText`Allies fighting with this rune active will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 7% MAP + 88 indirect, piercing damage.\n\nAugmented: Ability has no cooldown.`,
       },
       "Thousand Yard Stare": {
         name: "Thousand Yard Stare",
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "1.25s cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`You ravage the enemy with your rune, ripping out their life force and using it to restore vitality to an ally. Deals 8% SAP + 110 elemental damage to target enemy. Your defensive target is healed for 150% of the damage you deal.\n\nAugmented: your defensive target will now be healed for 200% of the damage you deal.`,
+        description: talentText`You ravage the enemy with your rune, ripping out their life force and using it to restore vitality to an ally. Deals 9% SAP + 135 elemental damage to target enemy. Your defensive target is healed for 150% of the damage you deal.\n\nAugmented: your defensive target will now be healed for 200% of the damage you deal.`,
       },
 	  "Rune of Shielding": {
         name: "Rune of Shielding",
@@ -466,7 +466,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "8s cooldown",
         blue: "Valaya Rune",
-        description: talentText`Activate Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 25% RP + 312 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
+        description: talentText`Activate Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 26% RP + 359 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
       },
 	  "Rune of Immolation": {
         name: "Rune of Immolation",
@@ -480,7 +480,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 9% SAP + 128 elemental damage.\n\nAugmented: the effect is now a cripple.`,
+        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 10% SAP + 132 indirect, elemental damage.\n\nAugmented: the effect is now a cripple.`,
       },
 	  "Rune of Hakka-Dron": {
         name: "Rune of Hakka-Dron",
@@ -494,7 +494,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 5% SAP + 81 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
+        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 6% SAP + 89 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
       },
       "Rune of the Furnace": {
         name: "Rune of the Furnace",
@@ -562,7 +562,7 @@ export const data: TalentData = {
           { dir: "down", from: "g5", to: "g6" },
         ],
         type: "career tactic",
-        description: talentText`The healing powers from this rune spread to allies when broken. Rune of Shielding will restore 5% RP + 87 health to up to 24 allies within 30 feet whenever it breaks.`,
+        description: talentText`The healing powers from this rune spread to allies when broken. Rune of Shielding will restore 5% RP + 59 health to up to 24 allies within 30 feet whenever it breaks.`,
       },
 	  "Strollaz's Rune": {
         name: "Strollaz's Rune",
@@ -662,13 +662,13 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
-        description: talentText`Wounds are healed almost as quickly as they are made. Rune of Regeneration will restore additional health equal to ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}% RP.`,
+        description: talentText`Wounds are healed almost as quickly as they are made. Rune of Regeneration will restore ${[
+          50,
+          100,
+          150,
+          200,
+          250,
+        ]}% additional health.`,
       },
 	  "Improved Rune of Fire": {
         name: "Improved Rune of Fire",
@@ -706,9 +706,9 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "passive",
         description: talentText`You have a ${[
-          12.5,
-          25,
-          37.5,
+          5,
+          15,
+          30,
           50,
         ]}% chance whenever you are hit by an enemy ability to cause your next ability used within 5 seconds to have a 50% faster cast time.`,
       },
@@ -732,7 +732,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -747,7 +747,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -777,7 +777,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -792,7 +792,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -822,7 +822,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -837,7 +837,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -852,7 +852,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -939,7 +939,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
@@ -957,7 +957,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Call upon Divine intervention to heal your friends and shield them from harm. All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`Call upon Divine intervention to heal your friends and shield them from harm. All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -971,7 +971,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Change the fate of your companions undoing all bodily harm. Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Change the fate of your companions undoing all bodily harm. Removes all ailments and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
 	  "Rune of Sanctuary": {
         name: "Rune of Sanctuary",
@@ -1046,10 +1046,10 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Put the fear of Grimnir in them! (Basic Attack) Deal 110 impact damage to target enemy. Generates 22 action points.`,
+        description: talentText`Put the fear of Grimnir in them! (Basic Attack) Deal 4% MAP + 30 impact damage to target enemy. Generates 22 action points.`,
       },
       "Rune Empowerment": {
         name: "Rune Empowerment",
@@ -1077,7 +1077,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grungni Rune",
-        description: talentText`Don't try this at home, beardlings. Throw your hammer at target enemy dealing 19% MAP + 257 impact damage before returning to you.\n\nAugmented: Deals additional impact damage equal to 18% MAP.`,
+        description: talentText`Don't try this at home, beardlings. Throw your hammer at target enemy dealing 21% MAP + 267 impact damage before returning to you.\n\nAugmented: deals 25% additional damage.`,
       },
       "Rune of Striking": {
         name: "Rune of Striking",
@@ -1087,7 +1087,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "25 action points",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
@@ -1105,7 +1105,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Allies Augmented with this rune will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 5% MAP + 49 piercing damage.\n\nAugmented: Ability has no cooldown.`,
+        description: talentText`Allies augmented with this rune will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 7% MAP + 88 indirect, piercing damage.\n\nAugmented: Ability has no cooldown.`,
       },
       "Rune of the Drunkard": {
         name: "Rune of the Drunkard",
@@ -1134,18 +1134,18 @@ export const data: TalentData = {
         cooldown: "15s cooldown",
         description: talentText`Your Rune will shield your friends from the enemy and strength your attacks against them. Places a master rune where you select. You may only have 1 active. All allies within 30 feet of the Master Rune have Cover from enemies not in range of the master rune. All abilities used against enemies within 30 feet of the master rune will be Augmented.`,
       },
-      "Steel Skin": {
-        name: "Steel Skin",
+      "Thousand Yard Stare": {
+        name: "Thousand Yard Stare",
         pos: "i1",
-        icon: icons["abi_vigilance"],
+        icon: icons["abi_detaunt"],
         maxRank: 0,
         reqPoints: 0,
         type: "ability",
         cost: "no cost",
-        range: "self",
+        range: "150ft range",
         cast: "instant cast",
-        cooldown: "60s cooldown",
-        description: talentText`You use runic magic to temporarily harden your flesh, swords and arrows will bounce off as if hitting rock. Your damage reduction is increased by 50% but your outdoing damage is reduced by 90% for 7 seconds.`,
+        cooldown: "15s cooldown",
+        description: talentText`You give your most disapproving stare to the enemy. Reduces the damage target does to you by 50% for 15 seconds. Effect will be removed if you hit the opponent with an ability.`,
       },
 	  "Rune of Immolation": {
         name: "Rune of Immolation",
@@ -1159,7 +1159,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 9% SAP + 128 elemental damage.\n\nAugmented: the effect is now a cripple.`,
+        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 10% SAP + 132 indirect, elemental damage.\n\nAugmented: the effect is now a cripple.`,
       },
 	  "Rune of Shielding": {
         name: "Rune of Shielding",
@@ -1173,7 +1173,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "8s cooldown",
         blue: "Valaya Rune",
-        description: talentText`Activate Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 25% RP + 312 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
+        description: talentText`Activate Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 26% RP + 359 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
       },
 	  "Rune of Speed": {
         name: "Rune of Speed",
@@ -1191,7 +1191,7 @@ export const data: TalentData = {
       },
 	  "Rune of Hakka-Dron": {
         name: "Rune of Hakka-Dron",
-        pos: "a8",
+        pos: "d8",
         icon: icons["abi_dw_symbol05"],
         maxRank: 1,
         reqPoints: 25,
@@ -1201,7 +1201,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 5% SAP + 81 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
+        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 6% SAP + 89 indirect, elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
       },
       "Quagmire": {
         name: "Quagmire",
@@ -1298,12 +1298,12 @@ export const data: TalentData = {
       },
 	  "Rune of Upheaval": {
         name: "Rune of Upheaval",
-        pos: "b8",
+        pos: "e8",
         icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 25,
         prereq: "Rune of Hakka-Dron",
-        arrows: [{ dir: "right", from: "a8", to: "b8" }],
+        arrows: [{ dir: "right", from: "d8", to: "e8" }],
         type: "career tactic",
         description: talentText`Your rune causes upheaval in the earth, knocking enemies violently off their feet. Rune of Hakka-Dron will now knock up to 9 enemies into the sky within 30 feet of the ally you cast it on.`,
       },
@@ -1331,19 +1331,33 @@ export const data: TalentData = {
           8,
         ]}% Damage Reduction.`,
       },
-	  "Improved Grimnir's Fury": {
-        name: "Improved Grimnir's Fury",
+	  "Engage": {
+        name: "Engage",
+        pos: "g4",
+        icon: icons["abi_engage"],
+        maxRank: 3,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Enemies that you deal direct damage to will have their outgoing damage reduced by ${[
+          2,
+          4,
+          6,
+        ]}% for 5 seconds.`,
+      },
+	  "Improved Basic Attack": {
+        name: "Improved Basic Attack",
         pos: "e5",
-        icon: icons["abi_dw_melee05"],
-        maxRank: 4,
+        icon: icons["abi_dw_melee11"],
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
-        description: talentText`Grimnir's strength surges through you. Grimnir's fury will deal additional damage equal to ${[
-          4,
-          8,
-          12,
-          16,
-        ]}% MAP.`,
+        description: talentText`Your basic attacks will deal ${[
+          75,
+          150,
+          225,
+          300,
+          375,
+        ]}% additional damage.`,
       },
 	  "Extra Cleaving": {
         name: "Extra Cleaving",
@@ -1402,18 +1416,18 @@ export const data: TalentData = {
           10,
         ]}%. This effect is surpressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
-      "Determination": {
-        name: "Determination",
-        pos: "e8",
+      "Divine Intervention": {
+        name: "Divine Intervention",
+        pos: "f8",
         icon: icons["abi_intervention"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`You're determined to get back up no matter how many times they knock you down. Whenever you are effected by knocked-down, disarmed, silenced, or rooted effects; you will gain ${[
-          8,
-          16,
+          4,
+          12,
           24,
-          32,
+          40,
         ]}% damage reduction for 3 seconds.`,
       },
     },
@@ -1466,7 +1480,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -1481,7 +1495,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1511,7 +1525,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -1647,7 +1661,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Now their friends can share in the hurt. You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`Now their friends can share in the hurt. You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -1750,10 +1764,10 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Put the fear of Grimnir in them! (Basic Attack) Deal 110 impact damage to target enemy. Generates 22 action points.`,
+        description: talentText`Put the fear of Grimnir in them! (Basic Attack) Deal 4% + 30 impact damage to target enemy. Generates 22 action points.`,
       },
       "Rune Empowerment": {
         name: "Rune Empowerment",
@@ -1790,11 +1804,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "skill",
         cost: "25 action points",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`A rune to smite your foe and grant a boon to your ally. Deals 23% MAP + 289 impact damage to target enemy. Your defensive target will gain 1 stack of Enhanced Accuracy if they are within 100 feet.\n\nAugmented: You will also gain 1 stack of Enhanced Accuracy.`,
+        description: talentText`A rune to smite your foe and grant a boon to your ally. Deals 28% MAP + 378 impact damage to target enemy. Your defensive target will gain 1 stack of Enhanced Accuracy if they are within 100 feet.\n\nAugmented: You will also gain 1 stack of Enhanced Accuracy.`,
       },
 	  "Rune of Immolation": {
         name: "Rune of Immolation",
@@ -1808,7 +1822,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 9% SAP + 128 elemental damage.\n\nAugmented: the effect is now a cripple.`,
+        description: talentText`A rune bearing heat from the forge, unleash it to burn the enemy. Apply a 15 second ailment to target enemy. Every 3 seconds target will take 10% SAP + 132 indirect, elemental damage.\n\nAugmented: the effect is now a cripple.`,
       },
       "Rune of the Drunkard": {
         name: "Rune of the Drunkard",
@@ -1836,7 +1850,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Allies Augmented with this rune will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 5% MAP + 49 piercing damage.\n\nAugmented: Ability has no cooldown.`,
+        description: talentText`Allies Augmented with this rune will cut through enemies like butter. Target ally gains a 30 second buff. For the next 5 basic attacks, they will deal an additional 7% MAP + 88 indirect, piercing damage.\n\nAugmented: Ability has no cooldown.`,
       },
       "Thousand Yard Stare": {
         name: "Thousand Yard Stare",
@@ -1863,7 +1877,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grungni Rune",
-        description: talentText`Don't try this at home, beardlings. Throw your hammer at target enemy dealing 19% MAP + 257 impact damage before returning to you.\n\nAugmented: Deals additional impact damage equal to 18% MAP.`,
+        description: talentText`Don't try this at home, beardlings. Throw your hammer at target enemy dealing 21% MAP + 267 impact damage before returning to you.\n\nAugmented: deals 25% additional damage.`,
       },
 	  "Rune of Shielding": {
         name: "Rune of Shielding",
@@ -1877,9 +1891,9 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "8s cooldown",
         blue: "Valaya Rune",
-        description: talentText`Call upon Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 25% RP + 312 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
+        description: talentText`Call upon Valaya's rune of protection. Applies a 8 second enchantment to target ally. They will absorb up to 26% RP + 359 damage for the duration.\n\nAugmented: the duration is increased by 7 seconds.`,
       },
-	   "Rune of Burning": {
+	  "Rune of Burning": {
         name: "Rune of Burning",
         pos: "h6",
         icon: icons["abi_dw_runeofburning"],
@@ -1891,9 +1905,9 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Grimnir Rune",
-        description: talentText`Release Grimnir's fury to burn your foes. Deals 9% SAP + 101 elemental damage to up to 9 enemy targets within a 20 foot area you select.\n\nAugmented: will now hit up to 24 enemeies.`,
+        description: talentText`Release Grimnir's fury to burn your foes. Deals 9% SAP + 123 elemental damage to up to 9 enemy targets within a 20 foot area you select.\n\nAugmented: will now hit up to 24 enemeies.`,
       },
-	   "Rune of Hakka-Dron": {
+	  "Rune of Hakka-Dron": {
         name: "Rune of Hakka-Dron",
         pos: "d8",
         icon: icons["abi_dw_symbol05"],
@@ -1905,7 +1919,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Grungni Rune",
-        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 5% SAP + 81 elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
+        description: talentText`Waves of violent magic emenate from your ally, ripping any nearby enemies apart. Applies a 15 second enchantment to target ally. Every 3 seconds, up to 9 enemies within 30 feet of the target will take 6% SAP + 89 indirect, elemental damage.\n\nAugmented: Each enemy struck will lose 1 mass for 3 seconds.`,
       },
       "Rune of the Furnace": {
         name: "Rune of the Furnace",
@@ -1972,7 +1986,7 @@ export const data: TalentData = {
         prereq: "Rune of Shielding",
         arrows: [{ dir: "down", from: "g5", to: "g6" }],
         type: "career tactic",
-        description: talentText`Volatile energy is released when an enemy breaks your Rune-shield, making them regret their actions. Rune of Shielding will deal 9% SAP + 107 elemental damage to up to 24 enemies within 30 feet whenever it breaks.`,
+        description: talentText`Volatile energy is released when an enemy breaks your Rune-shield, making them regret their actions. Rune of Shielding will deal 9% SAP + 107 indirect, elemental damage to up to 24 enemies within 30 feet whenever it breaks.`,
       },
 	  "Grimnir's Gift": {
         name: "Grimnir's Gift",
@@ -2009,7 +2023,7 @@ export const data: TalentData = {
         name: "Ancestral Cycle",
         pos: "e3",
         icon: icons["abi_dw_oath02"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`The Ancestors often take turns caring for their folk. You gain effects whenever your runes are on shared cooldown.\nGrimnir: You gain ${[
@@ -2029,19 +2043,29 @@ export const data: TalentData = {
           8,
         ]}% Damage Reduction.`,
       },
-	  "Improved Grimnir's Fury": {
-        name: "Improved Grimnir's Fury",
+	  "Rune of Binding": {
+        name: "Rune of Binding",
+        pos: "g4",
+        icon: icons["abi_dw_runeofbinding"],
+        maxRank: 1,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Rune of the Drunkard now costs 25 action points, but has a 20 second cooldown.`,
+      },
+	  "Improved Basic Attack": {
+        name: "Improved Basic Attack",
         pos: "e5",
-        icon: icons["abi_dw_melee05"],
+        icon: icons["abi_dw_melee11"],
         maxRank: 4,
         reqPoints: 10,
         type: "passive",
-        description: talentText`Grimnir's strength surges through you. Grimnir's fury will deal additional damage equal to ${[
-          4,
-          8,
-          12,
-          16,
-        ]}% MAP.`,
+        description: talentText`Your basic attacks will deal ${[
+          75,
+          150,
+          225,
+          300,
+          375,
+        ]}% additional damage.`,
       },
 	  "Extra Cleaving": {
         name: "Extra Cleaving",
@@ -2106,9 +2130,9 @@ export const data: TalentData = {
         reqPoints: 25,
         type: "passive",
         description: talentText`The Ancestor gods are beside themselves with wrath!. Venerate Grimnir provides ${[
-          2,
-          4,
-          7,
+          1,
+          3,
+          6,
           10,
         ]}% more MAP and SAP.`,
       },

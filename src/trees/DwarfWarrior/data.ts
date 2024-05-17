@@ -1293,7 +1293,7 @@ export const data: TalentData = {
         type: "passive",
         description: talentText`You gain melee attack power equal to ${[
           15,
-          40,
+          30,
           50,
         ]}% of your armor.`,
       },
@@ -1376,7 +1376,7 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "h6", to: "h7" }
         ],
         type: "passive",
-        description: talentText`Hammer Slam deals ${[
+        description: talentText`Slam deals ${[
           5,
           10,
           15,
@@ -1948,7 +1948,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Guard will now only grant 25% of your armor, resistances, and block; but it will no longer reduce your stats.`,
+        description: talentText`Guard will now only grant 25% of your armor, resistances, and block; but it will no longer reduce your stats or trigger effects based on having your guard active.`,
       },
 	  "Dwarven Riposte": {
         name: "Dwarven Riposte",
@@ -1982,7 +1982,7 @@ export const data: TalentData = {
         pos: "e3",
         icon: icons["abi_dw_melee11"],
         maxRank: 2,
-        reqPoints: 5,
+        reqPoints: 0,
         type: "passive",
         description: talentText`Grudging Blow generates ${[
           1,
