@@ -551,7 +551,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Gloom applies a cripple to target for 4 seconds. Whenever they take damage from Doombolt or Shadow Bolt, up to 2 additional enemies within 20 feet will take Gloom damage.`,
+        description: talentText`Gloom applies a cripple to target for 5 seconds. Whenever they take damage from Doombolt or Shadow Bolt, up to 2 additional enemies within 20 feet will take Gloom damage.`,
       },
 	  "Grip of Fear": {
         name: "Grip of Fear",
@@ -668,18 +668,18 @@ export const data: TalentData = {
           25,
         ]}% more damage.`,
       },
-	  "Swift Passing": {
-        name: "Swift Passing",
+	  "Final Words": {
+        name: "Final Words",
         pos: "e7",
-        icon: icons["noicon"],
+        icon: icons["abi_de_consumewill"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`You deal ${[
+        description: talentText`You have ${[
           5,
           10,
           15,
-        ]}% more damage against enemies under 40% health.`,
+        ]}% outgoing damage and outgoing healing against targets with 40% or less health.`,
       },
 	  "Extra Crit": {
         name: "Extra Crit",
@@ -1085,7 +1085,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. At the end of the duration, target will take 23% SAP + 311 spiritual damage.`,
+        description: talentText`Applies an ailment to target enemy for 10 seconds. At the end of the duration, target will take 23% SAP + 311 spiritual damage.`,
       },
       "Mockery of Death": {
         name: "Mockery of Death",
@@ -1712,7 +1712,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all ailments and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
       },
       "Winds of Magic": {
         name: "Winds of Magic",
@@ -1774,7 +1774,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies an affliction to target enemy for 10 seconds. At the end of the duration, target will take 23% SAP + 311 spiritual damage.`,
+        description: talentText`Applies an ailment to target enemy for 10 seconds. At the end of the duration, target will take 23% SAP + 311 spiritual damage.`,
       },
       "Arnzipal's Black Horror": {
         name: "Arnzipal's Black Horror",
@@ -1815,7 +1815,7 @@ export const data: TalentData = {
         cast: "1.75s cast",
         cooldown: "no cooldown",
         blue: "Lore of Death",
-        description: talentText`Applies an affliction to target enemy for 15 seconds. Every 3 seconds, the target will take 12% SAP + 175 spiritual damage and your defensive target will be healed for 100% of the damage dealt.\n\nAugmented: ability is now instant cast and applies a blessing.`,
+        description: talentText`Applies an ailment to target enemy for 15 seconds. Every 3 seconds, the target will take 12% SAP + 175 spiritual damage and your defensive target will be healed for 100% of the damage dealt.\n\nAugmented: ability is now instant cast and applies a blessing.`,
       },
       "Boar's Hide": {
         name: "Boar's Hide",
@@ -2072,9 +2072,9 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`You have ${[
-          3,
-          6,
+          5,
           10,
+          15,
         ]}% outgoing damage and outgoing healing against targets with 40% or less health.`,
       },
 	  "Spirit Leech": {

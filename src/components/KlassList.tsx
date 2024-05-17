@@ -9,24 +9,9 @@ const icons = requireAll(require.context("../assets/icons", false));
 
 const KLASSES = [
   {
-    name: "Bright Wizard",
-    icon: icons["class_brightwizard"],
-    path: "/brightwizard",
-  },
-  {
-    name: "Knight",
-    icon: icons["class_squire"],
-    path: "/knight",
-  },
-  {
-    name: "Swordsman",
-    icon: icons["class_swordsman"],
-    path: "/swordsman",
-  },
-  {
-    name: "Warrior Priest",
-    icon: icons["class_warriorpriest"],
-    path: "/warriorpriest",
+    name: "Rune Scribe",
+    icon: icons["class_runescribe"],
+    path: "/runescribe",
   },
   {
     name: "Dwarf Warrior",
@@ -34,19 +19,34 @@ const KLASSES = [
     path: "/dwarfwarrior",
   },
   {
-    name: "Engineer",
-    icon: icons["class_engineer"],
-    path: "/engineer",
-  },
-  {
     name: "Oathbreaker",
     icon: icons["class_oathbreaker"],
     path: "/oathbreaker",
   },
   {
-    name: "Rune Scribe",
-    icon: icons["class_runescribe"],
-    path: "/runescribe",
+    name: "Engineer",
+    icon: icons["class_engineer"],
+    path: "/engineer",
+  },
+  {
+    name: "Swordsman",
+    icon: icons["class_swordsman"],
+    path: "/swordsman",
+  },
+  {
+    name: "Bright Wizard",
+    icon: icons["class_brightwizard"],
+    path: "/brightwizard",
+  },
+  {
+    name: "Warrior Priest",
+    icon: icons["class_warriorpriest"],
+    path: "/warriorpriest",
+  },
+  {
+    name: "Knight",
+    icon: icons["class_squire"],
+    path: "/knight",
   },
   {
     name: "Archmage",
@@ -59,18 +59,38 @@ const KLASSES = [
     path: "/apprentice",
   },
   {
-    name: "White Lion",
-    icon: icons["class_whitelion"],
-    path: "/whitelion",
-  },
-  {
     name: "Archer",
     icon: icons["class_archer"],
     path: "/archer",
   },
+  {
+    name: "White Lion",
+    icon: icons["class_whitelion"],
+    path: "/whitelion",
+  },
 ];
 
 const KLASSES2 = [
+  {
+    name: "Da Boyz",
+    icon: icons["class_daboyz"],
+    path: "/daboyz",
+  },
+  {
+    name: "Goblin",
+    icon: icons["class_goblin"],
+    path: "/goblin",
+  },
+  {
+    name: "Black Orc",
+    icon: icons["class_blackorc"],
+    path: "/blackorc",
+  },
+  {
+    name: "Night Goblin",
+    icon: icons["class_nightgoblin"],
+    path: "/nightgoblin",
+  },
   {
     name: "Chosen",
     icon: icons["class_chosen"],
@@ -92,19 +112,9 @@ const KLASSES2 = [
     path: "/magus",
   },
   {
-    name: "Bleaksword",
-    icon: icons["class_bleaksword"],
-    path: "/bleaksword",
-  },
-  {
     name: "Bride of Khaine",
     icon: icons["class_brideofkhaine"],
     path: "/brideofkhaine",
-  },
-  {
-    name: "Hag Graef",
-    icon: icons["class_haggraef"],
-    path: "/haggraef",
   },
   {
     name: "Sorcerer",
@@ -112,24 +122,14 @@ const KLASSES2 = [
     path: "/sorcerer",
   },
   {
-    name: "Black Orc",
-    icon: icons["class_blackorc"],
-    path: "/blackorc",
+    name: "Bleaksword",
+    icon: icons["class_bleaksword"],
+    path: "/bleaksword",
   },
   {
-    name: "Da Boyz",
-    icon: icons["class_daboyz"],
-    path: "/daboyz",
-  },
-  {
-    name: "Goblin",
-    icon: icons["class_goblin"],
-    path: "/goblin",
-  },
-  {
-    name: "Night Goblin",
-    icon: icons["class_nightgoblin"],
-    path: "/nightgoblin",
+    name: "Hag Graef",
+    icon: icons["class_haggraef"],
+    path: "/haggraef",
   },
 ];
 

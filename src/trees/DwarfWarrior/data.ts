@@ -40,7 +40,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -70,7 +70,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -130,7 +130,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -145,7 +145,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 physical damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -232,7 +232,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 4% MAP + 60 ichor damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
       "Inspiring Attack": {
         name: "Inspiring Attack",
@@ -410,7 +410,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 17% MAP + 220 piercing damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
+        description: talentText`Deals 19% MAP + 250 piercing damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
       },
       "Away With Ye": {
         name: "Away With Ye",
@@ -437,7 +437,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 31% RP + 409 for the duration.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 25% RP + 319 for the duration.`,
       },
 	  "Fire Bomb": {
         name: "Fire Bomb",
@@ -453,7 +453,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20ft area you select.`,
+        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20 feet area you select.`,
       },
 	  "Flashbang Grenade": {
         name: "Flashbang Grenade",
@@ -479,7 +479,7 @@ export const data: TalentData = {
         reqPoints: 15,
         type: "skill",
         cost: "60 action points",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents the application of Knocked-down and Staggered for 30 seconds.`,
@@ -496,7 +496,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Grudge",
-        description: talentText`Deals 12% MAP + 170 impact damage to up to 9 enemies within 30ft in front of you.`,
+        description: talentText`Deals 11% MAP + 140 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
       "Skin of Iron": {
         name: "Skin of Iron",
@@ -621,7 +621,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 5,
         type: "passive",
-        description: talentText`Inspiring attack will now deal 10% more damage and generates 1 grenade for you.`,
+        description: talentText`Inspiring attack will now deal 10% more damage and generates 2 grenades for you.`,
       },
 	  "Engage": {
         name: "Engage",
@@ -639,7 +639,7 @@ export const data: TalentData = {
 	  "Improved Block": {
         name: "Improved Block",
         pos: "e6",
-        icon: icons["archetype_tank"],
+        icon: icons["skl_specexpertshield"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
@@ -649,7 +649,7 @@ export const data: TalentData = {
           9,
           12,
           15,
-        ]}.`,
+        ]}%.`,
       },
 	  "Shell Shock": {
         name: "Shell Shock",
@@ -696,10 +696,10 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Ability 13, Binding Grudge, Grumble and Mutter, Inspiring Attack, Runic Shield, and Skin of Iron have a ${[
-          25,
-          50,
-          75,
+        description: talentText`Binding Grudge, Grumble and Mutter, Inspiring Attack, Runic Shield, Seasoned Veteran, and Skin of Iron have a ${[
+          10,
+          30,
+          60,
           100,
         ]}% chance to apply 1 stack of Enhanced Hardiness to your defensive target and yourself.`,
       },
@@ -753,7 +753,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -768,7 +768,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -783,7 +783,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -798,7 +798,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -813,7 +813,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -828,7 +828,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -897,7 +897,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 physical damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -920,7 +920,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -934,7 +934,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -948,7 +948,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -962,7 +962,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
 	  "Mountain Spirit": {
         name: "Mountain Spirit",
@@ -1081,7 +1081,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 17% MAP + 220 piercing damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
+        description: talentText`Deals 19% MAP + 250 piercing damage to target enemy. Your defensive target and yourself will gain 1 stack of Enhanced Ballistic Skill and a blessing for 10 seconds. For the duration, gain 10% critical chance.`,
       },
       "Stonebreaker": {
         name: "Stonebreaker",
@@ -1095,7 +1095,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 26% MAP + 348 impact damage to target enemy and applies 1 stack of reduced impact resistance.`,
+        description: talentText`Deals 24% MAP + 329 impact damage to target enemy and applies 1 stack of reduced impact resistance.`,
       },
       "Cave-In": {
         name: "Cave-In",
@@ -1110,8 +1110,8 @@ export const data: TalentData = {
         cooldown: "20s cooldown",
         description: talentText`Applies Knocked-down and Unstoppable to target enemy.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents the application of Knocked-down and Staggered for 30 seconds.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "Seen It All Before": {
+        name: "Seen It All Before",
         pos: "h1",
         icon: icons["abi_dw_symbol10"],
         maxRank: 0,
@@ -1121,7 +1121,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "6s cooldown",
-        description: talentText`(Movement Skill) Dispel 1 affliction from you and gain 1 mass for 3 seconds. One random enemy within 20 feet of you will take 21% MAP + 277 impact damage.`,
+        description: talentText`(Movement Skill) Dispel 1 ailment from you and gain 1 mass for 3 seconds. One random enemy within 20 feet of you will take 21% MAP + 277 impact damage.`,
       },
       "Runic Shield": {
         name: "Runic Shield",
@@ -1135,7 +1135,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 31% RP + 409 for the duration.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 25% RP + 319 for the duration.`,
       },
 	  "Flurry": {
         name: "Flurry",
@@ -1148,10 +1148,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 2": {
-        name: "Ability 2",
+	  "Vengeful Strike": {
+        name: "Vengeful Strike",
         pos: "c5",
         icon: icons["abi_dw_melee06"],
         maxRank: 1,
@@ -1161,10 +1161,10 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 7% MAP + 93 additional impact damage and lose a stack.`,
+        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 additional impact damage and lose a stack.`,
       },
-	  "Ability 3": {
-        name: "Ability 3",
+	  "Slam": {
+        name: "Slam",
         pos: "g6",
         icon: icons["abi_dw_melee04"],
         maxRank: 1,
@@ -1175,10 +1175,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Grudge",
-        description: talentText`Deals 12% MAP + 147 impact damage to up to 9 enemies within 30 feet of you.`,
+        description: talentText`Deals 11% MAP + 140 impact damage to up to 9 enemies within 30 feet of you.`,
       },
-	  "Ability 4": {
-        name: "Ability 4",
+	  "Avenging the Debt": {
+        name: "Avenging the Debt",
         pos: "e8",
         icon: icons["abi_dw_figure01"],
         maxRank: 1,
@@ -1202,7 +1202,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
 		blue: "Castable while Moving",
-        description: talentText`Deals 13% MAP + 161 impact damage to target enemy every second for every 33 Grudge you have.`,
+        description: talentText`Deals 15% MAP + 204 impact damage to target enemy every second for every 33 Grudge you have.`,
       },
       "Inevitable Doom": {
         name: "Inevitable Doom",
@@ -1235,17 +1235,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you take direct damage, you will gain 2000 armor but lose 20% movement speed for 5 seconds.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Watch And Learn": {
+        name: "Watch and Learn",
         pos: "b6",
         icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 1 will now dispel 1 cripple as well and deal its damage to another target in range.`,
+        description: talentText`Seen It All Before will now dispel 1 cripple as well and deal its damage to another target in range.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Earth Shatter": {
+        name: "Earth Shatter",
         pos: "c6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
@@ -1262,8 +1262,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Inspiring Attack will apply a 10 second cripple on the target. For the duration, target will have -33% outgoing healing.`,
       },
-	  "Massacre": {
-        name: "Massacre",
+	  "Extended Battle": {
+        name: "Extended Battle",
         pos: "g7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1273,37 +1273,47 @@ export const data: TalentData = {
           { dir: "down", from: "g6", to: "g7" }
         ],
         type: "career tactic",
-        description: talentText`Ability 3, Flurry, and Wild Swing will now hit up to 24 enemies.`,
+        description: talentText`Flurry, Hammer Slam, and Wild Swing will now hit up to 24 enemies.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Relentless Training": {
+        name: "Relentless Training",
         pos: "d8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`You can no longer critically hit. You gain outgoing damage equal to X% of your potency.`,
+        description: talentText`You can no longer critically hit. You gain outgoing damage equal to 25% of your potency.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Iron Veterans": {
+        name: "Iron Veterans",
         pos: "e3",
         icon: icons["abi_dw_oath01"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`You gain melee attack power equal to ${[
-          10,
-          20,
-          30,
+          15,
           40,
           50,
         ]}% of your armor.`,
+      },
+	  "Improved Grudging Blow": {
+        name: "Improved Grudging Blow",
+        pos: "b4",
+        icon: icons["abi_dw_melee11"],
+        maxRank: 2,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Grudging Blow generates ${[
+          1,
+          2,
+        ]} additional Grudge.`,
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "e5",
         icon: icons["abi_dw_melee11"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Your basic attacks will deal ${[
@@ -1314,8 +1324,8 @@ export const data: TalentData = {
           375,
         ]}% additional damage.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Grudges to Settle": {
+        name: "Grudges to Settle",
         pos: "d6",
         icon: icons["abi_dw_figure02"],
         maxRank: 2,
@@ -1326,64 +1336,64 @@ export const data: TalentData = {
           25,
         ]} more action points.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Avalanche": {
+        name: "Avalanche",
         pos: "e6",
         icon: icons["abi_dw_figure15"],
         maxRank: 5,
         reqPoints: 15,
         type: "passive",
-        description: talentText`Cave-In will now deal (7% MAP + 140) * ${[
-          "1",
-          "1.25",
-          "1.48",
-          "1.72",
-          "1.96",
+        description: talentText`Cave-In will now deal ${[
+          "3% MAP + 31",
+          "6% MAP + 62",
+          "9% MAP + 93",
+          "12% MAP + 124",
+          "15% MAP + 155",
         ]} impact damage for every 33 Grudge you have to target enemy.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Shield of Reprisal": {
+        name: "Shield of Reprisal",
         pos: "b7",
         icon: icons["abi_dw_shield04"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`You deal (13% MAP + 181) * ${[
-          "0.5",
-          "1",
-          "1.5",
-        ]} impact damage to any enemy that hits you your Runic Shields.`,
+        description: talentText`You deal ${[
+          "4% MAP + 49",
+          "8% MAP + 96",
+          "12% MAP + 147,
+        ]} impact damage to any enemy that hits your Runic Shields.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Improved Slam": {
+        name: "Improved Slam",
         pos: "h7",
         icon: icons["abi_dw_melee04"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Ability 3",
+        prereq: "Slam",
 		arrows: [
           { dir: "right-down", from: "g6", to: "h6" },
           { dir: "right-down-down", from: "h6", to: "h7" }
         ],
         type: "passive",
-        description: talentText`Ability 3 deals ${[
+        description: talentText`Hammer Slam deals ${[
           5,
           10,
           15,
         ]}% more damage.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Veteran's Pride": {
+        name: "Veteran's Pride",
         pos: "f8",
         icon: icons["abi_dw_figure01"],
         maxRank: 4,
         reqPoints: 25,
-        prereq: "Ability 4",
+        prereq: "Avenging the Debt",
 		arrows: [
           { dir: "right", from: "e8", to: "f8" },
         ],
         type: "passive",
-        description: talentText`Reduce the cooldown on Ability 4 by ${[
+        description: talentText`Reduce the cooldown on Avenging the Debt by ${[
           2,
           4,
           6,
@@ -1410,7 +1420,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1455,7 +1465,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1470,7 +1480,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1500,7 +1510,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1515,7 +1525,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1530,7 +1540,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1584,7 +1594,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 physical damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1607,7 +1617,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -1617,7 +1627,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
@@ -1635,7 +1645,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -1781,10 +1791,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 25 Grudge",
-        description: talentText`Deals 4% MAP + 60 ichor damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
+        description: talentText`Deals 15% MAP + 204 ichor damage to target enemy and applies Ensnared and Momentum to them. Your defensive target and yourself will gain a blessing for 10 seconds. For the duration, gain 20% block chance.\n\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents the application of Ensnared for 8 seconds.`,
       },
-      "Ability 4": {
-        name: "Ability 4",
+      "Avenging the Debt": {
+        name: "Avenging the Debt",
         pos: "g1",
         icon: icons["abi_dw_figure01"],
         maxRank: 0,
@@ -1821,7 +1831,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 31% RP + 409 for the duration.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. You will absorb damage equal to 25% RP + 319 for the duration.`,
       },
 	  "Grumble and Mutter": {
         name: "Grumble and Mutter",
@@ -1835,10 +1845,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 30 Grudge",
-        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. Every 2 seconds, you restore 6% RP + 66 health.`,
+        description: talentText`Your defensive target and yourself gain a blessing for 10 seconds. Every 2 seconds, you restore 9% RP + 130 health.`,
       },
-	  "Ability 2": {
-        name: "Ability 2",
+	  "Vengeful Strike": {
+        name: "Vengeful Strike",
         pos: "g5",
         icon: icons["abi_dw_melee06"],
         maxRank: 1,
@@ -1848,10 +1858,10 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 7% MAP + 93 additional impact damage and lose a stack.`,
+        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 additional impact damage and lose a stack.`,
       },
-	  "Ability 3": {
-        name: "Ability 3",
+	  "Slam": {
+        name: "Slam",
         pos: "g6",
         icon: icons["abi_dw_melee04"],
         maxRank: 1,
@@ -1862,10 +1872,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 35 Grudge",
-        description: talentText`Deals 12% MAP + 147 impact damage to up to 9 enemies within 30 feet of you.`,
+        description: talentText`Deals 11% MAP + 140 impact damage to up to 9 enemies within 30 feet of you.`,
       },
-	  "Ability 5": {
-        name: "Ability 5",
+	  "Ancestral Grudge": {
+        name: "Ancestral Grudge",
         pos: "e8",
         icon: icons["abi_dw_face04"],
         maxRank: 1,
@@ -1878,8 +1888,8 @@ export const data: TalentData = {
         blue: "Costs 20 Grudge",
         description: talentText`Applies Marked to target enemy\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
-      "Ability 13": {
-        name: "Ability 13",
+      "Seasoned Veteran": {
+        name: "Seasoned Veteran",
         pos: "d9",
         icon: icons["abi_dw_earthenrenewal"],
         maxRank: 1,
@@ -1889,7 +1899,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Your defensive target and yourself gain 1 stack of Enhanced Willpower. Your defensive target also gains 1 stack per 33 Grudge you have of a 10 second blessing. This blessing grants 25% damage reduction against 1 attack per stack.`,
+        description: talentText`Your defensive target and yourself gain 1 stack of Enhanced Willpower. Your defensive target also gains 1 stack per 33 Grudge you have of a 10 second blessing. This blessing grants 50% damage reduction against 1 attack per stack.`,
       },
       "Quagmire": {
         name: "Quagmire",
@@ -1931,8 +1941,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`You gain Restoration Power equal to 50% of your armor.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "Glorified Sentry": {
+        name: "Glorified Sentry",
         pos: "c6",
         icon: icons["tac_spec_4"],
         maxRank: 1,
@@ -1949,8 +1959,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you block or dodge an attack, you will gain 30 Grudge. This effect cannot happen more than once every 2 seconds.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Tales of Many Wars": {
+        name: "Tales of Many Wars",
         pos: "d7",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1958,35 +1968,47 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Grumble and Mutter will now apply to all groupmates within 100 feet of you when cast.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Relentless Training": {
+        name: "Relentless Training",
         pos: "g8",
         icon: icons["tac_spec_1"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`You can no longer critically hit. You gain outgoing damage equal to X% of your potency.`,
+        description: talentText`You can no longer critically hit. You gain outgoing damage equal to 25% of your potency.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
+	  "Improved Grudging Blow": {
+        name: "Improved Grudging Blow",
         pos: "e3",
-        icon: icons["abi_grudge"],
-        maxRank: 3,
-        reqPoints: 0,
+        icon: icons["abi_dw_melee11"],
+        maxRank: 2,
+        reqPoints: 5,
         type: "passive",
-        description: talentText`Grudging Blow will generate ${[
+        description: talentText`Grudging Blow generates ${[
           1,
           2,
-          3,
-          4,
-          5,
-        ]} more Grudge.`,
+        ]} additional Grudge.`,
+      },
+	  "Oaths of Old": {
+        name: "Oaths of Old",
+        pos: "b4",
+        icon: icons["abi_dw_oathfriend"],
+        maxRank: 3,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`You gain restoration power equal to ${[
+          10,
+          20,
+          30,
+          40,
+          50,
+        ]}% of your melee attack power.`,
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "e5",
         icon: icons["abi_dw_melee11"],
-        maxRank: 5,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Your basic attacks will deal ${[
@@ -1997,8 +2019,8 @@ export const data: TalentData = {
           375,
         ]}% additional damage.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Grudges to Settle": {
+        name: "Grudges to Settle",
         pos: "d6",
         icon: icons["abi_dw_figure02"],
         maxRank: 2,
@@ -2009,8 +2031,8 @@ export const data: TalentData = {
           25,
         ]} more action points.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Obstinancy": {
+        name: "Obstinancy",
         pos: "h6",
         icon: icons["abi_dw_taunt"],
         maxRank: 5,
@@ -2041,18 +2063,18 @@ export const data: TalentData = {
           6,
         ]}% for 5 seconds.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Improved Slam": {
+        name: "Improved Slam",
         pos: "g7",
         icon: icons["abi_dw_melee04"],
         maxRank: 3,
         reqPoints: 20,
-        prereq: "Ability 3",
+        prereq: "Slam",
 		arrows: [
           { dir: "down", from: "g6", to: "g7" },
         ],
         type: "passive",
-        description: talentText`Ability 3 deals ${[
+        description: talentText`Slam deals ${[
           5,
           10,
           15,
@@ -2065,10 +2087,10 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Ability 13, Binding Grudge, Grumble and Mutter, Inspiring Attack, Runic Shield, and Skin of Iron have a ${[
-          25,
-          50,
-          75,
+        description: talentText`Binding Grudge, Grumble and Mutter, Inspiring Attack, Runic Shield, Seasoned Veteran, and Skin of Iron have a ${[
+          10,
+          30,
+          60,
           100,
         ]}% chance to apply 1 stack of Enhanced Hardiness to your defensive target and yourself.`,
       },
