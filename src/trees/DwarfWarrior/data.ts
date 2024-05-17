@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 indirect, piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -897,7 +897,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 indirect, piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1161,7 +1161,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 additional impact damage and lose a stack.`,
+        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 indirect, impact damage and lose a stack.`,
       },
 	  "Slam": {
         name: "Slam",
@@ -1361,8 +1361,8 @@ export const data: TalentData = {
         description: talentText`You deal ${[
           "4% MAP + 49",
           "8% MAP + 96",
-          "12% MAP + 147,
-        ]} impact damage to any enemy that hits your Runic Shields.`,
+          "12% MAP + 147",
+        ]} indirect, impact damage to any enemy that hits your Runic Shields.`,
       },
 	  "Improved Slam": {
         name: "Improved Slam",
@@ -1594,7 +1594,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 piercing damage every second for every 33 Grudge you have.`,
+        description: talentText`Heavy Blow will now apply a 6 second ailment to the target. They will take 2% MAP + 27 indirect, piercing damage every second for every 33 Grudge you have.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1858,7 +1858,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 additional impact damage and lose a stack.`,
+        description: talentText`Applies 2 stacks of a 10 second debuff to target enemy for every 33 Grudge you have. Whenever the target is hit by an ability, they will take 8% MAP + 119 indirect, impact damage and lose a stack.`,
       },
 	  "Slam": {
         name: "Slam",
