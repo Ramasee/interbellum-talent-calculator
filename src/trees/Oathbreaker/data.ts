@@ -1891,7 +1891,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 30,
         type: "passive",
-        description: talentText`You have 10% increased maximum health, deal 7% MAP + 91 ichor damage to enemies that hit you with abilities, and Grimnir's Fury deals 300% additional damage but no longer generates action points.`,
+        description: talentText`You have 10% increased maximum health, deal 7% MAP + 91 indirect, ichor damage to enemies that hit you with abilities, and Grimnir's Fury deals 300% additional damage but no longer generates action points.`,
       },
       "Quagmire": {
         name: "Quagmire",
@@ -2090,7 +2090,7 @@ export const data: TalentData = {
           12,
           24,
           40,
-        ]} when you hit an enemy with Wild Swing to apply a stack of Reduced Strength to the target.`,
+        ]}% chance when you hit an enemy with Wild Swing to apply a stack of Reduced Strength to the target.`,
       },
     },
   },

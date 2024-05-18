@@ -25,7 +25,7 @@ talents: {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -40,7 +40,7 @@ talents: {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -55,7 +55,7 @@ talents: {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -70,7 +70,7 @@ talents: {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -85,7 +85,7 @@ talents: {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -100,7 +100,7 @@ talents: {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -145,7 +145,7 @@ talents: {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -200,7 +200,7 @@ talents: {
         reqPoints: 0,
         prereq: "Craft Munitions",
         type: "career tactic",
-        description: talentText`Craft Munitions now costs 50 AP, is castable while moving, and has a 1.0s cast time. The ability no longer creates the buff.`,
+        description: talentText`Craft Munitions now costs 50 AP and is instant cast. The ability no longer creates the buff.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -251,7 +251,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20 feet of the target.`,
       },
       "Unleash the Winds": {
         name: "Unleash the Winds",
@@ -265,7 +265,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 30 feet location you select are knocked straight up into the air.`,
       },
 	  "Cannon Smash": {
         name: "Cannon Smash",
@@ -344,7 +344,7 @@ talents: {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Deals 34% RAP + 435 piercing damage to target enemy.\n\nDetonates Residual Explosives on target.`,
+        description: talentText`Deals 31% RAP + 422 piercing damage to target enemy.\n\nDetonates Residual Explosives on target.`,
       },
 	  "Craft Munitions": {
         name: "Craft Munitions",
@@ -385,7 +385,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 kit",
-        description: talentText`(Deployment) Summon a gun turret at your feet that will attack enemies within 100 feet of it. It will give you 1 bullet every 2 seconds if you are within 30 feet of it.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`(Deployment) Summon a gun turret at your feet that will deal 4% RAP + 30 piercing damage every GCD to target enemy 100 feet from it. It will give you 1 bullet every 2 seconds if you are within 30 feet of it.\n\nYou can only have one Deployment skill active.`,
       },
 	  "Signal Flare": {
         name: "Signal Flare",
@@ -399,7 +399,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Applies a cripple to target enemy that deals 8% RAP + 115 ichor damage every 3 seconds over 21 seconds.`,
+        description: talentText`Applies a 21 second cripple to target enemy. For the duration, target takes 8% RAP + 97 indirect, ichor damage every 3 seconds over 21 seconds.`,
       },
 	  "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -427,7 +427,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Applies an affliction to target enemy that deals 9% RAP + 128 corporeal damage every 3 seconds over 15 seconds.`,
+        description: talentText`Applies a 15 second ailment to target enemy. For the duration, target takes 9% RAP + 108 indirect, corporeal damage every 3 seconds over 15 seconds.`,
       },
 	  "Thousand Meter Stare": {
         name: "Thousand Meter Stare",
@@ -451,10 +451,10 @@ talents: {
         type: "skill",
         cost: "no cost",
         range: "100ft range",
-        cast: "1.0s cast",
+        cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Costs 2 bullets",
-        description: talentText`Deals 10% RAP + 110 corporeal damage to target enemy. Then it applies an affliction for 12 seconds to the target and up to 2 enemies within 20 feet of them that deals 4% RAP + 56 corporeal damage every 2 seconds.`,
+        description: talentText`Deals 10% RAP + 110 corporeal damage to target enemy. Then it applies an ailment for 12 seconds to the target and up to 2 enemies within 20 feet of them that deals 6% RAP + 69 indirect, corporeal damage every 2 seconds.`,
       },
 	  "Fire Bomb": {
         name: "Fire Bomb",
@@ -468,7 +468,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
+        description: talentText`Deals 10% RAP + 136 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
       },
 	  "Self Destruct": {
         name: "Self Destruct",
@@ -480,8 +480,8 @@ talents: {
         cost: "no cost",
         range: "self",
         cast: "instant cast",
-        cooldown: "45s cooldown",
-        blue: "Costs 1 kit",
+        cooldown: "30s cooldown",
+        blue: "Costs 2 kit",
         description: talentText`Destroy your Deployment device to apply Knocked-down and Unstoppable to up to 6 enemies within 20 feet of it.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down or Staggered for 30 seconds.`,
       },
 	  "Focused Fire": {
@@ -496,7 +496,7 @@ talents: {
         cast: "2s channel",
         cooldown: "10s cooldown",
         blue: "Costs 3 bullets",
-        description: talentText`Deals 27% RAP + 358 piercing damage every second to target enemy.`,
+        description: talentText`Deals 29% RAP + 399 piercing damage every second to target enemy.`,
       },
 	  "Snipe": {
         name: "Snipe",
@@ -510,7 +510,7 @@ talents: {
         cast: "3.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Deals 56% RAP + 759 piercing damage to the target enemy. Applies 1 stack of Reduced Dodge.`,
+        description: talentText`Deals 53% RAP + 696 piercing damage to the target enemy. Applies 1 stack of Reduced Dodge.`,
       },
       "Napalm Grenade": {
         name: "Napalm Grenade",
@@ -533,16 +533,16 @@ talents: {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Gun Blast will now deal 7% RAP + 84 ichor damage every second for 6 seconds but the initial hit will always be blocked.`,
+        description: talentText`Gun Blast will always be blocked but will now apply a 6 second ailment to target. For the duration, target takes 14% RAP + 176 indirect, ichor damage every 2 seconds.`,
       },
 	  "Trench Fighting": {
         name: "Trench Fighting",
-        pos: "c5",
+        pos: "e5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`As long as you are within 30 feet of your Deployable, you will gain 15% dodge and 50% push back immunity, but lose 25% movement speed.`,
+        description: talentText`As long as you are within 30 feet of your Deployable, you will gain 15% dodge and 75% push back immunity, but lose 20% movement speed.`,
       },
 	  "Pierce Defenses": {
         name: "Pierce Defenses",
@@ -587,7 +587,7 @@ talents: {
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Every ability that uses bullets will deal an additional 15% SAP corporeal damage.`,
+        description: talentText`Every ability that uses bullets will deal an additional 10% + 100 RAP indirect, corporeal damage.`,
       },
       "Ammo Belt": {
         name: "Ammo Belt",
@@ -605,17 +605,31 @@ talents: {
       },
 	  "Interchangeable Parts": {
         name: "Interchangeable Parts",
-        pos: "e5",
+        pos: "c4",
         icon: icons["abi_gunblast"],
-        maxRank: 4,
-        reqPoints: 10,
+        maxRank: 2,
+        reqPoints: 5,
+        prereq: "Interchangeable Parts",
         type: "passive",
-        description: talentText`The cast time of Gun Blast is reduced by ${[
-          0.1,
-          0.2,
-          0.3,
-          0.4,
-          0.5,
+        description: talentText`The cast time of Gun Blast is now ${[
+          1.9,
+          1.8,
+        ]} seconds.`,
+      },
+	  "Interchangeable Parts III/IV": {
+        name: "Interchangeable Parts III/IV",
+        pos: "c5",
+        icon: icons["abi_gunblast"],
+        maxRank: 2,
+        reqPoints: 10,
+        prereq: "Interchangeable Parts",
+		arrows: [
+          { dir: "down", from: "c4", to: "c5" },
+        ],
+        type: "passive",
+        description: talentText`The cast time of Gun Blast is now ${[
+          1.7,
+          1.6,
         ]} seconds.`,
       },
 	  "Enhanced Rifling": {
@@ -646,7 +660,7 @@ talents: {
         type: "passive",
         description: talentText`Fire Bomb now costs 2 grenades and deals ${[
           30,
-          60,
+          75,
         ]}% more damage.`,
       },
 	  "Combusting Slugs": {
@@ -683,8 +697,8 @@ talents: {
           100,
         ]}%.`,
 	  },
-	  "Suppressive Fire": {
-        name: "Suppressive Fire",
+	  "Tracer Rounds": {
+        name: "Tracer Rounds",
         pos: "g8",
         icon: icons["abi_focusedfire"],
         maxRank: 4,
@@ -721,7 +735,7 @@ talents: {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -736,7 +750,7 @@ talents: {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -751,7 +765,7 @@ talents: {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -766,7 +780,7 @@ talents: {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -781,7 +795,7 @@ talents: {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -796,7 +810,7 @@ talents: {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -841,7 +855,7 @@ talents: {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -896,7 +910,7 @@ talents: {
         reqPoints: 0,
         prereq: "Craft Munitions",
         type: "career tactic",
-        description: talentText`Craft Munitions now costs 50 AP, is castable while moving, and has a 1.0s cast time. The ability no longer creates the buff.`,
+        description: talentText`Craft Munitions now costs 50 AP and instant cast. The ability no longer creates the buff.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -947,7 +961,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20 feet of the target.`,
       },
       "Unleash the Winds": {
         name: "Unleash the Winds",
@@ -961,7 +975,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 30 feet location you select are knocked straight up into the air.`,
       },
 	  "Cannon Smash": {
         name: "Cannon Smash",
@@ -1040,7 +1054,7 @@ talents: {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Deals 34% RAP + 435 piercing damage to target enemy.\n\nDetonates Residual Explosives on target.`,
+        description: talentText`Deals 31% RAP + 422 piercing damage to target enemy.\n\nDetonates Residual Explosives on target.`,
       },
 	  "Craft Munitions": {
         name: "Craft Munitions",
@@ -1081,7 +1095,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
+        description: talentText`Deals 10% RAP + 136 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
       },
       "Cinderblast Bomb": {
         name: "Cinderblast Bomb",
@@ -1095,7 +1109,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 2 grenades",
-        description: talentText`Applies an 18 second affliction to up to 3 enemies within a 20 foot area you select. Deals 11% RAP + 134 corporeal damage every 3 seconds.`,
+        description: talentText`Applies an 18 second ailment to up to 3 enemies within a 20 foot area you select. Deals 10% RAP + 119 indirect, corporeal damage every 3 seconds.`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -1123,7 +1137,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Applies an affliction to target enemy that deals 9% RAP + 128 corporeal damage every 3 seconds over 15 seconds.`,
+        description: talentText`Applies a 15 second ailment to target enemy. For the duration, target takes 9% RAP + 108 indirect, corporeal damage every 3 seconds over 15 seconds.`,
       },
 	  "Thousand Meter Stare": {
         name: "Thousand Meter Stare",
@@ -1150,7 +1164,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 2 grenades",
-        description: talentText`Applies a 15 second affliction to target enemy. Deals 7% RAP + 78 corporeal damage every 3 seconds. At the end of the duration, explodes dealing 12% RAP + 144 corporeal damage to up to 3 enemies within 20 feet.`,
+        description: talentText`Applies a 15 second ailment to target enemy. Deals 8% RAP + 121 indirect, corporeal damage every 3 seconds. At the end of the duration, explodes dealing 12% RAP + 144 corporeal damage to up to 3 enemies within 20 feet.`,
       },
 	  "Flashbang Grenade": {
         name: "Flashbang Grenade",
@@ -1175,10 +1189,10 @@ talents: {
         type: "skill",
         cost: "no cost",
         range: "100ft range",
-        cast: "1.0s cast",
+        cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Costs 2 bullets",
-        description: talentText`Deals 10% RAP + 110 corporeal damage to target enemy. Then it applies an affliction for 12 seconds to the target and up to 2 enemies within 20 feet of them that deals 4% RAP + 56 corporeal damage every 2 seconds.`,
+        description: talentText`Deals 10% RAP + 110 corporeal damage to target enemy. Then it applies an ailment for 12 seconds to the target and up to 2 enemies within 20 feet of them that deals 6% RAP + 69 indirect, corporeal damage every 2 seconds.`,
       },
 	  "Acid Bomb": {
         name: "Acid Bomb",
@@ -1192,7 +1206,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Applies 1 stack of Reduced Corporeal Resistance and a 12 second affliction to up to 9 enemies in a 20 foot area you select. Deals 4% RAP + 32 physical damage every 3 seconds.`,
+        description: talentText`Applies 1 stack of Reduced Impact Resistance, 1 stack of Reduced Ichor Resistance, and a 12 second ailment to up to 9 enemies in a 20 foot area you select. Deals 4% RAP + 40 indirect, ichor damage every 3 seconds.`,
       },
       "Improvise": {
         name: "Improvise",
@@ -1204,7 +1218,7 @@ talents: {
         cost: "no cost",
         range: "self",
         cast: "instant cast",
-        cooldown: "8s cooldown",
+        cooldown: "5s cooldown",
         blue: "Costs 1 kit\nOff the GCD",
         description: talentText`Generate 2 grenades.`,
       },
@@ -1229,10 +1243,10 @@ talents: {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Cinderblast Grenade applies stacks of Residual Explosives whenever it deals damage with a duration of 3.1 seconds and a maximum of 10 stacks. Residual Explosive deals 5% RAP + 77 corporeal damage whenever the effect ends.`,
+        description: talentText`Cinderblast Grenade applies stacks of Residual Explosives whenever it deals damage with a duration of 4 seconds and a maximum of 10 stacks. Residual Explosive deals 5% RAP + 77 indirect, corporeal damage whenever the effect ends.`,
       },
-	  "Tactic 7": {
-        name: "T7",
+	  "Barak Varr Handshake": {
+        name: "Barak Varr Handshake",
         pos: "b5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -1258,8 +1272,8 @@ talents: {
         type: "career tactic",
         description: talentText`Cinderblast Grenade, Fire Bomb, and the explosions from Sticky Bomb and Phosphorus Shell will now hit up to 12 enemies.`,
       },
-	  "Tactic 6": {
-        name: "T6",
+	  "Tool Maker's Guild": {
+        name: "Tool Maker's Guild",
         pos: "a7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1303,14 +1317,26 @@ talents: {
       },
 	  "Pull the Pin": {
         name: "Pull the Pin",
-        pos: "e5",
+        pos: "g4",
         icon: icons["abi_dw_range09"],
-        maxRank: 4,
-        reqPoints: 10,
+        maxRank: 2,
+        reqPoints: 5,
         type: "passive",
         description: talentText`You have a ${[
           10,
           20,
+        ]}% chance to generate a grenade when you use a bullet skill.`,
+      },
+	  "Pull the Pin III/IV": {
+        name: "Pull the Pin III/IV",
+        pos: "g5",
+        icon: icons["abi_dw_range09"],
+        maxRank: 2,
+        reqPoints: 10,
+		prereq: "Pull the Pin",
+        arrows: [{ dir: "down", from: "g4", to: "g5" }],
+        type: "passive",
+        description: talentText`You have a ${[
           30,
           40,
         ]}% chance to generate a grenade when you use a bullet skill.`,
@@ -1342,8 +1368,8 @@ talents: {
           40,
         ]}% increased range.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Quick Reloader": {
+        name: "Quick Reloader",
         pos: "b7",
         icon: icons["abi_ammopack"],
         maxRank: 3,
@@ -1372,8 +1398,8 @@ talents: {
           "cripple",
         ]}.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Stopping Power": {
+        name: "Stopping Power",
         pos: "g8",
         icon: icons["abi_dw_foot06"],
         maxRank: 4,
@@ -1406,7 +1432,7 @@ talents: {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1421,7 +1447,7 @@ talents: {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 3,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -1451,7 +1477,7 @@ talents: {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1511,7 +1537,7 @@ talents: {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1526,7 +1552,7 @@ talents: {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1581,7 +1607,7 @@ talents: {
         reqPoints: 0,
         prereq: "Craft Munitions",
         type: "career tactic",
-        description: talentText`Craft Munitions now costs 50 AP, is castable while moving, and has a 1.0s cast time. The ability no longer creates the buff.`,
+        description: talentText`Craft Munitions now costs 50 AP, and is instant cast. The ability no longer creates the buff.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1632,7 +1658,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -1725,7 +1751,7 @@ talents: {
         cast: "1.5s cast",
         cooldown: "no cooldown",
         blue: "Costs 2 bullets\nCastable while moving",
-        description: talentText`Deals 14% RAP + 280 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 13% RAP + 161 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
       "Craft Munitions": {
         name: "Craft Munitions",
@@ -1766,7 +1792,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 kit",
-        description: talentText`(Deployment) Summon a beer keg at your feet for 20 seconds that will heal groupmates within 30 feet of it. Affected allies gain Cover from enemies.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`(Deployment) Summon a beer keg at your feet that will heal groupmates within 30 feet of it for 3% RP + 20. Affected allies gain Cover from enemies.\n\nYou can only have one Deployment skill active.`,
       },
       "Fire Bomb": {
         name: "Fire Bomb",
@@ -1780,7 +1806,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
+        description: talentText`Deals 10% RAP + 136 corporeal damage to up to 3 enemies within a 20 foot area you select.`,
       },
       "Concussion Grenade": {
         name: "Concussion Grenade",
@@ -1806,8 +1832,8 @@ talents: {
         cost: "no cost",
         range: "self",
         cast: "instant cast",
-        cooldown: "45s cooldown",
-        blue: "Costs 1 kit",
+        cooldown: "30s cooldown",
+        blue: "Costs 2 kit",
         description: talentText`Destroy your Deployment device to apply Knocked-down and Unstoppable to up to 6 enemies within 20 feet of it.\n\nKnocked-down prevents all control of your character for 3 seconds. Unstoppable prevents application of Knocked-down or Staggered for 30 seconds.`,
       },
       "Redirect": {
@@ -1835,7 +1861,7 @@ talents: {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 kit",
-        description: talentText`(Deployment) Summon a lightning rod at your feet for 20 seconds that will deal elemental damage to up to 9 enemies within 30 feet of it. Groupmates within 30 feet of it will have their abilities augmented.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`(Deployment) Summon a lightning rod at your feet that will deal 4% RAP + 30 elemental damage to up to 9 enemies within 30 feet of it. Groupmates within 30 feet of it will have their abilities augmented.\n\nYou can only have one Deployment skill active.`,
       },
 	  "Flashbang Grenade": {
         name: "Flashbang Grenade",
@@ -1863,7 +1889,7 @@ talents: {
         cast: "instant cast",
         cooldown: "15s cooldown",
         blue: "Costs 1 bullet",
-        description: talentText`Deals 4% RAP + 30 piercing damage to the target enemy and applies Disarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects for 20 seconds.`,
+        description: talentText`Deals 11% RAP + 149 piercing damage to the target enemy and applies Disarmed and Inevitable.\n\nDisarmed prevents the use of skills for 5 seconds. Inevitable prevents the application of Disarmed and Silenced effects for 20 seconds.`,
       },
 	  "Flak Jacket": {
         name: "Flak Jacket",
@@ -1891,7 +1917,7 @@ talents: {
         cast: "1.0s cast",
         cooldown: "60s cooldown",
         blue: "Costs 2 kit",
-        description: talentText`(Deployment) Summon a magnet at your feet for 20 seconds that pulls up to 9 enemies within 65ft of you then applies Ensnared and Momentum to up to 9 enemies within 20ft of it every 2 seconds.\n\nYou can only have one Deployment skill active.`,
+        description: talentText`(Deployment) Summon a magnet at your feet for 20 seconds. When summoned, it will pull up to 9 enemies within 65 feet of you and applies Immovable to them. Every 2 seconds, applies Ensnared and Momentum to up to 9 enemies within 20 feet of it.\n\nYou can only have one Deployment skill active.\n\nImmovable prevents application of Rooted and the target from being Knocked back or Pulled for 20 seconds.\nEnsnared reduces movement speed by 30% for 16 seconds.\nMomentum prevents application of Ensnared for 8 seconds.`,
       },
       "Land Mine": {
         name: "Land Mine",
@@ -1907,14 +1933,14 @@ talents: {
         blue: "Costs 2 kit",
         description: talentText`You place a Land Mine at your feet that lasts up to 40 seconds. The mine detonates if an enemy gets too close applying the Staggered and Unstoppable effects to up to 48 enemies within 30 feet of it unless they have Cover.\n\nStagger prevents all control of your character for 5 seconds or until you are attacked. Unstoppable prevents you from being Stagger or knocked-down for 30 seconds.`,
       },
-	  "Tactic 1": {
-        name: "T1",
+	  "Reinforced Casing": {
+        name: "Reinforced Casing",
         pos: "a5",
         icon: icons["tac_spec_8"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`The armor of your deployables is doubled an their health is increased by 1000. Every 30 seconds, you can summon a deployable for free.`,
+        description: talentText`The armor of your deployables is doubled and their health is increased by 1000. Every 30 seconds, you can summon a deployable for free.`,
       },
 	  "Trench Fighting": {
         name: "Trench Fighting",
@@ -1923,7 +1949,7 @@ talents: {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`As long as you are within 30 feet of your Deployable, you will gain 15% dodge and 50% push back immunity, but lose 25% movement speed.`,
+        description: talentText`As long as you are within 30 feet of your Deployable, you will gain 15% dodge and 75% push back immunity, but lose 20% movement speed.`,
       },
 	  "Controlled Demolition": {
         name: "Controlled Demolition",
@@ -1932,7 +1958,7 @@ talents: {
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Self Destruct no longer destroys your deployable and deals 21% RAP + 266 corporeal damage, but costs 3 kit.`,
+        description: talentText`Self Destruct no longer destroys your deployable and deals 11% RAP + 142 corporeal damage, but costs 3 kit.`,
       },
 	  "Pierce Defenses": {
         name: "Pierce Defenses",
@@ -1943,8 +1969,8 @@ talents: {
         type: "career tactic",
         description: talentText`Whenever a target blocks an ability, they will take 1 stack of Reduced Piercing Resistance and 1 stack of Reduced Corporeal Resistance.`,
       },
-	  "Tactic 2": {
-        name: "T5",
+	  "Percussive Maintenance": {
+        name: "Percussive Maintenance",
         pos: "a7",
         icon: icons["tac_spec_9"],
         maxRank: 1,
@@ -2023,7 +2049,7 @@ talents: {
         type: "passive",
         description: talentText`Fire Bomb now costs 2 grenades and deals ${[
           30,
-          60,
+          75,
         ]}% more damage.`,
       },
 	  "Band Together": {
@@ -2041,8 +2067,8 @@ talents: {
           10,
         ]}%. This effect is surpressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Triangulation": {
+        name: "Triangulation",
         pos: "b7",
         icon: icons["abi_dw_giveall"],
         maxRank: 3,
@@ -2054,8 +2080,8 @@ talents: {
           30,
         ]}% more effective.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Well-Oiled Machine": {
+        name: "Well-Oiled Machine",
         pos: "e7",
         icon: icons["abi_redirect"],
         maxRank: 3,
@@ -2067,8 +2093,8 @@ talents: {
           6,
         ]} seconds.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Tradition and Innovation": {
+        name: "Tradition and Innovation",
         pos: "c8",
         icon: icons["abi_augment"],
         maxRank: 4,

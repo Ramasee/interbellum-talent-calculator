@@ -453,7 +453,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1 grenade",
-        description: talentText`Deals 11% RAP + 140 corporeal damage to up to 3 enemies within a 20 feet area you select.`,
+        description: talentText`Deals 10% RAP + 136 corporeal damage to up to 3 enemies within a 20 feet area you select.`,
       },
 	  "Flashbang Grenade": {
         name: "Flashbang Grenade",
