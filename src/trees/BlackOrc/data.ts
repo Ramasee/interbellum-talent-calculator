@@ -25,7 +25,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -145,7 +145,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.`,
+        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.\n\nThis tactic allows the ability to be used when it lights up but before it glows.`,
       },
       "Guud at Big Choppin'": {
         name: "Guud at Big Choppin'",
@@ -222,7 +222,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "No Choppin' Me": {
         name: "No Choppin' Me",
@@ -278,7 +278,7 @@ export const data: TalentData = {
         cast: "5.0s channel",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`You gain 100% block chance.`,
+        description: talentText`You gain 100% block chance for the duration.`,
       },
       "Save Da Runts": {
         name: "Save Da Runts",
@@ -370,7 +370,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
+        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 3 Fightiness.`,
       },
       "Guard": {
         name: "Guard",
@@ -452,7 +452,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`A maddening swing deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`A maddening swing deals 10% MAP + 127 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Distract": {
         name: "Distract",
@@ -478,7 +478,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`All groupmates within 100 feet of you gain an enchantment for 5 seconds. For the duration they will gain 5 action points per second and 5 adrenaline per second.`,
+        description: talentText`All groupmates within 100 feet of you gain an enchantment for 5 seconds. For the duration they will gain 5 action points per second and 5 adrenaline per second. Generates 2 Fightiness.`,
       },
 	  "Big Scrappin": {
         name: "Big Scrappin",
@@ -487,7 +487,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
-        cost: "80 action points",
+        cost: "75 action points",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
@@ -567,7 +567,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you block an attack, you will deal 6% MAP + 90 impact damage to up to 9 enemies within 30 feet of you and gain 1 Fightiness. This effect cannot happen more than once every 2 seconds.`,
+        description: talentText`Whenever you block an attack, you will deal 6% MAP + 90 indirect, impact damage to up to 9 enemies within 30 feet of you and gain 1 Fightiness. This effect cannot happen more than once every 2 seconds.`,
       },
 	  "'Ead Bashers": {
         name: "'Ead Bashers",
@@ -604,12 +604,25 @@ export const data: TalentData = {
           100,
         ]}% chance to gain an extra Fightiness whenever you gain Fightiness.`,
       },
+	  "Dat Was Great!": {
+        name: "Dat Was Great!",
+        pos: "h4",
+        icon: icons["abi_gs_yernothin"],
+        maxRank: 2,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Clobber has a ${[
+          33,
+          66,
+          100,
+        ]}% chance to generate 1 Fightiness.`,
+      },
 	  "Improved Block": {
         name: "Improved Block",
-        pos: "h4",
+        pos: "d6",
         icon: icons["skl_specexpertshield"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 15,
         type: "passive",
         description: talentText`Increase your chance to block by ${[
           3,
@@ -621,10 +634,10 @@ export const data: TalentData = {
       },
 	  "Engage": {
         name: "Engage",
-        pos: "d6",
+        pos: "e5",
         icon: icons["abi_engage"],
         maxRank: 3,
-        reqPoints: 15,
+        reqPoints: 10,
         type: "passive",
         description: talentText`Enemies that you deal direct damage to will have their outgoing damage reduced by ${[
           2,
@@ -636,7 +649,7 @@ export const data: TalentData = {
         name: "Savin' Me Hide",
         pos: "f6",
         icon: icons["abi_or_face19"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 15,
         type: "passive",
         description: talentText`Whenever you cast Can't Hit Me, you will gain ${[
@@ -705,7 +718,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -735,7 +748,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -765,7 +778,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 3,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -795,7 +808,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -825,7 +838,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -870,7 +883,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.`,
+        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.\n\nThis tactic allows the ability to be used when it lights up but before it glows.`,
       },
       "Guud at Big Choppin'": {
         name: "Guud at Big Choppin'",
@@ -902,7 +915,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -912,7 +925,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
@@ -930,7 +943,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -944,7 +957,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
       "No Choppin' Me": {
         name: "No Choppin' Me",
@@ -958,7 +971,7 @@ export const data: TalentData = {
         cast: "5.0s channel",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`You gain 100% block chance.`,
+        description: talentText`You gain 100% block chance for the duration.`,
       },
       "Save Da Runts": {
         name: "Save Da Runts",
@@ -1050,10 +1063,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
+        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 3 Fightiness.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "Less Stabbin' Me": {
+        name: "Less Stabbin' Me",
         pos: "e1",
         icon: icons["abi_gs_tuffernnails"],
         maxRank: 0,
@@ -1072,7 +1085,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "50 action points",
+        cost: "36 action points",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
@@ -1127,15 +1140,15 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
-        cost: "60 action points",
+        cost: "45 action points",
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`A maddening swing deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`A maddening swing deals 10% MAP + 127 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 2": {
-        name: "Ability 2",
+	  "Down Ya Go": {
+        name: "Down Ya Go",
         pos: "g5",
         icon: icons["abi_gs_whereyougoing"],
         maxRank: 1,
@@ -1146,7 +1159,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "20s cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals 15% MAP + 204 piercing damage to target enemy and applies Knocked-down and Unstoppable to them.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`Deals 19% MAP + 250 impact damage to target enemy and applies Knocked-down and Unstoppable to them.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
 	  "Follow Me Lead": {
         name: "Follow Me Lead",
@@ -1159,7 +1172,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`All groupmates within 100 feet of you gain an enchantment for 5 seconds. For the duration they will gain 5 action points per second and 5 adrenaline per second.`,
+        description: talentText`All groupmates within 100 feet of you gain an enchantment for 5 seconds. For the duration they will gain 5 action points per second and 5 adrenaline per second. Generates 2 Fightiness.`,
       },
 	  "Big Scrappin": {
         name: "Big Scrappin",
@@ -1168,15 +1181,15 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
-        cost: "80 action points",
+        cost: "75 action points",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
         blue: "Requires Clobberin' Time",
         description: talentText`Knocks away up to 9 enemies within 20 feet target enemy and applies Immovable to them. Apply an ailment to target enemy for 10 seconds. For the duration, their outgoing damage is decreased by 15%.\n\nImmovable prevents the application of Knockbacks, Pulls, and the Rooted status for 20 seconds.`,
       },
-      "Ability 3": {
-        name: "Ability 3",
+      "Rock 'Ard": {
+        name: "Rock 'Ard",
         pos: "d9",
         icon: icons["abi_gs_canttouchus"],
         maxRank: 1,
@@ -1187,7 +1200,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Deal 15% MAP + 204 piercing damage to target enemy. Your defensive target gains 1 stack of Savin' Me Hide and a 5 second enchantment. For the duration, target absorbs up to 14% RP + 166 damage. Generates 1 Fightiness.`,
+        description: talentText`Deal 15% MAP + 204 piercing damage to target enemy. Your defensive target gains 1 stack of Savin' Me Hide and a 5 second enchantment. For the duration, target absorbs up to 15% RP + 199 damage. Generates 2 Fightiness.`,
       },
       "Waaagh!": {
         name: "Waagh!",
@@ -1211,14 +1224,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Outta My Way, Knowhere ta Go, and Distract now generates 1 Fightiness.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Da Toughest!": {
+        name: "Da Toughest!",
         pos: "c5",
         icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`When you cast Ability 1 or Follow Me Lead, all groupmates within 100 feet gain 1 stack of Savin' Me Hide.`,
+        description: talentText`When you cast Less Stabbin' Me or Follow Me Lead, all groupmates within 100 feet gain 1 stack of Savin' Me Hide.`,
       },
 	  "Big Brawlin'": {
         name: "Big Brawlin'",
@@ -1229,14 +1242,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Skull Thumper now applies 1 stack of Reduced Fortitude and 1 stack of Reduced Agility to the target.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Quit Hittin Da Runts": {
+        name: "Quit Hittin Da Runts",
         pos: "b6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 1 will now apply to up to 8 other enemies within 30 feet of you.`,
+        description: talentText`Less Stabbin' Me will now apply to up to 8 other enemies within 30 feet of you.`,
       },
 	  "You'z See Me Block Dat?!": {
         name: "You'z See Me Block Dat?!",
@@ -1245,7 +1258,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Whenever you block an attack, you will deal 6% MAP + 90 impact damage to up to 9 enemies within 30 feet of you and gain 1 Fightiness. This effect cannot happen more than once every 2 seconds.`,
+        description: talentText`Whenever you block an attack, you will deal 6% MAP + 90 indirect, impact damage to up to 9 enemies within 30 feet of you and gain 1 Fightiness. This effect cannot happen more than once every 2 seconds.`,
       },
 	  "'Ead Bashers": {
         name: "'Ead Bashers",
@@ -1269,8 +1282,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you block an attack, you will gain 15% damage reduction for 5 seconds. Big Swing will now cost 10 less action points.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Tuffer 'n Nails": {
+        name: "Tuffer 'n Nails",
         pos: "e3",
         icon: icons["abi_or_face19"],
         maxRank: 3,
@@ -1284,23 +1297,36 @@ export const data: TalentData = {
           5,
         ]} groupmates within 100 feet of you.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
-        pos: "b4",
+	  "Loud Mouth": {
+        name: "Loud Mouth",
+        pos: "b3",
         icon: icons["abi_gs_followmelead"],
-        maxRank: 5,
-        reqPoints: 5,
+        maxRank: 3,
+        reqPoints: 0,
         type: "passive",
-        description: talentText`Ability 1 and Follow Me Lead cost ${[
-          4,
-          8,
-          12,
-          16,
-          20,
+        description: talentText`Less Stabbin' Me and Follow Me Lead cost ${[
+          5,
+          10,
+          15,
         ]} less action points.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Improved Basic Attack": {
+        name: "Improved Basic Attack",
+        pos: "b4",
+        icon: icons["abi_or_melee15"],
+        maxRank: 2,
+        reqPoints: 5,
+        type: "passive",
+        description: talentText`Your basic attack will deal ${[
+          75,
+          150,
+          225,
+          300,
+          375,
+        ]}% additional damage.`,
+      },
+	  "Dat Was Great!": {
+        name: "Dat Was Great!",
         pos: "d6",
         icon: icons["abi_gs_yernothin"],
         maxRank: 3,
@@ -1350,17 +1376,17 @@ export const data: TalentData = {
           10,
         ]}%. This effect is supressed for 5 seconds whenever you are hit by a single-target ability.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Walk It Off": {
+        name: "Walk It Off",
         pos: "e8",
         icon: icons["abi_gs_stealyerthunder"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Savin' Me Hide has a ${[
-          15,
-          30,
-          45,
+          6,
+          18,
+          36,
           60,
         ]}% chance to apply 1 stack of Enhanced Piercing, Impact, or Ichor Resistance each time the target blocks.`,
       },
@@ -1384,7 +1410,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1429,7 +1455,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1444,7 +1470,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1459,7 +1485,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -1474,7 +1500,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1549,7 +1575,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.`,
+        description: talentText`Fightin'is gettin' guud, Clobberin' Time now costs 5 less Fightiness.\n\nThis tactic allows the ability to be used when it lights up but before it glows.`,
       },
       "Guud at Big Choppin'": {
         name: "Guud at Big Choppin'",
@@ -1577,11 +1603,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -1595,7 +1621,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -1609,7 +1635,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -1623,35 +1649,35 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
-      "Morale 1 Class": {
-        name: "Morale 1 Class",
+      "Shut Yer Face": {
+        name: "Shut Yer Face",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_or_face02"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "65ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Applies Silenced and Inevitable to target enemy.\n\nSilenced prevents the use of spells for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
-      "Morale 2 Spec": {
-        name: "Morale 2 Spec",
+      "Lookin Fer Opp'tunity": {
+        name: "Lookin Fer Opp'tunity",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_face01"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Generates 30 Fightiness.`,
       },
       "Puddle O' Muck": {
         name: "Puddle O' Muck",
@@ -1729,7 +1755,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 2 Fightiness.`,
+        description: talentText`Wuts' fightin dirty? a scrap is a scrap. You deal 15% MAP + 204 impact damage to target enemy. Generates 3 Fightiness.`,
       },
       "Skull Thumper": {
         name: "Skull Thumper",
@@ -1738,15 +1764,15 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "skill",
-        cost: "50 action points",
+        cost: "36 action points",
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
         description: talentText`A smash to the 'ead that deals 26% MAP + 348 impact damage to target enemy and apply 1 stack of Reduced Block to them.`,
       },
-      "Ability 4": {
-        name: "Ability 4",
+      "Stab Ya Gooder": {
+        name: "Stab Ya Gooder",
         pos: "f1",
         icon: icons["abi_or_figure13"],
         maxRank: 0,
@@ -1756,10 +1782,10 @@ export const data: TalentData = {
         range: "65ft range",
         cast: "instant cast",
         cooldown: "6s cooldown",
-        description: talentText`Target ally gains 1 stack of Enhanced Critical Chance.`,
+        description: talentText`Target ally gains 1 stack of Enhanced Critical Chance. Generates 1 Fightiness.`,
       },
-      "Ability 2": {
-        name: "Ability 2",
+      "Down Ya Go": {
+        name: "Down Ya Go",
         pos: "g1",
         icon: icons["abi_gs_whereyougoing"],
         maxRank: 0,
@@ -1770,10 +1796,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "20s cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Deals 15% MAP + 204 piercing damage to target enemy and applies Knocked-down and Unstoppable to them.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
+        description: talentText`Deals 19% MAP + 250 impact damage to target enemy and applies Knocked-down and Unstoppable to them.\n\nKnocked-down prevents all control of your character for 3 seconds.\nUnstoppable prevents application of Knocked-down and Staggered for 30 seconds.`,
       },
-      "Ability 5": {
-        name: "Ability 5",
+      "'Ave Anuther One": {
+        name: "'Ave Anuther One",
         pos: "h1",
         icon: icons["abi_or_melee19"],
         maxRank: 0,
@@ -1784,7 +1810,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies a 10 second affliction to target enemy. Every 2 seconds, deals 9% MAP + 126 ichor damage and applies Bleeding.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
+        description: talentText`Applies a 10 second ailment to target enemy. Every 2 seconds, deals 10% MAP + 130 ichor damage and applies Bleeding.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
       },
       "Can't Hit Me": {
         name: "Can't Hit Me",
@@ -1806,15 +1832,15 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 5,
         type: "skill",
-        cost: "60 action points",
+        cost: "45 action points",
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`A maddening swing deals 10% MAP + 126 impact damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`A maddening swing deals 10% MAP + 127 impact damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 6": {
-        name: "Ability 6",
+	  "Yer Nuthin": {
+        name: "Yer Nuthin",
         pos: "c5",
         icon: icons["abi_or_melee13"],
         maxRank: 1,
@@ -1825,7 +1851,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time",
-        description: talentText`Applies a 6 second affliction to target enemy. At the end of the duration, deals 25% MAP + 312 ichor damage to target.`,
+        description: talentText`Applies a 6 second ailment to target enemy. At the end of the duration, deals 39% MAP + 507 indirect, ichor damage to target.`,
       },
 	  "Chop Fasta": {
         name: "Chop Fasta",
@@ -1839,10 +1865,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Disabled by Clobberin' Time",
-        description: talentText`Deals 18% MAP + 222 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
+        description: talentText`Deals 18% MAP + 234 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
       },
-	  "Ability 7": {
-        name: "Ability 7",
+	  "Get Em": {
+        name: "Get Em",
         pos: "e8",
         icon: icons["abi_or_melee08"],
         maxRank: 1,
@@ -1853,21 +1879,21 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take 5% MAP + 73 piercing damage and lose a stack.`,
+        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take 7% MAP + 86 indirect, piercing damage and lose a stack.`,
       },
-      "Ability 8": {
-        name: "Ability 8",
+      "T'ree Hit Combo": {
+        name: "T'ree Hit Combo",
         pos: "d9",
         icon: icons["abi_or_furiouschoppin"],
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
-        cost: "60 action points",
+        cost: "50 action points",
         range: "8ft range",
         cast: "2.5s channel",
         cooldown: "no cooldown",
         blue: "Requires Clobberin' Time\nCastable While Moving",
-        description: talentText`Deals 13% MAP + 182 piercing damage every 0.5 seconds to target enemy.`,
+        description: talentText`Deals 14% MAP + 186 piercing damage every 0.5 seconds to target enemy.`,
       },
       "Waaagh!": {
         name: "Waagh!",
@@ -1891,8 +1917,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Your Bleeding effect can now stack up to 3 times on a target. In addition, whenever Bleedign expires it has a 20% chance to reapply.`,
       },
-	  "Tactic 7": {
-        name: "Tactic 7",
+	  "Changin' Da Plan": {
+        name: "Changin' Da Plan",
         pos: "b5",
         icon: icons["tac_spec_1"],
         maxRank: 1,
@@ -1900,26 +1926,26 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`You gain 50% of your block chance as accuracy while in Clobberin' Time.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Toothy Weapons": {
+        name: "Toothy Weapons",
         pos: "d6",
         icon: icons["tac_spec_1"],
         maxRank: 3,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 4 will also apply 1 stack of Enhanced Weaponskill. In addition, it now always applies to you in addition to your target.`,
+        description: talentText`Stab Ya Gooder will also apply 1 stack of Enhanced Weaponskill. In addition, it now always applies to you in addition to your target.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Pullin' Teef": {
+        name: "Pullin' Teef",
         pos: "f6",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 2 will now apply Marked to the target.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
+        description: talentText`Down Ya Go will now apply Marked to the target.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "Go Bigger": {
+        name: "Go Bigger",
         pos: "e7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1929,7 +1955,7 @@ export const data: TalentData = {
           { dir: "down", from: "e6", to: "e7" },
         ],
         type: "career tactic",
-        description: talentText`Chop Fasta and Big Swing will now hit up to 24 enemies. Chop Fasta will now deal 50% less damage.`,
+        description: talentText`Chop Fasta and Big Swing will now hit up to 24 enemies. Chop Fasta will now deal 50% less damage but generate 2 Fightiness.`,
       },
 	  "Big Brawlin'": {
         name: "Big Brawlin'",
@@ -1940,21 +1966,21 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Skull Thumper now applies 1 stack of Reduced Fortitude and 1 stack of Reduced Agility to the target.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Egg Em On": {
+        name: "Egg Em On",
         pos: "g8",
         icon: icons["tac_spec_1"],
         maxRank: 5,
         reqPoints: 25,
-        prereq: "Ability 7",
+        prereq: "Get Em",
 		arrows: [
           { dir: "right", from: "e8", to: "g8" },
         ],
         type: "career tactic",
-        description: talentText`Ability 7 now applies 10 stacks.`,
+        description: talentText`Get Em now applies 10 stacks.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Don' Botha Me None": {
+        name: "Don' Botha Me None",
         pos: "e3",
         icon: icons["abi_gs_eadbutt"],
         maxRank: 4,
@@ -1982,38 +2008,38 @@ export const data: TalentData = {
           375,
         ]}% additional damage.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
-        pos: "e5",
+	  "An Anuther One": {
+        name: "An Anuther One",
+        pos: "b3",
         icon: icons["abi_or_melee19"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "passive",
-        description: talentText`Ability 5 has a ${[
+        description: talentText`'Ave Anuther One has a ${[
           50,
           100,
         ]}% chance to hit an additional target within 20 feet.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Improved Yer Nuthin": {
+        name: "Improved Yer Nuthin",
         pos: "c6",
         icon: icons["abi_or_melee13"],
         maxRank: 4,
         reqPoints: 15,
-        prereq: "Ability 6",
+        prereq: "Yer Nuthin",
 		arrows: [
           { dir: "down", from: "c5", to: "c6" },
         ],
         type: "passive",
-        description: talentText`Ability 6 deals ${[
+        description: talentText`Yer Nuthin deals ${[
           5,
           10,
           15,
           20,
         ]}% more damage.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Dat Was Great!": {
+        name: "Dat Was Great!",
         pos: "g6",
         icon: icons["abi_gs_yernothin"],
         maxRank: 3,
@@ -2025,21 +2051,21 @@ export const data: TalentData = {
           100,
         ]}% chance to generate 1 Fightiness.`,
       },
-	  "Passive 9": {
-        name: "Passive 9",
+	  "Carve Deepa": {
+        name: "Carve Deepa",
         pos: "b7",
         icon: icons["abi_or_throatslasha"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
         description: talentText`${[
-          "Ability 5",
-          "Ability 5 and Ability 6",
-          "Abilty 5, Ability 6, and Ability 7",
+          "'Ave Anuther One",
+          "'Ave Anuther One and Yer Nuthin",
+          "'Ave Anuther One, Get Em, and Yer Nuthin",
         ]} now classify as a cripple.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
+	  "Bigga Slash": {
+        name: "Bigga Slash",
         pos: "h7",
         icon: icons["abi_gs_bigswing"],
         maxRank: 3,
@@ -2055,17 +2081,17 @@ export const data: TalentData = {
           15,
         ]}% more damage.`,
       },
-	  "Passive 10": {
-        name: "Passive 10",
+	  "Linecracka": {
+        name: "Linecracka",
         pos: "c8",
         icon: icons["abi_or_armor01"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Whenever you activate Clobberin' Time, you will gain ${[
-          10,
-          20,
-          35,
+          5,
+          15,
+          30,
           50,
         ]}% outgoing damage for 4 seconds.`,
       },
