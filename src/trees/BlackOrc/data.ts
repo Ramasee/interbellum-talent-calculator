@@ -1810,7 +1810,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies a 10 second ailment to target enemy. Every 2 seconds, deals 10% MAP + 130 ichor damage and applies Bleeding.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
+        description: talentText`Applies a 10 second ailment to target enemy. Every 2 seconds, deals 10% MAP + 130 indirect, ichor damage and applies Bleeding. Generates 1 Fightiness.\n\nBleeding is a status effect that lasts for 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
       },
       "Can't Hit Me": {
         name: "Can't Hit Me",
@@ -1879,7 +1879,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Clobberin' Time",
-        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take 7% MAP + 86 indirect, piercing damage and lose a stack.`,
+        description: talentText`Applies 5 stacks of a 10 second ailment to target enemy. Each time the enemy is hit by an ability, they take 7% MAP + 86 indirect, piercing damage and lose a stack. Generates 1 Fightiness.`,
       },
       "T'ree Hit Combo": {
         name: "T'ree Hit Combo",
@@ -1930,7 +1930,7 @@ export const data: TalentData = {
         name: "Toothy Weapons",
         pos: "d6",
         icon: icons["tac_spec_1"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
         description: talentText`Stab Ya Gooder will also apply 1 stack of Enhanced Weaponskill. In addition, it now always applies to you in addition to your target.`,
@@ -1970,7 +1970,7 @@ export const data: TalentData = {
         name: "Egg Em On",
         pos: "g8",
         icon: icons["tac_spec_1"],
-        maxRank: 5,
+        maxRank: 1,
         reqPoints: 25,
         prereq: "Get Em",
 		arrows: [
@@ -2013,7 +2013,7 @@ export const data: TalentData = {
         pos: "b3",
         icon: icons["abi_or_melee19"],
         maxRank: 2,
-        reqPoints: 5,
+        reqPoints: 0,
         type: "passive",
         description: talentText`'Ave Anuther One has a ${[
           50,

@@ -25,7 +25,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -40,7 +40,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -218,7 +218,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
@@ -236,7 +236,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -369,7 +369,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Deals 33% MAP + 453 piercing damage to target enemy.`,
+        description: talentText`Deals 33% MAP + 450 piercing damage to target enemy.`,
       },
       "Charge": {
         name: "Charge",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 18% MAP + 222 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        description: talentText`Deals 18% MAP + 234 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
       },
       "Sit Down!": {
         name: "Sit Down!",
@@ -422,7 +422,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Applies a 6 second ailment to target enemy. Deals 33% SAP + 425 impact damage to them at the end of the duration.`,
+        description: talentText`Applies a 6 second ailment to target enemy. Deals 32% SAP + 443 indirect, impact damage to them at the end of the duration.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -448,7 +448,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 11% MAP + 133 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Quit Yer Yappin'": {
         name: "Quit Yer Yappin'",
@@ -480,7 +480,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 171 piercing damage to up to 9 enemies within 30 feet of you.`,
       },
 	  "Bleed 'Em Out": {
         name: "Bleed 'Em Out",
@@ -494,7 +494,7 @@ export const data: TalentData = {
         cast: "3.0s channel",
         cooldown: "no cooldown",
         blue: "Castable While Moving",
-        description: talentText`Applies one stack of a 6 second ailment to target enemy every second with a maximum of 4 stacks. For the duration, deals 13% MAP + 175 ichor damage every 3 seconds.`,
+        description: talentText`Applies one stack of a 6 second ailment to target enemy every second with a maximum of 4 stacks. For the duration, deals 8% MAP + 101 ichor damage every 3 seconds.`,
       },
       "Hurtin' Time": {
         name: "Hurtin' Time",
@@ -508,7 +508,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Off the GCD",
-        description: talentText`Gain a buff for 60 seconds. For the duration, you have +15% outgoing damage but you will lose 30 Psychic Energy every second. This effect will be dispelled if you run out of Psychic Energy.`,
+        description: talentText`Gain a buff for 60 seconds. For the duration, you have +20% outgoing damage but you will lose 20 Psychic Energy every second. This effect will be dispelled if you run out of Psychic Energy.`,
       },
       "Waaagh!": {
         name: "Waaagh!",
@@ -530,7 +530,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you spend Psychic Energy, you will gain a 5 second enchantment. Absorb up to X damage for the duration.`,
+        description: talentText`Whenever you spend Psychic Energy, you will gain a 5 second enchantment. Absorb up to 15% RP + 204 damage for the duration.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -593,13 +593,13 @@ export const data: TalentData = {
           { dir: "right", from: "d8", to: "e8" },
         ],
         type: "career tactic",
-        description: talentText`Bleed 'Em Out will now hit an additional enemy within 15 feet of the target.`,
+        description: talentText`Bleed 'Em Out will now hit an additional enemy within 20 feet of the target.`,
       },
 	  "Long Lasta": {
         name: "Long Lasta",
         pos: "e3",
         icon: icons["abi_or_figure10"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 0,
         type: "passive",
         description: talentText`Whenever you use a basic attack, you will gain ${[
@@ -607,29 +607,15 @@ export const data: TalentData = {
           6,
           9,
           12,
+		  15,
         ]}% outgoing damage for 4 seconds.`,
-      },
-	  "Improved Basic Attack": {
-        name: "Improved Basic Attack",
-        pos: "c4",
-        icon: icons["abi_gs_yernothin"],
-        maxRank: 2,
-        reqPoints: 5,
-        type: "passive",
-        description: talentText`Your basic attacks will deal ${[
-          75,
-          150,
-          225,
-          300,
-          375,
-        ]}% additional damage.`,
       },
 	  "Shrug It Off": {
         name: "Shrug It Off",
-        pos: "e5",
+        pos: "c4",
         icon: icons["abi_or_figure12"],
-        maxRank: 2,
-        reqPoints: 10,
+        maxRank: 3,
+        reqPoints: 5,
         type: "passive",
         description: talentText`Gain ${[
           1,
@@ -679,7 +665,7 @@ export const data: TalentData = {
 		  4,
           6,
 		  8,
-        ]}.`,
+        ]}%.`,
       },
 	  "Improved Wild Choppin'": {
         name: "Improved Wild Choppin'",
@@ -710,7 +696,7 @@ export const data: TalentData = {
           12,
           18,
           24,
-        ]}% MAP impact damage to them. In addition, your potency is reduced by ${[
+        ]}% MAP indirect, impact damage to them. In addition, your potency is reduced by ${[
           15,
           30,
           45,
@@ -737,7 +723,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -767,7 +753,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -812,7 +798,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -827,7 +813,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -842,7 +828,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -857,7 +843,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -976,7 +962,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 30 feet location you select are knocked straight up into the air.`,
       },
       "Hunter's Trap": {
         name: "Hunter's Trap",
@@ -1054,7 +1040,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 6% RAP + 133 piercing damage to target enemy. Generates 40 action points.`,
+        description: talentText`(Basic Attack) Deals 6% RAP + 133 piercing damage to target enemy. Generates 40 action points.`,
       },
       "Plink": {
         name: "Plink",
@@ -1081,10 +1067,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Deals 33% MAP + 453 piercing damage to target enemy.`,
+        description: talentText`Deals 33% MAP + 450 piercing damage to target enemy.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "Go For Da Soft Spot": {
+        name: "Go For Da Soft Spot",
         pos: "e1",
         icon: icons["abi_gs_whatarmor"],
         maxRank: 0,
@@ -1092,12 +1078,12 @@ export const data: TalentData = {
         type: "skill",
         cost: "50 action points",
         range: "100ft range",
-        cast: "3.0s cast",
+        cast: "3.0s channel",
         cooldown: "10s cooldown",
-        description: talentText`Deals 11% RAP + 140 piercing damage to target enemy every second and apply 1 stack of Reduced Agility, Dodge, or Block.`,
+        description: talentText`Deals 10% RAP + 148 piercing damage to target enemy every second and apply 1 stack of Reduced Agility, Dodge, or Block.`,
       },
-      "Ability 2": {
-        name: "Ability 2",
+      "Wear Em Down": {
+        name: "Wear Em Down",
         pos: "f1",
         icon: icons["abi_or_yerallbleedinnow"],
         maxRank: 0,
@@ -1108,7 +1094,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Psychic Energy",
-        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals 16% MAP + 206 ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second ailment to target enemy stacking up to 5 times. For the duration, deals 9% MAP + 135 indirect, ichor damage every 3 seconds.`,
       },
       "Drop That!": {
         name: "Drop That!",
@@ -1123,8 +1109,8 @@ export const data: TalentData = {
         cooldown: "10s cooldown",
         description: talentText`Applies Disarmed and Inevitable to the target.\n\nDisarmed prevents the use of skills for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
-      "Ability 3": {
-        name: "Ability 3",
+      "Don' Wana Live Foreva": {
+        name: "Don' Wana Live Foreva",
         pos: "h1",
         icon: icons["abi_or_range02"],
         maxRank: 0,
@@ -1134,7 +1120,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 14% RAP + 191 piercing damage to target enemy, applies 1 stack of Reduced Outgoing Healing, and applies a 5 second affliction. For the duration, target has 33% slower cast times.`,
+        description: talentText`Deals 15% RAP + 214 piercing damage to target enemy, applies 1 stack of Reduced Outgoing Healing, and applies a 5 second affliction. For the duration, target has 33% slower cast times.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1160,7 +1146,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 10 second affliction to up to 9 enemies within a 30 foot area you select. For the duration, deals 4% RAP + 43 ichor damage every 2 seconds.`,
+        description: talentText`Applies a 10 second ailment to up to 9 enemies within a 30 foot area you select. For the duration, deals 4% RAP + 44 indirect, ichor damage every 2 seconds.`,
       },
 	  "Quit Yer Yappin'": {
         name: "Quit Yer Yappin'",
@@ -1188,20 +1174,20 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet of you.`,
       },
-	  "Ability 4": {
-        name: "Ability 4",
+	  "Abuse Em": {
+        name: "Abuse Em",
         pos: "d8",
         icon: icons["abi_or_range01"],
         maxRank: 1,
         reqPoints: 25,
         type: "skill",
-        cost: "40 action points",
+        cost: "65 action points",
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "15s cooldown",
-        description: talentText`Applies 3 stacks of Reduced Armor and a 15 second affliction to target enemy. For the duration, deals 10% RAP + 113 ichor damage every 3 seconds.`,
+        description: talentText`Applies 3 stacks of Reduced Armor and a 15 second ailment to target enemy. For the duration, deals 16% RAP + 226 indirect, ichor damage every 3 seconds.`,
       },
       "Da Big Arrer": {
         name: "Da Big Arrer",
@@ -1210,11 +1196,11 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 30,
         type: "skill",
-        cost: "100 action points",
+        cost: "65 action points",
         range: "100ft range",
         cast: "3.0s cast",
         cooldown: "15s cooldown",
-        description: talentText`Deals 73% RAP + 974 piercing damage to target enemy.`,
+        description: talentText`Deals 91% RAP + 1210 piercing damage to target enemy.`,
       },
       "Penetrating Arrow": {
         name: "Penetrating Arrow",
@@ -1236,7 +1222,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you spend Psychic Energy, you will gain a 5 second enchantment. Absorb up to X damage for the duration.`,
+        description: talentText`Whenever you spend Psychic Energy, you will gain a 5 second enchantment. Absorb up to 15% RP + 204 damage for the duration.`,
       },
 	  "Unfair Advantage": {
         name: "Unfair Advantage",
@@ -1256,8 +1242,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Plink has a 0.75 second faster cast time.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Biggest and Strongest": {
+        name: "Biggest and Strongest",
         pos: "g6",
         icon: icons["tac_spec_1"],
         maxRank: 1,
@@ -1265,17 +1251,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Vigilance now increases outgoing damage by 20% instead of its original effects.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "You Got Nuffin": {
+        name: "You Got Nuffin",
         pos: "a7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Ability 1 and Ability 3 now hit up to 8 additional enemies within 20 feet of the target, but will deal 66% less damage.`,
+        description: talentText`Go For Da Soft Spot and Don Wana Live Foreva now hit up to 8 additional enemies within 20 feet of the target, but will deal 66% less damage.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Heavy Metal": {
+        name: "Heavy Metal",
         pos: "h7",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1287,17 +1273,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Shrapnel Arrer now reduces Outgoing Damage and Outgoing Healing by 5%; and Pushback Immunity by 33%.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Finish Em Fasta": {
+        name: "Finish Em Fasta",
         pos: "f8",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Supa Chop, Ability 2, and Wild Choppin' now apply stacks of Reduced Piercing Resistance to their target.`,
+        description: talentText`Supa Chop, Wear Em Down, and Wild Choppin' now apply stacks of Reduced Piercing Resistance to their target.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Red Goes Fasta": {
+        name: "Red Goes Fasta",
         pos: "e3",
         icon: icons["abi_or_range04"],
         maxRank: 5,
@@ -1311,8 +1297,8 @@ export const data: TalentData = {
           25,
         ]}%.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Bigga and Harda": {
+        name: "Bigga and Harda",
         pos: "b4",
         icon: icons["abi_gs_arreromork"],
         maxRank: 1,
@@ -1320,13 +1306,13 @@ export const data: TalentData = {
         type: "passive",
         description: talentText`Your ranged attacks deal 50% more damage but have an additional 30% chance to miss.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Bring It On": {
+        name: "Bring It On",
         pos: "b5",
         icon: icons["abi_gs_arreromork"],
         maxRank: 2,
         reqPoints: 10,
-        prereq: "Passive 2",
+        prereq: "Bigga and Harda",
 		arrows: [
           { dir: "down", from: "b4", to: "b5" },
         ],
@@ -1336,8 +1322,8 @@ export const data: TalentData = {
           20,
         ]}% range and accuracy for 10 seconds.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Go Fasta": {
+        name: "Go Fasta",
         pos: "d6",
         icon: icons["abi_gs_runnshoot"],
         maxRank: 2,
@@ -1345,8 +1331,8 @@ export const data: TalentData = {
         type: "passive",
         description: talentText`You gain ${[
           2,
-          4,
-        ]}% movement speed for 10 seconds whenever you cast Ability 2. Stacks up to 5 times.`,
+          5,
+        ]}% movement speed for 10 seconds whenever you spend Psychic Energy. Stacks up to 5 times.`,
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
@@ -1380,7 +1366,7 @@ export const data: TalentData = {
           15,
         ]}% more damage.`,
       },
-	  "Passive 5": {
+	  "Ladz, Ladz, Ladz": {
         name: "Passive 5",
         pos: "e7",
         icon: icons["abi_gs_quityersquabbin"],
@@ -1388,22 +1374,22 @@ export const data: TalentData = {
         reqPoints: 20,
         type: "passive",
         description: talentText`Your outgoing damage is reduced by ${[
-          3,
           6,
-          9,
-        ]}%. Whenever you use an ability, all groupmates within 100 feet will gain the same amount of outgoing damage for 3 seconds.`,
+          12,
+          20,
+        ]}%. Whenever you use an ability, all groupmates within 100 feet will gain half the amount of outgoing damage for 3 seconds.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Use Them": {
+        name: "Use Them",
         pos: "e8",
         icon: icons["abi_or_figure10"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Your action point costs are reduced by ${[
-          5,
-          10,
-          15,
+          2,
+          6,
+          12,
           20,
         ]}%. Whenever you spend Psychic Energy, you will double this benefit for 10 seconds.`,
       },
@@ -1427,7 +1413,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 5,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1442,7 +1428,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -1457,7 +1443,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 1,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -1472,7 +1458,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -1502,7 +1488,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -1517,7 +1503,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1532,7 +1518,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 4,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1547,7 +1533,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1652,7 +1638,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -1666,21 +1652,21 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all ailments and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
-      "Morale 1 Class": {
-        name: "Morale 1 Class",
+      "Melt Armor": {
+        name: "Melt Armor",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["morale_melt"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Insert tooltip.`,
+        description: talentText`Target enemy gains 4 stacks of Reduced Armor.`,
       },
       "Relentless": {
         name: "Relentless",
@@ -1759,8 +1745,8 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Deals 21% MAP + 280 piercing damage to target enemy.`,
       },
-      "Ability 5": {
-        name: "Ability 5",
+      "Gaze of Mork": {
+        name: "Gaze of Mork",
         pos: "d1",
         icon: icons["abi_or_melee06"],
         maxRank: 0,
@@ -1771,7 +1757,7 @@ export const data: TalentData = {
         cast: "2.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Deals 57% SAP + 771 impact damage to target enemy.`,
+        description: talentText`Deals 57% SAP + 767 impact damage to target enemy.`,
       },
       "Bring Da Pain": {
         name: "Bring Da Pain",
@@ -1785,7 +1771,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 50 Psychic Energy",
-        description: talentText`Applies a 6 second ailment to target enemy. Deals 33% SAP + 425 impact damage to them at the end of the duration.`,
+        description: talentText`Applies a 6 second ailment to target enemy. Deals 32% SAP + 443 indirect, impact damage to them at the end of the duration.`,
       },
       "Chop Fasta": {
         name: "Chop Fasta",
@@ -1798,7 +1784,7 @@ export const data: TalentData = {
         range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 18% MAP + 222 piercing damage to target enemy and up to 2 other enemies within 15 feet of them.`,
+        description: talentText`Deals 18% MAP + 234 piercing damage to target enemy and up to 2 other enemies within 20 feet of them.`,
       },
       "Quit Yer Yappin'": {
         name: "Quit Yer Yappin'",
@@ -1814,8 +1800,8 @@ export const data: TalentData = {
         blue: "Costs 30 Psychic Energy",
         description: talentText`Applies Silenced and Inevitable to target enemy.\n\nSilenced prevents the use fo spells for 5 seconds.\nInevitable prevents the application of Disarmed and Silenced for 20 seconds.`,
       },
-      "Ability 2": {
-        name: "Ability 2",
+      "Wear Em Down": {
+        name: "Wer Em Down",
         pos: "h1",
         icon: icons["abi_or_yerallbleedinnow"],
         maxRank: 0,
@@ -1826,7 +1812,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 40 Psychic Energy",
-        description: talentText`Applies a 21 second affliction to target enemy stacking up to 5 times. For the duration, deals 16% MAP + 206 ichor damage every 3 seconds.`,
+        description: talentText`Applies a 21 second ailment to target enemy stacking up to 5 times. For the duration, deals 9% MAP + 135 indirect, ichor damage every 3 seconds.`,
       },
       "Vigilance": {
         name: "Vigilance",
@@ -1841,8 +1827,8 @@ export const data: TalentData = {
         cooldown: "60s cooldown",
         description: talentText`Your damage reduction is increased by 50% but your outgoing damage is reduced by 90% for 7 seconds.`,
       },
-	  "Ability 3 NG": {
-        name: "Ability 3 NG",
+	  "Breath of Mork": {
+        name: "Breath of Mork",
         pos: "g4",
         icon: icons["abi_ge_zap"],
         maxRank: 1,
@@ -1854,8 +1840,8 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Deals 36% SAP + 485 elemental damage to target enemy. Then will jump to another enemy within 20 feet. Jumps twice.\n\nAugmented: each jump will explode dealing 7% SAP + 95 elemental damage to 1 additional enemy within 20 feet.`,
       },
-	  "Ability 6": {
-        name: "Ability 6",
+	  "Tired Already?": {
+        name: "Tired Already?",
         pos: "c5",
         icon: icons["abi_gs_getemlads"],
         maxRank: 1,
@@ -1866,7 +1852,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "5s cooldown",
         blue: "Costs 35 Psychic Energy",
-        description: talentText`Deals 16% SAP + 205 impact damage to target enemy and slows their movement by 25% for 1 second.`,
+        description: talentText`Deals 17% SAP + 211 impact damage to target enemy and slows their movement by 25% for 1 second.`,
       },
 	  "Wild Choppin'": {
         name: "Wild Choppin'",
@@ -1880,10 +1866,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 12% MAP + 170 piercing damage to up to 9 enemies within 30 feet of you.`,
       },
-	  "Ability 7": {
-        name: "Ability 7",
+	  "Fists of Gork": {
+        name: "Fists of Gork",
         pos: "b8",
         icon: icons["abi_gs_bunchowaaagh"],
         maxRank: 1,
@@ -1894,10 +1880,10 @@ export const data: TalentData = {
         cast: "3.0s cast",
         cooldown: "no cooldown",
         blue: "Costs 75 Psychic Energy",
-        description: talentText`Deals 32% SAP + 424 impact damage to target enemy every second.`,
+        description: talentText`Deals 32% SAP + 426 impact damage to target enemy every second.`,
       },
-      "Ability 8": {
-        name: "Ability 8",
+      "Really Green": {
+        name: "Really Green",
         pos: "d9",
         icon: icons["abi_or_figure22"],
         maxRank: 1,
@@ -1922,26 +1908,26 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`You interrupt up to 48 enemies who do not have Cover from you within 30 feet every 0.5 seconds. Whenever you successfully interrupt an enemy, you will deal 10% MAP + 50 ichor damage to them and up to 17 other enemies within 20 feet of them.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "Cripple Em": {
+        name: "Cripple Em",
         pos: "a5",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Bring Da Pain and Ability 2 are now cripples.`,
+        description: talentText`Bring Da Pain and Wear Em Down are now cripples.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Fightin' Betta": {
+        name: "Fightin' Betta",
         pos: "b5",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Whenever you hit with a melee attack, your next ability 5 cast within 8 seconds will deal 33% more damage.`,
+        description: talentText`Whenever you hit with a melee attack, your next Gaze of Mork cast within 8 seconds will deal 33% more damage.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Biggest and Strongest": {
+        name: "Biggest and Strongest",
         pos: "a6",
         icon: icons["tac_spec_1"],
         maxRank: 1,
@@ -1967,30 +1953,30 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Lotsa Choppin' and Wild Choppin' will now hit up to 24 enemies.`,
       },
-	  "Tactic 8": {
-        name: "Tactic 8",
+	  "Big Breath": {
+        name: "Big Breath",
         pos: "g7",
         icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 20,
-        prereq: "Ability 3 NG",
+        prereq: "Breath of Mork",
 		arrows: [
           { dir: "down", from: "g4", to: "g7" },
         ],
         type: "career tactic",
-        description: talentText`Ability 3 NG will be augmented and costs 30 PE. Otherwise cast as normal.`,
+        description: talentText`If you have 30 or more Psychic Energy, Breath of Mork will be augmented and cost 30 Psychic Energy.`,
       },
-	  "Tactic 7": {
-        name: "Tactic 7",
+	  "Blast Em Fasta": {
+        name: "Blast Em Fasta",
         pos: "h8",
         icon: icons["tac_spec_4"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Ability 5 is now castable while moving. You will lose 25% movement for 2 seconds after casting it.`,
+        description: talentText`The cast time of Gaze of Mork is reduced by 1.7 seconds. You will lose 20% movement for 2 seconds after casting it.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Great Green Nemesis": {
+        name: "Great Green Nemesis",
         pos: "e3",
         icon: icons["abi_or_figure10"],
         maxRank: 5,
@@ -2004,14 +1990,14 @@ export const data: TalentData = {
           5,
         ]} Psychic Energy every 2 seconds.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
-        pos: "e5",
+	  "Improved Gaze of Mork": {
+        name: "Improved Gaze of Mork",
+        pos: "c4",
         icon: icons["abi_or_melee06"],
         maxRank: 3,
-        reqPoints: 10,
+        reqPoints: 5,
         type: "passive",
-        description: talentText`The cast time of Ability 5 is reduced by ${[
+        description: talentText`The cast time of Gaze of Mork is reduced by ${[
           0.1,
           0.2,
           0.3,
@@ -2019,8 +2005,8 @@ export const data: TalentData = {
           0.5,
         ]} seconds.`,
       },
-	  "Passive 9": {
-        name: "Passive 9",
+	  "Wots Da Rush": {
+        name: "Wots Da Rush",
         pos: "c6",
         icon: icons["abi_gs_getemlads"],
         maxRank: 2,
@@ -2030,13 +2016,13 @@ export const data: TalentData = {
           { dir: "down", from: "c5", to: "c6" },
         ],
         type: "passive",
-        description: talentText`The effect of Ability 6 now lasts ${[
+        description: talentText`The effect of Tired Already? now lasts ${[
           2,
           3,
         ]} seconds.`,
       },
-	  "Passive 3 NG": {
-        name: "Passive 3 NG",
+	  "Explosive Breath": {
+        name: "Explosive Breath",
         pos: "h6",
         icon: icons["abi_ge_zap"],
         maxRank: 5,
@@ -2047,7 +2033,7 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "h4", to: "h6" }
         ],
         type: "passive",
-        description: talentText`The augmented explosion for Ability 3 will now hit ${[
+        description: talentText`The augmented explosion for Breath of Mork will now hit ${[
           2,
           3,
           4,
@@ -2055,14 +2041,14 @@ export const data: TalentData = {
           6,
         ]} additional enemies.`,
       },
-	  "Passive 10": {
-        name: "Passive 10",
+	  "Yer Gettin Soft": {
+        name: "Yer Getting Soft",
         pos: "d7",
         icon: icons["abi_or_yerallbleedinnow"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Ability 2 will now cost ${[
+        description: talentText`Wear Em Down will now cost ${[
           28,
           15,
           0,
@@ -2093,23 +2079,23 @@ export const data: TalentData = {
           15,
         ]}% more damage.`,
       },
-	  "Passive 11": {
-        name: "Passive 11",
+	  "Imposin Presence": {
+        name: "Imposing Presence",
         pos: "e8",
         icon: icons["abi_gs_dachallenge"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Your spells deal ${[
-          5,
-          10,
+          3,
+          8,
           15,
-          20,
+          25,
         ]}% additional damage against enemies above 80% health, and your skills deal ${[
-          5,
-          10,
+          3,
+          8,
           15,
-          20,
+          25,
         ]}% additional damage against enemies below 40% health.`,
       },
     },
