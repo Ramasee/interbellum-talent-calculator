@@ -2011,7 +2011,7 @@ export const data: TalentData = {
         icon: icons["abi_gs_getemlads"],
         maxRank: 2,
         reqPoints: 15,
-        prereq: "Ability 6",
+        prereq: "Tired Already?",
 		arrows: [
           { dir: "down", from: "c5", to: "c6" },
         ],
@@ -2027,7 +2027,7 @@ export const data: TalentData = {
         icon: icons["abi_ge_zap"],
         maxRank: 5,
         reqPoints: 15,
-        prereq: "Ability 3 NG",
+        prereq: "Breath of Mork",
 		arrows: [
           { dir: "right-down", from: "g4", to: "h4" },
           { dir: "right-down-down", from: "h4", to: "h6" }
