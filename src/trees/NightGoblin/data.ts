@@ -25,7 +25,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -40,7 +40,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -55,7 +55,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -70,7 +70,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 5,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -130,7 +130,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -145,7 +145,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -199,7 +199,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer.`,
+        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer. This effect can only happen once every 3 seconds.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -264,7 +264,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all ailments and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
       "Too Smart For Dat": {
         name: "Too Smart For Dat",
@@ -369,20 +369,20 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "2.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second enchantment to target ally. For the duration, restore 19% RP + 252 health to them every 3 seconds.\n\nAugmented: Restore 18% RP + 215 health to target on spell cast.`,
+        description: talentText`Applies a 12 second enchantment to target ally. For the duration, restore 25% RP + 332 health to them every 3 seconds.\n\nAugmented: Restore 15% RP + 189 health to target on spell cast.`,
       },
-      "Summon Mushroom": {
-        name: "Summon Mushroom",
+      "Mushroom Infusion": {
+        name: "Mushroom Infusion",
         pos: "e1",
         icon: icons["abi_or_symbol03"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
         cost: "50 action points",
-        range: "100ft range",
+        range: "150ft range",
         cast: "instant cast",
-        cooldown: "20s cooldown",
-        description: talentText`Summons a "pet" mushroom. This mushroom will heal allies within 30 feet every 2 seconds for 5% RP + 46.`,
+        cooldown: "15s cooldown",
+        description: talentText`Target groupmate gains a buff for 15 seconds. Every 3 seconds, target and up to 5 allies within 30 feet of them have 4% RP + 46 health restored.`,
       },
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
@@ -395,7 +395,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second affliction to target enemy. For the duration, deal 21% SAP + 274 corporeal damage every 3 seconds to them.\n\nAugmented: Deals 12% SAP + 166 elemental damage on cast to target.`,
+        description: talentText`Applies a 12 second ailment to target enemy. For the duration, deal 13% SAP + 165 indirect, corporeal damage every 3 seconds to them.\n\nAugmented: Deals 16% SAP + 201 direct, elemental damage on cast to target.`,
       },
       "Eeek!": {
         name: "Eeek!",
@@ -447,7 +447,7 @@ export const data: TalentData = {
         range: "150ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Restore 22% RP + 293 health to target ally.\n\nAugmented: ability is now instant cast.`,
+        description: talentText`Restore 19% RP + 243 health to target ally.\n\nAugmented: ability is now instant cast.`,
       },
 	  "Puff of Poison": {
         name: "Puff of Poison",
@@ -457,11 +457,11 @@ export const data: TalentData = {
         reqPoints: 10,
         type: "spell",
         cost: "75 action points",
-        range: "100ft range",
+        range: "Self",
         cast: "instant cast",
         cooldown: "6s cooldown",
         blue: "Off the GCD",
-        description: talentText`Applies a 9 second affliction to up to 9 enemies within 30 feet of your mushroom. For the duration, deals 5% SAP + 60 corporeal damage every 3 seconds.\n\nAugmented: now deals 7% SAP + 90 corporeal damage every 3 seconds.`,
+        description: talentText`Applies a 9 second ailment to up to 9 enemies within 30 feet of each of your active Mushroom Infusions. For the duration, deals 4% SAP + 64 indirect, corporeal damage every 3 seconds.\n\nAugmented: now deals 7% SAP + 89 indirect, corporeal damage every 3 seconds.`,
       },
 	  "Blightbloom": {
         name: "Blightbloom",
@@ -475,7 +475,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "6s cooldown",
         blue: "Off the GCD",
-        description: talentText`Restores 5% RP + 50 health to up to 9 allies within 30 feet of your mushroom.\n\nAugmented: restores 7% RP + 76 health instead.`,
+        description: talentText`Restores 4% RP + 54 health to all groupmates with Mushroom Infusion and up to 5 additional allies within 30 feet of them.\n\nAugmented: restores 6% RP + 93 health instead.`,
       },
 	  "Mycotoxin": {
         name: "Mycotoxin",
@@ -488,7 +488,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 9% SAP + 114 corporeal damage and remove 1 stack.\n\nAugmented: applies 7 stacks.`,
+        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 10% SAP + 125 indirect, corporeal damage and remove 1 stack.\n\nAugmented: applies 8 stacks.`,
       },
       "Gather Round": {
         name: "Gather Round",
@@ -501,7 +501,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Restores 11% RP + 153 health to up to 9 allies within a 30 foot area you select.\n\nAugmented: ability is now instant cast.`,
+        description: talentText`Restores 11% RP + 145 health to up to 9 allies within a 30 foot area you select.\n\nAugmented: ability is now instant cast.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -532,7 +532,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`If your Summon Mushroom is killed, all groupmates within 100 feet of you gain a buff for 5 second. For the duration, gain 5 adrenaline per second and restore 5% RP + 40 health every second.`,
+        description: talentText`Whenever a Mushroom Infusion expires, all groupmates within 100 feet of the target gain a buff for 5 second. For the duration, gain 5 adrenaline regen and restore 5% RP + 40 health every second.`,
       },
 	  "Fungus Gud For Ya": {
         name: "Fungus Gud For Ya",
@@ -559,7 +559,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Summon Mushroom, Puff of Poison, and Blightbloom now hit up to 24 targets.`,
+        description: talentText`Mushroom Infusion, Puff of Poison, and Blightbloom now hit up to 24 targets.`,
       },
 	  "Pass It On": {
         name: "Pass It On",
@@ -590,13 +590,11 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Whenever you cast Fungal Beer, a random groupmate within 100 feet will be healed for ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}% RP.`,
+        description: talentText`Whenever you cast Fungal Beer, all groupmates within 150 feet of you with Fungal Infusion have ${[
+          "3% RP + 38",
+          "6% RP + 76",
+          "9% RP + 114",
+        ]} health restored.`,
       },
 	  "Run Fasta'": {
         name: "Run Fasta'",
@@ -664,7 +662,7 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Reduce the cooldown on Summon Mushroom by ${[
+        description: talentText`Increase the duration of Mushroom Infusion by ${[
           5,
           10,
           15,
@@ -694,12 +692,12 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`Whenever you critically heal someone, you will apply an enchantment on them for 5 seconds. Effect does not refresh. At the end of the duration, target will be healed for 40 + ${[
-          8,
-          16,
-          24,
-          32,
-        ]}% RP.`,
+        description: talentText`Whenever you critically heal someone, you will apply an enchantment on them for 5 seconds. Effect does not refresh. At the end of the duration, target will be healed for ${[
+          "1% RP + 12",
+          "3% RP + 36",
+          "6% RP + 72",
+          "10% RP + 120",
+        ]}.`,
       },
     },
   },
@@ -721,7 +719,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -736,7 +734,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -751,7 +749,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -766,7 +764,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 4,
+        maxRank: 5,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -826,7 +824,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -841,7 +839,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -895,7 +893,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer.`,
+        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer. This effect cannot happen more than once every 3 seconds.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -914,11 +912,11 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`Deals 50% MAP + 400 physical damage to the target.`,
+        description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
       "Broad Swings": {
         name: "Broad Swings",
@@ -932,7 +930,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -946,7 +944,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -960,7 +958,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
       "Too Smart For Dat": {
         name: "Too Smart For Dat",
@@ -1027,8 +1025,8 @@ export const data: TalentData = {
         type: "passive",
         description: talentText`Paranoia has a base of 0 and a max of 30. Reduced at a rate of 3 per second outside of combat. Paranoia applies a negative effect to the caster at intervals based on amount of current paranoia.\n1 - 5: 1 every 15 seconds.\n6 - 10: 1 every 12 seconds.\n10 - 14: 1 every 10 seconds.\n15 - 19: 1 every 8 seconds.\n20 - 24: 1 every 5 seconds.\n25 - 29: 1 every 3 seconds.\n30 - 30: 1 every second.\n\nThe following are the negative effects that can be applied chosen at random: Gain 1 stack of Reduced Intelliegence, Reduced Willpower, Reduced Initiative, Reduced Agility, Reduced Critical Hit Rating, Reduced Potency, Reduced Accuracy, Reduced Block, Reduced Incoming Healing, or Removes Inevitable and Unstoppable from you.`,
       },
-      "Goblin Basic Attack": {
-        name: "Goblin Basic Attack",
+      "Poke": {
+        name: "Poke",
         pos: "b1",
         icon: icons["abi_or_melee05"],
         maxRank: 0,
@@ -1065,7 +1063,7 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 9% SAP + 114 corporeal damage and remove 1 stack.\n\nAugmented: applies 7 stacks.`,
+        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 10% SAP + 125 indirect, corporeal damage and remove 1 stack.\n\nAugmented: applies 8 stacks.`,
       },
       "Stalk": {
         name: "Stalk",
@@ -1079,7 +1077,7 @@ export const data: TalentData = {
         cast: "2.5s cast",
         cooldown: "45s cooldown",
         blue: "Castable while Moving",
-        description: talentText`(Movement Skill) You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points.`,
+        description: talentText`(Movement Skill) You become invisible to enemies for up to 5 min. Your action points per second is set to -5, and you will come out of stalk if you reach 0 action points or cast any ability.`,
       },
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
@@ -1092,7 +1090,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second affliction to target enemy. For the duration, deal 21% SAP + 274 corporeal damage every 3 seconds to them.\n\nAugmented: Deals 12% SAP + 166 elemental damage on cast to target.`,
+        description: talentText`Applies a 12 second ailment to target enemy. For the duration, deal 13% SAP + 165 indirect, corporeal damage every 3 seconds to them.\n\nAugmented: Deals 16% SAP + 201 direct, elemental damage on cast to target.`,
       },
       "Eeek!": {
         name: "Eeek!",
@@ -1133,7 +1131,7 @@ export const data: TalentData = {
         cooldown: "60s cooldown",
         description: talentText`Your damage reduction is increased by 50% but your outgoing damage is reduced by 90% for 7 seconds.`,
       },
-	  "Ability 7": {
+	  "Scuse Me!": {
         name: "Ability 7",
         pos: "h4",
         icon: icons["abi_go_face01"],
@@ -1144,10 +1142,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 10% MAP + 130 corporeal damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 8% MAP + 118 corporeal damage to up to 9 enemies within 30 feet in front of you.\n\nAugmented: counts as a basic attack.`,
       },
-	  "Ability 8": {
-        name: "Ability 8",
+	  "Sharp Stabba": {
+        name: "Sharp Stabba",
         pos: "c5",
         icon: icons["abi_or_nofightinback"],
         maxRank: 1,
@@ -1158,15 +1156,15 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
 		blue: "Disabled by Coward!",
-        description: talentText`Deal 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
+        description: talentText`Deal 18% MAP + 235 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
-	  "Ability 9": {
-        name: "Ability 9",
+	  "Life Leaka": {
+        name: "Life Leaka",
         pos: "h6",
         icon: icons["abi_gs_puddleomuck"],
         maxRank: 1,
         reqPoints: 15,
-        prereq: "Ability 7",
+        prereq: "Scuse Me!",
 		arrows: [
           { dir: "down", from: "h4", to: "h6" },
         ],
@@ -1175,10 +1173,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "12s cooldown",
-        description: talentText`Place a 20 foot wide pool around you for 4 seconds. Every second, up to 9 enemies in the pool will gain 1 stack of a 9 second affliction. Every 3 seconds, target takes 5% SAP + 65 corporeal damage.\n\nAugmented: pool lasts for 6 seconds.`,
+        description: talentText`Place a 30 foot wide pool around you for 4 seconds. Every second, up to 9 enemies in the pool will gain 1 stack of a 9 second ailment. Every 3 seconds, target takes 3% SAP + 55 indirect, corporeal damage.\n\nAugmented: pool lasts for 6 seconds.`,
       },
-	  "Ability 1": {
-        name: "Ability 1",
+	  "You'z Squishy": {
+        name: "You'z Squishy",
         pos: "f8",
         icon: icons["abi_or_melee14"],
         maxRank: 1,
@@ -1188,10 +1186,10 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 14% SAP + 171 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
+        description: talentText`Deals 9% SAP + 133 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
       },
-      "Ability 10": {
-        name: "Ability 10",
+      "Dis Makes You Dizzy": {
+        name: "Dis Makes You Dizzy",
         pos: "d9",
         icon: icons["abi_gs_gorksbarbs"],
         maxRank: 1,
@@ -1202,7 +1200,7 @@ export const data: TalentData = {
         cast: "1.5s cast",
         cooldown: "no cooldown",
 		blue: "Castable while Moving",
-        description: talentText`Applies 10 stacks to target enemy. Each time they are hit by an ability, they take 6% SAP + 66 elemental damage and lose a stack.\n\nAugmented: add 4 stacks.`,
+        description: talentText`Applies 10 stacks to target enemy. Each time they are hit by an ability, they take 6% SAP + 86 indirect, elemental damage and lose a stack.\n\nAugmented: add 6 stacks.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1226,26 +1224,26 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you hit an enemy you are flanking, you will gain a buff for 2 seconds. For the duration, you will gain outgoing damage equal to 100% of your accuracy.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "Poison Em Fasta": {
+        name: "Poison Em Fasta",
         pos: "g5",
         icon: icons["tac_spec_9"],
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Ey Quit Bleedin and Ability 1 are now instant cast but deal 50% less damage.`,
+        description: talentText`Ey Quit Bleedin and You'z Squishy are now instant cast but deal 50% less damage.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Spore Cloud": {
+        name: "Spore Cloud",
         pos: "b6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`You will gain 5 stacks of Mycotoxin whenever you cast Stalk.`,
+        description: talentText`You will gain 8 stacks of Mycotoxin whenever you cast Stalk.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Git n Smarta": {
+        name: "Git n Smarta",
         pos: "f6",
         icon: icons["tac_spec_8"],
         maxRank: 1,
@@ -1253,8 +1251,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Lose 1 Paranoia every 5 seconds.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Git Stuck In": {
+        name: "Git Stuck In",
         pos: "b7",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1262,21 +1260,21 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Sticky Feetz will no longer reduce enemy movement speed. Instead, it will apply Rooted and Immovable to up to 96 enemies in the area on cast.\n\nRooted reduces target movement speed to 0 for 5 seconds.\nImmovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
-	  "Tactic 8": {
-        name: "Tactic 8",
+	  "Da Waaagh is Coming!": {
+        name: "Da Waaaagh is Coming!",
         pos: "h7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
-        prereq: "Ability 9",
+        prereq: "Life Leaka",
 		arrows: [
           { dir: "down", from: "h6", to: "h7" }
         ],
         type: "career tactic",
-        description: talentText`Ability 7 and Ability 9 will now hit 24 enemies.`,
+        description: talentText`Life Leaka and Scuse Me! will now hit up to 24 enemies.`,
       },
-	  "Tactic 7": {
-        name: "Tactic 7",
+	  "Git Outta Here": {
+        name: "Git Outta Here",
         pos: "d8",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -1284,8 +1282,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`The cooldown on Stalk is reduced by 5 seconds for every 4 Paranoia you had on cast.`,
       },
-	  "Passive 10": {
-        name: "Passive 10",
+	  "I'm Still Here": {
+        name: "I'm Still Here",
         pos: "e3",
         icon: icons["abi_stalk"],
         maxRank: 5,
@@ -1312,20 +1310,20 @@ export const data: TalentData = {
           45,
         ]}%.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Whazat Behind Ya": {
+        name: "Whazat Behind Ya",
         pos: "d6",
         icon: icons["abi_gs_fickskin"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
         description: talentText`${[
-          "Mycotoxin",
-          "Mycotoxin and Ey Quit Bleedin",
+          "Sticky Feetz",
+          "Sticky Feetz and Ey Quit Bleedin",
         ]} can now be cast in Stalk.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
+	  "Improved Mycotoxin": {
+        name: "Improved Mycotoxin",
         pos: "e6",
         icon: icons["abi_or_melee18"],
         maxRank: 5,
@@ -1354,8 +1352,8 @@ export const data: TalentData = {
 		  6,
         ]} times on the same target.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Big Thinkin": {
+        name: "Big Thinkin",
         pos: "e7",
         icon: icons["abi_or_face06"],
         maxRank: 3,
@@ -1367,8 +1365,8 @@ export const data: TalentData = {
           9,
         ]}% outgoing damage but also gain 1 Paranoia every 5 seconds.`,
       },
-	  "Passive 9": {
-        name: "Passive 9",
+	  "Sneaky Stabbas": {
+        name: "Sneaky Stabbas",
         pos: "e8",
         icon: icons["abi_go_face03"],
         maxRank: 4,
@@ -1401,7 +1399,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 5,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1416,7 +1414,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -1431,7 +1429,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 3,
+        maxRank: 5,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -1461,7 +1459,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1506,7 +1504,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1521,7 +1519,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1575,7 +1573,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer.`,
+        description: talentText`You restore 420 + 28% wounds health whenever you use Fungal Beer. This effect cannot happen more than once every 3 seconds.`,
       },
       "Weapon Aptitude": {
         name: "Weapon Aptitude",
@@ -1626,7 +1624,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. They will absorb up to 200% RP + 1500 damage over the duration.`,
       },
       "Alter Fate": {
         name: "Alter Fate",
@@ -1640,7 +1638,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Removes all afflictions and cripples from each groupmate within 100ft. Also applies Return Life to each dead groupmate within 100ft.`,
+        description: talentText`Removes all ailments and cripples from each groupmate within 100 feet. Also applies Return Life to each dead groupmate within 100 feet.`,
       },
       "Too Smart For Dat": {
         name: "Too Smart For Dat",
@@ -1734,8 +1732,8 @@ export const data: TalentData = {
 		blue: "Off the GCD",
         description: talentText`Generates 2 Paranoia and one of the negative effects to the caster. Your next spell will be augmented.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "You'z Squishy": {
+        name: "You'z Squishy",
         pos: "d1",
         icon: icons["abi_or_melee14"],
         maxRank: 0,
@@ -1745,7 +1743,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 14% SAP + 171 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
+        description: talentText`Deals 9% SAP + 133 elemental damage to target enemy and applies 1 stack of Reduced Toughness.\n\nAugmented: Will apply an additional stack.`,
       },
       "Ey! Quit Bleedin'": {
         name: "Ey! Quit Bleedin'",
@@ -1758,16 +1756,16 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 12 second affliction to target enemy. For the duration, deal 21% SAP + 274 corporeal damage every 3 seconds to them.\n\nAugmented: Deals 12% SAP + 166 elemental damage on cast to target.`,
+        description: talentText`Applies a 12 second ailment to target enemy. For the duration, deal 13% SAP + 165 indirect, corporeal damage every 3 seconds to them.\n\nAugmented: Deals 19% SAP + 243 direct, elemental damage on cast to target.`,
       },
-      "Ability 2": {
-        name: "Ability 2",
+      "You Weren't Usin Dat": {
+        name: "You Weren't Usin Dat",
         pos: "f1",
         icon: icons["abi_or_wotsdarush"],
         maxRank: 0,
         reqPoints: 0,
         type: "spell",
-        cost: "25 action points",
+        cost: "20 action points",
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
@@ -1812,8 +1810,8 @@ export const data: TalentData = {
         cooldown: "45s cooldown",
         description: talentText`(Movement Skill) For the next 6 seconds, your movement speed is increased by 25%.`,
       },
-	  "Ability 3": {
-        name: "Ability 3",
+	  "Breath of Mork": {
+        name: "Breath of Mork",
         pos: "h4",
         icon: icons["abi_ge_zap"],
         maxRank: 1,
@@ -1825,14 +1823,14 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Deals 36% SAP + 485 elemental damage to target enemy. Then will jump to another enemy within 20 feet. Jumps twice.\n\nAugmented: each jump will explode dealing 7% SAP + 95 elemental damage to 1 additional enemy within 20 feet.`,
       },
-	  "Ability 4": {
-        name: "Ability 4",
+	  "'Ard Lads": {
+        name: "'Ard Lads",
         pos: "c5",
         icon: icons["abi_or_shrugitoff"],
         maxRank: 1,
         reqPoints: 10,
         type: "spell",
-        cost: "45 action points",
+        cost: "30 action points",
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
@@ -1849,10 +1847,10 @@ export const data: TalentData = {
         range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 9% SAP + 114 corporeal damage and remove 1 stack.\n\nAugmented: applies 7 stacks.`,
+        description: talentText`Applies 5 stacks of fungal poison to your weapon. Whenever you use a basic attack, you will deal an additional 10% SAP + 125 indirect, corporeal damage and remove 1 stack.\n\nAugmented: applies 8 stacks.`,
       },
-	  "Ability 5": {
-        name: "Abiltity 5",
+	  "Fury of Da Green": {
+        name: "Fury of Da Green",
         pos: "e8",
         icon: icons["abi_or_figure16"],
         maxRank: 1,
@@ -1862,10 +1860,10 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "2.25s channel",
         cooldown: "10s cooldown",
-        description: talentText`Deals 16% SAP + 200 elemental damage to target enemy every 0.75 seconds.\n\nAugmented: removes the cooldown.`,
+        description: talentText`Deals 12% SAP + 170 elemental damage to target enemy every 0.75 seconds.\n\nAugmented: removes the cooldown.`,
       },
-      "Ability 6": {
-        name: "Ability 6",
+      "Brain Bursta": {
+        name: "Brain Bursta",
         pos: "d9",
         icon: icons["abi_or_figure18"],
         maxRank: 1,
@@ -1875,7 +1873,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "10s cooldown",
-        description: talentText`Applies Marked and an 8 second cripple to target enemy. At the end of the duration, deal 28% SAP + 376 corporeal damage to them.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
+        description: talentText`Applies Marked and an 8 second cripple to target enemy. At the end of the duration, deal 19% SAP + 259 corporeal damage to them.\n\nAugmented: deals an additional 14% SAP + 180 indirect, corporeal damage.\n\nMarked reduces the target's damage reduction by 15% for 10 seconds.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1899,8 +1897,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`The cooldown on RUN AWAY! is reduced by 20 seconds.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Hurts, Don' It?": {
+        name: "Hurts, Don'It?",
         pos: "g5",
         icon: icons["tac_spec_1"],
         maxRank: 1,
@@ -1917,17 +1915,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Gain 2 mass for 3 seconds whenever you cast Fungal Beer.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Steal Yer Thunda": {
+        name: "Steal Yer Thunda",
         pos: "f6",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 1 and Ability 2 will now hit 2 additional enemies within 20 feet of the primary target.`,
+        description: talentText`You'z Squishy and You Weren't Using Dat will now hit 2 additional enemies within 20 feet of the primary target.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Git N Smarta": {
+        name: "Git N Smarta",
         pos: "a7",
         icon: icons["tac_spec_8"],
         maxRank: 1,
@@ -1948,8 +1946,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Mycotoxin now applies to all groupmates within 100 feet of you.`,
       },
-	  "Tactic 4": {
-        name: "Tactic 4",
+	  "Git Stuck In": {
+        name: "Git Stuck In",
         pos: "c8",
         icon: icons["tac_spec_6"],
         maxRank: 1,
@@ -1957,8 +1955,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Sticky Feetz will no longer reduce enemy movement speed. Instead, it will apply Rooted and Immovable to up to 96 enemies in the area on cast.\n\nRooted reduces target movement speed to 0 for 5 seconds.\nImmovable prevents application of Rooted, Knockbacks, and Pull effects for 20 seconds.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Vitashrooms": {
+        name: "Vitashrooms",
         pos: "e3",
         icon: icons["abi_gs_lemmeout"],
         maxRank: 4,
@@ -1986,8 +1984,8 @@ export const data: TalentData = {
 		  6,
         ]} times on the same target.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Tunnel Boss": {
+        name: "Tunnel Boss",
         pos: "e6",
         icon: icons["abi_or_face17"],
         maxRank: 2,
@@ -1998,13 +1996,13 @@ export const data: TalentData = {
           6,
         ]}% outgoing damage for 3 seconds whenever you cast Fungal Beer.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Explosive Breath": {
+        name: "Explosive Breath",
         pos: "h6",
         icon: icons["abi_ge_zap"],
         maxRank: 5,
         reqPoints: 15,
-        prereq: "Ability 3",
+        prereq: "Breath of Mork",
 		arrows: [
           { dir: "down", from: "h4", to: "h6" },
         ],
@@ -2017,8 +2015,8 @@ export const data: TalentData = {
           6,
         ]} additional enemies.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Big Thinkin": {
+        name: "Big Thinkin",
         pos: "e7",
         icon: icons["abi_or_face06"],
         maxRank: 3,
@@ -2043,17 +2041,17 @@ export const data: TalentData = {
           40,
         ]}%.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Scrub Ya Gud": {
+        name: "Scrub Ya Gud",
         pos: "g8",
         icon: icons["abi_or_figure17"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`You have a ${[
-          12.5,
-          25,
-          37.5,
+          5,
+          15,
+          30,
           50,
         ]}% chance whenever you cast Fungal Beer to cause your next damage ability to dispel 1 enchantment from the target.`,
       },

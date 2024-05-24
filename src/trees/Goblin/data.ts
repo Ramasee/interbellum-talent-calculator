@@ -25,7 +25,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -40,7 +40,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 5,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -55,7 +55,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -70,7 +70,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -85,7 +85,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 2,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -100,7 +100,7 @@ export const data: TalentData = {
         name: "Toughness",
         pos: "d3",
         icon: icons["stat_tou"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Toughness by ${[
@@ -115,7 +115,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -130,7 +130,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -145,7 +145,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -190,7 +190,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Gain 5 action points per second. Whenever you gain Cowardice, you will lose 8 action points per second for 3 seconds.`,
+        description: talentText`Gain 5 AP regen.. Whenever you gain Cowardice, you will lose 8 AP regen for 3 seconds.`,
       },
       "Why Me?!": {
         name: "Why Me?!",
@@ -250,7 +250,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 24 enemies within 20ft of the target.`,
+        description: talentText`You gain a buff for 10 seconds. Whenever you hit a target with a single-target ability, you will deal 10% RAP + 150 corporeal damage and 10% SAP + 150 elemental damage to up to 23 enemies within 20 feet of the target.`,
       },
       "Unleash the Winds": {
         name: "Unleash the Winds",
@@ -264,35 +264,35 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Up to 96 enemies within a 20ft location you select are knocked straight up into the air.`,
+        description: talentText`Up to 96 enemies within a 30 feet location you select are knocked straight up into the air.`,
       },
       "Sever Nerve": {
         name: "Sever Nerve",
         pos: "i4",
         icon: icons["morale_severnerve"],
-        maxRank: 0,
-        reqPoints: 0,
+        maxRank: 1,
+        reqPoints: 5,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
         description: talentText`Deals 50% MAP + 400 piercing damage to the target.`,
       },
-      "Morale 2 Spec": {
-        name: "Morale 2 Spec",
+      "Gork Iz Watchin": {
+        name: "Gork Iz Watchin",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_spinnslash"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Costs 720 adrenaline\nRequires Coward!",
+        description: talentText`Dispel Coward! from yourself. Lose 50 Cowardice. Gain maximum charges of Stabbity. Gain a buff for 6 seconds. For the duration, your outgoign damage and damage reduction will be increased by 15%.`,
       },
       "Ain't Dun Yet": {
         name: "Ain't Dun Yet",
@@ -329,7 +329,7 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a melee ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.\n\nBleeding is a status effect that lasts 8 seconds and deals 2% MAP + 10 ichor damage every second.`,
+        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a single-target ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.\n\nBleeding is a status effect that lasts 8 seconds and deals 2% MAP + 10 indirect, ichor damage every second.`,
       },
       "Shoot 'Em": {
         name: "Shoot 'Em",
@@ -382,7 +382,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.0s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 10 second affliction to target enemy. For the duration, deals 12% RAP + 143 ichor damage every 2 seconds.`,
+        description: talentText`Applies a 10 second ailment to target enemy. For the duration, deals 14% RAP + 174 indirect, ichor damage every 2 seconds.`,
       },
       "Run N Shoot": {
         name: "Run N Shoot",
@@ -396,7 +396,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Off the GCD\nRequires Coward!",
-        description: talentText`Gain a buff for 10 seconds. For the duration, all of your abilities are castable while moving and you have +20% movement speed, but your accuracy is reduced by 30%.`,
+        description: talentText`Gain a buff for 10 seconds. For the duration, have 3.0 second faster cast times and you have +25% movement speed, but your accuracy is reduced by 30%.`,
       },
       "Drop That!": {
         name: "Drop That!",
@@ -450,7 +450,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 10% MAP + 126 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Shrapnel Arrer": {
         name: "Shrapnel Arrer",
@@ -467,7 +467,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "1.5s cast",
         cooldown: "no cooldown",
-        description: talentText`Applies a 10 second affliction to up to 9 enemies within a 30 foot area you select. For the duration, deals 4% RAP + 43 ichor damage every 2 seconds.`,
+        description: talentText`Applies a 10 second ailment to up to 9 enemies within a 30 foot area you select. For the duration, deals 4% RAP + 44 indirect, ichor damage every 2 seconds.`,
       },
 	  "Explodin' Arrer": {
         name: "Explodin' Arrer",
@@ -480,7 +480,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "2.25s cast",
         cooldown: "no cooldown",
-        description: talentText`Deals 18% RAP + 253 impact damage to up to 9 enemies within a 30 foot area you select.`,
+        description: talentText`Deals 18% RAP + 254 impact damage to up to 9 enemies within a 30 foot area you select.`,
       },
 	  "Stop Runnin'": {
         name: "Stop Runnin'",
@@ -506,7 +506,7 @@ export const data: TalentData = {
         range: "75ft range",
         cast: "3.0s channel",
         cooldown: "no cooldown",
-        description: talentText`Deals 21% RAP + 294 piercing damage to target enemy every second.`,
+        description: talentText`Deals 21% RAP + 296 piercing damage to target enemy every second.`,
       },
       "Penetrating Arrow": {
         name: "Penetrating Arrow",
@@ -537,16 +537,16 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         type: "career tactic",
-        description: talentText`Rotten Arrer and Cut Ya! now apply Bleeding to the target.`,
+        description: talentText`Cut Ya! and Rotten Arrer deal 10% more damage and always apply Bleeding to the target.`,
       },
-	  "Dat's da gud Rot": {
+	  "Dat's da Gud Rot": {
         name: "Dat's da gud Rot",
         pos: "f6",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Rotten Arrer will now apply to two additional enemies within 15 feet of the target.`,
+        description: talentText`Cut Ya! and Rotten Arrer will now apply to two additional enemies within 20 feet of the target.`,
       },
 	  "Aimin' Quickly": {
         name: "Aimin' Quickly",
@@ -557,14 +557,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Plink has a 0.75 second faster cast time.`,
       },
-	  "Bigger Arrers": {
-        name: "Bigger Arrers",
+	  "Stomp Da Yard": {
+        name: "Stom Da Yard",
         pos: "a7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Shrapnel Arrer and Explodin' Arrer now hit up to 24 targets.`,
+        description: talentText`Explodin' Arrer, Explosive Squig, Shrapnel Arrer, Squig Frenzy, and Wide Stabbin now hit up to 24 targets. Squig Frenzy will deal 40% less damage.`,
       },
 	  "I gotz you": {
         name: "I gotz you",
@@ -573,7 +573,7 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Run N Shoot no longer reduces your accuracy, but the movement speed increase is halved.`,
+        description: talentText`Run N Shoot no longer reduces your accuracy.`,
       },
 	  "Finish 'Em Off": {
         name: "Finish 'Em Off",
@@ -582,16 +582,16 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Whenever you deal direct damage to an enemy under 50% health, you will deal an additional 7% RAP + 140 indirect ichor damage to them.`,
+        description: talentText`Whenever you deal direct damage to an enemy under 40% health, you will deal an additional 7% RAP + 140 indirect ichor damage to them.`,
       },
-	  "Sharpened Arrers": {
-        name: "Sharpened Arrers",
+	  "Betta Arrer 'Eads": {
+        name: "Betta Arrer 'Eads",
         pos: "e3",
         icon: icons["abi_or_blood02"],
         maxRank: 5,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Plink, Stabbity, and Explodin' Arrer have a ${[
+        description: talentText`Plink, Stabbity, and Shrapnel Arrer have a ${[
           8,
           16,
           24,
@@ -602,7 +602,7 @@ export const data: TalentData = {
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
         pos: "e5",
-        icon: icons["noicon"],
+        icon: icons["abi_or_plink"],
         maxRank: 3,
         reqPoints: 10,
         type: "passive",
@@ -656,33 +656,33 @@ export const data: TalentData = {
           30,
         ]}% chance whenever Bleeding deals damage that your next Explodin' Arrer will be instant cast.`,
       },
-	  "Open Wounds": {
-        name: "Open Wounds",
+	  "Split Artery": {
+        name: "Split Artery",
         pos: "e7",
         icon: icons["abi_he_festeringwound"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Your Bleeding effects deal additional damage equal to ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}% RAP.`,
+        description: talentText`Your Bleeding effects now deal ${[
+          50,
+          100,
+          150,
+          200,
+          250,
+        ]}% additional damage.`,
       },
-	  "Sharp Toofs": {
-        name: "Sharp Toofs",
+	  "Sharpened Arrers": {
+        name: "Sharpened Arrers",
         pos: "e8",
         icon: icons["abi_or_blood01"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Increase your damage against bleeding targets by ${[
-          3,
-          6,
+          2,
+          5,
           9,
-          12,
+          15,
         ]}%.`,
       },
     },
@@ -705,7 +705,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 2,
+        maxRank: 5,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -720,7 +720,7 @@ export const data: TalentData = {
         name: "Ballistic Skill",
         pos: "d4",
         icon: icons["stat_bal"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Ballistic Skill by ${[
@@ -735,7 +735,7 @@ export const data: TalentData = {
         name: "Initiative",
         pos: "c3",
         icon: icons["stat_ini"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Initiative by ${[
@@ -750,7 +750,7 @@ export const data: TalentData = {
         name: "Intelligence",
         pos: "f4",
         icon: icons["stat_int"],
-        maxRank: 4,
+        maxRank: 2,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Intelligence by ${[
@@ -765,7 +765,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 2,
+        maxRank: 3,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -795,7 +795,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 2,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -863,14 +863,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that have this tactic gain 1 Fightiness, gain 3 Pyschic Energy, lose 1 Cowardice, or lose 1 Paranoia.`,
       },
-      "Class Tactic 1": {
-        name: "Class Tactic 1",
+      "Keep Runnin": {
+        name: "Keep Runnin",
         pos: "c2",
         icon: icons["tac_class_1"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Gain 5 action points per second. Whenever you gain Cowardice, you will lose 8 action points per second for 3 seconds.`,
+        description: talentText`Gain 5 AP regen. Whenever you gain Cowardice, you will lose 8 AP regen for 3 seconds.`,
       },
       "Why Me?!": {
         name: "Why Me?!",
@@ -898,7 +898,7 @@ export const data: TalentData = {
         reqPoints: 0,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range",
+        range: "8ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
@@ -916,7 +916,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 720 adrenaline",
-        description: talentText`You gain a  buff for 10 seconds. Your single target abilities will target two additional enemies within 15ft in front of you.`,
+        description: talentText`You gain a buff for 10 seconds. Your single target abilities will target two additional enemies within 20 feet in front of you.`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -930,7 +930,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 10 seconds. Action point costs are reduced by 75% for the duration.`,
       },
       "Frenzied Slaughter": {
         name: "Frenzied Slaughter",
@@ -944,35 +944,35 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`All groupmates within 100ft gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
+        description: talentText`All groupmates within 100 feet gain a buff for 15 seconds. +40% outgoing damage and 50% reduced cooldowns for the duration.`,
       },
-      "Morale 1 Class": {
-        name: "Morale 1 Class",
+      "Healy Shroom": {
+        name: "Healy Shroom",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_stickysquig"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 360 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Requires Pet!\nCosts 360 adrenaline",
+        description: talentText`Heals your controlled squig for 3000. You gain 15 stacks of Squig Spore.\n\nSquig Spore lasts 15 seconds and stacks up to 20. At 20 stacks, dispel all stacks and summon an uncontrolled basic squig.`,
       },
-      "Morale 2 Spec": {
-        name: "Morale 2 Spec",
+      "Gork Iz Watchin": {
+        name: "Gork Iz Watchin",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_spinnslash"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Costs 720 adrenaline\nRequires Coward!",
+        description: talentText`Dispel Coward! from yourself. Lose 50 Cowardice. Gain maximum charges of Stabbity. Gain a buff for 6 seconds. For the duration, your outgoign damage and damage reduction will be increased by 15%.`,
       },
       "Ain't Dun Yet": {
         name: "Ain't Dun Yet",
@@ -988,10 +988,10 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`Gain a buff for 20 seconds. For the duration, every second your Cowardice and Paranoia will lower by 1 and you will gain 20 action points.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Squigbeast": {
+        name: "Squigbeast",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_squigfrenzy"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -999,8 +999,8 @@ export const data: TalentData = {
         range: "7.5ft range self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Requires Pet\nCosts 3600 adrenaline",
+        description: talentText`Your controlled squig, or you if you are in Squig Armor, gain a buff for 20 seconds. For the duration, target gains 100% outgoing damage, 50% damage reduction, and will generate 5 squig spores per second.`,
       },
       "Cowardice and Basic Squig": {
         name: "Cowardice and Basic Squig",
@@ -1009,10 +1009,10 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a melee ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.\n\nBasic Squigs are uncontrolled summons that are aggressive to Order and friendly to Destro. They will attack at random, have stats independent of yours, will not follow you, and disappear after 15 seconds.`,
+        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a single-target ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.\n\nBasic Squigs are uncontrolled summons that are aggressive to Order and friendly to Destro. They will attack at random, have stats independent of yours, will not follow you, and disappear after 15 seconds.`,
       },
-      "Goblin Basic Attack": {
-        name: "Goblin Basic Attack",
+      "Poke": {
+        name: "Poke",
         pos: "b1",
         icon: icons["abi_or_melee05"],
         maxRank: 0,
@@ -1025,8 +1025,8 @@ export const data: TalentData = {
         blue: "Disabled By Coward!",
         description: talentText`Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "Sharp Stabba": {
+        name: "Sharp Stabba",
         pos: "c1",
         icon: icons["abi_or_nofightinback"],
         maxRank: 0,
@@ -1037,7 +1037,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
+        description: talentText`Deals 18% MAP + 235 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
       "Stabbity": {
         name: "Stabbity",
@@ -1064,10 +1064,10 @@ export const data: TalentData = {
         range: "self",
         cast: "1.0s cast",
         cooldown: "90s cooldown",
-        description: talentText`This is 3 different abilities with there own cooldowns. Cooldown starts when that squig dies. Unless otherwise stated, they have 100% of your stats but with a base health of 2000. You can only have one of these three squigs active.\n\nHorned: attacks in melee. Wounds 150%, Armor 150%.\nSpiked: attacks at 100ft range. Wounds 75%, Armor 0%.\nGas: attacks at 75ft range. Armor 75%.`,
+        description: talentText`This is 3 different abilities with their own cooldowns. Cooldown starts when that squig dies. Unless otherwise stated, they have 100% of your stats but with a base health of 2000. You can only have one of these three squigs active.\n\nHorned: attacks in melee. Wounds 150%, Armor 150%.\nSpiked: attacks at 100ft range. Wounds 75%, Armor 0%.\nGas: attacks at 75ft range. Armor 75%.`,
       },
-      "Ability 2": {
-        name: "Ability 2",
+      "Squig Frenzy": {
+        name: "Squig Frenzy",
         pos: "f1",
         icon: icons["abi_or_squig13"],
         maxRank: 0,
@@ -1077,11 +1077,11 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Requires Pet",
+        blue: "Requires Pet\nOff the GCD",
         description: talentText`Commands your pet to attack its current target.\n\nHorned/Battle: deals 27% MAP + 348 impact damage.\nSpiked: deals 17% RAP + 224 piercing damage.\nGas: deals 20% RAP + 251 ichor damage.`,
       },
-      "Ability 3": {
-        name: "Ability 3",
+      "Sticky Squigz": {
+        name: "Sticky Squigz",
         pos: "g1",
         icon: icons["abi_or_squig05"],
         maxRank: 0,
@@ -1094,8 +1094,8 @@ export const data: TalentData = {
         blue: "Requires Pet",
         description: talentText`Applies an effect to your squig's target.\n\nHorned: applies Knocked-down and Unstoppable.\nSpiked: applies Ensnared and Momentum.\nGas: applies Silenced and Inevitable.`,
       },
-      "Ability 4": {
-        name: "Ability 4",
+      "Itsa Biggun": {
+        name: "Itsa Biggun",
         pos: "h1",
         icon: icons["abi_or_squig11"],
         maxRank: 0,
@@ -1132,7 +1132,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 10% MAP + 126 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
 	  "Spore Toss": {
         name: "Spore Toss",
@@ -1145,8 +1145,7 @@ export const data: TalentData = {
         range: "65ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Requires Coward!",
-        description: talentText`Deals 16% RAP + 205 ichor damage to target enemy. Has a 20% chance to summon a Basic Squig.`,
+        description: talentText`Deals 18% RAP + 239 ichor damage to target enemy. Generates 5 Squig Spores. This ability will be augmented while Coward!\n\nAugmented: costs no action points.`,
       },
 	  "Explosive Squig": {
         name: "Explosive Squig",
@@ -1161,19 +1160,19 @@ export const data: TalentData = {
         cooldown: "no cooldown",
         description: talentText`Summon an explosive squig that promptly explodes dealing 7% RAP + 102 ichor damage to up to 9 enemies within 30 feet of you.`,
       },
-	  "Ability 5": {
-        name: "Ability 5",
+	  "Poisoned Spine": {
+        name: "Poisoned Spine",
         pos: "c8",
         icon: icons["abi_or_squig07"],
         maxRank: 1,
         reqPoints: 25,
         type: "spell",
-        cost: "50 action points",
+        cost: "30 action points",
         range: "100ft range",
         cast: "instant cast",
         cooldown: "15s cooldown",
-        blue: "Requires Pet",
-        description: talentText`Your pet applies an effect to its current target.\n\nSpiked: applies Marked. Marked reduces a target's damage reduction by 15% for 10 seconds.\nSpiked: applies a 10 second affliction. For the duration, target mass is reduced by 2.\nGas: applies a 10s cripple. Target has 33% longer cast times.`,
+        blue: "Requires Pet\nOff the GCD",
+        description: talentText`Your pet applies an effect to its current target.\n\nSpiked: applies Marked. Marked reduces a target's damage reduction by 15% for 10 seconds.\nSpiked: applies a 10 second ailment. For the duration, target mass is reduced by 2.\nGas: applies a 10s cripple. Target has 33% longer cast times.`,
       },
       "Squigpede": {
         name: "Squigpede",
@@ -1184,9 +1183,9 @@ export const data: TalentData = {
         type: "spell",
         cost: "100 action points",
         range: "self",
-        cast: "1.0s cast",
+        cast: "instant cast",
         cooldown: "30s cooldown",
-        description: talentText`Summons 4 basic squigs.`,
+        description: talentText`You gain a buff for 5 seconds. For the duration, generate 20 Squig Spores every second.Squig Spore lasts 15 seconds and stacks up to 20. At 20 stacks, dispel all stacks and summon an uncontrolled basic squig.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1201,8 +1200,8 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`Up to 10 enemies within a 30 foot area you select gain a debuff for 1 second if they do not have cover from you. At the end of the duration, they apply 1 stack of a 6 second debuff to up to 96 enemies within 30 feet of them. Enemies lose 5% damage reduction per stack.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Supa Stabbity": {
+        name: "Supa Stabbity",
         pos: "a5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -1210,8 +1209,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Stabbity now has 5 charges.`,
       },
-	  "Tactic 5": {
-        name: "Tactic 5",
+	  "I Got Lots": {
+        name: "I Got Lots",
         pos: "g5",
         icon: icons["tac_spec_8"],
         maxRank: 1,
@@ -1219,8 +1218,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Cooldown on Summon Horned Squig is now 10 seconds, but you can no longer summon spiked or gas squigs.`,
       },
-	  "Tactic 15": {
-        name: "Tactic 15",
+	  "Goop Shot": {
+        name: "Goop Shot",
         pos: "c6",
         icon: icons["tac_spec_1"],
         maxRank: 1,
@@ -1230,43 +1229,43 @@ export const data: TalentData = {
           { dir: "down", from: "c5", to: "c6" },
         ],
         type: "career tactic",
-        description: talentText`Spore Toss no longer requires Coward! and will always summon a basic squig, but now has a cooldown of 10 seconds.`,
+        description: talentText`Spore Toss now generates 20 Squig Spores but now has a cooldown of 10 seconds.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Itsa Fast One": {
+        name: "Itsa Fast One",
         pos: "f6",
         icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 4 always provides the movement speed buff, but never applies the damage reduction.`,
+        description: talentText`Itsa Biggun always provides the movement speed buff, but never applies the damage reduction.`,
       },
-	  "Tactic 2": {
-        name: "Tactic 2",
+	  "Big Claws": {
+        name: "Big Claws",
         pos: "a7",
         icon: icons["tac_spec_5"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Ability 2 will now apply a stack of Reduced Resistance to target enemy. Horned - Impact, Spiked - Piercing, Gas - Ichor.`,
+        description: talentText`Squig Frenzy will now apply a stack of Reduced Resistance to target enemy. Horned - Impact, Spiked - Piercing, Gas - Ichor.`,
       },
-	  "Tactic 14": {
-        name: "Tactic 14",
+	  "Stomp Da Yard": {
+        name: "Stom Da Yard",
         pos: "e7",
         icon: icons["tac_spec_7"],
         maxRank: 1,
         reqPoints: 20,
         type: "career tactic",
-        description: talentText`Wide Stabbin', Explosive Squig, and Ability 2 now hit up to 24 enemies. Ability 2 will deal 66% less damage.`,
+        description: talentText`Explodin' Arrer, Explosive Squig, Shrapnel Arrer, Squig Frenzy, and Wide Stabbin now hit up to 24 targets. Squig Frenzy will deal 40% less damage.`,
       },
-	  "Tactic 6": {
-        name: "Tactic 6",
+	  "Git Em!": {
+        name: "Git Em!",
         pos: "g8",
         icon: icons["tac_spec_2"],
         maxRank: 1,
         reqPoints: 25,
         type: "career tactic",
-        description: talentText`Whenever you hit an enemy with a melee attack, the next ability 2 against that target will deal 33% increased damage.`,
+        description: talentText`Whenever you hit an enemy with a melee attack, the next Squig Frenzy against that target will deal 33% increased damage.`,
       },
 	  "Gotta Herd Em All": {
         name: "Gotta Herd Em All",
@@ -1275,16 +1274,15 @@ export const data: TalentData = {
         maxRank: 4,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Your melee attacks have a ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}% chance to summon a basic squig.`,
+        description: talentText`Your melee attacks generate ${[
+          1,
+          2,
+          3,
+          4,
+        ]} Squig Spores.\n\nSquig Spore lasts 15 seconds and stacks up to 20. At 20 stacks, dispel all stacks and summon an uncontrolled basic squig.`,
       },
-	  "Passive 1": {
-        name: "Passive 1",
+	  "Gore": {
+        name: "Gore",
         pos: "c4",
         icon: icons["abi_or_squig13"],
         maxRank: 2,
@@ -1293,22 +1291,22 @@ export const data: TalentData = {
         description: talentText`You have a ${[
           5,
           10,
-        ]}% chance on any ability use to make the next Ability 2 cost no action points.`,
+        ]}% chance on any ability use to make the next Squig Frenzy cost no action points.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
-        pos: "e5",
+	  "Strength in Numbas": {
+        name: "Strength in Numbas",
+        pos: "b3",
         icon: icons["abi_gs_donthitme"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 0,
         type: "passive",
         description: talentText`You have a ${[
           50,
           100,
-        ]}% chance to lose 1 Cowardice whenever you use Ability 2.`,
+        ]}% chance to lose 1 Cowardice whenever you use Squig Frenzy.`,
       },
-	  "Passive 3": {
-        name: "Passive 3",
+	  "Explodin Delivery": {
+        name: "Explodin Delivery",
         pos: "e6",
         icon: icons["abi_or_squig09"],
         maxRank: 4,
@@ -1318,12 +1316,12 @@ export const data: TalentData = {
           { dir: "right", from: "d6", to: "e6" },
         ],
         type: "passive",
-        description: talentText`You have a ${[
-          15,
-          30,
-          45,
-          60,
-        ]}% chance whenever you summon a basic squig to also summon an Explosive Squig.`,
+        description: talentText`Explosive Squig will generate ${[
+          3,
+          6,
+          9,
+          12,
+        ]}% Squig Spores.`,
       },
 	  "Improved Vigilance": {
         name: "Improved Vigilance",
@@ -1338,14 +1336,14 @@ export const data: TalentData = {
           45,
         ]}%.`,
       },
-	  "Passive 5": {
-        name: "Passive 5",
+	  "Stabbin Frenzy": {
+        name: "Stabbin Frenzy",
         pos: "b7",
         icon: icons["abi_or_stabbity"],
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Ability 2 has a ${[
+        description: talentText`Squig Frenzy has a ${[
           10,
           20,
           30,
@@ -1353,8 +1351,8 @@ export const data: TalentData = {
           50,
         ]}% chance to generate 1 charge of Stabbity.`,
       },
-	  "Passive 4": {
-        name: "Passive 4",
+	  "Wida Stabbin": {
+        name: "Wida Stabbin",
         pos: "h7",
         icon: icons["abi_or_melee20"],
         maxRank: 3,
@@ -1370,19 +1368,24 @@ export const data: TalentData = {
           15,
         ]}% more damage.`,
       },
-	  "Passive 6": {
-        name: "Passive 6",
+	  "Stranga Danga": {
+        name: "Stranga Danga",
         pos: "e8",
         icon: icons["abi_or_squig08"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
         description: talentText`Your Horned, Spiked, and Gas squigs gain an additional ${[
-          75,
-          150,
-          225,
+          30,
+          90,
+          180,
           300,
-        ]}% of your HP4.`,
+        ]}% of your HP4. They also gain ${[
+          2,
+          6,
+          12,
+          20,
+        ]}% movement speed.`,
       },
     },
   },
@@ -1404,7 +1407,7 @@ export const data: TalentData = {
         name: "Agility",
         pos: "d5",
         icon: icons["stat_agl"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Agility by ${[
@@ -1464,7 +1467,7 @@ export const data: TalentData = {
         name: "Strength",
         pos: "e4",
         icon: icons["stat_str"],
-        maxRank: 1,
+        maxRank: 4,
         reqPoints: 5,
         type: "passive",
         description: talentText`Increases your Strength by ${[
@@ -1494,7 +1497,7 @@ export const data: TalentData = {
         name: "Willpower",
         pos: "g3",
         icon: icons["stat_wil"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Willpower by ${[
@@ -1509,7 +1512,7 @@ export const data: TalentData = {
         name: "Wounds",
         pos: "f5",
         icon: icons["stat_wou"],
-        maxRank: 3,
+        maxRank: 4,
         reqPoints: 10,
         type: "passive",
         description: talentText`Increases your Wounds by ${[
@@ -1524,7 +1527,7 @@ export const data: TalentData = {
         name: "Weapon Skill",
         pos: "f3",
         icon: icons["stat_ws"],
-        maxRank: 3,
+        maxRank: 1,
         reqPoints: 0,
         type: "passive",
         description: talentText`Increases your Weapon Skill by ${[
@@ -1562,14 +1565,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Whenever you use a basic attack, all groupmates within 100 feet that have this tactic gain 1 Fightiness, gain 3 Pyschic Energy, lose 1 Cowardice, or lose 1 Paranoia.`,
       },
-      "Class Tactic 1": {
-        name: "Class Tactic 1",
+      "Keep Runnin": {
+        name: "Keep Runnin",
         pos: "c2",
         icon: icons["tac_class_1"],
         maxRank: 0,
         reqPoints: 0,
         type: "career tactic",
-        description: talentText`Gain 5 action points per second. Whenever you gain Cowardice, you will lose 8 action points per second for 3 seconds.`,
+        description: talentText`Gain 5 AP regen. Whenever you gain Cowardice, you will lose 8 AP regen for 3 seconds.`,
       },
       "Why Me?!": {
         name: "Why Me?!",
@@ -1601,7 +1604,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 360 adrenaline",
-        description: talentText`All groupmates within 100ft gain 3 stacks of Enhanced Block.`,
+        description: talentText`All groupmates within 100 feet gain 3 stacks of Enhanced Block.`,
       },
       "Champion's Challenge": {
         name: "Champion's Chalenge",
@@ -1629,7 +1632,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 1800 adrenaline",
-        description: talentText`Up to 48 enemies within 30ft of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
+        description: talentText`Up to 48 enemies within 30 feet of you receive a debuff. For 10 seconds, they cannot benefit from Cover.`,
       },
       "Immaculate Defense": {
         name: "Immaculate Defense",
@@ -1643,35 +1646,35 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Costs 3600 adrenaline",
-        description: talentText`Groupmates within 100ft gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
+        description: talentText`Groupmates within 100 feet gain 25 stacks of a buff for 20 seconds. Each stack grants 3% damage reduction. A stack is removed each time they are attacked by an ability; 4 additional stacks are removed if the ability is single target.`,
       },
-      "Morale 1 Class": {
-        name: "Morale 1 Class",
+      "Healy Shroom": {
+        name: "Healy Shroom",
         pos: "i4",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_stickysquig"],
         maxRank: 1,
         reqPoints: 5,
         type: "morale 1",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 360 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Requires Pet!\nCosts 360 adrenaline",
+        description: talentText`Heals your controlled squig for 3000. You gain 15 stacks of Squig Spore.\n\nSquig Spore lasts 15 seconds and stacks up to 20. At 20 stacks, dispel all stacks and summon an uncontrolled basic squig.`,
       },
-      "Morale 2 Spec": {
-        name: "Morale 2 Spec",
+      "Gork Iz Watchin": {
+        name: "Gork Iz Watchin",
         pos: "i5",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_spinnslash"],
         maxRank: 1,
         reqPoints: 10,
         type: "morale 2",
         cost: "no cost",
-        range: "7.5ft range self",
+        range: "self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 720 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Costs 720 adrenaline\nRequires Coward!",
+        description: talentText`Dispel Coward! from yourself. Lose 50 Cowardice. Gain maximum charges of Stabbity. Gain a buff for 6 seconds. For the duration, your outgoign damage and damage reduction will be increased by 15%.`,
       },
       "Ain't Dun Yet": {
         name: "Ain't Dun Yet",
@@ -1687,10 +1690,10 @@ export const data: TalentData = {
         blue: "Costs 1800 adrenaline",
         description: talentText`Gain a buff for 20 seconds. For the duration, every second your Cowardice and Paranoia will lower by 1 and you will gain 20 action points.`,
       },
-      "Morale 4 Spec": {
-        name: "Morale 4 Spec",
+      "Squigbeast": {
+        name: "Squigbeast",
         pos: "i8",
-        icon: icons["noicon"],
+        icon: icons["abi_gs_squigfrenzy"],
         maxRank: 1,
         reqPoints: 25,
         type: "morale 4",
@@ -1698,8 +1701,8 @@ export const data: TalentData = {
         range: "7.5ft range self",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Costs 3600 adrenaline",
-        description: talentText`Insert tooltip.`,
+        blue: "Requires Pet\nCosts 3600 adrenaline",
+        description: talentText`Your controlled squig, or you if you are in Squig Armor, gain a buff for 20 seconds. For the duration, target gains 100% outgoing damage, 50% damage reduction, and will generate 5 squig spores per second.`,
       },
       "Cowardice": {
         name: "Cowardice",
@@ -1708,10 +1711,10 @@ export const data: TalentData = {
         maxRank: 0,
         reqPoints: 0,
         type: "passive",
-        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a melee ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.`,
+        description: talentText`Cowardice has a base of 0 and a maximum of 100. You gain 5 Cowardice each time you are hit by a single-target ability, and lose 1 per second. Whenever you reach 100 cowardice you will gain Coward!\n\nCoward lasts for 15 seconds, reduces your cowardice by 10 per second as well as disabling and enabling different abilities.`,
       },
-      "Goblin Basic Attack": {
-        name: "Goblin Basic Attack",
+      "Poke": {
+        name: "Poke",
         pos: "b1",
         icon: icons["abi_or_melee05"],
         maxRank: 0,
@@ -1724,8 +1727,8 @@ export const data: TalentData = {
         blue: "Disabled By Coward!",
         description: talentText`Deals 4% MAP + 30 piercing damage to target enemy. Generates 22 action points.`,
       },
-      "Ability 1": {
-        name: "Ability 1",
+      "Sharp Stabba": {
+        name: "Sharp Stabba",
         pos: "c1",
         icon: icons["abi_or_nofightinback"],
         maxRank: 0,
@@ -1736,7 +1739,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 21% MAP + 280 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
+        description: talentText`Deals 18% MAP + 235 elemental damage to target enemy.\n\nAugmented: counts as a basic attack.`,
       },
       "Stabbity": {
         name: "Stabbity",
@@ -1780,8 +1783,8 @@ export const data: TalentData = {
         blue: "Requires Pet",
         description: talentText`Engulf yourself in your Battle Squig gaining access to new abilities and effects. Your pet is "unsummoned" while Squig Armor is active, and resummoned whenever you leave it. You will leave Squig Armor when you become a Coward!`,
       },
-      "Ability 7": {
-        name: "Ability 7",
+      "Git Ova Here": {
+        name: "Git Ova Here",
         pos: "g1",
         icon: icons["abi_or_squig14"],
         maxRank: 0,
@@ -1794,8 +1797,8 @@ export const data: TalentData = {
         blue: "Requires Squig Armor\nCastable While Moving",
         description: talentText`Caster has their movement speed reduced by 15%. After 2.5 seconds, target enemy is Pulled and Immovable is applied to them.\n\nImmovable prevents aplication of Rooted, Knockback, and Pull effects for 20 seconds.`,
       },
-      "Ability 6": {
-        name: "Ability 6",
+      "Feelz Your Pain": {
+        name: "Feelz Your Pain",
         pos: "h1",
         icon: icons["abi_or_squig02"],
         maxRank: 0,
@@ -1807,8 +1810,8 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`For the next 6 seconds, your squig will get hit by all abilities that would hit groupmates within 30 feet of it. If you are in Squig Armor, the abilities are redirected to you instead and the ability counts as a Guard effect.`,
       },
-      "Ability 4": {
-        name: "Ability 4",
+      "Itsa Biggun": {
+        name: "Itsa Biggun",
         pos: "i1",
         icon: icons["abi_or_squig11"],
         maxRank: 0,
@@ -1832,10 +1835,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Disabled by Coward!",
-        description: talentText`Deals 10% MAP + 126 piercing damage to up to 9 enemies within 30 feet in front of you.`,
+        description: talentText`Deals 10% MAP + 127 piercing damage to up to 9 enemies within 30 feet in front of you.`,
       },
-	  "Ability 2": {
-        name: "Ability 2",
+	  "Squig Frenzy": {
+        name: "Squig Frenzy",
         pos: "c5",
         icon: icons["abi_or_squig13"],
         maxRank: 1,
@@ -1845,7 +1848,7 @@ export const data: TalentData = {
         range: "100ft range",
         cast: "instant cast",
         cooldown: "no cooldown",
-        blue: "Requires Pet",
+        blue: "Requires Pet\nOff the GCD",
         description: talentText`Commands your pet to attack its current target.\n\nHorned/Battle: deals 27% MAP + 348 impact damage.\nSpiked: deals 17% RAP + 224 piercing damage.\nGas: deals 20% RAP + 251 ichor damage.`,
       },
 	  "Tastes Like Stuntie": {
@@ -1860,10 +1863,10 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Squig Armor",
-        description: talentText`Deals 19% MAP + 262 piercing damage to target enemy. You are healed for 100% of the damage dealt.`,
+        description: talentText`Deals 19% MAP + 263 piercing damage to target enemy. You are healed for 100% of the damage dealt.`,
       },
-	  "Ability 8": {
-        name: "Ability 8",
+	  "Kaboom!": {
+        name: "Kaboom!",
         pos: "d8",
         icon: icons["abi_squig_bounce"],
         maxRank: 1,
@@ -1875,8 +1878,8 @@ export const data: TalentData = {
         cooldown: "20s cooldown",
         description: talentText`Knocks back up to 9 enemies within 30 feet of you if you are in Squig Armor. If you pet is active, the effect is centered on your pet, but the pet dies.`,
       },
-      "Ability 9": {
-        name: "Ability 9",
+      "Look Ova Dere": {
+        name: "Look Ova Dere",
         pos: "d9",
         icon: icons["abi_squig_shout"],
         maxRank: 1,
@@ -1887,7 +1890,7 @@ export const data: TalentData = {
         cast: "instant cast",
         cooldown: "no cooldown",
         blue: "Requires Squig Armor",
-        description: talentText`Deals 10% MAP + 126 ichor damage to up to 24 enemies within 30 feet of you. You lose Squig Armor and knock yourself backwards.`,
+        description: talentText`Deals 10% MAP + 127 ichor damage to up to 24 enemies within 30 feet of you. You lose Squig Armor and knock yourself backwards.`,
       },
       "Sneaky Waaagh": {
         name: "Sneaky Waaagh",
@@ -1902,8 +1905,8 @@ export const data: TalentData = {
         cooldown: "30s cooldown",
         description: talentText`Up to 10 enemies within a 30 foot area you select gain a debuff for 1 second if they do not have cover from you. At the end of the duration, they apply 1 stack of a 6 second debuff to up to 96 enemies within 30 feet of them. Enemies lose 5% damage reduction per stack.`,
       },
-	  "Tactic 1": {
-        name: "Tactic 1",
+	  "Supa Stabbity": {
+        name: "Supa Stabbity",
         pos: "a5",
         icon: icons["tac_spec_3"],
         maxRank: 1,
@@ -1911,8 +1914,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Stabbity now has 5 charges.`,
       },
-	  "Tactic 10": {
-        name: "Tactic 10",
+	  "Farty Squig": {
+        name: "Farty Squig",
         pos: "g5",
         icon: icons["tac_spec_4"],
         maxRank: 1,
@@ -1920,17 +1923,17 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Your Battle Squig takes 90% less damage from AoE attacks.`,
       },
-	  "Tactic 3": {
-        name: "Tactic 3",
+	  "Itsa Fast One": {
+        name: "Itsa Fast One",
         pos: "b6",
         icon: icons["tac_spec_6"],
         maxRank: 1,
         reqPoints: 15,
         type: "career tactic",
-        description: talentText`Ability 4 always provides the movement speed buff, but never applies the damage reduction.`,
+        description: talentText`Itsa Biggun always provides the movement speed buff, but never applies the damage reduction.`,
       },
-	  "Tactic 13": {
-        name: "Tactic 13",
+	  "Big Bouncin": {
+        name: "Big Bouncin",
         pos: "e6",
         icon: icons["tac_spec_7"],
         maxRank: 1,
@@ -1938,8 +1941,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`While in Squig Armor, Stabbity will hit 2 additional enemies within 20 feet.`,
       },
-	  "Tactic 8": {
-        name: "Tactic 8",
+	  "All by Meself": {
+        name: "All by Meself",
         pos: "a7",
         icon: icons["tac_spec_9"],
         maxRank: 1,
@@ -1947,8 +1950,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`If you drop below 20% maximum health while in Squig Armor, you will be healed for 20,000, lose Squig Armor, and your pet will be placed on cooldown.`,
       },
-	  "Tactic 12": {
-        name: "Tactic 12",
+	  "Indigestion": {
+        name: "Indigestion",
         pos: "h7",
         icon: icons["tac_spec_8"],
         maxRank: 1,
@@ -1960,8 +1963,8 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Tastes Like Stuntie will deal 50% less damage but will now heal you for 300% of the damage dealt.`,
       },
-	  "Tactic 11": {
-        name: "Tactic 11",
+	  "Bigga Inside": {
+        name: "Bigga Inside",
         pos: "f8",
         icon: icons["tac_spec_5"],
         maxRank: 1,
@@ -1969,14 +1972,14 @@ export const data: TalentData = {
         type: "career tactic",
         description: talentText`Gain 2 mass while in Squig Armor.`,
       },
-	  "Passive 7": {
-        name: "Passive 7",
+	  "Da Smell Don Botha Me": {
+        name: "Da Smell Don Botha Me",
         pos: "e3",
         icon: icons["abi_squig_ardnoggin"],
         maxRank: 3,
         reqPoints: 0,
         type: "passive",
-        description: talentText`While in Squig Armor, you will lose 1 Cowardice every ${[
+        description: talentText`While in Squig Armor, you will lose 2 Cowardice every ${[
           5,
           4,
           3,
@@ -1984,10 +1987,10 @@ export const data: TalentData = {
       },
 	  "Improved Basic Attack": {
         name: "Improved Basic Attack",
-        pos: "b4",
+        pos: "b3",
         icon: icons["abi_or_melee15"],
         maxRank: 3,
-        reqPoints: 5,
+        reqPoints: 0,
         type: "passive",
         description: talentText`Your basic attacks will deal ${[
           75,
@@ -1995,8 +1998,8 @@ export const data: TalentData = {
           225,
         ]}% additional damage.`,
       },
-	  "Passive 2": {
-        name: "Passive 2",
+	  "Strength in Numbas": {
+        name: "Strength in Numbas",
         pos: "e5",
         icon: icons["abi_gs_donthitme"],
         maxRank: 2,
@@ -2005,16 +2008,16 @@ export const data: TalentData = {
         description: talentText`You have a ${[
           50,
           100,
-        ]}% chance to lose 1 Cowardice whenever you use Ability 2.`,
+        ]}% chance to lose 1 Cowardice whenever you use Squig Frenzy.`,
       },
-	  "Passive 8": {
-        name: "Passive 8",
+	  "Even Bigga!": {
+        name: "Even Bigga!",
         pos: "d6",
         icon: icons["abi_or_squig11"],
         maxRank: 2,
         reqPoints: 15,
         type: "passive",
-        description: talentText`The duration on Ability 4 is increased by ${[
+        description: talentText`The duration on Itsa Biggun is increased by ${[
           1,
           2,
           3,
@@ -2050,8 +2053,8 @@ export const data: TalentData = {
           6,
         ]}% for 5 seconds.`,
       },
-	  "Passive 9": {
-        name: "Passive 9",
+	  "Pick on Yer Own Size": {
+        name: "Pick on Yer Own Size",
         pos: "e7",
         icon: icons["abi_squig_spikeshield"],
         maxRank: 3,
@@ -2065,14 +2068,14 @@ export const data: TalentData = {
           25,
         ]}% maximum health and armor while in Squig Armor.`,
       },
-	  "Passive 10": {
-        name: "Passive 10",
+	  "Improved Feelz Your Pain": {
+        name: "Improved Feelz Your Pain",
         pos: "e8",
         icon: icons["abi_or_squig02"],
         maxRank: 4,
         reqPoints: 25,
         type: "passive",
-        description: talentText`The cooldown on Ability 6 is reduced by ${[
+        description: talentText`The cooldown on Feelz Your Pain is reduced by ${[
           2,
           4,
           6,

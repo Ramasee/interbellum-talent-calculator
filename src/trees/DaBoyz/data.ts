@@ -2048,19 +2048,11 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         type: "passive",
-        description: talentText`Wear Em Down will now cost ${[
-          28,
-          15,
+        description: talentText`Wear Em Down will now cost 0 Psychic Energy and 55 action points. Also deals ${[
           0,
-        ]} Psychic Energy and ${[
-          17,
-          35,
-          56,
-        ]} action points and also deals ${[
-          8,
-          16,
-          24,
-        ]}% more damage.`,
+          10,
+          25,
+        ]}% additional damage.`,
       },
 	  "Improved Wild Choppin'": {
         name: "Improved Wild Choppin'",
